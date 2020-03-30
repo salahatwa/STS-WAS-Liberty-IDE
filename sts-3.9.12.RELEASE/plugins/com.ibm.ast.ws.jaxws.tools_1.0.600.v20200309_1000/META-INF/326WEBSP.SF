@@ -1,0 +1,547 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: UGqFGINl19UwEuDGnvWzToWF7WkUB
+ dBvQWs3gygAVcw=
+SHA-256-Digest-Manifest: YxNhipYJqyIrKhGa5MehOKX+FdnRrUP1cC3yfslKWvI=
+Created-By: 1.7.0 (IBM Corporation)
+
+Name: templates/X509SymmetricForMessageAndUntForClient.xml
+SHA-256-Digest: 1AdPTgyR2wfAOFCqWr7flpM6ritxzeXXV8Z4fw2REYk=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPSecurityPolicyWizardPage1.c
+ lass
+SHA-256-Digest: 5wnqDqIiBpAMHwHWayunSrwhzFSJy7VC+zpmWMll39I=
+
+Name: com/ibm/ast/ws/jaxws/tools/actions/GenerateIBMWSBndAction.class
+SHA-256-Digest: omT3m2Yt9rpmh2ysFoX4OB8RME9pio7h4FG40XjLIdg=
+
+Name: icons/port_obj.gif
+SHA-256-Digest: /n5DRXHiktm8JSEWcBBUexK/LUjisBXFc/BXDl1vIgM=
+
+Name: templates/policyAttachments/SamlTokenOverSSL.xml
+SHA-256-Digest: IrW6+0kU83oaBEiRauFNyBXKbKV03Rv5sJig9tfnPlM=
+
+Name: icons/provider_endpoint.gif
+SHA-256-Digest: e8A0D/elCtXNYesWSz/WGdE+z8zi+EaSpA2mYIXd36s=
+
+Name: icons/banners/wsdl_security_wiz.gif
+SHA-256-Digest: 2McUyrqA/MqsrV7jHK3yduS2azT7ZBA0Lj1i9RFW8T8=
+
+Name: templates/policyAttachments/UsernameTokenwithPasswordTextoverSSL
+ .xml
+SHA-256-Digest: EpnRRRbxASdeRyH6/bmGxzbGEegPCF3SmCwrPBr138I=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/InputWrapper.class
+SHA-256-Digest: y61a4jwUmjXDt0CrrRM6dyPtg/eqKN/CWMMhW8qKkDI=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPSecurityPage1ValidationList
+ ener.class
+SHA-256-Digest: p+m79RlyAJjVWP9apCOOqtL7OmIVegpcDqqoFTeIcDA=
+
+Name: icons/url.gif
+SHA-256-Digest: EuIGnOQD8iRp5M5gi7gmC2feOIhD5YgO4Rhvbyzqp5E=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$4.class
+SHA-256-Digest: fzwQLU4KXROctQuyAfB3yWdgTI32NE3lVhMUlojocxs=
+
+Name: com/ibm/ast/ws/jaxws/tools/commands/PolicyAttachmentDefaultingCo
+ mmand.class
+SHA-256-Digest: 4zU9G2DCNxHTjlAk0x3r17idjCccll5iOsCsUbuAvS8=
+
+Name: xml/Attachments.xsd
+SHA-256-Digest: 1GVI7bIxySnsMP697JIGGxBzKpBh5BwLYWwxnHvVNH0=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/WLPRemoveFileServiceProperty
+ Tester.class
+SHA-256-Digest: 4ymU2BPA+PaaqkpiQk0rGCbg+QILxOby9mQAJ0jAzvA=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyAttachUtil.class
+SHA-256-Digest: ASv/yCRinRq8+SiIsR+C6jjWweHkMPY95J/ImAfbQXY=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyExtSerializer.class
+SHA-256-Digest: eSsR9N6756eQ16p6ehnpABE7TJChRj3eePL87Vmks8s=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/messages.properties
+SHA-256-Digest: YgTUzVeT5GJPq+gW0E54AIT5fisfLwE3O+c8C2hUfWk=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizardP
+ age1.class
+SHA-256-Digest: meuZXxLV+SP4HOwkSvs5OjZnpq8JunHAleJhEw9aH3E=
+
+Name: icons/serviceref_obj.gif
+SHA-256-Digest: U+tVwtytAttwKoW2mm+L1sOo19+yAh5ydcU0CvzeR0E=
+
+Name: templates/X509SymmetricAndEndorsing.xml
+SHA-256-Digest: 9FoiLJDX49T+Ok6II7DwI1DUfIxk8ZPaH4LfzCqlLbE=
+
+Name: icons/banners/serverPolicyAttachment_wiz.gif
+SHA-256-Digest: nRyBn+2qAqUCKINybtBi6kKQJLLO9+4+Hc/VgQvpMrM=
+
+Name: xml/IBMWSBindingsCustomizationFile.properties
+SHA-256-Digest: c7utALFOjL+F4bv9j4vMHsb4kI9QwkJtW8V8avGPxZc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/BindingWrapper.class
+SHA-256-Digest: x/vRRZ7hiMqUSxTpG9JjV6XEVIBhtWFkIb6sWUj/MBs=
+
+Name: icons/web_resource_collection.gif
+SHA-256-Digest: FLwrxc6wfxUjqWZjwhXy1aFalY0RLKFSqVmsoo4K7+8=
+
+Name: icons/security_role.gif
+SHA-256-Digest: j8Wal/6f7Haj4A6JhD9OYU/MZdIgm8oRwNZIeFjs98o=
+
+Name: xml/IBMWSBindingsCustomizationFile.xml
+SHA-256-Digest: 8BSVu1+lbWmqnMuov091VSY+iSLrRpj4QJ4LL3RMj6Y=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPSecWiza
+ rdAction.class
+SHA-256-Digest: h7sCIqsvv18wS9+NAFS4az4R6TY43rMpuf7trh53xiY=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$Column1LabelProvider.class
+SHA-256-Digest: EuO83TktvvQNghzkSomujXU3bjTHCyTDCXwKsz6VKWI=
+
+Name: templates/policyAttachments/X509AsymmetricMutualAndUntAuthentica
+ tion.xml
+SHA-256-Digest: 4PNZcStf0ygpk1N5RseQzpgxqeuR6giqbAfqzIVlSRA=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizardP
+ age1$3.class
+SHA-256-Digest: d+b1pw9a0FcrpxsGwF17Xt0myzhzQPbJfF+C1IprDEI=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPTemplateWidget.class
+SHA-256-Digest: i3L6Wm3tc5cX1lj7iXVsPb/xSpQY2nTwQd/Fc8KKDDM=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/OutputWrapper.class
+SHA-256-Digest: LZ02hhdU6ePc4O8Bjlz5UpivBoqlD/ADAN/ooEzQp44=
+
+Name: icons/webserv_bind.gif
+SHA-256-Digest: zKKwJRuwWAvbPAp/YcmzgVPqoPvWYWNgHWol/B1pItk=
+
+Name: templates/X509AsymmetricMutualAndUntAuthentication.xml
+SHA-256-Digest: 4ggy+Zcnw/bRTBrbA8bUF27y4LGPsjtl615QcsrsMl8=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/IInternalWLPSecurityPolicyTest
+ Interface.class
+SHA-256-Digest: jurIrkHWVeDeHNce9UwylF60+8ZanVuoS2dMkKTuJyc=
+
+Name: icons/form_login_config.gif
+SHA-256-Digest: 8FA7KjHH/CspKaXU60L7ftbnmUKX9aL/rSCPWEO/h/g=
+
+Name: com/ibm/ast/ws/jaxws/tools/Logger.class
+SHA-256-Digest: 55TblQg/iLSXstqwzR2dyvQG8kOmzY2qxRm/uqV10ZI=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/BindingOperationWrapper.class
+SHA-256-Digest: a3O0ln6LRLBNVtD6NRy0T/lH4kTXxBlXJ9UqXqR1PHQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/actions/GenerateIBMWSBndAction$1.clas
+ s
+SHA-256-Digest: RTvXJ637muNPC1IjO10PznulcQqm6xJRAytwMvplXys=
+
+Name: icons/httpbinding_obj.gif
+SHA-256-Digest: ZtOCb9vHUJwJAkCztNFi1bjFWLelVwV3CNoap5omxsY=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/AbstractWLPSecureAction.class
+SHA-256-Digest: 0nKyx98QuEbWWtuh8KywI//+JdGzGvUSEBHwIPEcG5Q=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/WLPPolicyTemp
+ lateWidget$PolicyAttachmentTemplateValidator.class
+SHA-256-Digest: lQJSqu+rvfDIJZsxd8QCYB7jLZZLPPBIfA+G7lMvr2o=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$RootInputModel.class
+SHA-256-Digest: Z1j1YwM4FCVz7b0FbD2Azf/K61ixI8H2XuXEPouPgx4=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$2.class
+SHA-256-Digest: KOJyOTGE8OIMUa/2hl50B50W74rY9QK1f+eRPW7zksY=
+
+Name: templates/UsernameTokenAsEndorsingAndX509Symmetric.xml
+SHA-256-Digest: n/MuDZ0OXWFAuFK/vmkhlCBx9qD2XPn+LJ7AkRKW6q8=
+
+Name: templates/SamlTokenWithX509AsymmetricMessageSignature.xml
+SHA-256-Digest: 2ZN/1BivTAo8c0Nx0VmQsmlRKmM6GmO3A64wCyvBP2Y=
+
+Name: templates/policyAttachments/SamlTokenWithX509AsymmetricMessagePr
+ otection.xml
+SHA-256-Digest: 1n1bO+0jDSCvu7hJ0rV963sqU2sFvW02L+3S8OMFmho=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/EndpointCateg
+ ory$SoapEndpoint.class
+SHA-256-Digest: MYR2edsbJBtJwK5xo7Q0jc23rvBXluj2XtSDrekqK4M=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entBinding$4.class
+SHA-256-Digest: SiwLLz4GrPFr6XkWCZb7avIndNJElSJj20whIBAJ1A8=
+
+Name: com/ibm/ast/ws/jaxws/tools/commands/GenerateIBMWSBndCommand$1.cl
+ ass
+SHA-256-Digest: aAgNeJqR4HqJmB1Hgt7a0wYsCMZUQkU0u2j9/+XYwL4=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/PortTypeWrapper.class
+SHA-256-Digest: RbzoNenKaJcG8EDUVu+oH5jm/DONW/vwmRwXJEoIbXU=
+
+Name: com/ibm/ast/ws/jaxws/tools/Messages.class
+SHA-256-Digest: X6s1oRqcs2rJ4P4cw3DlwSvrQLx3Fe+CiX2LjkUhri0=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizardP
+ age1$2.class
+SHA-256-Digest: kqVCE6x0YKWbfAJhsgUDeirj8n88c7JSQBwCTrBB570=
+
+Name: templates/UsernameTokenOverHTTP.xml
+SHA-256-Digest: LjzwhGBdNxFSKAUEcAWKj4j1rGByATbc589jN96lewI=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/OpenWLPSecWizardAction.class
+SHA-256-Digest: WhWTgqRXXfI1BtP0V58jVzNp2hmgCMjlUDDM4UDtffY=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyAttachUtil$PolicyAttac
+ hmentElement.class
+SHA-256-Digest: yW7eW9h8E1T2tsKWMNowhAjrHGs4PMaagSkuibJcDfc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizard.
+ class
+SHA-256-Digest: UkjDB/gPvGL/9Cxjmx0pKwyhzvdqzV5D2MbIbGn0XXY=
+
+Name: templates/policyAttachments/X509SymmetricForMessageAndUntForClie
+ nt.xml
+SHA-256-Digest: oeREPJ5h6hx4FaiYiqZiiO0FJjgVRc+FN8ydy2YkQ9w=
+
+Name: icons/calleridentity.gif
+SHA-256-Digest: 0RWOLqUGDkJHltKJgJsO7/F6q0u136axG/oycor+gGU=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/IEndpoint.class
+SHA-256-Digest: fmrAOxhvARnrTsmEvRPEibZzDYcTMCHEWVMQHtJLT0Q=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$CheckStateListener.class
+SHA-256-Digest: o6Wi3P7R8+l4Lox/j/yERHj9gq75r5pTWAucchACXmQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/commands/GenerateIBMWSBndCommand.clas
+ s
+SHA-256-Digest: MdjDFkweVLCK8uw6UFUhKprqJRA6GLI5My8S3SnxJEg=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/Messages.class
+SHA-256-Digest: 5mRY64TiqVKsz8JUuEPNFVHASy1++4eLlSOsIIoBa/M=
+
+Name: templates/policyAttachments/Attachments.xml
+SHA-256-Digest: k3VFijaO7x5lYt8Dt29CPRfIE1zpS8sfQtlyAsfUwto=
+
+Name: templates/SamlTokenOverSSL.xml
+SHA-256-Digest: XdYGc9wvER0hhphph3dY+hurBvEeb+k79u3oPCASA1k=
+
+Name: com/ibm/ast/ws/jaxws/tools/messages.properties
+SHA-256-Digest: QTUUW46U6YqrddWe7pZmkWaRH6969gbf9phkZ/TsDnU=
+
+Name: icons/error_overlay.gif
+SHA-256-Digest: Sea012B6KkQZUI86XEC/OmZqecuUh5ksfxB2kywlTT4=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/WSDL11Element
+ Identifiers.class
+SHA-256-Digest: Q3N7I/x1QEZ/YZ0ezY0vXlyVDrawt6Lw+pLKWwF7Ec4=
+
+Name: icons/http.gif
+SHA-256-Digest: +SkabNGglwZ9IK2hm/zFtwP92SwT22a/qxjgu7mlGTg=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPTemplateWidget$1.class
+SHA-256-Digest: Xg9N5gybhw3OQT9bdd9W1eHZj4dBuS78VzAePH1OQpY=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyReferenceExt.class
+SHA-256-Digest: qzKp1UOCv8vi06zAHZGmqwjQ/cgNAtV+7tzDGhHPtK8=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$5.class
+SHA-256-Digest: rZGh4Z9zpv/bmbfnZx+DxOF6YrX3bZQ6FvQpa7wDdj0=
+
+Name: com/ibm/ast/ws/jaxws/tools/actions/OpenDDAction.class
+SHA-256-Digest: yyH3ddFm+AGw08ujMLGYTSQJCwrnel1q7U+xBO12Mo0=
+
+Name: com/ibm/ast/ws/jaxws/tools/Activator.class
+SHA-256-Digest: 8P+Zk+Nzb0cINZOkGiUK2dSPvwj8S0cXxTVUH9i3Jr4=
+
+Name: plugin.xml
+SHA-256-Digest: gFklV01fRIwPrvx35JbpmM/qtG4UuA5Um0mnMYNAC2w=
+
+Name: templates/policyAttachments/SamlTokenWithX509AsymmetricMessageSi
+ gnature.xml
+SHA-256-Digest: iam5pLRNEPV0k2DnXeK7QSHWVPXUkDmzsRKo8SteBRE=
+
+Name: templates/policyAttachments/UsernameTokenAsEndorsingAndX509Symme
+ tric.xml
+SHA-256-Digest: lpcO/gOpbBoomS2W/gyd3Cxtcx/Ewzgdz9rOgAdkOFA=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/WLPPolicyTemp
+ lateWidget.class
+SHA-256-Digest: IP/B5+8VadoxeghIH62nEWbrQ8bCHc2lsrNi2XQFQoo=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyTemplate.class
+SHA-256-Digest: qSxsrYRjr0YNIzppY5F4UJcnXo1oJitGhz3tah9BRNw=
+
+Name: templates/SamlTokenWithX509AsymmetricMessageProtection.xml
+SHA-256-Digest: wT8qRVCKRXw2D4F4rcD8WFxamHVIWDC16JhkZrzA3to=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$Column2LabelProvider.class
+SHA-256-Digest: /oV4hY62GSvlj32uVROw/7eqyXB5LLBkJf2dzXObFbk=
+
+Name: icons/warning_overlay.gif
+SHA-256-Digest: L0hO4iHEArFbNXkZP6ZKQVR2uDiFNfaPrk0BDxSzhsQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/PartWrapper.class
+SHA-256-Digest: Fsi8ZPOTds6X7xcL52pawwX9JqpxBPVqhCCpXLiCDYI=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemovePolicyTemplateTableConte
+ ntProvider.class
+SHA-256-Digest: ehRFhitrmaZrwhE9VdogfHCWYcnv+B2qmS1nayo6+iA=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/OperationWrapper.class
+SHA-256-Digest: H/+ArhXGCPd/78SlKLDLork5PhbZv+HfXYWX10OQlXA=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/DOMTemplateWsdlInsertionUtil
+ .class
+SHA-256-Digest: mbzgGcO/doGUPgQY/YDDvCRLEyuAbfnFqH9Epr2bWww=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyEntry.class
+SHA-256-Digest: rnnIRJ7ydGVJi+N0DpJdEXHwVkvgSrU/N6u521J2qhY=
+
+Name: templates/UsernameTokenwithPasswordHashoverSSL.xml
+SHA-256-Digest: nu2O7I3XUNbgXkvjI5ZmK1u0BqihkwZCL/5AaSkURS8=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$6.class
+SHA-256-Digest: Hcrb7TcYgWJpfA3AFv0TEQc7QydfI+ZweMcpUslZF4U=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget.class
+SHA-256-Digest: wbwyDOEU8HepbVZ0jSQZtnvaqd1dGRFgpvcSJih1U2c=
+
+Name: xml/jaxwsTools_csh.xml
+SHA-256-Digest: v7tnx7Rlg8idTwM6L8mC24NkdQu/AvgcXPWh7SI6raA=
+
+Name: icons/login_config.gif
+SHA-256-Digest: /UsSOhZD52/3/6kFIYdPEK/w7rRb6G56cq4Vj9o8nWw=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyTemplateRegistry.class
+SHA-256-Digest: kPJdhri4GJ/dQEgIPpdEGIVQIJ+KuIGcCh3kmh8vkkA=
+
+Name: templates/UsernameTokenwithPasswordTextoverSSL.xml
+SHA-256-Digest: 9m0/J0l6Asc7UcV6oCV0qhAPtFugRP9kxYWItHUp0g4=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPSecurityPolicyWizard$1.clas
+ s
+SHA-256-Digest: w7ohZ8knyc/HLyFkv7OVhv8PbMfyfe8DryXr9VNe0FE=
+
+Name: templates/policyAttachments/X509SymmetricAndEndorsing.xml
+SHA-256-Digest: C2UwDZ8ss6zhq4CZIBQ1C7bP0DaMHQr7APCfZ4ix8eo=
+
+Name: com/ibm/ast/ws/jaxws/tools/dialogs/SecurityPasswordDialog.class
+SHA-256-Digest: EECbTAqymW64szLQEZNF3KjYq+ZoamZrcpXmWoHk/+k=
+
+Name: icons/binding.gif
+SHA-256-Digest: P+mDduBFubLq5WLGOS2p/hIXy4zWDgwpjW2A6EdSRGA=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/BindingOutputWrapper.class
+SHA-256-Digest: 89ikTb5Ad4JICLHM/gO1i5Y/2mZ/YIGWmG+/RoJJEfQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$1.class
+SHA-256-Digest: 8ochMHRRjYN0tjI69O6CXd1Tsg9dzPembhwcaBHDiUU=
+
+Name: com/ibm/ast/ws/jaxws/tools/commands/PolicyAttachmentGenerateComm
+ and.class
+SHA-256-Digest: frVUJFpbxFrYphazbEzhm4ZdebD0K2yO8Z+VVcNXfOk=
+
+Name: templates/policyAttachments/UsernameTokenwithPasswordHashoverSSL
+ .xml
+SHA-256-Digest: jYnxqIJw2OP16w232a6amBSp9feIzgIL4ZkN96aST3s=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/BindingFaultWrapper.class
+SHA-256-Digest: CYHMEHmWnZJww+uPEr9IqGNZsw/RtRTf0S2p9oh1VQk=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/WLPProjectContainerPropertyT
+ ester.class
+SHA-256-Digest: t1WnNv7TxTtIziet9OAMm9rjzCDiFMOtG/jK3zXJfZg=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/WSDLPolicyUtil.class
+SHA-256-Digest: A2hhuoz6vgb1ooqoHPhXVVpEqiR2WepJUtlvfEaTqaE=
+
+Name: plugin.properties
+SHA-256-Digest: HBsI+ka175jODNsX/AX0wtu0Ok/MOUpRJEUnBg+jIj0=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entBinding$1.class
+SHA-256-Digest: Cna6hBJZ9Sd2YbY/VPjhWTUfmYcvWzdWnLXX5eHsMUk=
+
+Name: icons/banners/clientPolicyAttachment_wiz.gif
+SHA-256-Digest: vC9/U296WIlOdV+JWq+ZQUh+hV6rMMKzb+PPUuW0sMc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizard$
+ 1.class
+SHA-256-Digest: A31YnbdaTjmrOWl67d9V7p6IrTpdq5xaXBcK0Ryg+dg=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyUtils$ExtractWsdlRetur
+ n.class
+SHA-256-Digest: mgLsTg8Jg4erT4ZRdHhQ5ura0cLl160cUnu7pKW71Sg=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/Messages.clas
+ s
+SHA-256-Digest: ugVx/r5JNdyj5uMK8qfv86Gcuol3LmqcwS/jU/8m9fA=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/WSSecurityFeatureResolver.cl
+ ass
+SHA-256-Digest: CrJ0thNMJIe3vzczA3OrrTUr4DIN192aUkeIhSMs5ws=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyAttachUtil$PolicyScope
+ Expression$Type.class
+SHA-256-Digest: sUqQT8zfQ1PTNZlGTPTJy2GGy2m0S+TDfiTYUVyD1Ho=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$3.class
+SHA-256-Digest: yDYyoFfPdfKdqEN+PvajuxwfsxD3iOM8GH/xYFUDBaw=
+
+Name: xml/ibm-ws-bnd.xml
+SHA-256-Digest: 7n4jdR4vRKrHkaAPpOJElTRIZoYOg2kNQ1MyQ8bZjKc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/SubjectCatego
+ ry.class
+SHA-256-Digest: ZCrAPP4CtB5rOORSt+ZDSRJPBhyMymZY+MzkvezhmkE=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyUtils.class
+SHA-256-Digest: yvukDo2KS5OlQNrvy/LmdwAtYF4WszMgHvjdZAvo838=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyExt.class
+SHA-256-Digest: qDyUA98mpnUBjAwFwLcs40MUZyDWRA7bNedfHU+samo=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entBinding$3.class
+SHA-256-Digest: t3xiGwxSyfZXtwGGBfIhjXCS2GEyT2eDs9fAdqFYv+A=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entBinding$2.class
+SHA-256-Digest: ZqwiV4pi5ZkE62Of++OLRQAmt28BirXbUjG9gVwGV+c=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/WLPBindingConfigurationPrope
+ rtyTester.class
+SHA-256-Digest: ObM3WIFKGdpW8S+ZtuajHIorytkxkuLBejCCFe1JTkU=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/EndpointCateg
+ ory.class
+SHA-256-Digest: XYz9DM8fH4lTCUmG7UZlNY0umaD2Lms6XfeG6Q3K0Lw=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/MessageWrapper.class
+SHA-256-Digest: vCZkqkRcQzk9sUPJlF1LOhuJIMHhpgbbl2i8+b/dCnc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemovePolicyTemplateTableViewe
+ r.class
+SHA-256-Digest: s9Q4DqVAZwTSojJtFwa64IuFRIEuuyRFmu9ACCsfUuQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$MyContentProvider.class
+SHA-256-Digest: eH4NHunWPXsD4M27MkRQcGK/bYeGRqQR+ifRA7xMaxc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/BindingInputWrapper.class
+SHA-256-Digest: KfKBO67fXs7VyBb87XLPh6oTMTw9lpAFBtIk1owAVJM=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$7.class
+SHA-256-Digest: QOLxQJn5an4zrxJTmx50kySCS5gpe2m3TUhh7pnaRFc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizardP
+ age1$4.class
+SHA-256-Digest: l8yXXvGh8DAc+v6rDZMKLtKYlhrryOZYFg7BsIspjTs=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/PolicyAttachUtil$PolicyScope
+ Expression.class
+SHA-256-Digest: zPnUP8mbRR8/4ZD+8TLzjMphiPFwk0JgwReiMKpnQkQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/IInternalRemoveSecurityPolicyT
+ estInterface.class
+SHA-256-Digest: VhtNJGeTmiascwwZ6wBrLzBw68sEsooKD+LWhSBHbQA=
+
+Name: templates/policyAttachments/UsernameTokenOverHTTP.xml
+SHA-256-Digest: bUOdm/tQV0t90nctgNR1/7UnAc5ZJNqCWOiUSbLJozw=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/ServiceWrapper.class
+SHA-256-Digest: aXFL9edt4NRHRt4ASvavPADKO+Chsfe2Pa2zoInZtV8=
+
+Name: icons/encryptioninfo.gif
+SHA-256-Digest: huidll8TdS/Q1gkB6d+qgsG4eAIwfJv4Uwi9VXr2rDA=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/SubjectCatego
+ ry$Subject.class
+SHA-256-Digest: ar49CQJ/dCw3xyUPPiOnc3dPHlkPHV8Rl3YeXuwWPN8=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemovePolicyTemplateTableLabel
+ Provider.class
+SHA-256-Digest: NouO7SesJEVxa3g2d05qUbhwrS1oRqhWz+Ueix6KY7g=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/FaultWrapper.class
+SHA-256-Digest: xms1XbaUwwiTqHgGeH8tzdSeCmIO6bp/+UVHzns/zD8=
+
+Name: com/ibm/ast/ws/jaxws/tools/internal/WLPWSDLFileServicePropertyTe
+ ster.class
+SHA-256-Digest: UZ1w+MxJTfVSkRtThelH1TMWt6fF7Rlxp98GMPxb13o=
+
+Name: icons/security_constraint.gif
+SHA-256-Digest: irzqKxdUWw0uTm41INrBb4FaplnfiNVqsx6Csen8Qb0=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$2$1.class
+SHA-256-Digest: uAoDifB+8uv5ZhwN0555sbJAQ5nXNQcC9n8UFKDeCtk=
+
+Name: icons/service_obj.gif
+SHA-256-Digest: x9GQOvP6N7VS8iK85Pg06sFcKC+Us69/jDEe7DTenhc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemovePolicyTemplateTableViewe
+ r$1.class
+SHA-256-Digest: 3x8junofELYnqHhgIUBHlyhB97LJK7WWd/Um0eW7VhU=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/WSDLElementWrapper.class
+SHA-256-Digest: 155nqDM14jpvB1v3ucSipBGV9bJEmOND2ISxeyH9XYI=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/RemoveSecurityPolicyWLPWizardP
+ age1$1.class
+SHA-256-Digest: W4bICMWZq0SK+9wRYVdnqFHr0RtmG5DLuJwSpPQ5nvQ=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/DataModel.cla
+ ss
+SHA-256-Digest: rSnIMcyN4nPrFQelWbJcnsaBwJUefUOlauZlPcYr1Ws=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entBinding.class
+SHA-256-Digest: XOwYj4BQiSCed60iXKLT1nIK3NTji73fkcoW9C9qfKc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/PolicyAttachm
+ entWidget$GetWSDLRunnable.class
+SHA-256-Digest: 65wXfGQyvmdSiYSHfkW0bg0Y0jtIZYJeQcq/HVyFTtE=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPSecurityPolicyWizardPage2.c
+ lass
+SHA-256-Digest: NrRTZM9YLGxugoZPgImA3TanD8wGx6hXGwPTfANcltw=
+
+Name: icons/security_group.gif
+SHA-256-Digest: OG3eXIMW7ViDMp0xWVeyavQ3skceNTb49mSxX7J7wp4=
+
+Name: com/ibm/ast/ws/jaxws/tools/wsdl/PortWrapper.class
+SHA-256-Digest: Mo8AYMP0UB/a0TycCZ44okU4JnApzwJbLzDx0nIN5KM=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/messages.prop
+ erties
+SHA-256-Digest: rRNJhUT0FsgDZp3tuMKfJEBBNaldMXdSuAZYot98AMY=
+
+Name: templates/SamlTokenWithX509SymmetricMessageProtection.xml
+SHA-256-Digest: pyfFSz6MN5bApAuTxxe5RZAnuqfbz3pim5FHgvDpBVI=
+
+Name: templates/policyAttachments/SamlTokenWithX509SymmetricMessagePro
+ tection.xml
+SHA-256-Digest: Hutf5v1vNPSovP6JsGmzoysnKHm5UWlOMMijk3ZZtHc=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/policyattachment/EndpointCateg
+ ory$HttpEndpoint.class
+SHA-256-Digest: w3OfHlWZe0gsgO9Om9orFJqQEcXMZB3JSLJYRst/3Gc=
+
+Name: com/ibm/ast/ws/jaxws/tools/actions/OpenPolicyAttachmentWizardAct
+ ion.class
+SHA-256-Digest: tCB3PSNkPU0hK5NmqKXjW48Gujr5urCDYxwnNeBfBLU=
+
+Name: com/ibm/ast/ws/jaxws/tools/wizard/WLPSecurityPolicyWizard.class
+SHA-256-Digest: hQRoakNm9Mo+NfARmvRB9SqmdAtqGWutfCsf9iQl3co=
+

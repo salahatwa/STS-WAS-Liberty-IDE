@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+   
+  
+  (c) Copyright IBM Corp. 2008 All Rights Reserved.
+  
+  The source code for this program is not published or otherwise
+  divested of its trade secrets, irrespective of what has been
+  deposited with the U.S. Copyright Office.
+-->
+
+
+
+
+<plugin>
+
+  <extension-point id="XSDFileOperationListener" name="XSD File Operation Listeners" schema="schema/XSDFileOperationListener.exsd"/>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/utils.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.utils.UtilsPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/types.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.types.TypesPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/transport.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.transport.TransportPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/wsdl.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.wsdl.WsdlPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/xml.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.xml.XmlPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/xml/serialization.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.xml.serialization.SerializationPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/xsd.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.xsd.XsdPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/security.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.security.SecurityPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/security/xmlsec.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.security.xmlsec.XmlsecPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/message.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.message.MessagePackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/message/mime.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.message.mime.MimePackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/message/content.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.message.content.ContentPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/message/transformation.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.message.transformation.TransformationPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/adaptation.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.adaptation.AdaptationPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/configuration.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.configuration.ConfigurationPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/protocol.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.protocol.ProtocolPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/protocol/http.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.protocol.http.HttpPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/protocol/jms.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.protocol.jms.JmsPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/protocol/dotnet.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.protocol.dotnet.DotnetPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+  
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/protocol/mq.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.protocol.mq.MqPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///com/ibm/rational/test/lt/models/wscore/jso.ecore" 
+       class = "com.ibm.rational.test.lt.models.wscore.datamodel.jso.JsoPackage"
+       genModel = "model/USTC_CORE.genmodel" /> 
+  </extension>
+
+  <extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="com.ibm.rational.ttt.common.models.core.prefs.CorePrefsInitializer"/>
+  </extension>
+</plugin>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS type="org.eclipse.help.contexts"?>
+<!-- meta name="DC.Type" content="cshelp -->
+<!-- meta name="DC.Title" content="JAX-WS Web services" -->
+<!-- meta name="abstract" content="" -->
+<!-- meta name="description" content="" -->
+<!-- meta name="copyright" content="(C) Copyright IBM Corporation 2000 2013" -->
+<!-- meta name="DC.Rights.Owner" content="(C) Copyright IBM Corporation 2000 2013" -->
+<!-- meta name="DC.Format" content="XML" -->
+<!-- meta name="DC.Identifier" content="jaxwscreationcsh" -->
+<!-- meta name="DC.Language" content="en-us" -->
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<contexts>
+<context id="JWSC0010">
+<description>Use this wizard to attach policies to policy subjects that use WS-Policy Attachment. To attach a policy to a policy subject, select one or more of the available entities (WSDL endpoint, message, service, or operation) in the <b>Policy Subjects</b> column. The <b>Domain Expressions</b> column displays the known endpoint URLs that are available for endpoint reference attachments. Edit these endpoints if necessary. The <b>Domain Expressions</b> column also displays the WSDL 1.1 Element Identifiers that are associated with the policy subject entity for IRI policy expressions.</description>
+<topic href="https://www.w3.org/TR/ws-policy-attach/#ExternalPolicyAttachment" label="Web Services Policy - External Attachment"/>
+<topic href="https://www.w3.org/TR/2007/NOTE-wsdl11elementidentifiers-20070720/" label="WSDL 1.1 Element Identifiers"/>
+</context>
+<context id="JWSC0100">
+<description>Select this option if you want the tools to overwrite an existing policy attachment file in the project (polictyAttachments_server.XML or polictyAttachment_client.xml).</description>
+</context>
+<context id="JWSC0200">
+<description>Choose one of the commonly used WS-Security policy templates to attach to the policy subjects.</description>
+<topic href="http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5/com.ibm.websphere.wlp.doc/ae/cwlp_wssec_templates.html?cp=SSEQTP_8.5.5" label="WS-SecurityPolicy and templates"/>
+</context>
+
+</contexts>

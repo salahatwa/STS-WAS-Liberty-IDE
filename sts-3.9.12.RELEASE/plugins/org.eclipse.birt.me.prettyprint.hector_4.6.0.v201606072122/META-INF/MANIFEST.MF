@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.birt.me.prettyprint.hector;singleton:
+ =true
+Archiver-Version: Plexus Archiver
+Built-By: genie.birt
+Require-Bundle: org.eclipse.birt.core;bundle-version="4.2.2"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-SourceReferences: scm:git:https://github.com/eclipse/birt.git;
+ path="data/org.eclipse.birt.me.prettyprint.hector";commitId=3f761def2
+ cd6dca6cf509c9518d60a5d1fe42bfe
+Bundle-Vendor: Eclipse BIRT Project
+Bundle-Name: Hector client library for Cassandra Scripted Data Source
+Bundle-Version: 4.6.0.v201606072122
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_51
+Eclipse-BundleShape: dir
+
+Name: about.html
+SHA-256-Digest: 6Fbu5rcTswd7m9KjaIXZkSlJiJ5y1vFXxTOZ0LbuL+4=
+
+Name: plugin.xml
+SHA-256-Digest: IWf7aUE5lClRVXbZiKj1lXfvR8MgvHOqtCGTt2EXtxE=
+
+Name: lib/README.txt
+SHA-256-Digest: FNaCCOzfnHQ2FOxSwqBMAQW05+qjwtPW1o2IKAUIR4s=
+

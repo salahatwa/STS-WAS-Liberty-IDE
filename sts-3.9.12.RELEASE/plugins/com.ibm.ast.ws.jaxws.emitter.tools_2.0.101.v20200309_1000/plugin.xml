@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>  
+    
+	<!-- Liberty JAX-WS 2.2 libraries extension point -->   
+	<extension-point id="wasJaxwsLibs" name="WebSphere Libraries"/>
+   
+	<extension
+		id="com.ibm.ast.ws.jaxws.emitter.tools.wasJaxwsLibs"
+		name="Liberty JAX-WS 2.2 libraries"
+		point="com.ibm.ast.ws.jaxws.emitter.tools.wasJaxwsLibs">
+        <waslib bundle="com.ibm.ws.jaxws.tools.2.2.1_1.0" directory="lib"/>
+        <waslib bundle="com.ibm.ws.jaxb.tools.2.2.3_1.0.0" directory="lib"/>
+	</extension>
+	
+	<extension
+	    point="com.ibm.ast.ws.jaxws.emitter.ProjectDescription"
+	    id="com.ibm.ast.ws.jaxws.emitter.tools.util.ProjectDescription">
+	  <class name="com.ibm.ast.ws.jaxws.emitter.tools.util.ProjectDescription"/>
+	</extension>	    
+
+	<!-- class to call for JAX-WS emitter tools on Liberty -->
+	<extension
+		id="com.ibm.ast.ws.jaxws.emitter.tools.EmitterDefinition"
+		name="Liberty JAX-WS emitter"
+		point="com.ibm.ast.ws.jaxws.emitter.EmitterMatcher">
+		<supported-project-type facet="jst.web" minimum-version="2.4"/>
+		<supported-project-type facet="jpt.jpa" minimum-version="2.0"/>
+		<supported-project-type facet="jst.ejb" minimum-version="3.0"/>
+		<supported-project-type facet="jst.utility" minimum-version="1.0"/>
+		<supported-project-type facet="osgi.bundle" minimum-version="1.0"/>
+		<serverType id="com.ibm.ws.st.server.*"/>
+		<class interface="com.ibm.ast.ws.jaxws.emitter.command.IWsimportCommand" implClass="com.ibm.ast.ws.jaxws.emitter.tools.command.WsImportCommand"/>
+		<class interface="com.ibm.ast.ws.jaxws.emitter.command.IWsgenCommand" implClass="com.ibm.ast.ws.jaxws.emitter.tools.command.WsGenCommand"/>
+		<class interface="com.ibm.ast.ws.jaxws.emitter.command.IXjcCommand" implClass="com.ibm.ast.ws.jaxws.emitter.tools.command.XjcCommand"/>
+		<class interface="com.ibm.ast.ws.jaxws.emitter.command.IWebServiceAPCommand" implClass="com.ibm.ast.ws.jaxws.emitter.tools.command.WebServiceAPCommand"/>	
+	</extension>
+		
+</plugin>

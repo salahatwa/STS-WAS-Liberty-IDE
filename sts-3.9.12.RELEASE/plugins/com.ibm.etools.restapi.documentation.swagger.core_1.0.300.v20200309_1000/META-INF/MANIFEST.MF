@@ -1,0 +1,211 @@
+Manifest-Version: 1.0
+Export-Package: com.ibm.etools.openapi.core,com.ibm.etools.openapi.cor
+ e.commands,com.ibm.etools.openapi.core.constants,com.ibm.etools.opena
+ pi.core.util,com.ibm.etools.openapi.core.tester
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Bundle-Name: %Bundle-Name
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.jst.server.core,o
+ rg.eclipse.core.commands,org.eclipse.jdt.core,org.eclipse.wst.command
+ .env.core,org.eclipse.jst.ws,org.eclipse.wst.common.environment,org.e
+ clipse.wst.sse.core
+Ant-Version: Apache Ant 1.8.4
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 1.0.300.v20200309_1000
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.ibm.etools.openapi.core.OpenAPICorePlugin
+Import-Package: com.ibm.ws.st.core.internal,org.eclipse.core.expressio
+ ns,org.eclipse.core.resources,org.eclipse.jdt.launching,org.eclipse.j
+ st.j2ee.project.facet,org.eclipse.jst.ws.jaxrs.core.internal,org.ecli
+ pse.wst.command.internal.env.common,org.eclipse.wst.common.componentc
+ ore,org.eclipse.wst.common.componentcore.internal.util,org.eclipse.ws
+ t.common.componentcore.resources,org.eclipse.wst.common.frameworks.da
+ tamodel,org.eclipse.wst.common.project.facet.core,org.eclipse.wst.com
+ mon.project.facet.core.runtime,org.eclipse.wst.server.core,org.eclips
+ e.wst.server.core.model
+Bundle-SymbolicName: com.ibm.etools.restapi.documentation.swagger.core
+ ;singleton:=true
+
+Name: com/ibm/etools/openapi/core/util/AbstractFileHandler.class
+SHA-256-Digest: asGVQ562aoX6k/Xf6yTCF0+EcleLWpGMOBPp9TQu9E4=
+
+Name: template/3.0/sample/openapi.json
+SHA-256-Digest: xqua3oaIwowjTTTMhfClaV4xiAyOx14ERukSBsTh9dw=
+
+Name: template/2.0/sample/swagger.yaml
+SHA-256-Digest: kZMDrDAuE7P+gah3vnvq2BR/XlgOPT4cgX9qiovliW0=
+
+Name: com/ibm/etools/openapi/core/OpenApiContentTypeDescriber.class
+SHA-256-Digest: Yil5ayPtTljWzcGKGExc26oApPVlr4JUa52Ia/58mRY=
+
+Name: openAPI/templates/jaxrsClient/auth/Authentication.mustache
+SHA-256-Digest: BXSb4idu95PKmRX2G7ETy/O49W5vLQ3pNlIMiA1f6VU=
+
+Name: openAPI/templates/jaxrsClient/auth/OAuthFlow.mustache
+SHA-256-Digest: +/KrctsLl0j80Q1/CrrWrrL6MV8psO9qDB7CfsZvqOQ=
+
+Name: template/2.0/sample/swagger.json
+SHA-256-Digest: Xs1RpQCRW6Hre8C6bC2PWGMEiC2W8Kl1fACLUIGuum8=
+
+Name: openAPI/templates/jaxrsClient/auth/HttpBasicAuth.mustache
+SHA-256-Digest: wQeJrFzNVKAuqX62i72jpCRXvU+uJ+1/j4N+QzCrAKg=
+
+Name: com/ibm/etools/openapi/core/OpenAPIMessages.class
+SHA-256-Digest: yoNz5x16R44DaVNFrHEOXstNfLMS3NTOE9otckhyOEY=
+
+Name: .options
+SHA-256-Digest: bKesFIGEdQeVfLlpISAfE51BeWgqrk0RnxZ0BTYhfTE=
+
+Name: com/ibm/etools/openapi/core/commands/MoveOpenAPIFileCommand.clas
+ s
+SHA-256-Digest: 1RKD/mru+u6i3RGN9+K1pgK6zXXIacvB5Tb27LWUdbM=
+
+Name: template/2.0/skeleton/swagger.yaml
+SHA-256-Digest: khUPcW/mi/GTFjse0kin3qkT97wRtJTfiXmapB77ZlU=
+
+Name: com/ibm/etools/openapi/core/commands/UpdateOSGiManifestCommand.c
+ lass
+SHA-256-Digest: ViEmCH4GoUqB+po+KUx5b55OYBzzMpzw6T5RNKR/wyQ=
+
+Name: openAPI/templates/jaxrsClient/Configuration.mustache
+SHA-256-Digest: Z2ZcT89nLv0WthzZI9KBrMRB3TR1uo7MQGmb4JLKcZM=
+
+Name: com/ibm/etools/openapi/core/commands/CopyDependentJars.class
+SHA-256-Digest: IpKJRRP4nVX+v6swwYuTBetCYl7Mc5HrIL6/5jWdTt0=
+
+Name: com/ibm/etools/openapi/core/OpenAPIMessages.properties
+SHA-256-Digest: czDkQie0kgU4+GZCLwyQ1r2ZdBSGfJSPUsar14qDx2U=
+
+Name: com/ibm/etools/openapi/core/commands/UpdateOSGiManifestCommand$1
+ .class
+SHA-256-Digest: MMiYAuIcXzZ6WkRFRB0ejm3Pm7h7/3KYBh9qRRl1uss=
+
+Name: plugin.properties
+SHA-256-Digest: Gn7Ff75PNJEm9bWcfYxQmmqnX83OH672zCNTMI89fgc=
+
+Name: openAPI/templates/jaxrsClient/apiException.mustache
+SHA-256-Digest: ptBWrV6tlAPSHbxe5gIbggd/wR7DzobbV1Nt8M1SAnM=
+
+Name: openAPI/templates/jaxrsClient/gradle.properties.mustache
+SHA-256-Digest: iHM5Jri22rlEslO3BPdsrIXfqfSltRzFbDsEd1/zezY=
+
+Name: openAPI/runtime/jackson-annotations-2.4.2.jar
+SHA-256-Digest: 6eVBzV7uM/C8f1pcmowSB4584aifVgKRzyWsnadw1T8=
+
+Name: openAPI/runtime/migbase64-2.2.jar
+SHA-256-Digest: ByJFhLYifvu4FeluMVOUV4biprGpNGILYTAzHCNRwSk=
+
+Name: openAPI/templates/jaxrsClient/README.mustache
+SHA-256-Digest: zFkNE+mKgvM9YK9mVp35ocSf3ZtEzHGQFGOlAhS2FRo=
+
+Name: com/ibm/etools/openapi/core/internal/OpenApiFeatureResolver.clas
+ s
+SHA-256-Digest: f7hNeXMnvewyoLLG9SLcV3CX3jd+QK761Nny3Ahs76s=
+
+Name: openAPI/templates/jaxrsClient/build.gradle.mustache
+SHA-256-Digest: uEbsKDgZdCt8SvJXqVZG0mTi2RJqHK/ybLm271EHPsg=
+
+Name: openAPI/templates/jaxrsClient/StringUtil.mustache
+SHA-256-Digest: kjukWKG9mn/j8CjASiVaQ0tDd8IIBcoEllRaiqlK0Ls=
+
+Name: openAPI/templates/jaxrsClient/generatedAnnotation.mustache
+SHA-256-Digest: ppcyHdw46Wgw5LsRROqCQ4t8yKCYKVfaTdIhXYK+AM8=
+
+Name: openAPI/templates/jaxrsClient/auth/ApiKeyAuth.mustache
+SHA-256-Digest: JZLVfIBHSjnnXarPCC4DlYfd9ZoipxfC9ywp7yopw+E=
+
+Name: com/ibm/etools/openapi/core/tester/OpenAPIResourcePropertyTester
+ .class
+SHA-256-Digest: zCmbCd40IlV3qqtRcB/cCJMNWGWDc81ScxEg+3SGt6I=
+
+Name: openAPI/templates/jaxrsClient/pojo.mustache
+SHA-256-Digest: pBWvCoEMiN0xwZti7mKVKq92KHtQ1dqOoPUGQKXgXgE=
+
+Name: openAPI/codegen/config.json
+SHA-256-Digest: P/mRi2/Z0tgqvOoJJR9Z98e78Tm83YvZ6dfeI4JEJWA=
+
+Name: com/ibm/etools/openapi/core/constants/IOpenAPIConstants.class
+SHA-256-Digest: pziqz4q0FBVES7ttqEIrmCOnRdhM/Dzx9/pTxZflxfc=
+
+Name: openAPI/templates/jaxrsClient/manifest.mustache
+SHA-256-Digest: ZVaqPWVzOWTVPoZ8WfMABnoPo+9Wzxf6U2wqVBCLdLQ=
+
+Name: openAPI/templates/jaxrsClient/enumClass.mustache
+SHA-256-Digest: v1S0B5lZhnOC78IQHob6H1GYN5NR8krdZnzoIYZkbc8=
+
+Name: template/3.0/skeleton/openapi.json
+SHA-256-Digest: OB4NmGaRwQdGtdUrO5GcukpkuTqt8LG8ISEagY7B6QY=
+
+Name: template/2.0/skeleton/swagger.json
+SHA-256-Digest: 3qxjzMN5LgR66UyPbFQ14Aj1Wz0dfMPlX/316iHX0yg=
+
+Name: openAPI/templates/jaxrsClient/Pair.mustache
+SHA-256-Digest: g2yZdUTWvOKPC+yuElzMQo8MQtWUmOyoPGQ1gTeq8TY=
+
+Name: openAPI/codegen/swagger-codegen-cli-2.2.2.jar
+SHA-256-Digest: 1OZAUDSCpCOul+P0hzR8ngjMDjTZDjYO196YfPrSQpk=
+
+Name: com/ibm/etools/openapi/core/OpenAPICorePlugin.class
+SHA-256-Digest: MUoITweQ8e1uOfF5huXxjek6xgSTqTZSSmt1u0jxEgs=
+
+Name: openAPI/templates/jaxrsClient/api.mustache
+SHA-256-Digest: vE5p/xtsTT9IzI5WbTd1bnLNPyQzlgz0SrCeyNm/jdA=
+
+Name: openAPI/templates/jaxrsClient/enumOuterClass.mustache
+SHA-256-Digest: aKeptnlDkPKaBJ3lK3uXGQxktberdFGMI4QQ1YRUefw=
+
+Name: com/ibm/etools/openapi/core/commands/CleanTargetProjectCommand.c
+ lass
+SHA-256-Digest: Dd2x38IO+okR+89mNUu/ab1vN6nsnlwKJxA0WhHZy0Q=
+
+Name: com/ibm/etools/openapi/core/util/OpenApiFileHandler.class
+SHA-256-Digest: /d6q08Pco3t7OZmD/fASOw8nHuKxgatkrhSDh/SodY0=
+
+Name: com/ibm/etools/openapi/core/OpenApiContentDetector.class
+SHA-256-Digest: TsLDJOLv1l1B6t/cChh7Eq557DVEUmSEW0dEPAJxlaI=
+
+Name: openAPI/templates/jaxrsClient/model.mustache
+SHA-256-Digest: 9UQ6rc0NSSrA5Tm2UpRoiC7gnCm+4vBnYchW4f4jDbg=
+
+Name: template/3.0/sample/openapi.yaml
+SHA-256-Digest: 5ImMmryQXlPRXbKVSQP4mnpL0Bb/ST7R5fIAKksYC00=
+
+Name: com/ibm/etools/openapi/core/util/SwaggerFileHandler.class
+SHA-256-Digest: v0NHQHQnDbaa/vOxwr8FzOTpvqazeHM0mzSFQB+sUBk=
+
+Name: com/ibm/etools/openapi/core/commands/CommandRunner.class
+SHA-256-Digest: rWewGBVL9o8qvY+N1pLukCX+srlhddCIjZv79z9ir0E=
+
+Name: com/ibm/etools/openapi/core/OpenAPILogger.class
+SHA-256-Digest: kZ0BD4SOr9Zc+d5ieztXoo98rorbPwZOucAuJOjM0pw=
+
+Name: openAPI/templates/jaxrsClient/ApiClient.mustache
+SHA-256-Digest: NShGbXA2pqRskhoaE4FIPBegedtsrNCNqiodmGVx7hs=
+
+Name: com/ibm/etools/openapi/core/util/OSGiUtil.class
+SHA-256-Digest: JFUO6xPN0G1nuoZJVucR7QhqO91RvtPvjALClgCKG8Q=
+
+Name: template/3.0/skeleton/openapi.yaml
+SHA-256-Digest: djulMXCnGY8DyQ1kAxuKYeLULVvRg3oPWAiDOgROXxc=
+
+Name: plugin.xml
+SHA-256-Digest: 2kFIDFzdB/HE09PkZBY+hNZnFUTqis9FlXkpIOEQimE=
+
+Name: com/ibm/etools/openapi/core/IOpenApiContentDetector.class
+SHA-256-Digest: JYdFrDjJPxG4l0ulFz/BAUJItN9VZ7Z4o+HbQei8kq4=
+
+Name: openAPI/templates/jaxrsClient/settings.gradle.mustache
+SHA-256-Digest: zuiatkA0UWbkjY5GeDvs8C2fr0a/ixdYynZNnEjZeYA=
+
+Name: openAPI/templates/jaxrsClient/auth/OAuth.mustache
+SHA-256-Digest: DBX3DuraaTR29Xrshoi0dOXGhV9KplwJkoTy5U+xrGg=
+
+Name: openAPI/templates/jaxrsClient/pom.mustache
+SHA-256-Digest: Gzeri6ph+S/xDru5DIdAfHR2ypyyG02oyfwlO5OA7nc=
+
+Name: com/ibm/etools/openapi/core/commands/WsToolStreamReader.class
+SHA-256-Digest: 41l6ea/ncdm5Y75eWOPD1tKZ2XjOK80Kd46m8X046Ok=
+

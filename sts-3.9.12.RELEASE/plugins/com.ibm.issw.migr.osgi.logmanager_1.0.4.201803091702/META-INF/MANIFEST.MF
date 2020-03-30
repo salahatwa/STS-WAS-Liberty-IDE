@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.2
+Created-By: pxa6470_27sr2fp10ifx-20150313_01 (SR2 FP10+IV70681) (IBM C
+ orporation)
+Bundle-ManifestVersion: 2
+Bundle-Name: Logmanager
+Bundle-SymbolicName: com.ibm.issw.migr.osgi.logmanager
+Bundle-Version: 1.0.4.201803091702
+Bundle-Activator: com.ibm.issw.migr.logmanager.Activator
+Bundle-Vendor: IBM
+Export-Package: com.ibm.issw.migr.logmanager.api,com.ibm.issw.migr.log
+ manager.messages,com.ibm.issw.migr.logmanager.model
+Require-Bundle: org.apache.log4j;bundle-version="1.2.13",org.eclipse.c
+ ore.runtime;bundle-version="3.5.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="1.3.0"
+

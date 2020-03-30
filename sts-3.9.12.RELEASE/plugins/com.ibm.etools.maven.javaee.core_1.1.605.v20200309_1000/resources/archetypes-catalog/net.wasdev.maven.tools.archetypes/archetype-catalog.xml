@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-catalog xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <archetypes>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>ejb-jee5-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>EJB 3.0 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>ejb-jee6-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>EJB 3.1 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>ejb-jee7-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>EJB 3.2 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>osgi-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>OSGi project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>osgi-web25-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>OSGi Web 2.5 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>osgi-web30-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>OSGi Web 3.0 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>osgi-web31-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>OSGi Web 3.1 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>webapp-jee5-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>Web 2.5 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>webapp-jee6-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>Web 3.0 project targeting WebSphere Liberty</description>
+    </archetype>
+    <archetype>
+      <groupId>net.wasdev.maven.tools.archetypes</groupId>
+      <artifactId>webapp-jee7-liberty</artifactId>
+      <version>RELEASE</version>
+      <description>Web 3.1 project targeting WebSphere Liberty</description>
+    </archetype>
+  </archetypes>
+</archetype-catalog>

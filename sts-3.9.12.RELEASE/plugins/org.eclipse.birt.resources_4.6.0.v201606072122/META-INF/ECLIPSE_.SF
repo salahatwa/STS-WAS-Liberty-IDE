@@ -1,0 +1,120 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 5SJ3Srg6aGEBSOMBTU3CUoPpT2hP4
+ TUTPjJkcfJOFqc=
+SHA-256-Digest-Manifest: loubGnoGstAhsRv75bL6WXW0dPDEdTH0m+vjK7B1jAo=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: YCuUy5E9lIQgU7ovYa6lzde/5RnPKRRnZSmxhGbddaA=
+
+Name: templates/simple_listing.rpttemplate
+SHA-256-Digest: WPfRf0N4FltCslEncr/dTs78g1m8gO53HnvmYNLoxkE=
+
+Name: templates/freeformat.rptdesign
+SHA-256-Digest: eIyc1/i7S3AA8h6FMWmnJsNLN6hPTrZTUJHCWrKMwsY=
+
+Name: templates/TOCDefaultValue.xml
+SHA-256-Digest: HEMOdCH/oHc6ei6DZneCEIjaWLQZ0wk+f1aFZzf5eO4=
+
+Name: templates/sidebyside_chart_listing.xml
+SHA-256-Digest: KXil0NkvX1vc+XJtIm3ur/ldVPf2sFSwTHGTt3/Yon4=
+
+Name: templates/crosstab.gif
+SHA-256-Digest: 9l6O1oGYRXL9p8PCeaRbo0IRQocMY/nE91vbstLvLRo=
+
+Name: templates/dual_column_listing.xml
+SHA-256-Digest: WtVYxp0X2CfHafF+C25X1pNXV53y7oKi6jDbYry2OUo=
+
+Name: templates/dual_column_chart_listing.gif
+SHA-256-Digest: h5/1mHuzIqQX7xyAa23TdvFvVOZCMa3sooRqdKwxSgk=
+
+Name: templates/chart_listing.xml
+SHA-256-Digest: NIJbqEV+HaUoxjZhPbGBYp3RhzyROLWE092hIh2j2oQ=
+
+Name: templates/dual_column_listing.rpttemplate
+SHA-256-Digest: YD2WHuniE45mcmsBhu9nNIQ1AjUy2hyQm5SQ51Ee8gc=
+
+Name: templates/chart_listing.rpttemplate
+SHA-256-Digest: tKr2UeImALCuRaJF7u/pNp8a2Yd6meShfEnoE0q7CMM=
+
+Name: templates/chart_listing.gif
+SHA-256-Digest: I+zl8u5GsDQaibwMYK+p53aaZ1WCOw9KdLFISBI2b3I=
+
+Name: templates/crosstab.xml
+SHA-256-Digest: jACt4kxJDsd5iI0iKrUAYgksl6lmKJSVrpc2Xmr/clo=
+
+Name: plugin.properties
+SHA-256-Digest: plS0Kk5nYRb+RCkgp+ZJICN9692QNZp6HOQWJqfwbCg=
+
+Name: templates/blank_library.rpttemplate
+SHA-256-Digest: aY6nOst69eVf6veF7K5t2CajrJluFUepsOslo0HTWnE=
+
+Name: templates/sidebyside_chart_listing.rpttemplate
+SHA-256-Digest: DeS/AhzKLalr4XdB2f482mv3OpcunCp+s9LWKZqgSU0=
+
+Name: templates/crosstab.rpttemplate
+SHA-256-Digest: oH6UWwiOnI03sTp0RiHQsvOlOdBxtjJcJD/YgpkZFxE=
+
+Name: templates/dual_column_chart_listing.rpttemplate
+SHA-256-Digest: VAEdKUHpgDTvZryQ9UEzUZZH3TCg6zo6vt4QGliR7fg=
+
+Name: templates/blank_report.gif
+SHA-256-Digest: HKX+ndUauChSCWzbrBdkzfdQAed6VSoHEPgH5pUlN84=
+
+Name: templates/letter.rptdesign
+SHA-256-Digest: T5Mryshc098+2U4i/hl0ePo3ikJZTkFOfoq4QBC1Wm8=
+
+Name: about.html
+SHA-256-Digest: 5rmhNof1wNzGfgPUeYG/uoMAzIbfmwb27aIEhcTXL40=
+
+Name: templates/letter.gif
+SHA-256-Digest: xqkgrZlAarIQ07N4w+c9aFsAkU2gF543nAElT95V9OE=
+
+Name: templates/simple_listing.gif
+SHA-256-Digest: 1M/n1A4kNMDCqJHst6g7IsTxcVAJeC5Jl/reNBPHoJ0=
+
+Name: templates/grouped_listing.rpttemplate
+SHA-256-Digest: e4tEhcIg1JeoKCBKX/sMLDvhm8N6MunO4a0TiLRmi5I=
+
+Name: templates/freeformat.gif
+SHA-256-Digest: fIk93f11N3LrNkft0DooQgmaiu2TMX/MFa146dvlt4I=
+
+Name: templates/blank_report.rpttemplate
+SHA-256-Digest: vsCV6mr0H5rYZ2+8MMJdxhsm8bw5xt8kNwV8WY2IOO0=
+
+Name: templates/dual_column_chart_listing.xml
+SHA-256-Digest: 2UuJ4PlWmewIR2OvAJnZqT+K+rNCnoXoWOpZh3OqJHk=
+
+Name: templates/dual_column_listing.gif
+SHA-256-Digest: wgkuOv9wgd4g4XcPI6QNjY0KwWr2q1vmGnqc/7+svH8=
+
+Name: templates/grouped_listing.xml
+SHA-256-Digest: aoG9LAAAoTGzILxWEjsXpDACxx/vnev8dYKZLFXyDbw=
+
+Name: templates/mailing_labels.rptdesign
+SHA-256-Digest: dxEnRaxehGD6rDVKeDj/qW3Q/1JD2wDZ37VklA19yRo=
+
+Name: templates/dashboard.gif
+SHA-256-Digest: V9CCP/oRWOovJF/cWkuKnTuQIdNS3zOCoOn2J48d2jA=
+
+Name: templates/simple_listing.xml
+SHA-256-Digest: Pu7Z2Rr85XJqPv7NsJqEd7c4ItuG9bz2koJFkHs797Y=
+
+Name: templates/grouped_listing.gif
+SHA-256-Digest: KDnSYrmVvUYLq0D57b61vw6RmTuEv0iI7MTJZlCbsF8=
+
+Name: templates/my_first_report.xml
+SHA-256-Digest: aXjBf60U/sSWlf4VbA/1Ts75+bPj7oAoTW01XJlZjOU=
+
+Name: templates/first_report.gif
+SHA-256-Digest: exr4g+CAyTUHzMS748jT8opTUbMy/SJA1+XwAy7hlEo=
+
+Name: templates/mailing_labels.gif
+SHA-256-Digest: JZVPU0/1ZFkXrdBFHJVLbGrNRx0sDSR3MFTfx92FLFM=
+
+Name: templates/my_first_report.rpttemplate
+SHA-256-Digest: Z0LfdivDV4uu10gmyyHTh/Kl5UM6HKtxSukc6AmqE2Q=
+
+Name: templates/sidebyside_chart_listing.gif
+SHA-256-Digest: YP2ZAgeYyub/FsuA+ooyCnLUEvE/jDjFVrG3iPbEEfg=
+

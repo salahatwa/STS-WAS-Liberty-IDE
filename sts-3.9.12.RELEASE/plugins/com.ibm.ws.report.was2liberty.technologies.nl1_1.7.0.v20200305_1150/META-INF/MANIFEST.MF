@@ -1,0 +1,167 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %bundle.vendor
+Fragment-Host: com.ibm.ws.report.was2liberty.technologies
+Bundle-Version: 1.7.0.v20200305_1150
+Bundle-Localization: fragment
+Bundle-Name: %bundle.name
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.ibm.ws.report.was2liberty.technologies.nl1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_ro.prope
+ rties
+SHA-256-Digest: v7HQa4HmeFQSQ+XSHp2SAd9076jRohhECkiHLdmHLhc=
+
+Name: plugin_ro.properties
+SHA-256-Digest: 86sJ2C31tzWPGCznleh7VplOVEkbab2HOJRUBa7J9lI=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_ko.propertie
+ s
+SHA-256-Digest: 3UCnXQb5XqGOby2CX8fXvVitAZeX/g1xS1uBnbYZHVk=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_es.propertie
+ s
+SHA-256-Digest: PNIy0UhTeKIcW37ndJSZzWjYrw2dvisbYExn/T3Uqd8=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_hu.prope
+ rties
+SHA-256-Digest: 1YjkRDWjmsxavBgLa8aI3fB7k74+KXcQmKcm6C+nAAc=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_pl.propertie
+ s
+SHA-256-Digest: KsSkrZyp82gq71YRX1sCUyOrpBP+Jbxtn8fvt3XMOOM=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_es.prope
+ rties
+SHA-256-Digest: PNIy0UhTeKIcW37ndJSZzWjYrw2dvisbYExn/T3Uqd8=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_it.propertie
+ s
+SHA-256-Digest: XZ3xwqs1e1vXcGL9TaSyqDUQh4J5LrvY2d8mvjoWlHU=
+
+Name: fragment.properties
+SHA-256-Digest: N3aYz1uWIAoFR+dkS3jqKfR1HttfW9okUcdUakL69nw=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_it.prope
+ rties
+SHA-256-Digest: XZ3xwqs1e1vXcGL9TaSyqDUQh4J5LrvY2d8mvjoWlHU=
+
+Name: plugin_hu.properties
+SHA-256-Digest: GSAsAkuscPjS31zt17NHD+OfX2hToKYvWZ89jG2LNug=
+
+Name: plugin_ru.properties
+SHA-256-Digest: uSt9kR6m5UVwCmLo9SJV8zCUedjKa9I7cWEpDkrw8OU=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_hu.propertie
+ s
+SHA-256-Digest: 1YjkRDWjmsxavBgLa8aI3fB7k74+KXcQmKcm6C+nAAc=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_cs.prope
+ rties
+SHA-256-Digest: jBXIjQMuwylv07xLXB7mSAuzxa9h3N/O7YoEeaEOEAc=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_zh_CN.pr
+ operties
+SHA-256-Digest: 9xR3Rz+hD4/yApjoohq1W7SWbPgXwcrvAbWUW2CNhCo=
+
+Name: plugin_es.properties
+SHA-256-Digest: P5yCGp7QliP6Z891xlARhjOtbl50PtB4HgVlf1bq1XI=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_fr.prope
+ rties
+SHA-256-Digest: VFKSfhBOnFylh81uASg7zfVZKpqGDNjFuhl7pSiOYPk=
+
+Name: plugin_pl.properties
+SHA-256-Digest: P2NJfRsC9Pi+yLnMEAy92eHvigI6FDxpMIv2eqhgVVE=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_ru.prope
+ rties
+SHA-256-Digest: gmgQwaA1JR/8fV5mUA+A5YcOvtbC2eGm7sEFZoHSEws=
+
+Name: plugin_cs.properties
+SHA-256-Digest: 86sJ2C31tzWPGCznleh7VplOVEkbab2HOJRUBa7J9lI=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_de.prope
+ rties
+SHA-256-Digest: lxD3C+HS4si0krGUiPSkJQlNAAPMmzkYns2PVGGJSME=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_ja.prope
+ rties
+SHA-256-Digest: vjLcVIFidC4ifYEd/xmXv8bB9JJGkYklZMNseth/LkU=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_pt_BR.pr
+ operties
+SHA-256-Digest: Fi12CXfvDDzFfIMi/GExPT0WJdtUqKSzM/i9LVUYagU=
+
+Name: plugin_zh_CN.properties
+SHA-256-Digest: J1ncIHaR1Pywe0gQh9FwQNpf/cxx8WJiXUwK3LWlTZo=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_pl.prope
+ rties
+SHA-256-Digest: KsSkrZyp82gq71YRX1sCUyOrpBP+Jbxtn8fvt3XMOOM=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_de.propertie
+ s
+SHA-256-Digest: lxD3C+HS4si0krGUiPSkJQlNAAPMmzkYns2PVGGJSME=
+
+Name: plugin_pt_BR.properties
+SHA-256-Digest: U+a6k1kyiYKEJwtHOmvgjNVtsX1tzzK7j1CPk0d+9G0=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_fr.propertie
+ s
+SHA-256-Digest: VFKSfhBOnFylh81uASg7zfVZKpqGDNjFuhl7pSiOYPk=
+
+Name: plugin_it.properties
+SHA-256-Digest: 86sJ2C31tzWPGCznleh7VplOVEkbab2HOJRUBa7J9lI=
+
+Name: plugin_zh_TW.properties
+SHA-256-Digest: RSgVf8tIjyUzfcFDNuBKmXEu1F48TTRoJlB38IFD+mE=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_ja.propertie
+ s
+SHA-256-Digest: vjLcVIFidC4ifYEd/xmXv8bB9JJGkYklZMNseth/LkU=
+
+Name: plugin_ko.properties
+SHA-256-Digest: 0RyHffK/ZDl9w8vkM3pXLd/XbhccQyEuRK8+bxp9ivg=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_zh_TW.pr
+ operties
+SHA-256-Digest: RLCJAA7Ee1vrBkl1+QXuoG414so3sVe4akZT3MVZIas=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_ru.propertie
+ s
+SHA-256-Digest: gmgQwaA1JR/8fV5mUA+A5YcOvtbC2eGm7sEFZoHSEws=
+
+Name: plugin_fr.properties
+SHA-256-Digest: 5CCgS1eW5XFz7oFiem+NbXCYU8HhPzhW86zXdz2ZL3c=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_pt_BR.proper
+ ties
+SHA-256-Digest: Fi12CXfvDDzFfIMi/GExPT0WJdtUqKSzM/i9LVUYagU=
+
+Name: plugin_de.properties
+SHA-256-Digest: vhZin8jlerKcHIPa/5aTq1QMxebF7yu708JLHlMRIY0=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_zh_TW.proper
+ ties
+SHA-256-Digest: RLCJAA7Ee1vrBkl1+QXuoG414so3sVe4akZT3MVZIas=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_zh_CN.proper
+ ties
+SHA-256-Digest: 9xR3Rz+hD4/yApjoohq1W7SWbPgXwcrvAbWUW2CNhCo=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_ro.propertie
+ s
+SHA-256-Digest: v7HQa4HmeFQSQ+XSHp2SAd9076jRohhECkiHLdmHLhc=
+
+Name: plugin_ja.properties
+SHA-256-Digest: 86sJ2C31tzWPGCznleh7VplOVEkbab2HOJRUBa7J9lI=
+
+Name: src/com/ibm/ws/report/was2liberty/technologies/messages_ko.prope
+ rties
+SHA-256-Digest: 3UCnXQb5XqGOby2CX8fXvVitAZeX/g1xS1uBnbYZHVk=
+
+Name: com/ibm/ws/report/was2liberty/technologies/messages_cs.propertie
+ s
+SHA-256-Digest: jBXIjQMuwylv07xLXB7mSAuzxa9h3N/O7YoEeaEOEAc=
+

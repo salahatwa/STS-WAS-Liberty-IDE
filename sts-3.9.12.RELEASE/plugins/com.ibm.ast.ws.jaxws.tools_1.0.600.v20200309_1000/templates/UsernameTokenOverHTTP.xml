@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Scenario 7 - UsernameTokenOverHTTP -->
+<wsp:Policy wsu:Id="##POLICY_NAME##">
+	<sp:SupportingTokens>
+		<wsp:Policy>
+			<sp:UsernameToken
+				sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient">
+				<wsp:Policy>
+					<sp13:Created />
+					<sp13:Nonce />
+					<sp:WssUsernameToken11 />
+				</wsp:Policy>
+			</sp:UsernameToken>
+		</wsp:Policy>
+	</sp:SupportingTokens>
+</wsp:Policy>
+
+
+
+

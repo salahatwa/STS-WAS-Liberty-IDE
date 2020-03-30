@@ -1,0 +1,18 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 6kzPrB0NLeD63f50OTU3sPAzU2L2i
+ cqiiVfZ/sKoM+I=
+SHA-256-Digest-Manifest: Yh4/KK3wxaKYcLZ1PFiRnuecHwA+G85h/gCwuBSaFlo=
+Created-By: 1.7.0 (IBM Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: CGKiBRa3DxxEn1+FtxGcVbvuSVcnBFvv3P7NwUjCL6E=
+
+Name: runtime/jaxws-core-tools.jar
+SHA-256-Digest: uLaHG1ntIHIYzhQRDDur/SWokV20TmIOvL4pQ20kbbo=
+
+Name: plugin.properties
+SHA-256-Digest: QP3xHqDRafnt9gmILC3OIhUJqYboiTJEuWQQ+IBgRFY=
+
+Name: com/ibm/ast/ws/jaxws/emitter/tools/plugin/Messages.properties
+SHA-256-Digest: pA/vEIAlexT21IKrHZ6uiIrylBJmzrSvmFT89aeRMJs=
+

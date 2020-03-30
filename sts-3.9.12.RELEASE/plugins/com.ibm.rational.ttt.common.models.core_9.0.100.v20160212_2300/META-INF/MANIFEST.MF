@@ -1,0 +1,569 @@
+Manifest-Version: 1.0
+Export-Package: com.ibm.mq,com.ibm.mq.constants,com.ibm.mq.headers,com
+ .ibm.rational.test.lt.models.ws,com.ibm.rational.test.lt.models.wscor
+ e.BackwardCompatibility,com.ibm.rational.test.lt.models.wscore.datamo
+ del.adaptation,com.ibm.rational.test.lt.models.wscore.datamodel.adapt
+ ation.impl,com.ibm.rational.test.lt.models.wscore.datamodel.adaptatio
+ n.util,com.ibm.rational.test.lt.models.wscore.datamodel.configuration
+ ,com.ibm.rational.test.lt.models.wscore.datamodel.configuration.impl,
+ com.ibm.rational.test.lt.models.wscore.datamodel.configuration.util,c
+ om.ibm.rational.test.lt.models.wscore.datamodel.jso,com.ibm.rational.
+ test.lt.models.wscore.datamodel.jso.impl,com.ibm.rational.test.lt.mod
+ els.wscore.datamodel.jso.util,com.ibm.rational.test.lt.models.wscore.
+ datamodel.json.util,com.ibm.rational.test.lt.models.wscore.datamodel.
+ message,com.ibm.rational.test.lt.models.wscore.datamodel.message.bina
+ ry.util,com.ibm.rational.test.lt.models.wscore.datamodel.message.cont
+ ent,com.ibm.rational.test.lt.models.wscore.datamodel.message.content.
+ impl,com.ibm.rational.test.lt.models.wscore.datamodel.message.content
+ .mq,com.ibm.rational.test.lt.models.wscore.datamodel.message.content.
+ mq.impl,com.ibm.rational.test.lt.models.wscore.datamodel.message.cont
+ ent.mq.util,com.ibm.rational.test.lt.models.wscore.datamodel.message.
+ content.util,com.ibm.rational.test.lt.models.wscore.datamodel.message
+ .impl,com.ibm.rational.test.lt.models.wscore.datamodel.message.mime,c
+ om.ibm.rational.test.lt.models.wscore.datamodel.message.mime.impl,com
+ .ibm.rational.test.lt.models.wscore.datamodel.message.mime.util,com.i
+ bm.rational.test.lt.models.wscore.datamodel.message.transformation,co
+ m.ibm.rational.test.lt.models.wscore.datamodel.message.transformation
+ .impl,com.ibm.rational.test.lt.models.wscore.datamodel.message.transf
+ ormation.util,com.ibm.rational.test.lt.models.wscore.datamodel.messag
+ e.util,com.ibm.rational.test.lt.models.wscore.datamodel.protocol,com.
+ ibm.rational.test.lt.models.wscore.datamodel.protocol.dotnet,com.ibm.
+ rational.test.lt.models.wscore.datamodel.protocol.dotnet.impl,com.ibm
+ .rational.test.lt.models.wscore.datamodel.protocol.dotnet.util,com.ib
+ m.rational.test.lt.models.wscore.datamodel.protocol.http,com.ibm.rati
+ onal.test.lt.models.wscore.datamodel.protocol.http.impl,com.ibm.ratio
+ nal.test.lt.models.wscore.datamodel.protocol.http.util,com.ibm.ration
+ al.test.lt.models.wscore.datamodel.protocol.impl,com.ibm.rational.tes
+ t.lt.models.wscore.datamodel.protocol.jms,com.ibm.rational.test.lt.mo
+ dels.wscore.datamodel.protocol.jms.impl,com.ibm.rational.test.lt.mode
+ ls.wscore.datamodel.protocol.jms.util,com.ibm.rational.test.lt.models
+ .wscore.datamodel.protocol.mq,com.ibm.rational.test.lt.models.wscore.
+ datamodel.protocol.mq.impl,com.ibm.rational.test.lt.models.wscore.dat
+ amodel.protocol.mq.util,com.ibm.rational.test.lt.models.wscore.datamo
+ del.protocol.mqn,com.ibm.rational.test.lt.models.wscore.datamodel.pro
+ tocol.mqn.impl,com.ibm.rational.test.lt.models.wscore.datamodel.proto
+ col.mqn.util,com.ibm.rational.test.lt.models.wscore.datamodel.protoco
+ l.util,com.ibm.rational.test.lt.models.wscore.datamodel.security,com.
+ ibm.rational.test.lt.models.wscore.datamodel.security.impl,com.ibm.ra
+ tional.test.lt.models.wscore.datamodel.security.policy,com.ibm.ration
+ al.test.lt.models.wscore.datamodel.security.policy.impl,com.ibm.ratio
+ nal.test.lt.models.wscore.datamodel.security.policy.parser,com.ibm.ra
+ tional.test.lt.models.wscore.datamodel.security.policy.rampartfixes.u
+ til,com.ibm.rational.test.lt.models.wscore.datamodel.security.policy.
+ util,com.ibm.rational.test.lt.models.wscore.datamodel.security.policy
+ .validator,com.ibm.rational.test.lt.models.wscore.datamodel.security.
+ util,com.ibm.rational.test.lt.models.wscore.datamodel.security.util.s
+ sl,com.ibm.rational.test.lt.models.wscore.datamodel.security.xmlsec,c
+ om.ibm.rational.test.lt.models.wscore.datamodel.security.xmlsec.impl,
+ com.ibm.rational.test.lt.models.wscore.datamodel.security.xmlsec.util
+ ,com.ibm.rational.test.lt.models.wscore.datamodel.typecreation.util,c
+ om.ibm.rational.test.lt.models.wscore.datamodel.typecreation.util.cre
+ ator,com.ibm.rational.test.lt.models.wscore.datamodel.util,com.ibm.ra
+ tional.test.lt.models.wscore.datamodel.vp,com.ibm.rational.test.lt.mo
+ dels.wscore.datamodel.wadl,com.ibm.rational.test.lt.models.wscore.dat
+ amodel.wadl.impl,com.ibm.rational.test.lt.models.wscore.datamodel.wad
+ l.util,com.ibm.rational.test.lt.models.wscore.datamodel.wsdl,com.ibm.
+ rational.test.lt.models.wscore.datamodel.wsdl.impl,com.ibm.rational.t
+ est.lt.models.wscore.datamodel.wsdl.policy.util,com.ibm.rational.test
+ .lt.models.wscore.datamodel.wsdl.util,com.ibm.rational.test.lt.models
+ .wscore.datamodel.xml,com.ibm.rational.test.lt.models.wscore.datamode
+ l.xml.impl,com.ibm.rational.test.lt.models.wscore.datamodel.xml.seria
+ lization,com.ibm.rational.test.lt.models.wscore.datamodel.xml.seriali
+ zation.impl,com.ibm.rational.test.lt.models.wscore.datamodel.xml.seri
+ alization.util,com.ibm.rational.test.lt.models.wscore.datamodel.xml.u
+ til,com.ibm.rational.test.lt.models.wscore.datamodel.xsd,com.ibm.rati
+ onal.test.lt.models.wscore.datamodel.xsd.impl,com.ibm.rational.test.l
+ t.models.wscore.datamodel.xsd.util,com.ibm.rational.test.lt.models.ws
+ core.datamodel.xsd.validation,com.ibm.rational.test.lt.models.wscore.
+ transport,com.ibm.rational.test.lt.models.wscore.transport.common.imp
+ l,com.ibm.rational.test.lt.models.wscore.transport.demo.impl,com.ibm.
+ rational.test.lt.models.wscore.transport.dotnet,com.ibm.rational.test
+ .lt.models.wscore.transport.dotnet.impl,com.ibm.rational.test.lt.mode
+ ls.wscore.transport.http.cookies.util,com.ibm.rational.test.lt.models
+ .wscore.transport.http.impl,com.ibm.rational.test.lt.models.wscore.tr
+ ansport.http.ntlm.impl,com.ibm.rational.test.lt.models.wscore.transpo
+ rt.impl,com.ibm.rational.test.lt.models.wscore.transport.jms.answer,c
+ om.ibm.rational.test.lt.models.wscore.transport.jms.answer.impl,com.i
+ bm.rational.test.lt.models.wscore.transport.jms.impl,com.ibm.rational
+ .test.lt.models.wscore.transport.jms.parse.impl,com.ibm.rational.test
+ .lt.models.wscore.transport.listener,com.ibm.rational.test.lt.models.
+ wscore.transport.mq.impl,com.ibm.rational.test.lt.models.wscore.trans
+ port.mqn.impl,com.ibm.rational.test.lt.models.wscore.transport.noblck
+ .impl,com.ibm.rational.test.lt.models.wscore.transport.util,com.ibm.r
+ ational.test.lt.models.wscore.types,com.ibm.rational.test.lt.models.w
+ score.types.impl,com.ibm.rational.test.lt.models.wscore.utils,com.ibm
+ .rational.test.lt.models.wscore.utils.impl,com.ibm.rational.test.lt.m
+ odels.wscore.utils.util,com.ibm.rational.ttt.common.cxf.policy.impl,c
+ om.ibm.rational.ttt.common.models.core,com.ibm.rational.ttt.common.mo
+ dels.core.notify,com.ibm.rational.ttt.common.models.core.prefs,com.ib
+ m.rational.ttt.common.models.core.rampart,javax.jms,javax.wsdl,javax.
+ wsdl.factory,javax.wsdl.xml,nl.flotsam.xeger,org.apache.axiom.om,org.
+ apache.axis.attachments,org.apache.axis.components.jms,org.apache.axi
+ s.transport.http,org.apache.axis.transport.jms,org.apache.axis2.addre
+ ssing,org.apache.cxf.transports.http.configuration,org.apache.http,or
+ g.apache.http.client.params,org.apache.http.cookie,org.apache.http.im
+ pl.cookie,org.apache.http.message,org.apache.neethi,org.apache.neethi
+ .builders,org.apache.rahas,org.apache.rampart.policy.model,org.apache
+ .ws.secpolicy,org.apache.ws.secpolicy.model,org.apache.ws.security,or
+ g.apache.ws.security.components.crypto,org.apache.ws.security.util,or
+ g.apache.xml.security.signature,org.opensaml,org.opensaml.saml2.core,
+ org.opensaml.xml,org.opensaml.xml.io
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: coremdl.jar,lib/attachment/activation.jar,lib/attach
+ ment/mail.jar,lib/jmslibs/sibc.jms.jar,lib/jmslibs/sibc.jndi.jar,lib/
+ wmqlibs/com.ibm.mq.commonservices.jar,lib/wmqlibs/com.ibm.mq.headers.
+ jar,lib/wmqlibs/com.ibm.mq.jar,lib/wmqlibs/com.ibm.mq.jmqi.jar,lib/wm
+ qlibs/com.ibm.mq.jms.Nojndi.jar,lib/wmqlibs/com.ibm.mqjms.jar,lib/wmq
+ libs/connector.jar,lib/wmqlibs/dhbcore.jar,lib/wmqlibs/fscontext.jar,
+ lib/wmqlibs/jms.jar,lib/wmqlibs/jndi.jar,lib/wmqlibs/jta.jar,lib/wmql
+ ibs/ldap.jar,lib/approvedbouncy/jce-jdk13-154.jar,lib/open/axis.jar,l
+ ib/open/cxf/asynchhttp/commons-codec-1.9.jar,lib/open/cxf/asynchhttp/
+ cxf-rt-transports-http-3.0.3.jar,lib/open/cxf/common/commons-lang-2.6
+ .jar,lib/open/cxf/jaxrs/axiom.jar,lib/open/cxf/jaxws/cxf-rt-bindings-
+ soap-3.0.3.jar,lib/open/cxf/jaxws/cxf-rt-databinding-jaxb-3.0.3.jar,l
+ ib/open/cxf/jaxws/cxf-rt-ws-addr-3.0.3.jar,lib/open/cxf/jaxws/cxf-rt-
+ ws-policy-3.0.3.jar,lib/open/cxf/jaxws/cxf-rt-wsdl-3.0.3.jar,lib/open
+ /cxf/kerberos/apacheds-kerberos-shared-1.5.5.jar,lib/open/cxf/mandato
+ ry/cxf-core-3.0.3.jar,lib/open/cxf/mandatory/jcl-over-slf4j-1.7.7.jar
+ ,lib/open/cxf/mandatory/slf4j-api-1.7.7.jar,lib/open/cxf/mandatory/sl
+ f4j-jdk14-1.7.7.jar,lib/open/cxf/mandatory/stax2-api-3.1.4.jar,lib/op
+ en/cxf/mandatory/woodstox-core-asl-4.4.1.jar,lib/open/cxf/neethi/neet
+ hi-3.0.3.jar,lib/open/cxf/saml/joda-time-2.2.jar,lib/open/cxf/saml/op
+ ensaml-2.6.1.jar,lib/open/cxf/saml/openws-1.5.1.jar,lib/open/cxf/saml
+ /xmltooling-1.4.1.jar,lib/open/cxf/security/cxf-rt-security-3.0.3.jar
+ ,lib/open/cxf/spring/spring-beans-3.2.6.RELEASE.jar,lib/open/cxf/spri
+ ng/spring-context-3.2.6.RELEASE.jar,lib/open/cxf/spring/spring-core-3
+ .2.6.RELEASE.jar,lib/open/cxf/stdahttpjetty/jetty-util-8.1.15.v201404
+ 11.jar,lib/open/cxf/wssec/cxf-rt-ws-security-3.0.3.jar,lib/open/cxf/w
+ ssec/jasypt-1.9.2.jar,lib/open/cxf/wssec/wss4j-bindings-2.0.2.jar,lib
+ /open/cxf/wssec/wss4j-policy-2.0.2.jar,lib/open/cxf/wssec/wss4j-ws-se
+ curity-common-2.0.2.jar,lib/open/cxf/wssec/wss4j-ws-security-dom-2.0.
+ 2.jar,lib/open/cxf/wssec/wss4j-ws-security-policy-stax-2.0.2.jar,lib/
+ open/cxf/wssec/wss4j-ws-security-stax-2.0.2.jar,lib/open/cxf/wssec/xm
+ lsec-2.0.2.jar,lib/open/http/httpclient-4.3.1.jar,lib/open/http/httpc
+ ore-4.3.jar,lib/open/parsingWsdl/woden-impl-commons-1.0M9.jar,lib/ope
+ n/parsingWsdl/woden-impl-dom-1.0M9.jar,lib/open/parsingWsdl/woden-qna
+ me-1.0M9.jar,lib/open/parsingWsdl/woden-tool-1.0M9.jar,lib/open/parsi
+ ngWsdl/wsdl4j.jar,lib/regularexpression/automaton.jar,lib/regularexpr
+ ession/xeger-1.0-SNAPSHOT.jar,lib/open/parsingWsdl/woden-api-1.0M9.ja
+ r,lib/open/rampart/rampart-policy-1.6.2.jar,lib/open/rampart/rampart-
+ trust-1.6.2.jar,lib/open/rampart/wss4j-1.6.14.jar,lib/open/rampart/ra
+ mpart-core-1.6.2.jar,lib/open/rampart/XmlSchema-1.4.7.jar,lib/open/ra
+ mpart/axis2-kernel-1.6.2.jar,customSecurityDefinition/customSecurityD
+ efinition.jar,lib/open/commons-logging-1.1.1.jar,lib/open/parsingXml/
+ ,lib/open/commons-discovery-0.2.jar,lib/wmqlibs/com.ibm.mq.pcf.jar,li
+ b/approvedbouncy/bcpkix-jdk13-154.jar
+Bundle-Localization: plugin
+Bundle-Name: Models Core Plug-in
+Require-Bundle: org.eclipse.emf.ecore.xmi,org.eclipse.core.resources,o
+ rg.eclipse.xsd,org.eclipse.core.runtime;bundle-version="3.10.0",com.i
+ bm.rational.test.lt.provider;bundle-version="7.1.0",javax.xml.soap;bu
+ ndle-version="1.2.0";visibility:=reexport,org.apache.commons.codec;bu
+ ndle-version="1.3.0";visibility:=reexport,org.apache.log4j;bundle-ver
+ sion="1.2.15";visibility:=reexport,javax.xml.rpc;bundle-version="1.1.
+ 0";visibility:=reexport,javax.xml;bundle-version="1.3.4";visibility:=
+ reexport
+Bundle-Vendor: IBM
+Eclipse-LazyStart: true
+Bundle-Version: 9.0.100.v20160212_2300
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.ibm.rational.ttt.common.models.core.Activator
+Bundle-SymbolicName: com.ibm.rational.ttt.common.models.core;singleton
+ :=true
+
+Name: customSecurityDefinition/ICustomSecurityAlgorithm.zip
+SHA-256-Digest: 0vckEpeaI9BwTRlSBhTZi9DlBvXWczEV4BNewZaq7nU=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2005.07.securitypolicy.ws-se
+ curitypolicy.xsd.xml
+SHA-256-Digest: Ushz+Sa1fqJOt/E2VlqV5eYqGNuTog1dyIoW1OqsTvo=
+
+Name: schemas/http.schemas.xmlsoap.org.soap.encoding.xml
+SHA-256-Digest: 4xWwPotnoZcNNODVTCkJxb/9Cw0xx+S7eXDJICOQ0jg=
+
+Name: lib/open/cxf/asynchhttp/commons-codec-1.9.jar
+SHA-256-Digest: rRnSYBw6vwuUa1w6QRPiJqjB4zBeOVuQATt43ZSnI84=
+
+Name: coremdl.jar
+SHA-256-Digest: JB5AwLI9argtOA7F2LUdMt6zlAI7svLeSEF8jMSiSqE=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.10.wsat.wsat.xsd.xml
+SHA-256-Digest: /DEHdDZOv3FCTOijcoSA24pxs3/1lAVxTz3rm99SK2I=
+
+Name: lib/open/commons-discovery-0.2.jar
+SHA-256-Digest: rpmV7EEs7Co0iaB4eFd5G5zHhPFTtMnQrpPjjF8hdPo=
+
+Name: lib/open/parsingWsdl/woden-qname-1.0M9.jar
+SHA-256-Digest: OddcqhrJpT5KyiaIX6WDqmf0ydxKwYERFr/mjlDy298=
+
+Name: lib/open/cxf/saml/xmltooling-1.4.1.jar
+SHA-256-Digest: 78ZVRkyJ542CptgefQKLHsOlcybAzhgRcG8PBkLP6is=
+
+Name: lib/open/cxf/asynchhttp/cxf-rt-transports-http-3.0.3.jar
+SHA-256-Digest: 0YXDSbtYXz2tlfPqRNUQpHtD/MUCgcAUQBwlBb7rjC0=
+
+Name: customhttptransformer/httptransformer.jar
+SHA-256-Digest: 9qMeoaAzHDbCGn8OEXMKvtRKAm8LHOMQSuTm9e4MbUg=
+
+Name: lib/open/rampart/rampart-policy-1.6.2.jar
+SHA-256-Digest: OIYVd+Acgq2QLLNvAlMuBsChys8RH17KjnVzv2UXLMQ=
+
+Name: schemas/http.docs.oasis-open.org.wsn.br-2.xsd.xml
+SHA-256-Digest: CEgShsTkS605sMBlnLsXpADRhHJGuIBi6wWPXpJ96Zo=
+
+Name: lib/open/rampart/rampart-trust-1.6.2.jar
+SHA-256-Digest: 07lOSlxaJuqbnsssQMW2hbFEFjJvEXgoevXexGjEfWo=
+
+Name: schemas/http.www.w3.org.2005.08.addressing.ws-addr.xsd.xml
+SHA-256-Digest: r4Bsya8lFOmwsH7+Tk3EKjLa2KwIRz3AJRNiB3edXuk=
+
+Name: lib/open/cxf/jaxws/cxf-rt-ws-policy-3.0.3.jar
+SHA-256-Digest: Of5J/kfy4oGiNggJqJMO4RayWbR1o6Ymmubib/bKs7E=
+
+Name: schemas/http.schemas.xmlsoap.org.wsdl.mime.xml
+SHA-256-Digest: F+cAL6px+WjxHTGudPUWYUQu8tXxE14jYN/vc6o38ZI=
+
+Name: schemas/http.www.w3.org.2004.08.xop.include.xsd.xml
+SHA-256-Digest: 58AVkqb3rReNnKDVnU3uvzHftI8FYmG/f8E3uRuQ66Y=
+
+Name: lib/jmslibs/sibc.jms.jar
+SHA-256-Digest: N3EwRoGgPHmuCEwQ2SFG0FXdGHFqNgZovFdtub3IHUI=
+
+Name: lib/open/cxf/wssec/wss4j-policy-2.0.2.jar
+SHA-256-Digest: eMvwjUVUXyoc/XYmUaXmibWUkELwhREVj+dLpQtrfyI=
+
+Name: lib/wmqlibs/com.ibm.mq.jar
+SHA-256-Digest: DkyT6H/l6a+De+WaGP17i7ZN5o1cuVkVtTdSWpR2M3o=
+
+Name: dotnet/client/bin/Soa-Behavior-Library.pdb
+SHA-256-Digest: hLyOWC7/eL/Leo+40YC630JYqpoYQ+mdqOd6g4utdF4=
+
+Name: lib/wmqlibs/com.ibm.mq.jmqi.jar
+SHA-256-Digest: yEDUpLT2gOxFUrvPyiSZ+p/530BCIPuOLk4I1o5y5fU=
+
+Name: lib/open/cxf/mex/cxf-rt-ws-mex-3.0.3.jar
+SHA-256-Digest: 5jDg2SuDf2xF1lA/CTF2qCTT5X6+pElS3+wGKCmRpR0=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.09.policy.ws-policy.xsd
+ .xml
+SHA-256-Digest: kfG5T0KZZDtofAVO32T+SuyD5LTfbJot19LfIgCWuKs=
+
+Name: lib/open/cxf/mandatory/stax2-api-3.1.4.jar
+SHA-256-Digest: htfAt3WnybRUzGumHUCo6zuZzBKfgy65uXejdVtLM44=
+
+Name: customSecurityDefinition/customSecurityDefinition.jar
+SHA-256-Digest: gRFdW+hML+FG5aGpZocYQxAr9zXnJ2yzfKY1cy/DtBA=
+
+Name: lib/open/http/httpclient-4.3.1.jar
+SHA-256-Digest: 3K55xTBYrbsfTRuJVrX1FnBZET+f5BrHj5PMYTLarXw=
+
+Name: schemas/http.www.w3.org.1999.part2.xsd.xml
+SHA-256-Digest: lCS+BWOxfqEugW8Ble3rgVIxkvObasKer1wKMx1niLQ=
+
+Name: lib/open/cxf/saml/joda-time-2.2.jar
+SHA-256-Digest: 5Rg8oTH3GVveWyfkzRje620U+LxcSDsUMUIRMpJyQK8=
+
+Name: lib/open/cxf/rt/cxf-rt-frontend-simple-3.0.3.jar
+SHA-256-Digest: Cqm9wY6S9tUQQkkOKMuT5iqWV0cEfDFGG0jZpi6speY=
+
+Name: lib/open/cxf/mandatory/slf4j-jdk14-1.7.7.jar
+SHA-256-Digest: mQmRXpkSaeXz9NjrUfsKHaf/i8YXSkzyWXDzc6uvz5s=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.10.wscoor.wscoor.xsd.xm
+ l
+SHA-256-Digest: GjDl/oFcDlHH0ubDmMbZgOTQiuQHXvLKJSZTOccO+dI=
+
+Name: lib/open/parsingWsdl/woden-api-1.0M9.jar
+SHA-256-Digest: +zBv5miZXxvryLJZxgXJcwlzTlnqeTQunTJgQMqsEX0=
+
+Name: lib/approvedbouncy/jce-jdk13-154.jar
+SHA-256-Digest: 4KkGgcv8nFa1DrkZq4SNAiAe2bh9T9bFXhx59vTK1j4=
+
+Name: lib/open/cxf/wssec/cxf-rt-ws-security-3.0.3.jar
+SHA-256-Digest: xUljZlSBT9FeEoJQF0oN/WI5sT1kPgoL6752otVN+fw=
+
+Name: lib/open/cxf/mandatory/slf4j-api-1.7.7.jar
+SHA-256-Digest: aZgMA4yhsTGSZWFZFhfZwl+r/Hspgor5FZfKhXDPNf4=
+
+Name: schemas/http.www.w3.org.2006.03.addressing.ws-addr.xsd.xml
+SHA-256-Digest: DFZRauPiAFAnrlnKhrBxGbCtr21dHc+hCZjUlo7A2C4=
+
+Name: lib/wmqlibs/jms.jar
+SHA-256-Digest: iw6cEzV8M5z8OlpuTt3coxQvUtzLtaqu160S1+SXlsk=
+
+Name: lib/attachment/activation.jar
+SHA-256-Digest: McaKh0P0KsQ7Q5o4LptMkRa6OS27LTC96/s1KcI8dTo=
+
+Name: lib/open/cxf/jaxws/cxf-rt-bindings-soap-3.0.3.jar
+SHA-256-Digest: +5WyAGAXOof7KanD1OL3evJuql5Z5xCMPDp8UQG6cdg=
+
+Name: resources/modules/mtompolicy-1.6.2.mar
+SHA-256-Digest: 1I8CP8LHA3iYXcnP/RPd3vas/SW7cffYuGNe9fFAl4E=
+
+Name: lib/approvedbouncy/bcpkix-jdk13-154.jar
+SHA-256-Digest: SyBu32HQ+Ptifu76cK+VpZqH5erqNX97jb3OSWLXVp4=
+
+Name: lib/wmqlibs/com.ibm.mq.commonservices.jar
+SHA-256-Digest: QZlisBsd3wrxCe/vuxZ0h5wwQDuVtGxAdTYXRNDXTR0=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-stax-2.0.2.jar
+SHA-256-Digest: VcHB1+GCH35HeBOneFUjApkSMZ6iKZU2FxHrkBFjnhw=
+
+Name: lib/attachment/mail.jar
+SHA-256-Digest: X9zO21e6e4nBDd+Qig11m4V9bR0IpZUf33//g8fxh/U=
+
+Name: lib/open/rampart/XmlSchema-1.4.7.jar
+SHA-256-Digest: quR7wnB1jMbGQbYk5nDGcC3tT2zV5FIpitKLxlwU4A0=
+
+Name: lib/open/cxf/spring/spring-beans-3.2.6.RELEASE.jar
+SHA-256-Digest: RG08yovfJFjOu3M9oP6YMiVRX/+NlIIltnZv/yg1Eo8=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.08.addressing.xml
+SHA-256-Digest: 6LR+tpFFk/l7xVMEPmsURBF0pi6dnv6U8v7A8f9Fxn0=
+
+Name: dotnet/client/bin/soaclient.exe
+SHA-256-Digest: rPyeAo7Xsia4IFLj9Inwf1+feFBLvhCDL+FsiA/A8a4=
+
+Name: resources/rampartCfg.xml
+SHA-256-Digest: tvLPkHYmEyrj9bcWm/5CN8xqDx7BJOHcRTYxdJQOLRY=
+
+Name: plugin.xml
+SHA-256-Digest: ZiVRhIya1tgvRUmCNc3klqrDBmFAumJaChxr6tUHf/I=
+
+Name: lib/open/parsingWsdl/woden-impl-commons-1.0M9.jar
+SHA-256-Digest: 0EZqkj+sxbUjZ6dHTDrW/lF9hYAxHrMG0GbmNR1wBGY=
+
+Name: lib/regularexpression/xeger-1.0-SNAPSHOT.jar
+SHA-256-Digest: FFMtk6jfPcN8O4Bu/KYUhOJywztyeU8fls4B1gSOTRw=
+
+Name: lib/open/cxf/jaxws/cxf-rt-wsdl-3.0.3.jar
+SHA-256-Digest: 2jrJVBwpJYl5xC6d0gB/irqbGwWVrX94wuGRc0O95z4=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-common-2.0.2.jar
+SHA-256-Digest: tAgYFUPtOTOgzo3+UznPAzYEPMYmDw5IC4theCWgxfw=
+
+Name: schema/XSDFileOperationListener.exsd
+SHA-256-Digest: X6eoJzhjpZ/OoxIVy5PNUiWAivQTtbV1JJbrkh0SooU=
+
+Name: schemas/http.docs.oasis-open.org.ws-sx.ws-trust.200512.ws-trust-
+ 1.3.xsd.xml
+SHA-256-Digest: PLRc5cddp/X68H9dvr1PHWDOJR6JfgsH/srkynvT2Hk=
+
+Name: lib/wmqlibs/com.ibm.mq.jms.Nojndi.jar
+SHA-256-Digest: r/razsotoWytsfe0Qz2ohJc0tvJAJjYe1p7AJTbbYpI=
+
+Name: lib/open/cxf/jaxws/cxf-rt-ws-addr-3.0.3.jar
+SHA-256-Digest: Ef+JYPhfHcd7VBLCPl1nUfQS6M0RydbQ/KvLfbAIbJo=
+
+Name: lib/wmqlibs/dhbcore.jar
+SHA-256-Digest: zULTJf0TPHrCFoLew/9VXp89HXpAdaynDp8C5P8tbPQ=
+
+Name: lib/wmqlibs/fscontext.jar
+SHA-256-Digest: FzSz7BaoadLYpl/Lq1lDzP8tU8i0gFcnNktbicTM+dc=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-dom-2.0.2.jar
+SHA-256-Digest: IXVx5FiUdA8ZGDBKwhltPCLOYwgKUjIrFBREk84xpEk=
+
+Name: lib/open/commons-logging-1.1.1.jar
+SHA-256-Digest: zm+RPK0fDbOq1wGG1lxbx//Mmpnj/o4LE3MSgZ98Ni8=
+
+Name: customSecurityDefinition/CustomSecurityTest.jar
+SHA-256-Digest: zhBJDXKEYlrNkqey+rheoPtur1N+7BlSFEU/EnpPQeA=
+
+Name: lib/wmqlibs/com.ibm.mq.headers.jar
+SHA-256-Digest: ID+0jXSorW2JivFnP9/4LIPQc647FNqJCPMyeOx7o+o=
+
+Name: lib/open/rampart/rampart-core-1.6.2.jar
+SHA-256-Digest: Zi5+4aqi93084sn35hzM4RUwHahU7OCqhVs5lfeBHAg=
+
+Name: lib/open/cxf/neethi/neethi-3.0.3.jar
+SHA-256-Digest: 1fGH8g64+7kr6Z+lC5vBSACrJkamXIKarchXDGqpiqo=
+
+Name: lib/jmslibs/sibc.jndi.jar
+SHA-256-Digest: 2lqVZOIlpl4ls9avkGmbLJVHdYaaZv2x8rWZljk0opc=
+
+Name: lib/open/cxf/mandatory/cxf-core-3.0.3.jar
+SHA-256-Digest: aD6eu2u4TFp9E8WtKRP4sG8Un17I59I2nxlhXFENYsA=
+
+Name: lib/wmqlibs/connector.jar
+SHA-256-Digest: B8I69qDQ6mOYhP2TdHCvDRODEYOcHLcDc/w/VR5DkiA=
+
+Name: lib/open/cxf/security/cxf-rt-security-3.0.3.jar
+SHA-256-Digest: Wt+dd+3mpTRwevk1KJ0hFijpdys+Nz2csFLSloAAPTA=
+
+Name: schemas/http.docs.oasis-open.org.wsrf.bf-2.xsd.xml
+SHA-256-Digest: maiuGu0bmcPtYEWViPY4LMtb7xf6NSSJ5NC7fLG2wCQ=
+
+Name: lib/wmqlibs/ldap.jar
+SHA-256-Digest: 8z583meFUL/Knxjx4YB+AtAvvRE31j6pK2L8PE6xEuM=
+
+Name: lib/open/cxf/jaxrs/axiom.jar
+SHA-256-Digest: 12lz14vbEvq2XatWMTNSIfeXN21Emq6qRL8JnzxqhgQ=
+
+Name: lib/open/axis.jar
+SHA-256-Digest: cWQEg2Hy2DwFuKPxQsDhjWlgEcER4mUx9axgtXlcivE=
+
+Name: schemas/http.schemas.xmlsoap.org.wsdl.soap.xml
+SHA-256-Digest: BoWAJCucuMN1wdh9rjpm5DhkEBx3FhCq+uOpiQAFdjs=
+
+Name: lib/open/cxf/wssec/jasypt-1.9.2.jar
+SHA-256-Digest: Mvh1WEfz/Oct5KoWSA7Y/iO1HQ9K6n6rnhZxJrsboEg=
+
+Name: schemas/http.www.w3.org.2003.05.soap-encoding.xml
+SHA-256-Digest: 36jTXmr1vGS7kErEGwHkeuvc9ScATyAAusGbilQ6jb0=
+
+Name: lib/open/parsingWsdl/woden-impl-dom-1.0M9.jar
+SHA-256-Digest: BIx5lLxUocEjo0VvgF7hHTNkAPhYjQ8XrZH6VfT2gFs=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2005.02.trust.WS-Trust.xsd.x
+ ml
+SHA-256-Digest: NQAj+SaFg5GxOMVB2TZnxeQdyNIbYRYRww3k1nWezS8=
+
+Name: schemas/http.docs.oasis-open.org.wsn.t-1.xsd.xml
+SHA-256-Digest: /Tf/9yGi/JWXFae/Ol4J/kNzRGqt0B1jXlAoGIHxSDM=
+
+Name: lib/open/cxf/stdahttpjetty/jetty-util-8.1.15.v20140411.jar
+SHA-256-Digest: 3Cy+BPuEt5tvc4mDjk84cdQhioKm/Mp1dx1UwZqa46k=
+
+Name: plugin.properties
+SHA-256-Digest: 0drMDjtGw3YgJL7ICetBFFo8iVDLaATmzxGxbaWO3xU=
+
+Name: lib/open/cxf/mandatory/xmlschema-core-2.1.0.jar
+SHA-256-Digest: lscu25xxFT3GLuoj+KKBnF09UG62HhQugdp6CHcxjTE=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2005.02.rm.wsrm.xsd.xml
+SHA-256-Digest: IW6aguWK5zcX4cIbD7hivZI2MqzDOD/2dHLpZ9+3yKg=
+
+Name: lib/open/cxf/spring/spring-context-3.2.6.RELEASE.jar
+SHA-256-Digest: WHfyXG+MypMjwOfXMA0ULaiLTjtHJb4qkd7FLfq/SLg=
+
+Name: schemas/http.schemas.xmlsoap.org.soap.envelope.xml
+SHA-256-Digest: s7R+1WxMHB3HWEPuyXZXXPYK4UYKi7Oc5S5LolpEFMs=
+
+Name: schemas/http.docs.oasis-open.org.wsn.b-2.xsd.xml
+SHA-256-Digest: 9k7XDwkgFoB7Qr3gigXfGTaYhS+zdesHg/fiX4wcTgE=
+
+Name: dotnet/client/bin/Soa-Behavior-Library.dll
+SHA-256-Digest: +AjjLnGIXOfZGG+fFfGt19a8WKmF1yZryAeMn4SkItY=
+
+Name: lib/open/parsingWsdl/wsdl4j.jar
+SHA-256-Digest: 6QEg0m8aFjxYQ8enWNCgyVDRsJcCaK0HcNbBzFBQjEM=
+
+Name: lib/open/http/httpcore-4.3.jar
+SHA-256-Digest: nVpcuUxRiCnRhBce7YvVeVMHTk37RNl/J007fAXoCIE=
+
+Name: schemas/http.docs.oasis-open.org.wss.v1.1.oasis-wss-wssecurity-s
+ ecext-1.1.xsd.xml
+SHA-256-Digest: LHndMFHuTlEj6FvzG6tiCQn67YympsPsZslOy1h+yVc=
+
+Name: lib/open/parsingWsdl/woden-tool-1.0M9.jar
+SHA-256-Digest: 2biAbwnc0Hvr74ewzoy0zIUZZRroW9dvkfJSp3fXLTI=
+
+Name: schemas/http.www.w3.org.2001.03.xml.xsd.xml
+SHA-256-Digest: UqraLg49jO1ezOtGVAWHOfHQAdbe8welT/bEdKJZ0mg=
+
+Name: lib/open/cxf/spring/spring-core-3.2.6.RELEASE.jar
+SHA-256-Digest: PPzh3YhQTaijiyXv7DS41xjEggmiJ7r2HyiXB2HyP0c=
+
+Name: lib/open/cxf/saml/opensaml-2.6.1.jar
+SHA-256-Digest: 8Tq0bUBIxToTfSu9nlbdE7JZZinu9uV/015ZSwFZ1qQ=
+
+Name: lib/open/cxf/common/commons-lang-2.6.jar
+SHA-256-Digest: UPEbCfh3wpTVbyRGP0fSj5Kc9QRPZIZhwPDPuumi9Jw=
+
+Name: lib/open/cxf/jaxws/cxf-rt-databinding-jaxb-3.0.3.jar
+SHA-256-Digest: CSLl6FmoXzw7lhYVrvywDDZjuBzv4lxg9DTo3VVEJBI=
+
+Name: schemas/http.www.w3.org.2001.xml.xsd.xml
+SHA-256-Digest: UqraLg49jO1ezOtGVAWHOfHQAdbe8welT/bEdKJZ0mg=
+
+Name: lib/wmqlibs/jta.jar
+SHA-256-Digest: zw8lQNEU2ZjcUelVM/Do6zfG7hBlUUp1soGjKDzgWII=
+
+Name: lib/open/rampart/axis2-kernel-1.6.2.jar
+SHA-256-Digest: dUg8pQ8IntqlStLdhqEeIB5qpF5ah4OIwC6bjGkd5E4=
+
+Name: schemas/http.www.w3.org.1999.XMLSchema.xsd.xml
+SHA-256-Digest: IbtP826OPaL1uBdtFsFqezV3MaBdFCd7beOzKMvQL60=
+
+Name: schemas/http.schemas.xmlsoap.org.wsdl.xml
+SHA-256-Digest: F0RMs1Lv5WBIbOl0QTjhIitFizYFhLe9JH8gcC7nuWA=
+
+Name: schemas/http.docs.oasis-open.org.wss.2004.01.oasis-200401-wss-ws
+ security-utility-1.0.xsd.xml
+SHA-256-Digest: URbl3WLvDc79J/ARJmRjzLK2bcpxUE56/MC1b+sMeWY=
+
+Name: resources/modules/rampart-1.6.2.mar
+SHA-256-Digest: WSM5tUoUUvxMCySTjnMsEXqWJE385/Ye266Ruz7Gk7c=
+
+Name: schemas/http.www.w3.org.2004.08.xop.include.xml
+SHA-256-Digest: 58AVkqb3rReNnKDVnU3uvzHftI8FYmG/f8E3uRuQ66Y=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.10.wsba.wsba.xsd.xml
+SHA-256-Digest: PWP0wocuXJICPjn2EYM9PC0p2m5noZe3ZX4+O2EyEUU=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-policy-stax-2.0.2.jar
+SHA-256-Digest: iXCezOTN6pu717Gj2pRio/rY4bqDQQR35+0QqAAxhYM=
+
+Name: lib/open/cxf/jaxws/cxf-rt-frontend-jaxws-3.0.3.jar
+SHA-256-Digest: yFLMuptvByaPi8lcbkC2P1NZ2U5vlxnvflSl7LsnuVg=
+
+Name: lib/open/parsingXml/serializer-2.7.1.jar
+SHA-256-Digest: oVB40kPUogtrTori9h7UZV41IFThIarab3RB8e1EWjw=
+
+Name: schemas/http.www.w3.org.2001.XMLSchema.xsd.xml
+SHA-256-Digest: 52ehWcF5vW5NwrrCpjpi9Qy9An7BnWtcyescLzPgyy4=
+
+Name: resources/modules/addressing-1.6.2.mar
+SHA-256-Digest: PGI7rWOB2oLCKQErxlBMp+9hiUEySw61lqnj7iDGgRc=
+
+Name: lib/open/cxf/mandatory/jcl-over-slf4j-1.7.7.jar
+SHA-256-Digest: xkcrWVDhwjIC5WfGM05IMtHbRvrWBLeg169x1KAUvOI=
+
+Name: schemas/http.www.w3.org.2003.05.soap-envelope.xml
+SHA-256-Digest: jXkKc3vE04msV1jgoDu5Wej1JXtJL9O7Gv5BjC5ll1A=
+
+Name: customSecurityDefinition/CustomSecurityAlgorithm.template
+SHA-256-Digest: C9KGHMq2cGvFFOlqTWrv8DuHXnjA/QRerDOw8V2D6tY=
+
+Name: lib/wmqlibs/com.ibm.mq.pcf.jar
+SHA-256-Digest: pw40xRyy+K/MMcSbMt5+cP7B+/uM0a7ZqHs0jIE7PsA=
+
+Name: lib/open/rampart/wss4j-1.6.14.jar
+SHA-256-Digest: +nC7lJHC+N5HqABfcwm3JW+zJhogwJHp7ja/lNWKsLw=
+
+Name: resources/modules/mex-1.6.2.mar
+SHA-256-Digest: F7ibLTlo34eHh74C1/JVv2owrAJrywXsKHIY4QCasX4=
+
+Name: lib/open/cxf/wssec/wss4j-bindings-2.0.2.jar
+SHA-256-Digest: Lzyc5EWz/+BXKC4etHEgaU/kjRm8W2d7xYNLr/lGCQw=
+
+Name: lib/open/cxf/kerberos/apacheds-kerberos-shared-1.5.5.jar
+SHA-256-Digest: wEeJszp0IvL/cuvj9LAhLT4KdZwONycLfh0O2o/6Hbw=
+
+Name: schemas/http.docs.oasis-open.org.wss.2004.01.oasis-200401-wss-ws
+ security-secext-1.0.xsd.xml
+SHA-256-Digest: lHh1EBaA0SKcUM2HCrM2NBzMv4Q6oHs1araBSHc3y/w=
+
+Name: lib/open/cxf/wssec/xmlsec-2.0.2.jar
+SHA-256-Digest: R+3uVCmDb3S0h4y/lcZgZunbwaQU6UFjq1UwMoTu1VQ=
+
+Name: lib/regularexpression/automaton.jar
+SHA-256-Digest: p61cZ9HdX4pjfxIU3RXxF6swdeu1RyOjp/YNPeHZfCE=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.09.mex.MetadataExchange
+ .xsd.xml
+SHA-256-Digest: 2VkkHb8o1d7hA9l/qmyODfxRAxbJv6cCN5cHSjQ/H+o=
+
+Name: lib/open/cxf/saml/openws-1.5.1.jar
+SHA-256-Digest: 26S2sq4a8URmr8kq8cLWm8MTcFXViiWi8rzdsWvwb1M=
+
+Name: lib/open/cxf/mandatory/woodstox-core-asl-4.4.1.jar
+SHA-256-Digest: J0+kA+0IwNby9XTcGRatqq7JpJPlbWRC+Hl+3mILymU=
+
+Name: lib/wmqlibs/jndi.jar
+SHA-256-Digest: NDehrR/AFRaD9oqSTOCdqfgNWPNFIxaYFbQyOJWGHMA=
+
+Name: lib/wmqlibs/com.ibm.mqjms.jar
+SHA-256-Digest: pPHfZQvaOMMRfNDR7FlsO8CCF4E6ft/41aJvcXVvpsY=
+

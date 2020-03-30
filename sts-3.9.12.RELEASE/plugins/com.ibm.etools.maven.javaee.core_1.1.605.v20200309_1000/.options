@@ -1,0 +1,6 @@
+# Debugging options for the com.ibm.etools.maven.javaee.core plugin.
+
+# Turn on debugging for the com.ibm.etools.maven.javaee.core plugin.
+com.ibm.etools.maven.javaee.core/debug = false
+# Turn on tracing for the com.ibm.etools.maven.javaee.core plugin.
+com.ibm.etools.maven.javaee.core/debug/trace = false

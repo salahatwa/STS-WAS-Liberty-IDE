@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+    overviewSectionTitle="%OVERVIEW_SECTION_TITLE" customizationSchemaLocation="" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile ../../com.ibm.xwt.dde/schema/CustomizationFile.xsd">
+
+    <!-- Global customization -->
+    <node path="*">
+        <item path="@id" hide="true" deleteIfEmpty="true" />
+        <item path="@address" label="%ADDRESS"/>
+        <node path="properties" label="%PROPERTIES" hide="true"></node>
+        <item path="@id" hide="true" deleteIfEmpty="true" namespace="http://java.sun.com/xml/ns/javaee"/>
+        <item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+        <item path="@lang" hide="true" namespace="http://www.w3.org/XML/1998/namespace"/>
+    </node>    
+        
+    <node path="/webservices-bnd" namespace="http://websphere.ibm.com/xml/ns/javaee" icon="icons/webserv_bind.gif" label="%WEBSERV_BIND" treeLabel="%WEBSERV_BIND" detailSectionTitle="%WEBSERV_BIND" sectionHeaderText="%WEBSERV_BIND_SECTION_TEXT">
+        <item path="@version" label="%VERSION"/>
+        <node path="webservice-endpoint-properties" label="%WEBSERVICE_ENDPOINT_PROPERTIES"/>
+        <node path="service-ref" icon="icons/serviceref_obj.gif" label="%SERVICE_REF" detailSectionTitle="%SERVICE_REF">
+        	<item path="@component-name" label="%COMPONENT_NAME"/>
+        	<item path="@name" label="%NAME"/>
+        	<item path="@port-address" label="%PORT_ADDRESS"/>
+            <item path="@wsdl-location" label="%WSDL_LOCATION"/>
+        	<node path="port" icon="icons/port_obj.gif" label="%PORT" detailSectionTitle="%PORT">
+               <item path="@address" label="%ADDRESS"/>
+               <item path="@name" deleteIfEmpty="true" label="%NAME"/>
+               <item path="@namespace" label="%NAMESPACE"/>
+               <item path="@key-alias" label="%KEY_ALIAS"/>
+               <item path="@username" label="%USERNAME"/>
+               <item path="@password" label="%PASSWORD" buttonLabel="%SET_BUTTON" buttonClass="com.ibm.ast.ws.jaxws.tools.dialogs.SecurityPasswordDialog" />
+               <item path="@ssl-ref" label="%SSL_REF"/>
+            </node>
+        </node>
+        <node path="http-publishing" icon="icons/http.gif" label="%HTTP_PUBLISHING"  detailSectionTitle="%HTTP_PUBLISHING" namespace="http://websphere.ibm.com/xml/ns/javaee">
+            <item path="@context-root" label="%CONTEXT_ROOT"/>
+            <node path="webservice-security" icon="icons/security_group.gif" label="%SERVICE_SECURITY" detailSectionTitle="%SERVICE_SECURITY" sectionHeaderText="%SERVICE_SECURITY_HEADER_TEXT" namespace="http://websphere.ibm.com/xml/ns/javaee">
+                <node path="login-config" icon="icons/login_config.gif" label="%LOGIN_CONFIG" detailSectionTitle="%LOGIN_CONFIG" namespace="http://websphere.ibm.com/xml/ns/javaee">
+           	        <node path="auth-method" label="%AUTH_METHOD" namespace="http://websphere.ibm.com/xml/ns/javaee"></node>
+                	<node path="form-login-config" label="%FORM_LOGIN_CONFIG" >
+                   		<node path="form-error-page" label="%FORM_ERROR_PAGE" />
+                   		<node path="form-login-page" label="%FORM_LOGIN_PAGE" />
+                	</node>
+                	<node path="realm-name" label="%REALM_NAME" >
+                	    <item path="@type" hide="true" label="%TYPE" namespace="http://www.w3.org/2001/XMLSchema-instance"/>
+                	    <node path="realm-name" label="%REALM_NAME" />
+                	</node>
+            	</node>
+            	<node path="security-constraint" icon="icons/security_constraint.gif" label="%SECURITY_CONSTRAINT" detailSectionTitle="%SECURITY_CONSTRAINT" namespace="http://websphere.ibm.com/xml/ns/javaee">
+            	    <item path="display-name" style="text" textLines="5" label="%DISPLAY_NAME">
+            	    </item>
+            	    <node path="auth-constraint" icon="icons/encryptioninfo.gif" label="%AUTH_CONSTRAINT"  detailSectionTitle="%AUTH_CONSTRAINT">
+            	       <item path="role-name" style="text" textLines="5" label="%ROLE_NAME"  />
+            	       <item path="description" style="text" textLines="5" label="%DESCRIPTION">
+            	       </item>
+            	       <item path="@type" hide="false" namespace="http://www.w3.org/2001/XMLSchema-instance"/>
+            	    </node>
+            	    <node path="web-resource-collection" icon="icons/web_resource_collection.gif" label="%WEB_RESOURCE_COLLECTION" detailSectionTitle="%WEB_RESOURCE_COLLECTION">
+                        <node path="web-resource-name" label="%WEB_RESOURCE_NAME">
+            	            <item path="@type" hide="true" label="%TYPE" namespace="http://www.w3.org/2001/XMLSchema-instance" inheritCustomization="false"/>
+                        </node>
+            	        <node path="url-pattern" label="%URL_PATTERN" />
+            	       <item path="description" style="text" textLines="5" label="%DESCRIPTION">
+            	       </item>
+                        <node path="http-method" icon="icons/http.gif" label="%HTTP_METHOD" detailSectionTitle="%HTTP_METHOD">
+            	        </node>
+            	        <node path="http-method-omission" icon="icons/http.gif" label="%HTTP_METHOD_OMISSION" detailSectionTitle="%HTTP_METHOD_OMISSION">
+            	        </node>
+            	    </node>
+            	    <node path="user-data-constraint" icon="icons/calleridentity.gif" label="%USER_DATA_CONSTRAINT" detailSectionTitle="%USER_DATA_CONSTRAINT">
+            	        <node path="transport-guarantee" label="%TRANSPORT_GUARANTEE"/>
+            	       <item path="description" style="text" textLines="5" label="%DESCRIPTION">
+            	       </item>
+            	    </node>
+            	</node>
+            	<node path="security-role" icon="icons/security_role.gif" label="%SECURITY_ROLE" detailSectionTitle="%SECURITY_ROLE">
+                    <node path="role-name" label="%ROLE_NAME" />
+            	        <node path="description" label="%DESCRIPTION">
+            	        </node>
+            	</node>        
+            </node>
+        </node>
+        <node path="webservice-endpoint" icon="icons/httpbinding_obj.gif" label="%SERVICE_ENDPOINT" detailSectionTitle="%SERVICE_ENDPOINT">
+            <item path="@port-component-name" deleteIfEmpty="true" label="%PORT_COMPONENT_NAME"/>
+            <node path="properties" label="%PROPERTIES"/>
+        </node>
+        <node path="webservice" icon="icons/service_obj.gif" label="%WEBSERVICE" detailSectionTitle="%WEBSERVICE">
+            <item path="@service-name" label="%SERVICE_NAME" deleteIfEmpty="false"/>
+            <item path="@wsdl-publish-dir" label="%WSDL_PUBLISH_DIR" deleteIfEmpty="false"/>
+        </node>
+
+    </node>
+    
+</customization>

@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Export-Package: com.ibm.ast.ws.jaxws.emitter.tools.command
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: runtime/jaxws-core-tools.jar
+Bundle-Name: %PLUGIN_NAME
+Bundle-Localization: plugin
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.wst.common.environment;bundle-version="[1.
+ 0.100,2.0.0)",org.eclipse.wst.common.frameworks;bundle-version="[1.1.
+ 0,2.0.0)",org.eclipse.wst.common.modulecore;bundle-version="[1.1.1,2.
+ 0.0)",org.eclipse.wst.command.env.core;bundle-version="[1.0.1,2.0.0)"
+ ,org.eclipse.wst.command.env;bundle-version="[1.0.1,2.0.0)",org.eclip
+ se.wst.server.core;bundle-version="[1.0.103,2.0.0)",org.eclipse.wst.c
+ ommon.project.facet.core;bundle-version="[1.1.1,2.0.0)",org.eclipse.w
+ st.ws;bundle-version="[1.0.101,2.0.0)",org.eclipse.jst.common.framewo
+ rks;bundle-version="[1.1.2,2.0.0)",org.eclipse.jst.common.project.fac
+ et.core;bundle-version="[1.4.102,2.0.0)",org.eclipse.jst.server.core;
+ bundle-version="[1.0.103,2.0.0)",org.eclipse.jst.j2ee;bundle-version=
+ "[1.1.1,2.0.0)",org.eclipse.jst.j2ee.web;bundle-version="[1.1.2,2.0.0
+ )",org.eclipse.jst.j2ee.ejb;bundle-version="[1.1.2,2.0.0)",org.eclips
+ e.jst.j2ee.core;bundle-version="[1.1.103,2.0.0)",org.eclipse.core.run
+ time;bundle-version="[3.2.0,4.0.0)",org.eclipse.core.resources;bundle
+ -version="[3.2.0,4.0.0)",org.eclipse.core.commands;bundle-version="[3
+ .2.0,4.0.0)",org.eclipse.jdt.core;bundle-version="[3.2.0,4.0.0)",org.
+ eclipse.jdt.apt.core;bundle-version="[3.2.0,4.0.0)",org.eclipse.jem.w
+ orkbench;bundle-version="[2.0.0,3.0.0)",org.eclipse.jem.util;bundle-v
+ ersion="[2.0.1,3.0.0)",org.eclipse.wst.common.emf;bundle-version="[1.
+ 1.1,2.0.0)",org.eclipse.wst.common.uriresolver;bundle-version="[1.1.1
+ ,2.0.0)",org.eclipse.wst.xml.core;bundle-version="[1.1.2,2.0.0)",org.
+ eclipse.xsd;bundle-version="[2.2.1,3.0.0)",org.eclipse.jface;bundle-v
+ ersion="[3.3.0,4.0.0)",com.ibm.xwt.wsdl;bundle-version="[1.0.0,2.0.0)
+ ",org.eclipse.wst.ws.parser;bundle-version="[1.0.2,2.0.0)",com.ibm.as
+ t.ws.jaxws.emitter;bundle-version="[2.0.0,3.0.0)",org.eclipse.osgi.se
+ rvices;bundle-version="[3.2.0,4.0.0)",org.eclipse.wst.wsdl;bundle-ver
+ sion="[1.2.300,2.0.0)",javax.wsdl;bundle-version="[1.5.1,3.0.0)"
+Ant-Version: Apache Ant 1.8.4
+Bundle-Vendor: IBM
+Bundle-Version: 2.0.101.v20200309_1000
+Bundle-Activator: com.ibm.ast.ws.jaxws.emitter.tools.plugin.JaxWSEmitt
+ erPlugin
+Bundle-ManifestVersion: 2
+Import-Package: org.eclipse.jdt.launching
+Bundle-SymbolicName: com.ibm.ast.ws.jaxws.emitter.tools;singleton:=tru
+ e
+
+Name: runtime/jaxws-core-tools.jar
+SHA-256-Digest: rBO8YZkTEquvu2OL7q8twvKEImgKeQ7Or+G49/jnjw4=
+
+Name: plugin.xml
+SHA-256-Digest: bBw2+aZKVATLioNTq525r1obMKnxR2T5VzxdJqRZ8Kc=
+
+Name: plugin.properties
+SHA-256-Digest: BJ02Jr0XGjM91UT49d/vbqzrULFGv39TQAHf3qR1VnA=
+
+Name: com/ibm/ast/ws/jaxws/emitter/tools/plugin/Messages.properties
+SHA-256-Digest: wxN0twUzo3Yl4/qCEVS2OGHgyWdrJyVImhdeSEZv5+U=
+

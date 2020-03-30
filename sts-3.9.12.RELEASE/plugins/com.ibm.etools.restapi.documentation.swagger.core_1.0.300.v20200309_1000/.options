@@ -1,0 +1,5 @@
+# Options for toggling tracing
+com.ibm.etools.restapi.documentation.swagger.core/debug/error=false
+com.ibm.etools.restapi.documentation.swagger.core/debug/warning=false
+com.ibm.etools.restapi.documentation.swagger.core/debug/info=false
+com.ibm.etools.restapi.documentation.swagger.core/debug/details=false

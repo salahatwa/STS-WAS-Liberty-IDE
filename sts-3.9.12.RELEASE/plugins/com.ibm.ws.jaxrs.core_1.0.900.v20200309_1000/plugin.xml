@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<!-- Finder categories -->
+	<extension point="com.ibm.ccl.ws.finder.category">
+		<category
+			id="jaxrs.resource"
+			type="rest"
+			label="%CATEGORY_JAX_RS">
+		</category>
+	</extension>
+
+	<!-- Finder extensions -->
+	<extension point="com.ibm.ccl.ws.finder.notifier.java">
+		<finder
+			category="jaxrs.resource"
+			class="com.ibm.ws.jaxrs.finder.ServiceSourceFinder">
+			<watch element="org.eclipse.jdt.core.IType"/>
+			<watch element="org.eclipse.jdt.core.IAnnotation"/>
+			<watch element="org.eclipse.jdt.core.IMethod"/>
+			<watch element="org.eclipse.jdt.core.ICompilationUnit"/>
+		</finder>
+		<finder
+			category="jaxrs.resource"
+			class="com.ibm.ws.jaxrs.finder.ServiceBinaryFinder">
+			<watch element="org.eclipse.jdt.core.IPackageFragmentRoot"/>			
+		</finder>
+	</extension>	
+	<extension point="com.ibm.ccl.ws.finder.notifier.resource">
+		<finder
+			category="jaxrs.resource"
+			class="com.ibm.ws.jaxrs.finder.ServiceSourceFinder">
+			<watch pattern="*.java"/>		
+		</finder>
+		<finder
+			category="jaxrs.resource"
+			class="com.ibm.ws.jaxrs.finder.ServiceBinaryFinder">
+			<watch pattern="*.jar"/>		
+		</finder>
+	</extension>
+	
+	<extension
+        point="org.eclipse.core.expressions.propertyTesters">
+        <propertyTester 
+            id="com.ibm.ws.jaxrs.core.ResourceTester" 
+        	type="org.eclipse.core.resources.IResource"
+      		namespace="com.ibm.ws.jaxrs.core.properties"
+      		properties="isValidResource"
+      		class="com.ibm.ws.jaxrs.core.tester.ResourcePropertyTester">
+    	</propertyTester>
+ 	</extension>
+
+</plugin>

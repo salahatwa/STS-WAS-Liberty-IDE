@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.m2e.core.lifecycleMappingMetadataSource">
+   </extension>
+
+	<!--<extension point="org.eclipse.m2e.core.projectConfigurators">
+      <configurator 
+          id="com.ibm.etools.maven.javaee.core.jpaConfigurator"
+          class="com.ibm.etools.maven.javaee.core.configurators.JPAProjectConfigurator"
+          name="JPAConfigurator"
+          secondaryTo="org.eclipse.m2e.jdt.javaConfigurator" />
+    </extension>-->
+    
+    <extension point="org.eclipse.m2e.core.projectConfigurators">
+      <configurator 
+          id="com.ibm.etools.maven.javaee.core.cdiConfiguratorUtil"
+          class="com.ibm.etools.maven.javaee.core.configurators.CDIProjectConfigurator"
+          name="CDIConfiguratorUtil"
+          secondaryTo="org.eclipse.m2e.jdt.javaConfigurator"/>
+    </extension>
+    
+    <extension point="org.eclipse.m2e.core.projectConfigurators">
+      <configurator 
+          id="com.ibm.etools.maven.javaee.core.cdiConfiguratorWarEJB"
+          class="com.ibm.etools.maven.javaee.core.configurators.CDIProjectConfigurator"
+          name="CDIConfiguratorWarEJB"
+          secondaryTo="org.maven.ide.eclipse.configuration.wtp.configurator" />
+    </extension>
+    <extension
+          point="org.eclipse.m2e.core.projectConfigurators">
+       <configurator
+             class="com.ibm.etools.maven.javaee.core.configurators.JavaBatchProjectConfigurator"
+             id="com.ibm.etools.maven.javaee.core.javaBatchConfiguratorUtil"
+             name="JavaBatchProjectConfiguratorUtil"
+             secondaryTo="org.eclipse.m2e.jdt.javaConfigurator">
+       </configurator>
+    </extension>
+    <extension
+          point="org.eclipse.m2e.core.projectConfigurators">
+       <configurator
+             class="com.ibm.etools.maven.javaee.core.configurators.JavaBatchProjectConfigurator"
+             id="com.ibm.etools.maven.javaee.core.javaBatchConfiguratorWarEJB"
+             name="JavaBatchProjectConfiguratorWarEJB"
+             secondaryTo="org.maven.ide.eclipse.configuration.wtp.configurator">
+       </configurator>
+    </extension>
+    
+    <!--<extension point="org.eclipse.m2e.core.projectConfigurators">
+      <configurator 
+          id="com.ibm.etools.maven.javaee.core.jaxrsConfigurator"
+          class="com.ibm.etools.maven.javaee.core.configurators.JAXRSProjectConfigurator"
+          name="JAXRSConfigurator"
+          secondaryTo="org.maven.ide.eclipse.configuration.wtp.configurator" />
+    </extension>-->
+    <extension
+          point="org.eclipse.m2e.core.projectConversionParticipants">
+       <projectConversionParticipant
+             class="com.ibm.etools.maven.javaee.core.conversion.WasRuntimeConverter"
+             id="com.ibm.etools.maven.javaee.conversion.WasRuntimeConverter"
+             name="WAS-targeted Java EE project conversion participant"
+             nature="org.eclipse.wst.common.modulecore.ModuleCoreNature"
+             runsAfter="org.eclipse.m2e.wtp.conversion.WebProjectConverter,org.eclipse.m2e.wtp.conversion.EjbProjectConverter,org.eclipse.m2e.wtp.conversion.EarProjectConverter,org.eclipse.m2e.wtp.conversion.AppClientProjectConverter,org.eclipse.m2e.wtp.conversion.ConnectorProjectConverter">
+       </projectConversionParticipant>
+       <projectConversionParticipant
+             class="com.ibm.etools.maven.javaee.core.conversion.LibertyRuntimeConverter"
+             id="com.ibm.etools.maven.javaee.conversion.LibertyRuntimeConverter"
+             name="Liberty-targeted Java EE project conversion participant"
+             nature="org.eclipse.wst.common.modulecore.ModuleCoreNature"
+             runsAfter="org.eclipse.m2e.wtp.conversion.WebProjectConverter,org.eclipse.m2e.wtp.conversion.EjbProjectConverter,org.eclipse.m2e.wtp.conversion.EarProjectConverter,org.eclipse.m2e.wtp.conversion.AppClientProjectConverter,org.eclipse.m2e.wtp.conversion.ConnectorProjectConverter">
+       </projectConversionParticipant>
+       <conversionParticipantConfiguration
+             compatiblePackagings="war,ejb,rar,app-client,jar"
+             conversionParticipantId="com.ibm.etools.maven.javaee.conversion.WasRuntimeConverter">
+       </conversionParticipantConfiguration>
+       <conversionParticipantConfiguration
+             compatiblePackagings="war,ejb,rar,app-client,jar"
+             conversionParticipantId="com.ibm.etools.maven.javaee.conversion.LibertyRuntimeConverter">
+       </conversionParticipantConfiguration>
+    </extension>
+    
+    <extension
+          point="org.eclipse.m2e.core.archetypeCatalogs">
+       <local
+             name="resources/archetypes-catalog/net.wasdev.maven.tools.archetypes/archetype-catalog.xml"
+             description="%catalogDescription">
+       </local>
+    </extension>
+    
+</plugin>

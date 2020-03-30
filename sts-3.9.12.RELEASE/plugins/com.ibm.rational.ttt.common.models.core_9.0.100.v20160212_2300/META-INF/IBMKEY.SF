@@ -1,0 +1,402 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: NHB6PltmLDkVsBN9RNUA57PRAKsSC
+ H3pB1YVji8d2I8=
+SHA-256-Digest-Manifest: tl7ZtML6I82N+95nxrjFyRjip7VDxtJUe4MFYOghVhs=
+Created-By: 1.7.0 (IBM Corporation)
+
+Name: customSecurityDefinition/ICustomSecurityAlgorithm.zip
+SHA-256-Digest: 1ru425vnbdMRTE15xlQ/nvZ/Uv1prtqQqHLTihDXSbI=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2005.07.securitypolicy.ws-se
+ curitypolicy.xsd.xml
+SHA-256-Digest: eILfuySRJHrvDMDMMpXoHOR87ARgjyCgeHBDa7odLXM=
+
+Name: schemas/http.schemas.xmlsoap.org.soap.encoding.xml
+SHA-256-Digest: 57i7X47WqV/4vs/S970YB3ikpHmHsc05HhOnf1gJ2Qc=
+
+Name: lib/open/cxf/asynchhttp/commons-codec-1.9.jar
+SHA-256-Digest: OQTh/KcCLii8Kt2OLdlc7mOUvdMczWhwAUN//HiqxR0=
+
+Name: coremdl.jar
+SHA-256-Digest: zHt4ocgY40HE2V6NltDOgJiduBiKp/tlA08P70quiHw=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.10.wsat.wsat.xsd.xml
+SHA-256-Digest: GLc9DrMSjo6mIAKdF5vJPDaRr9FnAQfZiNZKD7+mvu8=
+
+Name: lib/open/commons-discovery-0.2.jar
+SHA-256-Digest: 2StwPBlFg4hVtNCESGrA9FtXmITMSks27zONwnyYB7g=
+
+Name: lib/open/parsingWsdl/woden-qname-1.0M9.jar
+SHA-256-Digest: wgccHYYgyJhKnR68GNR6Reiah+0YDUoC+J21nwvQa2s=
+
+Name: lib/open/cxf/saml/xmltooling-1.4.1.jar
+SHA-256-Digest: p2+PllU5CAKiGOlCjzuD9uJqZMPKWP6V8to2S4WR5pM=
+
+Name: customhttptransformer/httptransformer.jar
+SHA-256-Digest: Ez8HbvvIeoC2TwNbxALXMu50sg61VbqG7MmCVoCiTPo=
+
+Name: lib/open/cxf/asynchhttp/cxf-rt-transports-http-3.0.3.jar
+SHA-256-Digest: JfQSBKBp0Q0qQ8U5TnqaojaY4b2cWYg7oXCPaXVbmy0=
+
+Name: lib/open/rampart/rampart-policy-1.6.2.jar
+SHA-256-Digest: 7yVMA1/ENVuU+qUS0EFsSQTGrkI6dU5Ait8A5qaBaCU=
+
+Name: schemas/http.docs.oasis-open.org.wsn.br-2.xsd.xml
+SHA-256-Digest: yuKybF3LG6jo7KpWN8GFOjBLmYqlHecNpkm2WjYLtzg=
+
+Name: lib/open/rampart/rampart-trust-1.6.2.jar
+SHA-256-Digest: SzxY0h+GgIzsN1Etzvz1fwu0zB3TgQyRPyLr6maUNCk=
+
+Name: schemas/http.www.w3.org.2005.08.addressing.ws-addr.xsd.xml
+SHA-256-Digest: 0hoQTXRIwvcBi7DIRb8ocwBlMDeElFlmCyivDyhde4k=
+
+Name: lib/open/cxf/jaxws/cxf-rt-ws-policy-3.0.3.jar
+SHA-256-Digest: +kwov6vR2+o10LQH5vFv8Z5YGgNfBZPSbRMaxpZxkvc=
+
+Name: schemas/http.schemas.xmlsoap.org.wsdl.mime.xml
+SHA-256-Digest: n8mipxCk9d0WMfSubY/CzvUnQNHiMO9oKulpuxfHv1c=
+
+Name: schemas/http.www.w3.org.2004.08.xop.include.xsd.xml
+SHA-256-Digest: MnaLlGN60a12ep8XNxdC3Z+3EyG3o7111tfR97HMHTw=
+
+Name: lib/jmslibs/sibc.jms.jar
+SHA-256-Digest: 574XeohPJs0DCXIEZ4naTCG/Lol24KOgC+GGxJgFZIU=
+
+Name: lib/open/cxf/wssec/wss4j-policy-2.0.2.jar
+SHA-256-Digest: UjMHeDzNeWqDTDlFNaPH0A+kgGha4ewIKmYdc1Vg6ts=
+
+Name: lib/wmqlibs/com.ibm.mq.jar
+SHA-256-Digest: A4wABq+BfMddnqdRIjPCwa/LDM6dhPfUd5+YX1LTLU4=
+
+Name: dotnet/client/bin/Soa-Behavior-Library.pdb
+SHA-256-Digest: w/Bj0qnvhoEQ2BGc5Y4MJafy4ONSXJYiz89ljY1+JU8=
+
+Name: lib/wmqlibs/com.ibm.mq.jmqi.jar
+SHA-256-Digest: n10nrou4D+cdxWgFoqoBxpRU3fAQPc4XYUq1Xsj129o=
+
+Name: lib/open/cxf/mex/cxf-rt-ws-mex-3.0.3.jar
+SHA-256-Digest: 5493WNJOKR0O8yM8JqIqqEhQhrwPwKVpAtw5DTg3Ths=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.09.policy.ws-policy.xsd
+ .xml
+SHA-256-Digest: mCFxuwrkgyxB5wB0JG3Ex9UGzRXyBYNdNEWMs+KzF2E=
+
+Name: lib/open/cxf/mandatory/stax2-api-3.1.4.jar
+SHA-256-Digest: VAIzbgdai0JoSoSBbdGJx0d/wtctlHyAzI3qeBq9PnU=
+
+Name: customSecurityDefinition/customSecurityDefinition.jar
+SHA-256-Digest: 4O5F9mkCTGw1+YfxXCy3RHHyhJ9Tpc9XsGkMYy/9Z0I=
+
+Name: lib/open/http/httpclient-4.3.1.jar
+SHA-256-Digest: SCURtwc4DVv0O5wfQFJboOBDf/kNnpmLCK2OsfK52z4=
+
+Name: lib/open/cxf/saml/joda-time-2.2.jar
+SHA-256-Digest: KNzJ5tV8Ph7l/ncSZ3L94Uas+wvaprcmoLlg/NRwWv4=
+
+Name: schemas/http.www.w3.org.1999.part2.xsd.xml
+SHA-256-Digest: K9WnKUL9m0QaCIVOS0kYxtkO4dhgcd2LCm3cv7l8qcM=
+
+Name: lib/open/cxf/rt/cxf-rt-frontend-simple-3.0.3.jar
+SHA-256-Digest: zgO2f1yXwpYPi7KLKcED7hhsvchSYY0zkLKtJOtQj4g=
+
+Name: lib/open/parsingWsdl/woden-api-1.0M9.jar
+SHA-256-Digest: rpTSguP+AuAZrASpU3dpjL/qR0pm0hgZchT/GPO78Qg=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.10.wscoor.wscoor.xsd.xm
+ l
+SHA-256-Digest: KXeywQ384ynZcUiR8ACprE1wDBy/fL9iVPkXQ2dhzOs=
+
+Name: lib/open/cxf/mandatory/slf4j-jdk14-1.7.7.jar
+SHA-256-Digest: d5/j5O6vRqYFhwogUwTgy9/CbxPWdpORGxjh74aYtyg=
+
+Name: lib/open/cxf/wssec/cxf-rt-ws-security-3.0.3.jar
+SHA-256-Digest: a9/hnkltFssZJ/LcZoThckM/jPnhdz5M4vnCSyEMc2A=
+
+Name: lib/approvedbouncy/jce-jdk13-154.jar
+SHA-256-Digest: /fCSXyqXARICAdnfdblZwsw1yCd2lALG8GHZ3uI2tiY=
+
+Name: lib/open/cxf/mandatory/slf4j-api-1.7.7.jar
+SHA-256-Digest: bORy62/nDwGlfzfWOe0GMerOmIOtq6NABXq5F/nMxT0=
+
+Name: schemas/http.www.w3.org.2006.03.addressing.ws-addr.xsd.xml
+SHA-256-Digest: sNoWQXOiRtE7MczesV6wYTMOLg2nNyc1YwtjtkDPYOg=
+
+Name: lib/wmqlibs/jms.jar
+SHA-256-Digest: tqDfpAtxqVHPQ02pDOItpvW492ZPr8HBCke13m+VaEM=
+
+Name: lib/open/cxf/jaxws/cxf-rt-bindings-soap-3.0.3.jar
+SHA-256-Digest: 1x+rcL8j2elMWNRQkNuY8H2JgtEqvqs/1+Bvnu/yA4k=
+
+Name: lib/attachment/activation.jar
+SHA-256-Digest: bHIARLxRtYX0o2IdAweWFk/ahb7aOnKPHDjgzUj4k4g=
+
+Name: lib/wmqlibs/com.ibm.mq.commonservices.jar
+SHA-256-Digest: nSHfsMgI8F1RsrbQ3G3V5G7EEDcZYQynS/pwKesOSho=
+
+Name: lib/approvedbouncy/bcpkix-jdk13-154.jar
+SHA-256-Digest: L0/JE62yiqGcFw0c8CxZD+LSHtwskdPRXv48PAP6NwE=
+
+Name: resources/modules/mtompolicy-1.6.2.mar
+SHA-256-Digest: 4HP2BCj018dTYoQT189X/YRPLHNGT22zvf/Dv5/isqo=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-stax-2.0.2.jar
+SHA-256-Digest: 3NCvVYJHxGIPRxFmqvSk9hclq28jjDOW8qVWgMh7n24=
+
+Name: lib/attachment/mail.jar
+SHA-256-Digest: 7Ffe0AG4lfzaj0H6ceijE4cT1kCTHysHIZwmOdjX8A4=
+
+Name: lib/open/rampart/XmlSchema-1.4.7.jar
+SHA-256-Digest: ftJ6MdpgC0HXXc/tBs/59BaHm0FFLK87vHXyEhCJsEQ=
+
+Name: lib/open/cxf/spring/spring-beans-3.2.6.RELEASE.jar
+SHA-256-Digest: BpqMww//jANS5ycEUFIAUe9Qa7UIQUgGy+Pxo17vA48=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.08.addressing.xml
+SHA-256-Digest: kH01kXWbSHAlhzDNa6JbeUJtfO5UEDzrLs/weJfsKUY=
+
+Name: dotnet/client/bin/soaclient.exe
+SHA-256-Digest: KzYXH9uCZiOUx0KQAfPhb4zD1wSlhg8uzvaS/LUhQtU=
+
+Name: resources/rampartCfg.xml
+SHA-256-Digest: TwLgY7/2DH7X4xNCtvnejQHJIquL84i6cwngpLpYe30=
+
+Name: plugin.xml
+SHA-256-Digest: BfslFqE9vgj+hWxEMKwKEX9oq63xHE+p9GTlKjIbLmE=
+
+Name: lib/open/parsingWsdl/woden-impl-commons-1.0M9.jar
+SHA-256-Digest: FERAaCG+fKyLxX4vV6rty6mMECk5t1NHAMoR2zEVTsU=
+
+Name: lib/regularexpression/xeger-1.0-SNAPSHOT.jar
+SHA-256-Digest: pN4KxMvIDToqLJgDRr4iU7cbLCPT/K8wtuUk4VuJwwY=
+
+Name: lib/open/cxf/jaxws/cxf-rt-wsdl-3.0.3.jar
+SHA-256-Digest: rSE45U9BoIn5c2HTmkStYDArbSSzLcCiSlHE2DMXwJk=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-common-2.0.2.jar
+SHA-256-Digest: 0UcxYHLeqHmDet0014i1E43d8QvP+Csaj7H0+2oGyBA=
+
+Name: schema/XSDFileOperationListener.exsd
+SHA-256-Digest: E77hLiJkt0n4moFi8ZaKrhnjmcmhu7rjydtGQC7XvkU=
+
+Name: schemas/http.docs.oasis-open.org.ws-sx.ws-trust.200512.ws-trust-
+ 1.3.xsd.xml
+SHA-256-Digest: zjeYjzziStFO/Ynvz5v9De4gmSY3jKQziLhbhJO0C0U=
+
+Name: lib/wmqlibs/com.ibm.mq.jms.Nojndi.jar
+SHA-256-Digest: 0Lwf9pEdbXu+sCuHZi1pE85fketRWu4RoEqHXu4kLMs=
+
+Name: lib/open/cxf/jaxws/cxf-rt-ws-addr-3.0.3.jar
+SHA-256-Digest: TZSW8b4ihkR4QxtOMGLgURHX5VjZOBkwpWAdSoXQcag=
+
+Name: lib/wmqlibs/dhbcore.jar
+SHA-256-Digest: M+67jlRLSa7x+fWqOjoXbLAeQKy67nk/0c9eTF35lKE=
+
+Name: lib/wmqlibs/fscontext.jar
+SHA-256-Digest: vKLTwwIjMM2vvNBFtnasObDN5zhFFgfkQj1UvNUOXTM=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-dom-2.0.2.jar
+SHA-256-Digest: 8jTRS8rVQ8OhfDnHI84rUKk5qk1CFix4ue+7wbGQ+i8=
+
+Name: lib/open/commons-logging-1.1.1.jar
+SHA-256-Digest: KGK6gOzHM/d9LdfFA5uSRWedbgenDtKo2W6F0eBOj6U=
+
+Name: customSecurityDefinition/CustomSecurityTest.jar
+SHA-256-Digest: QKC4unzgYtwv4M5dr//1WnlpCUL5fn4+aozTZez3e+0=
+
+Name: lib/wmqlibs/com.ibm.mq.headers.jar
+SHA-256-Digest: dype4EEYpv0T7B4WOR2XTsUf4r26Du51dEfU1QUKLsk=
+
+Name: lib/open/rampart/rampart-core-1.6.2.jar
+SHA-256-Digest: QVOZ1AyUi4buTbbD3ub4ohLGnKEr9d5PAmrwRqhmXSI=
+
+Name: lib/open/cxf/neethi/neethi-3.0.3.jar
+SHA-256-Digest: 3KpFimz9JoAM/VaFKqC5GCtluB2DCeTSVsDswQbIXJ4=
+
+Name: lib/jmslibs/sibc.jndi.jar
+SHA-256-Digest: J4iEMIz2FLjF0fEMLHlav/woW80XI2SuosRLfzgPZnI=
+
+Name: lib/open/cxf/mandatory/cxf-core-3.0.3.jar
+SHA-256-Digest: QPV++RrFXpNRJlIlHhKofVurmNtiNsdxUD/cwSX9C3M=
+
+Name: lib/wmqlibs/connector.jar
+SHA-256-Digest: l7LMBJ3XyCWlgDd9KFG+LVYhO1flBnWYrRdvCnPfc6w=
+
+Name: lib/open/cxf/security/cxf-rt-security-3.0.3.jar
+SHA-256-Digest: nARS5Y2bf0FmDb0SaaQmBbjsubU1y7Xq0LjyXvb7tAw=
+
+Name: schemas/http.docs.oasis-open.org.wsrf.bf-2.xsd.xml
+SHA-256-Digest: 9wwg/DriqWYfseo1d9atp6BOyz0R1ZgMV4ynCH5IXYg=
+
+Name: lib/wmqlibs/ldap.jar
+SHA-256-Digest: ADB4vbieLsehvMkCrhamxmlfDjjFK9/alaXRvlmuTj8=
+
+Name: lib/open/cxf/jaxrs/axiom.jar
+SHA-256-Digest: PwSqy7noL63gDIU5/3eiczSj4xPE+38rRGUZLJJ2F3w=
+
+Name: lib/open/axis.jar
+SHA-256-Digest: S/ebZM184MMABDxn0Ba0VcQ0JqPpxxhqAtWaPrev59k=
+
+Name: schemas/http.schemas.xmlsoap.org.wsdl.soap.xml
+SHA-256-Digest: TzKgmg0ePsCnUz34pQYY0aCNa6UysKey59qN4vtpTZY=
+
+Name: lib/open/cxf/wssec/jasypt-1.9.2.jar
+SHA-256-Digest: lkkkLHluk+eEuEPTk10xKlyc8P3Wi9PHO2oNpqjQny4=
+
+Name: schemas/http.www.w3.org.2003.05.soap-encoding.xml
+SHA-256-Digest: GP68Mnv7zMWd87Aw03JqdzV6acdOasQgORzW7Xeajho=
+
+Name: lib/open/parsingWsdl/woden-impl-dom-1.0M9.jar
+SHA-256-Digest: ovMk7cu5VG5bzNSqszqJOPZn5EHsUgmfnZJG3PkRDug=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2005.02.trust.WS-Trust.xsd.x
+ ml
+SHA-256-Digest: mIU9YCJVGgT7JtPpYO0eL3eC5ZRmA6vQqUtf44vYDek=
+
+Name: schemas/http.docs.oasis-open.org.wsn.t-1.xsd.xml
+SHA-256-Digest: qKe0CAA5QdkKDYwYHTEArtEN27H3xv8a4bnABY96jlI=
+
+Name: lib/open/cxf/stdahttpjetty/jetty-util-8.1.15.v20140411.jar
+SHA-256-Digest: Px8xZAKmBOoEDMYN7L8YauVhSWFAH/KZjSTKj2+BTNg=
+
+Name: plugin.properties
+SHA-256-Digest: 660VmOGSznlZnprnuc5pehlbYaWn26SmjOCixJHcOlE=
+
+Name: lib/open/cxf/mandatory/xmlschema-core-2.1.0.jar
+SHA-256-Digest: KznMsFkw68WX32M+AD3oDI+l1e2aTlo22bmy8JLEoL4=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2005.02.rm.wsrm.xsd.xml
+SHA-256-Digest: 44SVOObro7mXZrDWFsiDJ5zB/lgFs5IlJOSQBZKieJU=
+
+Name: lib/open/cxf/spring/spring-context-3.2.6.RELEASE.jar
+SHA-256-Digest: iCgMpXYZwhl9IXmC2O95/MPrxNT0spOCkDJ5HEPwsPU=
+
+Name: schemas/http.schemas.xmlsoap.org.soap.envelope.xml
+SHA-256-Digest: n+ec2gsZCBC0+SISc5TH4YrGhIvealzHWVtLKdMJfXE=
+
+Name: schemas/http.docs.oasis-open.org.wsn.b-2.xsd.xml
+SHA-256-Digest: 7qoKzosxcR80WkcasRcH0IyiVqbrIUZ+QrO6TGWqW+o=
+
+Name: dotnet/client/bin/Soa-Behavior-Library.dll
+SHA-256-Digest: wRmfOnQtvYLrHBpefGfq/uu0tL5z+YRjlTZPr+THM7Q=
+
+Name: lib/open/parsingWsdl/wsdl4j.jar
+SHA-256-Digest: AkLMuTWeAQqe6DwAsGme+mZC0MMp0E5AmscqXf3BGYI=
+
+Name: lib/open/http/httpcore-4.3.jar
+SHA-256-Digest: Ty7qoTqHB3IxPhvPUAJDBdqNLhKsrw8bz7LVLma6lVQ=
+
+Name: schemas/http.docs.oasis-open.org.wss.v1.1.oasis-wss-wssecurity-s
+ ecext-1.1.xsd.xml
+SHA-256-Digest: tA8cAbYmGcuDsQuJaO03biqKj0Wu+sryRf5/jzulHWw=
+
+Name: lib/open/parsingWsdl/woden-tool-1.0M9.jar
+SHA-256-Digest: jI2g0IapA5htdkM3otY++3VQLz1f+aWArSLXMZfn0ew=
+
+Name: schemas/http.www.w3.org.2001.03.xml.xsd.xml
+SHA-256-Digest: V2Hh0U26PcBccFz6Q2Hw06ckQTIeLtkEeNOwFjOT3II=
+
+Name: lib/open/cxf/spring/spring-core-3.2.6.RELEASE.jar
+SHA-256-Digest: MnOaq3moU7Xu4kRCe4ohLUwQ8WW8zDd2oeJCxtXEIOY=
+
+Name: lib/open/cxf/saml/opensaml-2.6.1.jar
+SHA-256-Digest: iUTV23QR5bN4R/A9405PEPMeJZMyz37M840e/6wJzS0=
+
+Name: lib/open/cxf/common/commons-lang-2.6.jar
+SHA-256-Digest: koVbJBDmjvwqqcJetoS1BaRAPXn6vtOENW/IBR60Jj0=
+
+Name: schemas/http.www.w3.org.2001.xml.xsd.xml
+SHA-256-Digest: zs5A2/LL0vxSNVOHPyDwXBxiPI9YjBkH2ngW7NwYzlY=
+
+Name: lib/open/cxf/jaxws/cxf-rt-databinding-jaxb-3.0.3.jar
+SHA-256-Digest: m7Csuf6eyrS2YAD2hh6u34tr0m60HZCtcCDQoK+xB94=
+
+Name: lib/open/rampart/axis2-kernel-1.6.2.jar
+SHA-256-Digest: e5OdknheqRddN4Axnsym7h7T9cR9MLZTLzkSBKk3eCc=
+
+Name: lib/wmqlibs/jta.jar
+SHA-256-Digest: DUV93vU5OKmRPWhDl+dRoEY73YTrhwq6mYuRBSLwiNc=
+
+Name: schemas/http.docs.oasis-open.org.wss.2004.01.oasis-200401-wss-ws
+ security-utility-1.0.xsd.xml
+SHA-256-Digest: iQSGqiC/uTm818EoNoGZHYBW+D+BGzT0LV2vfKnQkK4=
+
+Name: schemas/http.schemas.xmlsoap.org.wsdl.xml
+SHA-256-Digest: WfMyIWppCHCoHn1SJdYjUNv/n/MlGljMZAlKV3lg1vc=
+
+Name: schemas/http.www.w3.org.1999.XMLSchema.xsd.xml
+SHA-256-Digest: 8Svhw/PYsG7NWI1RAMTXCa2Wty9iC038X8CfkqhbfIQ=
+
+Name: resources/modules/rampart-1.6.2.mar
+SHA-256-Digest: Bg64fEUNXqdJgpf/WQpae3zFda3L0wtOsqy8oZZ9XDI=
+
+Name: schemas/http.www.w3.org.2004.08.xop.include.xml
+SHA-256-Digest: wt4CUUreYkg1u4WwC1DTmWc5c5MhTV6N27ksskBqFbY=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.10.wsba.wsba.xsd.xml
+SHA-256-Digest: V0Jo6ue4IRd85ajeO8fyynQx9se32kQEPaYYGLdiB5o=
+
+Name: lib/open/cxf/wssec/wss4j-ws-security-policy-stax-2.0.2.jar
+SHA-256-Digest: 0nw/wVNFl8QDJTn2blpDHGIowlTK0JOKU+j7+7DKO/A=
+
+Name: lib/open/cxf/jaxws/cxf-rt-frontend-jaxws-3.0.3.jar
+SHA-256-Digest: dT3uMHnW75KuZpG6jGf8BITTMFcE+1GmApUpzwlmjf0=
+
+Name: lib/open/parsingXml/serializer-2.7.1.jar
+SHA-256-Digest: phxNg7HIaNoghjR1SY2c3HtV6qPGIhOIQNgUXiMCfuQ=
+
+Name: schemas/http.www.w3.org.2001.XMLSchema.xsd.xml
+SHA-256-Digest: AjLCf8DU4HLUpQUIJdjLgp1s7RZHVuGehtYWxnAtkEY=
+
+Name: lib/open/cxf/mandatory/jcl-over-slf4j-1.7.7.jar
+SHA-256-Digest: WCcNgcFyj+rLg1XlpgOITDNp75WK/MKrkn7/urfseCM=
+
+Name: resources/modules/addressing-1.6.2.mar
+SHA-256-Digest: 4UK8cxWaKmDpJONSBRfeweP1UQ5CXbF7Mg9JB1DQh2g=
+
+Name: schemas/http.www.w3.org.2003.05.soap-envelope.xml
+SHA-256-Digest: iAUfmg+fVJvpmH0SoEsPKjk/eeY4v4vbePuNp+iG+Js=
+
+Name: customSecurityDefinition/CustomSecurityAlgorithm.template
+SHA-256-Digest: /6gstNkXNJ7oYmsl9TpR9G4MvxdPkR0+8HV7BkqGYXA=
+
+Name: lib/wmqlibs/com.ibm.mq.pcf.jar
+SHA-256-Digest: 6gRDABaaaXjaOSQK2LdQZn3Fl8YQaHWhl0BqNhcSmWo=
+
+Name: lib/open/rampart/wss4j-1.6.14.jar
+SHA-256-Digest: 3Njb2nIrzlX9vfamFbtQY1iNEkXzW1hoI/unUt0lVHo=
+
+Name: resources/modules/mex-1.6.2.mar
+SHA-256-Digest: um5rbJ2uJgmE3c5BHoNrUJJSmbzWMbDG1EqyeRxQFRo=
+
+Name: lib/open/cxf/wssec/wss4j-bindings-2.0.2.jar
+SHA-256-Digest: lme7EzJVZldwGKguH/wL+51Tt6Upv0OrfyjXC2ajitg=
+
+Name: lib/open/cxf/kerberos/apacheds-kerberos-shared-1.5.5.jar
+SHA-256-Digest: zxPHB7d0/TtiG5dIQN4gfrRlK3YvL47tB+DHcadEfbE=
+
+Name: lib/open/cxf/wssec/xmlsec-2.0.2.jar
+SHA-256-Digest: wVlDvFfVOGGSxbaxArzDTgHNns6y9DOysrfbmpM0PYs=
+
+Name: schemas/http.docs.oasis-open.org.wss.2004.01.oasis-200401-wss-ws
+ security-secext-1.0.xsd.xml
+SHA-256-Digest: zO37mX1AmT3k4WOlIEqOt/sBHHakWAfqtEkpMjttw8M=
+
+Name: lib/regularexpression/automaton.jar
+SHA-256-Digest: ZQoofTljbBS3soG8qo3xFbkLJaMPEwPHu8nXwGFQO5Y=
+
+Name: lib/open/cxf/saml/openws-1.5.1.jar
+SHA-256-Digest: Uo+QNi0ZoFERoTREw8rwrZ7M31SRpx35aMtrA1x9TAg=
+
+Name: schemas/http.schemas.xmlsoap.org.ws.2004.09.mex.MetadataExchange
+ .xsd.xml
+SHA-256-Digest: Sde9giXQ9XsCj9UGMOuh01QIDZWpp4cTk9Q2nnpwrYE=
+
+Name: lib/wmqlibs/jndi.jar
+SHA-256-Digest: 30ZjoZjLalUeVAEWA99LBxEG50GUlOeuOoYlfWbdF50=
+
+Name: lib/open/cxf/mandatory/woodstox-core-asl-4.4.1.jar
+SHA-256-Digest: bUFr9OrJygt90JAXNHY7aWj9rXXrMQYSSuZRGTyhFYE=
+
+Name: lib/wmqlibs/com.ibm.mqjms.jar
+SHA-256-Digest: 6/hwHl59Ubr5tDjPfsFmQENrgIEKRzt+MAIvgJir4E0=
+

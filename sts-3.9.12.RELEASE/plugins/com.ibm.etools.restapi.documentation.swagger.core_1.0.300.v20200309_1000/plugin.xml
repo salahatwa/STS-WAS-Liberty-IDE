@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension
+        point="org.eclipse.core.expressions.propertyTesters">
+        <propertyTester 
+            id="com.ibm.etools.openapi.core.tester.OpenAPIResourcePropertyTester" 
+        	type="org.eclipse.core.resources.IResource"
+      		namespace="com.ibm.etools.openapi.core.tester"
+      		properties="isValidResource"
+      		class="com.ibm.etools.openapi.core.tester.OpenAPIResourcePropertyTester">
+    	</propertyTester>
+ 	</extension>
+ 	
+ 	<extension point="com.ibm.ws.st.core.requiredFeatures">
+    		<requiredFeatures
+      		id="com.ibm.ws.st.runtime.restapi.documentation.openapi"
+      		priority="0"
+      		class="com.ibm.etools.openapi.core.internal.OpenApiFeatureResolver">
+      		<module type="jst.web"/>
+      	</requiredFeatures>
+    </extension>
+    
+    <!-- Content type for openapi json files not necessarily named openapi.json.  Extend base
+         content type from wst so that the files can be opened in the JSON editor.
+         (Instead of org.eclipse.core.runtime.text) -->
+    <extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type id="com.ibm.etools.openapi.source" name="%openapiSourceName" 
+			base-type="org.eclipse.wst.json.core.jsonsource"
+			priority="high"		
+			file-extensions="json">
+			<describer class="com.ibm.etools.openapi.core.OpenApiContentTypeDescriber" />
+		</content-type>
+    </extension>
+</plugin>

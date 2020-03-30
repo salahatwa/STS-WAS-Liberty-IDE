@@ -1,0 +1,18 @@
+<wsp:PolicyAttachment wsdlNamespace="##TARGET_NAMESPACE##">
+	<wsp:AppliesTo>
+		##APPLIESTO_VALUE##
+	</wsp:AppliesTo>
+	<wsp:Policy wsu:Id="##POLICY_NAME##">
+		<sp:SupportingTokens>
+			<wsp:Policy>
+				<sp:UsernameToken sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient">
+					<wsp:Policy>
+						<sp13:Created />
+						<sp13:Nonce />
+						<sp:WssUsernameToken11 />
+					</wsp:Policy>
+				</sp:UsernameToken>
+			</wsp:Policy>
+		</sp:SupportingTokens>
+	</wsp:Policy>
+</wsp:PolicyAttachment>

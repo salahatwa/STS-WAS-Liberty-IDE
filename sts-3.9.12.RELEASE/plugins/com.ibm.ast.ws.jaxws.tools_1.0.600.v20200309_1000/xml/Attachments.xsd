@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:wsp="http://www.w3.org/ns/ws-policy">
+
+	<xsd:import namespace="http://www.w3.org/ns/ws-policy"></xsd:import>
+
+	<xsd:element name="attachments" type="AttachmentsType"></xsd:element>
+
+	<xsd:complexType name="AttachmentsType">
+		<xsd:sequence>
+			<xsd:element ref="wsp:PolicyAttachment"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

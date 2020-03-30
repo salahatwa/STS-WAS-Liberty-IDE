@@ -1,0 +1,212 @@
+Manifest-Version: 1.0
+Export-Package: com.ibm.etools.maven.javaee.core.model,com.ibm.etools.
+ maven.javaee.core.project
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: bundle
+Bundle-Name: %Bundle-Name
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)
+ ",org.eclipse.core.resources;bundle-version="[3.6.0,4.0.0)",org.eclip
+ se.m2e.wtp;bundle-version="[1.0.0,2.0.0)";resolution:=optional,org.ec
+ lipse.m2e.core;bundle-version="[1.1.0,2.0.0)";resolution:=optional,or
+ g.eclipse.m2e.maven.runtime;bundle-version="[1.1.0,2.0.0)";resolution
+ :=optional,org.eclipse.wst.common.project.facet.core;bundle-version="
+ [1.4.102,2.0.0)",org.eclipse.wst.common.frameworks;bundle-version="[1
+ .2.0,2.0.0)",org.eclipse.jst.common.project.facet.core;bundle-version
+ ="[1.4.0,2.0.0)",org.eclipse.jst.j2ee;bundle-version="[1.1.404,2.0.0)
+ ",com.ibm.etools.javaee.cdi.core;bundle-version="[1.0.0,2.0.0)",com.i
+ bm.etools.javaee.core;bundle-version="[1.0.202,2.0.0)",com.ibm.etools
+ .annotations.core;bundle-version="[1.0.209,2.0.0)",com.ibm.jee.batch.
+ core;bundle-version="[1.0.100,2.0.0)";resolution:=optional,org.eclips
+ e.jst.ws.jaxrs.core;bundle-version="[1.0.204,2.0.0)",org.eclipse.wst.
+ server.core;bundle-version="[1.1.209,2.0.0)",org.eclipse.jem.util;bun
+ dle-version="[2.1.3,3.0.0)",org.eclipse.m2e.model.edit;bundle-version
+ ="[1.3.0,2.0.0)";resolution:=optional,org.eclipse.m2e.core.ui;bundle-
+ version="[1.3.0,2.0.0)";resolution:=optional,org.eclipse.jst.j2ee.cor
+ e;bundle-version="[1.3.0,2.0.0)",org.eclipse.ui.workbench;bundle-vers
+ ion="[3.0.0,4.0.0)",com.ibm.ws.st.core;bundle-version="[1.0.710,2.0.0
+ )",org.eclipse.wst.common.modulecore
+Ant-Version: Apache Ant 1.8.4
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 1.1.605.v20200309_1000
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.ibm.etools.maven.javaee.core.MavenJavaEEPlugin
+Import-Package: com.ibm.ws.st.liberty.buildplugin.integration.manager.
+ internal,com.ibm.etools.maven.liberty.integration.manager.internal,or
+ g.eclipse.debug.core,org.eclipse.debug.core.model,org.eclipse.jdt.lau
+ nching
+Bundle-SymbolicName: com.ibm.etools.maven.javaee.core;singleton:=true
+
+Name: com/ibm/etools/maven/javaee/core/project/MavenProjectEditor$3.cl
+ ass
+SHA-256-Digest: e/OGkguhCYAGv8zZttNMiBU5eWPX9fBEnrk+PymoJa8=
+
+Name: resources/scripts/Liberty 8.5.5 Plugins Installer/pom.xml
+SHA-256-Digest: NlggzXgDL4AtQ6un82BVUr6rvkAq29gk86ncWDSI7G4=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/JavaBatchProjectC
+ onfigurator.class
+SHA-256-Digest: /FvB2PEuRGwILf5a03rEycbAWEXHSGRM8oDGO/gjndU=
+
+Name: resources/scripts/WAS 8.5.5 Plugins installer/pom.xml
+SHA-256-Digest: bTBDHnsFN4sOcQll1yPbEMlBRCXcbaYZa3Jg3Ad8X/Q=
+
+Name: com/ibm/etools/maven/javaee/core/project/IMavenProjectEditor.cla
+ ss
+SHA-256-Digest: W3UoIKxl4BjKn+SK39T/zJ9cHwtc2n75i1M9P1j3lCA=
+
+Name: resources/scripts/WAS 8.5.5 Fix Pack 1 Plugins installer/pom.xml
+SHA-256-Digest: Bf7tcLqQMZOVzw/ckzxcS/+wWeqXmNsBVU8bVFqGorw=
+
+Name: resources/scripts/WAS 8.5.0 Fix Pack 2 Plugins installer/pom.xml
+SHA-256-Digest: oGR/gAlaeV1PeIuDnwAZjF+b9Lyx7FvG/FVzdKD6Sqw=
+
+Name: bundle.properties
+SHA-256-Digest: nTc5LTlZ/K2jtEEZTaCS5nBg9ggAANl57VvRlaT1Mrw=
+
+Name: com/ibm/etools/maven/javaee/core/xml/PersistenceXMLParser$Persis
+ tenceXMLHandler.class
+SHA-256-Digest: BEY+jlQ8wLsWKKEMB/VGb6oO+Bz46qWxpn+AyCZOYMU=
+
+Name: com/ibm/etools/maven/javaee/core/project/MavenProjectEditor.clas
+ s
+SHA-256-Digest: YN7A88reO/gzJAXuO7Blm2ijB3SSZgg1vOS1UJT5xa8=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/JPAProjectConfigu
+ ratorDelegate.class
+SHA-256-Digest: 1WtpIrp+NxGsp7wEkMeFWAITi44hfaUVMH9i01GESHo=
+
+Name: com/ibm/etools/maven/javaee/core/archetypes/MavenArchetypesCatal
+ og.class
+SHA-256-Digest: ryieStjzKBx07bhAKY1wc5G9DxCDgIYU1d7q5QuflJA=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/JAXRSProjectConfi
+ gurator.class
+SHA-256-Digest: A1WVaYJUohBU20gNBhHN1uEaSLIqP4yN7gO818y95ok=
+
+Name: com/ibm/etools/maven/javaee/core/model/ModelProviderManager.clas
+ s
+SHA-256-Digest: 1b5jnj+XAusscWN5Z5dgFIGsOumtZTKwoo+Ayco5WV4=
+
+Name: .options
+SHA-256-Digest: mr7k0Q2xGQHqG9GkytBWZwhPKNy+Sq2W6d0On4CXMs0=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/CDIProjectConfigu
+ ratorDelegate.class
+SHA-256-Digest: lSUyr5N+MRp/fY485m3yx6YQ4ULhzkgPfybw+6XEGN4=
+
+Name: com/ibm/etools/maven/javaee/core/Trace.class
+SHA-256-Digest: xK7A3UmYT+hWeIvhckePPSH2+7AtTn/ulY1Iep1xwk0=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/JAXRSProjectConfi
+ guratorDelegate.class
+SHA-256-Digest: TnXD67sMqJRzhpUM4GuHDEt/caXNkBy8Jea5x1Xr/sk=
+
+Name: com/ibm/etools/maven/javaee/core/conversion/WasRuntimeConverter.
+ class
+SHA-256-Digest: 1GIGP8Vt9IvICchpJettmNsT+9NrO4hidZ8n2HYHkx8=
+
+Name: com/ibm/etools/maven/javaee/core/MavenJavaEEPlugin.class
+SHA-256-Digest: rZsUde1OsusI79ChtPYJoRGwhJpu5VyLPKsNNczJLBg=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/AbstractProjectCo
+ nfiguratorDelegate.class
+SHA-256-Digest: ObptjizNa0j2lvHpxijVmH7+t3QBuzYMZnNWryQMQTQ=
+
+Name: resources/scripts/WAS 8.0.0 Fix Pack 7 Plugins installer/pom.xml
+SHA-256-Digest: sPg4+rhI/GQncqgBXUHuhS5+VQ6gWZ78dS8ctLcwqcA=
+
+Name: com/ibm/etools/maven/javaee/core/xml/PersistenceXMLParser.class
+SHA-256-Digest: gj8zi3zj0lJLXXegvUsJtyEe2viY2AX4psJiNdYn1Js=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/JPAProjectConfigu
+ rator.class
+SHA-256-Digest: hvTkzuhmYfxVqGGBlVxsSfkFT6U6ao6dr/mBziSDMAM=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/CDIProjectConfigu
+ rator.class
+SHA-256-Digest: 58yzdpgTkmJuoocG9et0HsViKQe4xV4FKmltgU7B21E=
+
+Name: com/ibm/etools/maven/javaee/core/project/MavenProjectEditor$2.cl
+ ass
+SHA-256-Digest: mAfOuOoavJHTSla0wZNEKznR2xRFGis2l5PX4iAV7/I=
+
+Name: resources/scripts/Liberty 8.5.0 Plugins Installer/pom.xml
+SHA-256-Digest: S1gOuOg2VmxGDXxuP1OL/YSGYTQheTKTTRwZrvXNPRM=
+
+Name: com/ibm/etools/maven/javaee/core/conversion/BaseRuntimeConverter
+ .class
+SHA-256-Digest: Bmq7oRIS7sPwykBYuEEzQZONzMUfo85FB3uHmMgwLnI=
+
+Name: com/ibm/etools/maven/javaee/core/model/IModelProvider.class
+SHA-256-Digest: Cep4RAxJJI7a0rJYQfXOp1tCKVFiDlqXA8Ij1wZQ06M=
+
+Name: resources/RunConfigurations/WAS8PluginsInstaller.launch
+SHA-256-Digest: YtOmBrbT7dz9CQr2Abc/92ygpxMca0L36AY/6GSg8d0=
+
+Name: com/ibm/etools/maven/javaee/core/project/RuntimeDependencyFactor
+ y.class
+SHA-256-Digest: s4uuXP8VMAQsFvBVhLE8GzMt+74wus0ezRd5YYaX5Tc=
+
+Name: resources/RunConfigurations/Liberty855PluginsInstaller.launch
+SHA-256-Digest: 8UlrTEEbgY/kRcT0pmnor+Wcq/fP9U7k5EeTlOxNff8=
+
+Name: resources/scripts/WAS 8.5.0 Plugins installer/pom.xml
+SHA-256-Digest: 5tBzXww6QtdOKOf7a0rQoVARkHIklUJncU/eACXlhk0=
+
+Name: lifecycle-mapping-metadata.xml
+SHA-256-Digest: ZjKv0I95Oo3xmTdzX5kFfBSheiitml4CfxMVyijkucU=
+
+Name: com/ibm/etools/maven/javaee/core/model/internal/MavenProjectMode
+ lProvider.class
+SHA-256-Digest: 2aoOt0PWaZsTiptqvcM0IotYuFPgmN0dm8pgtOKQ3zE=
+
+Name: com/ibm/etools/maven/javaee/core/xml/PersistenceXMLParser$1.clas
+ s
+SHA-256-Digest: skqgNb1wyTs86Bufexvu2h5FOqQ28pWc/d9fKPD4inE=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/JavaBatchProjectC
+ onfiguratorDelegate.class
+SHA-256-Digest: VhQxwjdUYk2sZuQZOHCqUmoZoxHG5HbN9DlmSgMmluM=
+
+Name: com/ibm/etools/maven/javaee/core/project/MavenProjectEditor$1.cl
+ ass
+SHA-256-Digest: g8noRwWOf3xBhK7nHrmiRsRW/nGwBFqbZnYsXB0GwKM=
+
+Name: resources/RunConfigurations/WAS855PluginsInstaller.launch
+SHA-256-Digest: JOHvYUn82cuCqtrNHwss0uEVa5q5CB2ouV1/c60ygYU=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/CDIQuickPeek.clas
+ s
+SHA-256-Digest: fWGt2Pz6yxkKnG77ExXMgLB8nRt7ETDP5FGEExekj88=
+
+Name: com/ibm/etools/maven/javaee/core/configurators/Utils.class
+SHA-256-Digest: 7X+Q7+p4PqePSXHxQYovu6+NhRyAdsRZAOyKhCAsYCg=
+
+Name: resources/scripts/WAS 8 Plugins installer/pom.xml
+SHA-256-Digest: ORL8/svKT9T1hdKldEcKBBrOfv4j1DmU/y7AJO3EZf8=
+
+Name: com/ibm/etools/maven/javaee/core/conversion/LibertyRuntimeConver
+ ter.class
+SHA-256-Digest: zSMjf+D3w8jMkAe3/E6vDEp2+96oEA3jfBJqo0sFzjA=
+
+Name: resources/scripts/Liberty 8.5.5 Fix Pack 1 Plugins installer/pom
+ .xml
+SHA-256-Digest: JaJBSMYbgZBpXj0Ps7Y46tod2IAjYFwn75f1erajVl0=
+
+Name: com/ibm/etools/maven/javaee/core/project/MavenProjectUtils.class
+SHA-256-Digest: O1J9UPrkd0RXoh/9qaJlpCON+uvOq5RFsYB6mv4Ar30=
+
+Name: plugin.xml
+SHA-256-Digest: CQLrSf4q9oBCrgjVNZizHMoFsOoCBTz/CQZ7wQqUoj0=
+
+Name: resources/archetypes-catalog/net.wasdev.maven.tools.archetypes/a
+ rchetype-catalog.xml
+SHA-256-Digest: eFxZwNFs3c2lvPrQiEV22dyXnYFDDSk38nvPCgwWrNs=
+
+Name: com/ibm/etools/maven/javaee/core/project/RuntimeDependencyFactor
+ y$RuntimeDependency.class
+SHA-256-Digest: YUUPmzmT5o3G8FAz/xEFaV1qFhBDY+R8JUvvmshNtUk=
+

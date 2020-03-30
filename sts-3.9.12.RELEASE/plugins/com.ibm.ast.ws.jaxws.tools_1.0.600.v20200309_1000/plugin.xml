@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension point="org.eclipse.core.expressions.propertyTesters">
+
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPProjectContainerPropertyTester"
+				        type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="isSupportedProject"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPProjectContainerPropertyTester">
+		</propertyTester>
+		
+		<!-- Work around for isSupportedProject to use binding configuration until EJB JMS binding 
+			support is added in Liberty -->
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPProjectContainerPropertyTester"
+				        type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData"
+					    namespace="com.ibm.ast.ws.jaxws.tools.binding"
+	  					properties="isSupportedProject"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPBindingConfigurationPropertyTester">
+		</propertyTester>
+		
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPProjectContainerPropertyTester"
+				        type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="hasBindingConfiguration"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPBindingConfigurationPropertyTester">
+		</propertyTester>
+		
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPProjectContainerPropertyTesterClient"
+				        type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="isSupportedClient"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPProjectContainerPropertyTester">
+		</propertyTester>
+		
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPProjectContainerPropertyTester"
+				        type="org.eclipse.core.resources.IProject"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="isSupportedProject"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPProjectContainerPropertyTester">
+		</propertyTester>
+		
+		<!-- Removal of security policy -->
+		
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPProjectContainerPropertyTester"
+				        type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="containsExistingPolicyInService"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPRemoveFileServicePropertyTester">
+		</propertyTester>
+		
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPRemoveFileServicePropertyTesterClient"
+				        type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="containsExistingPolicyInClient"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPRemoveFileServicePropertyTester">
+		</propertyTester>
+		
+		
+		 <!--  When you right click on WSDL, these let us know if they are Liberty backed web services -->
+		
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPWSDLFileServicePropertyTester"
+				        type="org.eclipse.core.resources.IFile"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="isSupportedServiceWSDL"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPWSDLFileServicePropertyTester">
+		</propertyTester>
+
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPWSDLFileServicePropertyTester"
+				        type="org.eclipse.core.resources.IFile"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="isSupportedClientWSDL"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPWSDLFileServicePropertyTester">
+		</propertyTester>
+
+
+		<!-- Removal of security policy -->
+
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPRemoveFileServicePropertyTester"
+				        type="org.eclipse.core.resources.IFile"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="containsExistingPolicyInClientWSDL"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPRemoveFileServicePropertyTester">
+		</propertyTester>
+
+		<propertyTester	id="com.ibm.ast.ws.jaxws.tools.WLPRemoveFileServicePropertyTester"
+				        type="org.eclipse.core.resources.IFile"
+					    namespace="com.ibm.ast.ws.jaxws.tools"
+	  					properties="containsExistingPolicyInServiceWSDL"
+	  					class="com.ibm.ast.ws.jaxws.tools.internal.WLPRemoveFileServicePropertyTester">
+		</propertyTester>
+
+		
+	</extension>
+	
+	
+	
+	
+	
+	<!-- Popup Menus                      														-->
+
+
+	<extension point="org.eclipse.ui.popupMenus">
+
+		<objectContribution
+			objectClass="com.ibm.ccl.ws.finder.core.WSInfo"
+			id="com.ibm.ast.ws.jaxws.tools.openDDContribution">
+			<enablement>
+				<and>
+	           		<or>
+						<test property="com.ibm.ccl.ws.finder.core.WSInfo.categoryId" value="jaxws.service"/>
+						<test property="com.ibm.ccl.ws.finder.core.WSInfo.categoryId" value="jaxws.client"/>
+					</or>
+					<test property="com.ibm.ccl.ws.finder.core.WSInfo.hasDD" value="com.ibm.ws.st.runtime.v85.was"/>
+				</and>
+			</enablement>
+			<action
+				label="%POPUP_OPEN_DD"
+				class="com.ibm.ast.ws.jaxws.tools.actions.OpenDDAction"
+				menubarPath="com.ibm.ccl.ws.finder.ui.navigator.showMenu/additions"
+				id="com.ibm.ast.ws.jaxws.tools.actions.openDDAction">
+			</action>
+		</objectContribution>
+
+
+
+		<!--  Service Security Policy Addition in Services tree UI -->
+		<!-- <objectContribution objectClass="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData" 
+			nameFilter="*" 
+			id="com.ibm.ast.ws.jaxws.tools.contribution"
+			adaptable="true">
+			
+			<enablement>
+    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData">
+  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedProject" forcePluginActivation="true"/>
+  				</adapt>
+  	    	</enablement>
+	
+			<action label="%SERVICE_MENU_TITLE"
+				class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+				menubarPath="additions"
+				id="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction">
+			</action>  
+			
+		</objectContribution> -->
+		
+		<!--  Client Security Policy Addition in Clients tree UI -->
+	    <!-- <objectContribution objectClass="com.ibm.ast.ws.jaxws.emitter.collector.ClientData" 
+			nameFilter="*" 
+			id="com.ibm.ast.ws.jaxws.tools.contribution.client"
+			adaptable="true">
+			
+				<enablement>
+	    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedClient" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+	
+			
+	  		<action label="%CLIENT_MENU_TITLE"
+	  		    class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+	  		    menubarPath="additions"
+	  		    id="com.ibm.ast.ws.jaxws.tools.wizard.OpenClientWizardAction">
+	  		</action>  		
+		</objectContribution> -->
+		
+		<!--  Service Security Policy Removal in Services tree UI -->
+		
+		<!--
+		<objectContribution objectClass="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData" 
+			nameFilter="*" 
+			id="com.ibm.ast.ws.jaxws.tools.contribution"
+			adaptable="true">
+			
+			<enablement>
+    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData">
+  					<test property="com.ibm.ast.ws.jaxws.tools.containsExistingPolicyInService" forcePluginActivation="true"/>
+  				</adapt>
+  	    	</enablement>
+	
+			<action label="%REMOVE_POLICY_SERVICE_MENU_TITLE"
+				class="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction"
+				menubarPath="additions"
+				id="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction">
+			</action>  
+			
+		</objectContribution> -->
+	
+
+
+		<!--  Client Security Policy Removal in Clients tree UI -->
+	    
+	    <!--
+	    <objectContribution objectClass="com.ibm.ast.ws.jaxws.emitter.collector.ClientData" 
+			nameFilter="*" 
+			id="com.ibm.ast.ws.jaxws.tools.contribution.client"
+			adaptable="true">
+			
+				<enablement>
+	    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.containsExistingPolicyInClient" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+	
+			
+	  		<action label="%REMOVE_POLICY_CLIENT_MENU_TITLE"
+	  		    class="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction"
+	  		    menubarPath="additions"
+	  		    id="com.ibm.ast.ws.jaxws.tools.wizard.OpenClientWizardAction">
+	  		</action>  		
+		</objectContribution>
+
+		-->
+
+
+	      <!--  Service Security Policy Removal in service's WSDL context menu -->
+	      <objectContribution
+	            objectClass="org.eclipse.core.resources.IFile"
+	            nameFilter="*.wsdl"
+	            id="org.eclipse.jst.ws.creation.ui.wizard.publish.file">
+					<action
+						label="%REMOVE_POLICY_SERVICE_MENU_TITLE"
+						class="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction"
+						menubarPath="org.eclipse.wst.ws.ui.webservice.category.popupMenu/popupActions"
+						id="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction.serviceWSDL">
+					</action>
+					
+				<enablement>
+	    			<adapt type="org.eclipse.core.resources.IFile">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.containsExistingPolicyInServiceWSDL" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+					
+	      </objectContribution>
+
+
+	      
+	      <!--  Client Security Policy Removal in client's WSDL context menu -->
+	      <objectContribution
+	            objectClass="org.eclipse.core.resources.IFile"
+	            nameFilter="*.wsdl"
+	            id="org.eclipse.jst.ws.creation.ui.wizard.publish.file">
+					<action
+						label="%REMOVE_POLICY_CLIENT_MENU_TITLE"
+						class="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction"
+						menubarPath="org.eclipse.wst.ws.ui.webservice.category.popupMenu/popupActions"
+						id="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction.clientWsdl">
+					</action>
+					
+				<enablement>
+	    			<adapt type="org.eclipse.core.resources.IFile">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.containsExistingPolicyInClientWSDL" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+					
+	      </objectContribution>	      
+
+
+		
+
+	      <!--  Service Security Policy Addition in service's WSDL context menu -->
+	      <objectContribution
+	            objectClass="org.eclipse.core.resources.IFile"
+	            nameFilter="*.wsdl"
+	            id="org.eclipse.jst.ws.creation.ui.wizard.publish.file">
+					<action
+						label="%SERVICE_MENU_TITLE"
+						class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+						menubarPath="org.eclipse.wst.ws.ui.webservice.category.popupMenu/popupActions"
+						id="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction.serviceWSDL">
+					</action>
+					
+				<enablement>
+	    			<adapt type="org.eclipse.core.resources.IFile">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedServiceWSDL" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+					
+	      </objectContribution>
+	      
+	      <!--  Client Security Policy Addition in client's WSDL context menu -->
+	      <objectContribution
+	            objectClass="org.eclipse.core.resources.IFile"
+	            nameFilter="*.wsdl"
+	            id="org.eclipse.jst.ws.creation.ui.wizard.publish.file">
+					<action
+						label="%CLIENT_MENU_TITLE"
+						class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+						menubarPath="org.eclipse.wst.ws.ui.webservice.category.popupMenu/popupActions"
+						id="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction.clientWsdl">
+					</action>
+					
+				<enablement>
+	    			<adapt type="org.eclipse.core.resources.IFile">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedClientWSDL" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+					
+	      </objectContribution>	      
+	
+
+
+
+
+	      
+	      
+	      <!-- Add action to the org.eclipse.jst.j2ee.ui javeeUIPopupMenuCategory 'Create files category' menu slot -->
+	      <objectContribution
+               objectClass="org.eclipse.core.resources.IProject" 
+               adaptable="true" 
+               id="org.eclipse.jst.j2ee.ui.popupMenu">
+               <action
+                  label="%GENERATE_BINDING_ACTION"
+                  class="com.ibm.ast.ws.jaxws.tools.actions.GenerateIBMWSBndAction"
+                  menubarPath="javeeUIPopupMenuCategory/slot2"
+                  id="com.ibm.ast.ws.jaxws.tools.actions.GenerateIBMWSBndAction">
+               </action>
+               <enablement>
+    			  <adapt type="org.eclipse.core.resources.IProject">
+  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedProject" forcePluginActivation="true"/>
+  				  </adapt>
+  	    	   </enablement>
+	      </objectContribution>
+
+		
+	</extension>
+
+    <!-- Editor for IBM WS Binding ibm-ws-bnd.xml -->
+    <extension point="org.eclipse.ui.editors">
+        <editor
+            default="true"
+            name="%IBM_WS_BINDING_EDITOR"
+            icon="icons/binding.gif"
+            class="com.ibm.xwt.dde.editor.DDEMultiPageEditorPart"
+            id="com.ibm.ast.ws.jaxws.web.bnd.editor">
+            <contentTypeBinding
+                contentTypeId="com.ibm.jee.was.content.ibm-ws-bnd-1.0"/>
+        </editor>
+    </extension>
+    
+    <!-- Customization for IBM WS Binding ibm-ws-bnd.xml-->
+    <extension point="com.ibm.xwt.dde.customization">
+        <customization
+            id="com.ibm.ast.ws.jaxws.web.bnd.editor"
+            customizationFile="xml/IBMWSBindingsCustomizationFile.xml"
+            translations="$nl$/xml/IBMWSBindingsCustomizationFile.properties"
+            debugMode="true"/>
+    </extension>
+
+
+
+<!--    
+    <extension point="org.eclipse.ui.popupMenus">
+
+
+		<objectContribution             
+			id="meow"
+			objectClass="org.eclipse.core.resources.IFile">
+
+     		<menu
+           		id="org.eclipse.wst.ws.ui.webservice.category.popupMenu/popupActions"
+           		
+
+           		label="22Liberty Security Policy22">
+          		<groupMarker name="newadditions"/>
+     		</menu>
+		</objectContribution>-->
+		
+		<!--
+	      <objectContribution
+	            objectClass="org.eclipse.core.resources.IFile"
+	            nameFilter="*.wsdl"
+	            id="org.eclipse.jst.ws.creation.ui.wizard.publish.file">
+					<action
+						label="%SERVICE_MENU_TITLE"
+						class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+
+						menubarPath="org.eclipse.wst.ws.ui.webservice.category.popupMenu/popupActions"
+						id="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction.serviceWSDL">
+					</action>
+					
+					
+				<enablement>
+	    			<adapt type="org.eclipse.core.resources.IFile">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedServiceWSDL" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement> 
+					
+	      </objectContribution> 
+	</extension> -->
+
+
+    <extension point="org.eclipse.ui.popupMenus">
+    
+		<objectContribution             
+			id="com.ibm.ccl.ws.finder.ui.navigator.menuContributions"
+            objectClass="com.ibm.ccl.ws.finder.core.WSInfo">
+
+     		<menu
+           		id="com.ibm.ccl.ws.finder.ui.navigator.wlpSecurityPolicyMenu"
+           		path="group.generate"
+
+           		label="%LIBERTY_SECURITY_POLICY_MENU">
+          		<groupMarker name="additions"/>                     	
+     		</menu>
+     		     		
+		</objectContribution>
+
+	<!-- Remove policy from client UI -->
+    	<objectContribution
+			objectClass="com.ibm.ccl.ws.finder.core.WSInfo"
+			nameFilter="*"
+			id="com.ibm.ast.ws.jaxws.creation.ui.ServiceData.objectContributions11">
+		
+		
+			<enablement>
+    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData">
+  					<test property="com.ibm.ast.ws.jaxws.tools.containsExistingPolicyInClient" forcePluginActivation="true"/>
+  				</adapt>
+  	    	</enablement>
+
+			<action
+				label="%REMOVE_POLICY_CLIENT_MENU_TITLE"
+				class="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction"
+				menubarPath="com.ibm.ccl.ws.finder.ui.navigator.wlpSecurityPolicyMenu/additions"
+				id="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction.clientWsdl11">
+			</action>
+
+		</objectContribution>
+
+		
+		
+		<!-- Remove policy from service UI -->
+    	<objectContribution
+			objectClass="com.ibm.ccl.ws.finder.core.WSInfo"
+			nameFilter="*"
+			id="com.ibm.ast.ws.jaxws.creation.ui.ServiceData.objectContributions10">
+
+
+			<enablement>
+    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData">
+  					<test property="com.ibm.ast.ws.jaxws.tools.containsExistingPolicyInService" forcePluginActivation="true"/>
+  				</adapt>
+  	    	</enablement>
+
+			<action
+				label="%REMOVE_POLICY_SERVICE_MENU_TITLE"
+				class="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction"
+				menubarPath="com.ibm.ccl.ws.finder.ui.navigator.wlpSecurityPolicyMenu/additions"
+				id="com.ibm.ast.ws.jaxws.tools.wizard.RemoveSecurityPolicyWLPSecWizardAction.serviceWsdl10">
+			</action>
+
+		</objectContribution>
+
+
+		<!-- Add policy from service UI -->
+    	<objectContribution
+			objectClass="com.ibm.ccl.ws.finder.core.WSInfo"
+			nameFilter="*"
+			id="com.ibm.ast.ws.jaxws.creation.ui.ServiceData.objectContributions12">
+
+			<enablement>
+    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData">
+  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedProject" forcePluginActivation="true"/>
+  				</adapt>
+  	    	</enablement>
+	
+			<action label="%SERVICE_MENU_TITLE"
+				class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+				menubarPath="com.ibm.ccl.ws.finder.ui.navigator.wlpSecurityPolicyMenu/additions"
+				id="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction12">
+			</action>  
+
+		</objectContribution>
+
+		<!-- Add policy from client UI -->
+    	<objectContribution
+			objectClass="com.ibm.ccl.ws.finder.core.WSInfo"
+			nameFilter="*"
+			id="com.ibm.ast.ws.jaxws.creation.ui.ServiceData.objectContributions13">
+
+				<enablement>
+	    			<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData">
+	  					<test property="com.ibm.ast.ws.jaxws.tools.isSupportedClient" forcePluginActivation="true"/>
+	  				</adapt>
+	  	    	</enablement>
+		
+		  	<action label="%CLIENT_MENU_TITLE"
+	  		    class="com.ibm.ast.ws.jaxws.tools.wizard.OpenWLPSecWizardAction"
+	  		    menubarPath="com.ibm.ccl.ws.finder.ui.navigator.wlpSecurityPolicyMenu/additions"
+	  		    id="com.ibm.ast.ws.jaxws.tools.wizard.OpenClientWizardAction13">
+	  		</action>  		
+		
+		
+		</objectContribution>
+		
+		<!-- Add policyAttachments from service and client -->
+    <objectContribution
+			objectClass="com.ibm.ccl.ws.finder.core.WSInfo"
+			nameFilter="*"
+			id="com.ibm.ast.ws.jaxws.tools.policyattachments">
+			<enablement>
+				<or>
+    				<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ServiceData">
+  						<test property="com.ibm.ast.ws.jaxws.tools.isSupportedProject" forcePluginActivation="true"/>
+  					</adapt>
+    				<adapt type="com.ibm.ast.ws.jaxws.emitter.collector.ClientData">
+  						<test property="com.ibm.ast.ws.jaxws.tools.isSupportedClient" forcePluginActivation="true"/>
+  					</adapt>
+  			</or>
+  	  </enablement>
+			<action label="%SERVICE_POLICY_ATTACHMENTS"
+				class="com.ibm.ast.ws.jaxws.tools.actions.OpenPolicyAttachmentWizardAction"
+				menubarPath="com.ibm.ccl.ws.finder.ui.navigator.wlpSecurityPolicyMenu/additions"
+				id="com.ibm.ast.ws.jaxws.tools.actions.OpenPolicyAttachmentWizardAction">
+			</action>  
+		</objectContribution>
+   </extension>
+
+   <extension
+         point="org.eclipse.wst.command.env.dynamicWizard">
+      <dynamicWizard
+            title="%POLICY_ATTACHMENT"
+            iconbanner="platform:/plugin/com.ibm.ast.ws.jaxws.tools/icons/banner/serverPolicyAttachment_wiz.gif"
+            class="com.ibm.ast.ws.jaxws.tools.wizard.policyattachment.PolicyAttachmentBinding"
+            id="com.ibm.ast.ws.jaxws.tools.wizard.policyattachment">
+      </dynamicWizard>
+   </extension>
+
+   <extension point="org.eclipse.help.contexts">
+			<contexts file="xml/jaxwsTools_csh.xml" plugin="com.ibm.ast.ws.jaxws.tools"/>
+   </extension>
+   <extension
+         point="com.ibm.ws.st.core.requiredFeatures">
+      <requiredFeatures
+            class="com.ibm.ast.ws.jaxws.tools.internal.WSSecurityFeatureResolver"
+            id="com.ibm.ast.ws.jaxws.tools.internal.requiredFeatures">
+      </requiredFeatures>
+   </extension>
+</plugin>
