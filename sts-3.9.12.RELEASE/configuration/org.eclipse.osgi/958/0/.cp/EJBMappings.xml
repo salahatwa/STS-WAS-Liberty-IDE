@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="EJBMappings.xsd">
+<triggerAnnotations>
+	<Name>javax.ejb.Stateless</Name>
+	<Name>javax.ejb.Stateful</Name>
+	<Name>javax.ejb.Singleton</Name>
+	<Name>javax.ejb.MessageDriven</Name>
+	<Name>javax.ejb.ApplicationException</Name>
+	<Name>javax.annotation.security.DeclareRoles</Name>
+	<Name>javax.annotation.security.PermitAll</Name>
+	<Name>javax.annotation.security.RolesAllowed</Name>
+	<Name>javax.annotation.security.DenyAll</Name>
+	<Name>javax.ejb.TransactionAttribute</Name>
+	<Name>javax.interceptor.Interceptors</Name>
+	<Name>javax.interceptor.AroundInvoke</Name>
+</triggerAnnotations>
+
+<eClass name="EJBPACKAGE.getEJBJar()"/>
+
+<AnnotationMapping name="javax.ejb.Stateless" eFeatureName="EJBPACKAGE.getEnterpriseBeans_SessionBeans">
+		
+		<requiredTopEObject>
+			<eObject eFeatureName="EJBPACKAGE.getEJBJar_EnterpriseBeans"/>
+		</requiredTopEObject>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="EJBPACKAGE.getSessionBean_EjbClass"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_EjbName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_MappedName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		 	 <eAttribute targetName="Stateless" targetType="ANY" eFeatureName="EJBPACKAGE.getSessionBean_SessionType"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping targetName="description" targetType="AnnotationAttribute">
+		 <eObject eFeatureName="EJBPACKAGE.getSessionBean_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		 </eObject>
+		</mapping>		
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.Stateful" eFeatureName="EJBPACKAGE.getEnterpriseBeans_SessionBeans">
+		
+		<requiredTopEObject>
+		<eObject eFeatureName="EJBPACKAGE.getEJBJar_EnterpriseBeans"/>
+		</requiredTopEObject>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="EJBPACKAGE.getSessionBean_EjbClass"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_EjbName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_MappedName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="passivationCapable" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_PassivationCapable"/>
+		  </eObject>
+		</mapping>		
+		<mapping>
+		 <eObject>
+		 	 <eAttribute targetName="Stateful" targetType="ANY" eFeatureName="EJBPACKAGE.getSessionBean_SessionType"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping targetName="description" targetType="AnnotationAttribute">
+		 <eObject eFeatureName="EJBPACKAGE.getSessionBean_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		 </eObject>
+		</mapping>		
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.Singleton" eFeatureName="EJBPACKAGE.getEnterpriseBeans_SessionBeans">
+		
+		<requiredTopEObject>
+		<eObject eFeatureName="EJBPACKAGE.getEJBJar_EnterpriseBeans"/>
+		</requiredTopEObject>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="EJBPACKAGE.getSessionBean_EjbClass"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_EjbName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_MappedName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		 	 <eAttribute targetName="Singleton" targetType="ANY" eFeatureName="EJBPACKAGE.getSessionBean_SessionType"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping targetName="description" targetType="AnnotationAttribute">
+		 <eObject eFeatureName="EJBPACKAGE.getSessionBean_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		 </eObject>
+		</mapping>		
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.MessageDriven" eFeatureName="EJBPACKAGE.getEnterpriseBeans_MessageDrivenBeans">
+		
+		<requiredTopEObject>
+		<eObject eFeatureName="EJBPACKAGE.getEJBJar_EnterpriseBeans"/>
+		</requiredTopEObject>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="EJBPACKAGE.getMessageDrivenBean_EjbClass"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getMessageDrivenBean_EjbName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getMessageDrivenBean_MappedName"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="messageListenerInterface" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getMessageDrivenBean_MessagingType"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping targetName="description" targetType="AnnotationAttribute">
+		 <eObject eFeatureName="EJBPACKAGE.getMessageDrivenBean_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		 </eObject>
+		</mapping>		
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.annotation.Resource">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_EnvEntries">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_EnvEntries">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_EnvEntries">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation  eFeatureName="EJBPACKAGE.getMessageDrivenBean_EnvEntries">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation  eFeatureName="EJBPACKAGE.getInterceptorType_EnvEntries">javax.interceptor.Interceptor</triggerAnnotation>
+		<context targetType="Attribute" target="type">
+		  <value>java.lang.String</value>
+		  <value>java.lang.Integer</value>
+		  <value>java.lang.Boolean</value>
+		  <value>java.lang.Byte</value>
+		  <value>java.lang.Character</value>
+		  <value>java.lang.Short</value>
+		  <value>java.lang.Long</value>
+		  <value>java.lang.Float</value>
+		  <value>java.lang.Double</value>
+		</context>  
+		
+		<mapping>
+		  <eObject eFeatureName="JAVAEEPACKAGE.getEnvEntry_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEnvEntry_EnvEntryType"/>
+		  </eObject>
+		</mapping> 
+		
+	    <mapping>
+	      <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEnvEntry_EnvEntryName"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEnvEntry_MappedName"/>
+		  </eObject>
+		</mapping> 
+		
+<!-- comment out, use customized code to handle it
+	    <mapping>
+	   		<eObject eFeatureName="JAVAEEPACKAGE.getEnvEntry_InjectionTargets">
+		    <eAttribute targetName="fieldName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getInjectionTarget_InjectionTargetName"/>
+		   </eObject>
+		</mapping>
+-->		
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.annotation.Resource">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ServiceRefs">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ServiceRefs">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ServiceRefs">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation  eFeatureName="EJBPACKAGE.getMessageDrivenBean_ServiceRefs">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_ServiceRefs">javax.interceptor.Interceptor</triggerAnnotation>
+		
+		<context targetType="Attribute" target="type">
+		  <value>javax.xml.rpc.Service</value>
+		  <value>javax.xml.ws.Service</value>
+		  <value>javax.jws.WebService</value>
+		</context>  
+		
+		<mapping>
+		  <eObject eFeatureName="JAVAEEPACKAGE.getServiceRef_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getServiceRef_ServiceRefType"/>
+		  </eObject>
+		</mapping> 
+		
+	    <mapping>
+	      <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getServiceRef_ServiceRefName"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getServiceRef_MappedName"/>
+		  </eObject>
+		</mapping> 
+		
+<!-- comment out, use customized code to handle it	
+	    <mapping>
+	   		<eObject eFeatureName="JAVAEEPACKAGE.getServiceRef_InjectionTargets">
+		    <eAttribute targetName="fieldName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getInjectionTarget_InjectionTargetName"/>
+		   </eObject>
+		</mapping>
+-->
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.annotation.Resource">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_MessageDestinationRefs">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_MessageDestinationRefs">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_MessageDestinationRefs">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation  eFeatureName="EJBPACKAGE.getMessageDrivenBean_MessageDestinationRefs">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_MessageDestinationRefs">javax.interceptor.Interceptor</triggerAnnotation>
+		
+		<context targetType="Attribute" target="type">
+		  <value>javax.jms.Queue</value>
+		  <value>javax.jms.Topic</value>
+		  <value>javax.jms.Destination</value>
+		</context>  
+		
+		<mapping>
+		  <eObject eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_MessageDestinationType"/>
+		  </eObject>
+		</mapping> 
+		
+	    <mapping>
+	      <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_MessageDestinationRefName"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_MappedName"/>
+		  </eObject>
+		</mapping> 
+		
+<!-- comment out, use customized code to handle it	
+	    <mapping>
+	   		<eObject eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_InjectionTargets">
+		    <eAttribute targetName="fieldName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getInjectionTarget_InjectionTargetName"/>
+		   </eObject>
+		</mapping>
+-->
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.annotation.Resource">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ResourceRefs">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ResourceRefs">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ResourceRefs">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_ResourceRefs">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_ResourceRefs">javax.interceptor.Interceptor</triggerAnnotation>
+
+		<context targetType="Attribute" target="type">
+		  <value>javax.sql.DataSource</value>
+		  <value>javax.jms.ConnectionFactory</value>
+		  <value>javax.jms.QueueConnectionFactory</value>
+		  <value>javax.jms.TopicConnectionFactory</value>
+		  <value>javax.mail.Session</value>
+		  <value>java.net.URL</value>
+		  <value>javax.resource.cci.ConnectionFactory</value>
+		  <value>org.omg.CORBA_2_3.ORB</value>
+		  <value>commonj.timers.TimerManager</value>
+		  <value>commonj.work.WorkManager</value>
+		  <value>com.ibm.websphere.scheduler.Scheduler</value>
+  		  <value>com.ibm.websphere.asynchbeans.WorkManager</value>
+  		  <value>com.ibm.websphere.asynchbeans.pool.ObjectPoolManager</value>
+  		  <value>com.ibm.websphere.cache.DistributedMap</value>
+		</context>  
+		
+		<mapping>
+		  <eObject eFeatureName="JAVAEEPACKAGE.getResourceRef_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="authenticationType" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResAuth">
+		  <validValuesMap>
+		  	<mapEntry key="javax.annotation.Resource.AuthenticationType.APPLICATION" value="Application"/>
+		  	<mapEntry key="javax.annotation.Resource.AuthenticationType.CONTAINER" value="Container"/>
+		  	<mapEntry key="APPLICATION" value="Application"/>
+		  	<mapEntry key="CONTAINER" value="Container"/>
+		  </validValuesMap>
+		  </eAttribute>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="shareable" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResSharingScope">
+		   <validValuesMap>
+		  	<mapEntry key="true" value="Shareable"/>
+		  	<mapEntry key="false" value="Unshareable"/>
+		  </validValuesMap>
+		  </eAttribute>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResType"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_MappedName"/>
+		  </eObject>
+		</mapping> 
+		
+	    <mapping>
+	      <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResRefName"/>
+		  </eObject>
+		</mapping>
+			
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.annotation.Resource" eFeatureName="EJBPACKAGE.getSessionBean_ResourceEnvRefs">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ResourceEnvRefs">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ResourceEnvRefs">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_ResourceEnvRefs">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_ResourceEnvRefs">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation  eFeatureName="EJBPACKAGE.getInterceptorType_ResourceEnvRefs">javax.interceptor.Interceptor</triggerAnnotation>
+
+		<context targetType="Attribute" target="type" notOneOfContextValidValues="true">
+		  <value>javax.sql.DataSource</value>
+		  <value>javax.jms.ConnectionFactory</value>
+		  <value>javax.jms.QueueConnectionFactory</value>
+		  <value>javax.jms.TopicConnectionFactory</value>
+		  <value>javax.mail.Session</value>
+		  <value>java.net.URL</value>
+		  <value>javax.resource.cci.ConnectionFactory</value>
+		  <value>org.omg.CORBA_2_3.ORB</value>
+		  <value>javax.jms.Queue</value>
+		  <value>javax.jms.Topic</value>
+		  <value>javax.jms.Destination</value>
+		  <value>java.lang.String</value>
+		  <value>java.lang.Integer</value>
+		  <value>java.lang.Boolean</value>
+		  <value>java.lang.Byte</value>
+		  <value>java.lang.Character</value>
+		  <value>java.lang.Short</value>
+		  <value>java.lang.Long</value>
+		  <value>java.lang.Float</value>
+		  <value>java.lang.Double</value>
+  		  <value>javax.xml.rpc.Service</value>
+		  <value>javax.xml.ws.Service</value>
+		  <value>javax.jws.WebService</value>
+		</context>  
+		
+		<mapping>
+		  <eObject eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_Descriptions">
+		  <eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+		  </eObject>
+		</mapping> 
+		
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_ResourceEnvRefType"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_MappedName"/>
+		  </eObject>
+		</mapping> 
+		
+	    <mapping>
+	      <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_ResourceEnvRefName"/>
+		  </eObject>
+		</mapping>
+			
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.PostActivate">
+
+<!--
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PostActivates">javax.ejb.Stateless</triggerAnnotation>
+-->
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PostActivates">javax.ejb.Stateful</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_PostActivates">javax.interceptor.Interceptor</triggerAnnotation>
+
+		<mapping>
+		<eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackClass"/>
+		   <eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackMethod"/>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.annotation.PostConstruct">
+
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PostConstructs">javax.ejb.Stateless</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PostConstructs">javax.ejb.Stateful</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PostConstructs">javax.ejb.Singleton</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_PostConstructs">javax.ejb.MessageDriven</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_PostConstructs">javax.interceptor.Interceptor</triggerAnnotation>
+
+		<mapping>
+		<eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackClass"/>
+		   <eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackMethod"/>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.ejb.PrePassivate">
+
+<!--
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PrePassivates">javax.ejb.Stateless</triggerAnnotation>
+-->
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PrePassivates">javax.ejb.Stateful</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_PrePassivates">javax.interceptor.Interceptor</triggerAnnotation>
+
+		<mapping>
+		<eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackClass"/>
+		   <eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackMethod"/>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.annotation.PreDestroy">
+
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PreDestroys">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PreDestroys">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_PreDestroys">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_PreDestroys">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_PreDestroys">javax.interceptor.Interceptor</triggerAnnotation>
+		 
+		<mapping>
+		<eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackClass"/>
+		   <eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackMethod"/>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.ejb.Remote">
+
+		<triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+
+		<mapping>
+		   <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_BusinessRemotes"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.Local">
+
+		<triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+	
+		<mapping>
+		   <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_BusinessLocals"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.LocalHome">
+
+		<triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+	
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_LocalHome"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.RemoteHome">
+
+		<triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+	
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_Home"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.Timeout" eFeatureName="EJBPACKAGE.getSessionBean_TimeoutMethod">
+	
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_TimeoutMethod">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_TimeoutMethod">javax.ejb.Singleton</triggerAnnotation>
+<!--
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_TimeoutMethod">javax.ejb.Stateful</triggerAnnotation>
+-->
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_TimeoutMethod">javax.ejb.MessageDriven</triggerAnnotation>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="EJBPACKAGE.getNamedMethodType_MethodName"/>
+		 
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		<eObject eFeatureName="EJBPACKAGE.getNamedMethodType_MethodParams">
+		  <eAttribute targetName="methodParameters" targetType="JavaElement" eFeatureName="EJBPACKAGE.getMethodParams_MethodParams"/>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.annotation.security.RunAs" eFeatureName="EJBPACKAGE.getSessionBean_SecurityIdentities">
+
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_SecurityIdentities">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_SecurityIdentities">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_SecurityIdentities">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_SecurityIdentity">javax.ejb.MessageDriven</triggerAnnotation>
+		
+		
+		<mapping>
+		<eObject eFeatureName="EJBPACKAGE.getSecurityIdentityType_RunAs">
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getRunAs_RoleName"/>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+<AnnotationMapping name="javax.interceptor.AroundInvoke">
+
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_AroundInvokes">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_AroundInvokes">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_AroundInvokes">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_AroundInvokes">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_AroundInvokes">javax.interceptor.Interceptor</triggerAnnotation>
+
+		
+		<mapping>
+			<eObject>
+			   <eAttribute targetName="className" targetType="JavaElement" eFeatureName="EJBPACKAGE.getAroundInvokeType_Class"/>
+			   <eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="EJBPACKAGE.getAroundInvokeType_MethodName"/>
+			</eObject>
+		</mapping> 
+</AnnotationMapping>
+
+
+
+<AnnotationMapping name="javax.ejb.Remove" eFeatureName="EJBPACKAGE.getSessionBean_RemoveMethods">
+
+		 <triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		 <triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+
+		
+		<mapping>
+		  <eObject>
+		  	<eAttribute targetName="retainIfException" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getRemoveMethodType_RetainIfException"/>
+		  </eObject>
+		</mapping>
+		<mapping>
+		<eObject eFeatureName="EJBPACKAGE.getRemoveMethodType_BeanMethod">
+			<eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="EJBPACKAGE.getNamedMethodType_MethodName"/>
+			<eObject eFeatureName="EJBPACKAGE.getNamedMethodType_MethodParams">
+			  <eAttribute targetName="methodParameters" targetType="JavaElement" eFeatureName="EJBPACKAGE.getMethodParams_MethodParams"/>
+			  </eObject>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.Init" eFeatureName="EJBPACKAGE.getSessionBean_InitMethods">
+
+		<triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+		
+		<mapping>
+		<eObject eFeatureName="EJBPACKAGE.getInitMethodType_CreateMethod">
+			<eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getNamedMethodType_MethodName"/>
+			<eObject eFeatureName="EJBPACKAGE.getNamedMethodType_MethodParams">
+			  <eAttribute targetName="methodParameters" targetType="JavaElement" eFeatureName="EJBPACKAGE.getMethodParams_MethodParams"/>
+			  </eObject>
+		  </eObject>
+		</mapping> 
+		<mapping>
+		<eObject eFeatureName="EJBPACKAGE.getInitMethodType_BeanMethod">
+			<eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="EJBPACKAGE.getNamedMethodType_MethodName"/>
+			<eObject eFeatureName="EJBPACKAGE.getNamedMethodType_MethodParams">
+			  <eAttribute targetName="methodParameters" targetType="JavaElement" eFeatureName="EJBPACKAGE.getMethodParams_MethodParams"/>
+			  </eObject>
+		  </eObject>
+		</mapping> 
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.ApplicationException" eFeatureName="EJBPACKAGE.getAssemblyDescriptor_ApplicationExceptions">
+		
+		<requiredTopEObject>
+			<eObject eFeatureName="EJBPACKAGE.getEJBJar_AssemblyDescriptor"/>
+		</requiredTopEObject>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="className" targetType="JavaElement" eFeatureName="EJBPACKAGE.getApplicationException_ExceptionClass"/>
+		  </eObject>
+		</mapping>
+		
+		<mapping>
+		 <eObject>
+		  <eAttribute targetName="rollback" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getApplicationException_Rollback"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.TransactionManagement">
+
+		 <triggerAnnotation>javax.ejb.Stateless</triggerAnnotation>
+		 <triggerAnnotation>javax.ejb.Stateful</triggerAnnotation>
+		 <triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+
+		<mapping>
+		   <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_TransactionType"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.TransactionManagement">
+
+		 <triggerAnnotation>javax.ejb.MessageDriven</triggerAnnotation>
+
+		<mapping>
+		   <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getMessageDrivenBean_TransactionType"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.TransactionAttribute">
+
+		<mapping>
+		   <eObject>
+		  <eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getContainerTransactionType_TransAttribute"/>
+		  </eObject>
+		</mapping>
+</AnnotationMapping>
+
+<AnnotationMapping name="javax.ejb.EJB">
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_EjbRefs">javax.ejb.Stateless</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_EjbRefs">javax.ejb.Stateful</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_EjbRefs">javax.ejb.Singleton</triggerAnnotation>
+		 <triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_EjbRefs">javax.ejb.MessageDriven</triggerAnnotation>
+
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="beanName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEjbRef_EjbLink"/>
+		  </eObject>
+		</mapping> 
+		
+		<mapping>
+		  <eObject>
+		  <eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEjbRef_MappedName"/>
+		  </eObject>
+		</mapping> 
+		
+	    <mapping>
+	      <eObject>
+		  <eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEjbRef_EjbRefName"/>
+		  </eObject>
+		</mapping>
+			
+</AnnotationMapping>
+
+	<AnnotationMapping name="javax.ejb.StatefulTimeout">	
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_StatefulTimeout">javax.ejb.Stateful</triggerAnnotation>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getStatefulTimeoutType_Timeout"/>
+				<eAttribute targetName="unit" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getStatefulTimeoutType_Unit"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.ejb.ConcurrencyManagement">	
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getSessionBean_ConcurrencyManagementType"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.ejb.DependsOn">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_DependsOn">javax.ejb.Singleton</triggerAnnotation>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="EJBPACKAGE.getDependsOnType_EjbName"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.ejb.Startup">
+		<triggerAnnotation>javax.ejb.Singleton</triggerAnnotation>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="true" targetType="ANY" eFeatureName="EJBPACKAGE.getSessionBean_InitOnStartup"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.ejb.LocalBean">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_LocalBean">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_LocalBean">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_LocalBean">javax.ejb.Singleton</triggerAnnotation>
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.annotation.sql.DataSourceDefinition">
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_DataSource">javax.ejb.Stateless</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_DataSource">javax.ejb.Stateful</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getSessionBean_DataSource">javax.ejb.Singleton</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getMessageDrivenBean_DataSource">javax.ejb.MessageDriven</triggerAnnotation>
+		<triggerAnnotation eFeatureName="EJBPACKAGE.getInterceptorType_DataSource">javax.interceptor.Interceptor</triggerAnnotation>		 
+		<mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Name"/>
+				<eAttribute targetName="className" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_ClassName"/>
+				<eAttribute targetName="url" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Url"/>
+				<eAttribute targetName="user" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_User"/>
+				<eAttribute targetName="password" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Password"/>
+				<eAttribute targetName="databaseName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_DatabaseName"/>
+				<eAttribute targetName="portNumber" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_PortNumber"/>
+				<eAttribute targetName="serverName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_ServerName"/>
+				<eAttribute targetName="transactional" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Transactional"/>
+				<eAttribute targetName="initialPoolSize" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_InitialPoolSize"/>
+				<eAttribute targetName="maxPoolSize" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MaxPoolSize"/>
+				<eAttribute targetName="minPoolSize" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MinPoolSize"/>
+				<eAttribute targetName="maxIdleTime" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MaxIdleTime"/>
+				<eAttribute targetName="maxStatements" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MaxStatements"/>
+				<eAttribute targetName="loginTimeout" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_LoginTimeout"/>
+			</eObject>
+		</mapping>
+		<mapping targetName="description" targetType="AnnotationAttribute">
+			<eObject eFeatureName="JAVAEEPACKAGE.getDataSourceType_Description">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+</root>

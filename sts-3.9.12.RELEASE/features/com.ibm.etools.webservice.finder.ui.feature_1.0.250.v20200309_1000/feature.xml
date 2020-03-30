@@ -1,0 +1,13 @@
+<feature id="com.ibm.etools.webservice.finder.ui.feature" image="rtFeatUpdate.gif" label="%featureName" provider-name="%providerName" version="1.0.250.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.ccl.ws.finder.ui" install-size="0" unpack="false" version="1.0.450.v20200309_1000"/>
+
+</feature>

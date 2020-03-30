@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+
+Name: feature_ru.properties
+SHA-256-Digest: OievOJDcCjoBDinitTPzmPASOpTEtr0lqErGBkNfxNs=
+
+Name: feature_pl.properties
+SHA-256-Digest: akiLzXdS8X40lsVrJ6bOe9CGRNwip6FcW42MVmKqlBk=
+
+Name: feature_cs.properties
+SHA-256-Digest: iTufJmvk5r8/3eqtYYPmKozHPBb7vFD7cPt2UrS1R9U=
+
+Name: feature_sl.properties
+SHA-256-Digest: LD2pveirj9GfE3SFNdxYT4bPFysOy7akDQn4clfOkCQ=
+
+Name: feature_lt.properties
+SHA-256-Digest: RjGX5HAYVywbZzCJzPGkiTSUWfqfQFfRvESv8intXfk=
+
+Name: feature.xml
+SHA-256-Digest: g21eP5MMmTtQXFfrk4rNvQD0AWEr9QnPDTQOCAj0ShQ=
+
+Name: feature_ko.properties
+SHA-256-Digest: O6MY0009XN8i9dmkF2K5ybkm6Ram5HJgns7sXuUQl9M=
+
+Name: feature_de.properties
+SHA-256-Digest: KKXMCRUAc9rT5qDZfTrQqNVnKYqp989G8DXeZu63DZk=
+
+Name: feature_es.properties
+SHA-256-Digest: JCDiwF41N0lGf9q7faAmU3g9jIZLlM6qehD5hB2W9ng=
+
+Name: feature_in.properties
+SHA-256-Digest: pCaGaXgHMFtYSMYQYuakW/FPn2r8spnfg8iOjmIu9ns=
+
+Name: feature_it.properties
+SHA-256-Digest: aveOf9JMRG1V+BWoQyMeKWYcNFU7BM8iqB10p1BhKHQ=
+
+Name: feature_pt.properties
+SHA-256-Digest: 7UpBmO7gI067DWI8gnj/MP0adr4mVWJxfOzi90EQNuI=
+
+Name: feature_ja.properties
+SHA-256-Digest: Vc20wJy5GMWbFufA2SgubF0CU+1/nuPxRg5KOBU4P/w=
+
+Name: feature_fr.properties
+SHA-256-Digest: 3swupxX9DuFuJfXHvRpsFyttspEnqPh03aoLCe57xWs=
+
+Name: feature_tr.properties
+SHA-256-Digest: JKMD2UVD13i7X3e/UYXnizWwoe7GVopVhooA/4hRiOQ=
+
+Name: feature_el.properties
+SHA-256-Digest: V9M0rBVS0Sf0DQGl257XCIld9bUsXdExh7e3dtG5cOk=
+
+Name: feature.properties
+SHA-256-Digest: OnnEyYNMv7lA7sCgeS7YFcMpLip3ceWeuSiK/UxSUpA=
+

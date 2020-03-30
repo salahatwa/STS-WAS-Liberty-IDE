@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization 
+customizationNamespace="http://java.sun.com/xml/ns/javaee"
+	customizationSchemaLocation="http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd ">
+	
+	<!-- Global customization -->
+	<node path="*" inheritCustomization="true">
+		<!-- Data Source customization -->
+		<node path="data-source" label="%Data_Source" treeLabel="%Data_Source_treelabel" treeLabelData="name" icon="icons/data_souce.gif">
+			<item path="name" label="%Name" style="text"/>
+			<item path="class-name" label="%Class_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="database-name" label="%Database_Name" style="text"/>	
+			<item path="user" label="%User" style="text"/>
+			<item path="password" label="%Password" style="text"/>
+			<item path="server-name" label="%Server_Name" style="text"/>
+			<item path="port-number" label="%Port_Number" skipSyntaxValidation="true" style="text" validationClass="com.ibm.etools.javaee.ui.validation.PortNumberValidator" />	
+			<item path="url" label="%URL" style="text"/>
+			<item path="transactional" label="%Transactional">
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+			<item path="isolation-level" label="%Isolation_Level"/>
+			<item path="login-timeout" label="%Login_Timeout" style="text"/>
+			<item path="initial-pool-size" label="%Initial_Pool_Size" style="text"/>
+			<item path="min-pool-size" label="%Minimum_Pool_Size" style="text"/>
+			<item path="max-pool-size" label="%Maximum_Pool_Size" style="text"/>			
+			<item path="max-statements" label="%Maximum_Statements" style="text"/>		
+			<item path="max-idle-time" label="%Maximum_Idle_Time" style="text"/>
+			<node path="property" label="%Property" treeLabel="%Property_treelabel" treeLabelData="name" icon="icons/data_source_property.gif">
+				<item path="name" label="%Name"/>
+				<item path="value" label="%Value"/>
+			</node>
+		</node>
+		
+		<node path="after-begin-method" label="%After_Begin_Method" treeLabel="%After_Begin_Method_treelabel" treeLabelData="method-name" icon="icons/after_begin_method.gif">
+			<item path="method-name" label="%Method_Name"/>
+			<node path="method-params" label="%Method_Parameters">
+				<node path="method-param" label="%Method_Parameter" />
+			</node>
+		</node>
+		
+		<node path="after-completion-method" label="%After_Completion_Method" treeLabel="%After_Completion_Method_treelabel" treeLabelData="method-name" icon="icons/after_completion_method.gif">
+			<item path="method-name" label="%Method_Name"/>
+			<node path="method-params" label="%Method_Parameters">
+				<node path="method-param" label="%Method_Parameter" />
+			</node>
+		</node>
+		
+		<node path="around-timeout" label="%Around_Timeout" treeLabel="%Around_Timeout_treelabel" treeLabelData="method-name" icon="icons/around_timeout.gif">
+			<item path="class" label="%Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="method-name" label="%Method_Name"/>
+		</node>
+		
+		<node path="timer" label="%Timer" icon="icons/timer.gif">
+			<item path="start" label="%Start_Time" style="text"/>
+			<item path="end" label="%End_Time" style="text"/>
+			<item path="timezone" label="%Timezone" style="text"/>
+			<item path="persistent" label="%Persistent">
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+			<item path="info" label="%Information" style="text"/>
+			<node path="schedule" label="%Schedule">
+				<item path="day-of-month" label="%Day_Of_The_Month"/>
+				<item path="day-of-week" label="%Day_Of_The_Week"/>
+				<item path="hour" label="%Hour" />
+				<item path="minute" label="%Minute"/>
+				<item path="second" label="%Second"/>
+				<item path="month" label="%Month"/>
+				<item path="year" label="%Year"/>
+			</node>
+		</node>
+		
+		<node path="application-exception" label="%Application_Exception" treeLabel="%Application_Exception" icon="icons/ejb/app_ex.gif">	
+			<item path="inherited" label="%Inherited">
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+		</node>
+		
+		<node path="depends-on" label="%Depends_On">
+			<item path="ejb-name" label="%EJB_Name"/>
+		</node>
+		
+		<node path="stateful-timeout" label="%Stateful_Timeout">
+			<item path="timeout" label="%Timeout"/>
+			<item path="unit" label="%Time_Unit">
+				<possibleValues>
+					<value label="%Days" value="Days"/>
+					<value label="%Hours" value="Hours"/>
+					<value label="%Minutes" value="Minutes"/>
+					<value label="%Seconds" value="Seconds"/>
+					<value label="%Milliseconds" value="Milliseconds"/>
+					<value label="%Microseconds" value="Microseconds"/>
+					<value label="%Nanoseconds" value="Nanoseconds"/>
+				</possibleValues>
+			</item>
+		</node>
+		
+		<node path="lookup-name" label="%Lookup_Name" treeLabel="%Lookup_Name_treelabel" treeLabelData="." icon="icons/lookup.gif">
+			<item path="." label="%Lookup_Name" style="text" deleteIfEmpty="false"/>
+		</node>
+		
+		<node path="async-method" label="%Asynchronous_Method" treeLabel="%Asynchronous_Method_treelabel" treeLabelData="method-name" icon="icons/async_method.gif">
+			<item path="method-name" label="%Method_Name" style="text"/>
+			<item path="method-intf" label="%Method_Interface">
+				<possibleValues>
+					<value label="%Home" value="Home"/>
+					<value label="%Local" value="Local"/>
+					<value label="%Local_Home" value="LocalHome"/>
+					<value label="%Remote" value="Remote"/>
+					<value label="%Service_Endpoint" value="ServiceEndpoint"/>
+					<value label="%Timer" value="Timer"/>
+					<value label="%Message_Endpoint" value="MessageEndpoint"/>
+				</possibleValues>
+			</item>
+			<node path="method-params" label="%Method_Parameters">
+				<node path="method-param" label="%Method_Parameter" />
+			</node>
+		</node>
+		
+		<node path="before-completion-method" label="%Before_Completion_Method" treeLabel="%Before_Completion_Method_treelabel" treeLabelData="method-name" icon="icons/before_completion_method.gif">
+			<item path="method-name" label="%Method_Name" style="text"/>
+			<node path="method-params" label="%Method_Parameters">
+				<node path="method-param" label="%Method_Parameter" />
+			</node>
+		</node>
+		
+		<node path="concurrent-method" label="%Concurrent_Method" icon="icons/concurrent_method.gif">
+			<item path="lock" label="%Lock">
+				<possibleValues>
+					<value label="%Read" value="Read"/>
+					<value label="%Write" value="Write"/>
+				</possibleValues>
+			</item>
+			<node path="access-timeout" label="%Access_Timeout">
+				<item path="timeout" label="%Timeout"/>
+				<item path="unit" label="%Time_Unit">
+					<possibleValues>
+						<value label="%Days" value="Days"/>
+						<value label="%Hours" value="Hours"/>
+						<value label="%Minutes" value="Minutes"/>
+						<value label="%Seconds" value="Seconds"/>
+						<value label="%Milliseconds" value="Milliseconds"/>
+						<value label="%Nanoseconds" value="Nanoseconds"/>
+					</possibleValues>
+				</item>
+			</node>
+			<node path="method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+				<item path="method-name" label="%Method_Name" style="text"/>
+				<node path="method-params" label="%Method_Parameters">
+					<node path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+		</node>
+		
+		<node path="service-ref" inheritCustomization="true">
+			<node path="port-component-ref" inheritCustomization="true">
+				<item path="enable-mtom" label="%Enable_MTOM"/>
+				<item path="mtom-threshold" label="%MTOM_Threshold"/>
+				<item path="port-component-link" label="%Port_component_link"/>
+				<item path="service-endpoint-interface" label="%service_endpoint_interface"/>
+				<node path="addressing" label="%Addressing">
+					<item path="enabled" label="%Enabled">
+						<possibleValues>
+							<value label="%True" value="true"/>
+							<value label="%False" value="false"/>
+						</possibleValues>
+					</item>
+					<item path="required" label="%Required">
+						<possibleValues>
+							<value label="%True" value="true"/>
+							<value label="%False" value="false"/>
+						</possibleValues>
+					</item>
+					<item path="responses" label="%Responses"/>
+				</node>
+				<node path="respect-binding" label="%Respect_Binding">
+					<item path="enabled" label="%Enabled">
+						<possibleValues>
+							<value label="%True" value="true"/>
+							<value label="%False" value="false"/>
+						</possibleValues>
+					</item>
+				</node>
+			</node>
+		</node>
+	</node>
+	
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+	<!-- EJB 3.0 customization -->
+	<node path="/ejb-jar" inheritCustomization="true">
+		<item path="module-name" label="%Module_Name" style="text"/>
+		
+		<node path="enterprise-beans/session" label="%S_Bean" treeLabel="%Session_Bean" treeLabelData="ejb-name" icon="icons/full/obj16/sessionBean_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.SessionCreation" deletionClass="com.ibm.etools.javaee.ui.editors.ejb.EnterpriseBeanDeletion" canCreate="true">
+			<item path="ejb-name" inheritCustomization="true"/>
+			<item path="display-name" inheritCustomization="true"/>
+			<item path="ejb-class" inheritCustomization="true"/>
+			<item path="session-type" inheritCustomization="true">
+					<!-- Include a set of predefined possible values for the page encoding -->
+					<item path="session-type" inheritCustomization="true">
+					<!-- Include a set of predefined possible values for the page encoding -->
+					<possibleValues>
+						<value label="%Singleton" value="Singleton"/>
+						<value label="%Stateful" value="Stateful"/>
+						<value label="%Stateless" value="Stateless"/>
+					</possibleValues>
+				</item>
+			</item>
+			<item path="local-bean" label="%Local_Bean"/>
+			<item path="transaction-type" inheritCustomization="true"/>
+			<item path="concurrency-management-type" label="%Concurrency_Management_Type">
+				<possibleValues>
+					<value label="%Bean" value="Bean"/>
+					<value label="%Container" value="Container"/>
+				</possibleValues>
+			</item>
+			
+			<item path="init-on-startup" label="%Initialize_On_Startup">
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+			<item path="home" inheritCustomization="true"/>
+			<item path="local" inheritCustomization="true"/>
+			<item path="local-home" inheritCustomization="true"/>
+			<item path="remote" inheritCustomization="true"/>
+			<item path="service-endpoint" inheritCustomization="true"/>
+			<item path="business-local" inheritCustomization="true"/>
+			<item path="business-remote" inheritCustomization="true"/>
+			
+			
+		</node>
+		
+		<node path="assembly-descriptor/exclude-list" label="%Exclude_List" treeLabel="%Exclude_List" icon="icons/ejb/app_ex.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AssemblyExcludeAction" >
+			<node path="method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+				<item path="ejb-name" label="%EJB_Name" style="text"/>
+				<item path="method-name" label="%Method_Name" style="text"/>
+				<item path="method-intf" label="%Method_Interface">
+					<possibleValues>
+						<value label="%Home" value="Home"/>
+						<value label="%Local" value="Local"/>
+						<value label="%Local_Home" value="LocalHome"/>
+						<value label="%Remote" value="Remote"/>
+						<value label="%Service_Endpoint" value="ServiceEndpoint"/>
+						<value label="%Timer" value="Timer"/>
+						<value label="%Message_Endpoint" value="MessageEndpoint"/>
+					</possibleValues>
+				</item>
+				<node path="method-params" label="%Method_Parameters">
+					<node path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+		</node>
+		
+		<!-- For consistent ordering of fields -->
+		<node path="assembly-descriptor/message-destination" inheritCustomization="true" >
+			<item path="lookup-name" label="%Lookup_Name"/>
+		</node>
+	</node>
+	
+</customization>

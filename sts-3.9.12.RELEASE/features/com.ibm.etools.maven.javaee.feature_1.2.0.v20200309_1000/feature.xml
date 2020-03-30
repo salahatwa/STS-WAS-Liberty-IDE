@@ -1,0 +1,19 @@
+<feature id="com.ibm.etools.maven.javaee.feature" label="%featureName" provider-name="%providerName" version="1.2.0.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%licenseURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.maven.javaee.core" install-size="0" version="1.1.605.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.etools.maven.javaee.ui" install-size="0" unpack="false" version="1.1.405.v20200309_1000"/>
+
+</feature>

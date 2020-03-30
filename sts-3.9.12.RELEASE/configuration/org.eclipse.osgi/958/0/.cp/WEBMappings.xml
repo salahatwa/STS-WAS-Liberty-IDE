@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EJBMappings.xsd">
+	<triggerAnnotations>
+		<Name>javax.annotation.Resource</Name>
+		<Name>javax.annotation.Resources</Name>
+		<Name>javax.annotation.PostConstruct</Name>
+		<Name>javax.annotation.PreDestroy</Name>
+		<Name>javax.annotation.security.DeclareRoles</Name>
+		<Name>javax.ejb.EJB</Name>
+		<Name>javax.ejb.EJBs</Name>
+		<Name>javax.servlet.annotation.WebServlet</Name>
+		<Name>javax.servlet.annotation.WebFilter</Name>
+		<Name>javax.servlet.annotation.WebListener</Name>
+		<Name>javax.annotation.sql.DataSourceDefinition</Name>
+		<Name>javax.annotation.sql.DataSourceDefinitions</Name>
+	</triggerAnnotations>
+	
+	<Triggers>
+		<Trigger name="javax.servlet.Servlet" type="Interface">
+			<!-- the annotations driven by this trigger -->
+			<DrivenAnnotations>
+				<Name>javax.annotation.security.RunAs</Name>
+				<Name>javax.servlet.annotation.MultipartConfig</Name>
+			</DrivenAnnotations>
+			<Context>
+				<Annotation>javax.servlet.annotation.WebServlet</Annotation>
+			</Context>
+		</Trigger>
+	</Triggers>
+
+	<!-- Root object -->
+	<eClass name="WEBPACKAGE.getWebApp()"/>
+
+	<AnnotationMapping name="javax.annotation.Resource" eFeatureName="WEBPACKAGE.getWebApp_EnvEntries">
+		<context targetType="Attribute" target="type">
+			<value>java.lang.String</value>
+			<value>java.lang.Character</value>
+			<value>java.lang.Integer</value>
+			<value>java.lang.Boolean</value>
+			<value>java.lang.Double</value>
+			<value>java.lang.Byte</value>
+			<value>java.lang.Short</value>
+			<value>java.lang.Long</value>
+			<value>java.lang.Float</value>
+		</context>  
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getEnvEntry_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEnvEntry_EnvEntryType"/>
+			</eObject>
+		</mapping> 	
+	    <mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEnvEntry_EnvEntryName"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getEnvEntry_MappedName"/>
+			</eObject>
+		</mapping> 		
+<!-- comment out, use customized code to handle it
+	    <mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getEnvEntry_InjectionTargets">
+				<eAttribute targetName="fieldName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getInjectionTarget_InjectionTargetName"/>
+			</eObject>
+		</mapping>
+-->
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.annotation.Resource" eFeatureName="WEBPACKAGE.getWebApp_ServiceRefs">
+		<context targetType="Attribute" target="type">
+			<value>javax.xml.rpc.Service</value>
+			<value>javax.xml.ws.Service</value>
+			<value>javax.jws.WebService</value>
+		</context>  
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getServiceRef_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping> 
+		<mapping>
+			<eObject>
+				<eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getServiceRef_ServiceRefType"/>
+			</eObject>
+		</mapping> 		
+	    <mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getServiceRef_ServiceRefName"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getServiceRef_MappedName"/>
+			</eObject>
+		</mapping> 	
+<!-- comment out, use customized code to handle it
+	    <mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getServiceRef_InjectionTargets">
+				<eAttribute targetName="fieldName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getInjectionTarget_InjectionTargetName"/>
+			</eObject>
+		</mapping>
+-->
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.annotation.Resource" eFeatureName="WEBPACKAGE.getWebApp_MessageDestinationRefs">
+		<context targetType="Attribute" target="type">
+			<value>javax.jms.Queue</value>
+			<value>javax.jms.Topic</value>
+			<value>javax.jms.Destination</value>
+		</context>  
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping> 
+		<mapping>
+			<eObject>
+				<eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_MessageDestinationType"/>
+			</eObject>
+		</mapping> 		
+	    <mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_MessageDestinationRefName"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_MappedName"/>
+			</eObject>
+		</mapping>
+<!-- comment out, use customized code to handle it
+	    <mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getMessageDestinationRef_InjectionTargets">
+				<eAttribute targetName="fieldName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getInjectionTarget_InjectionTargetName"/>
+			</eObject>
+		</mapping>
+-->
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.annotation.Resource" eFeatureName="WEBPACKAGE.getWebApp_ResourceRefs">
+		<context targetType="Attribute" target="type">
+			<value>javax.sql.DataSource</value>
+			<value>javax.jms.ConnectionFactory</value>
+			<value>javax.jms.QueueConnectionFactory</value>
+			<value>javax.jms.TopicConnectionFactory</value>
+			<value>javax.mail.Session</value>
+			<value>java.net.URL</value>
+			<value>javax.resource.cci.ConnectionFactory</value>
+			<value>org.omg.CORBA_2_3.ORB</value>
+		</context>  
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getResourceRef_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping> 
+		<mapping>
+			<eObject>
+				<eAttribute targetName="authenticationType" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResAuth">
+					<validValuesMap>
+						<mapEntry key="javax.annotation.Resource.AuthenticationType.APPLICATION" value="Application"/>
+						<mapEntry key="javax.annotation.Resource.AuthenticationType.CONTAINER" value="Container"/>
+						<mapEntry key="APPLICATION" value="Application"/>
+						<mapEntry key="CONTAINER" value="Container"/>
+					</validValuesMap>
+				</eAttribute>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="shareable" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResSharingScope">
+					<validValuesMap>
+						<mapEntry key="true" value="Shareable"/>
+						<mapEntry key="false" value="Unshareable"/>
+					</validValuesMap>
+				</eAttribute>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResType"/>
+			</eObject>
+		</mapping> 		
+		<mapping>
+			<eObject>
+				<eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_MappedName"/>
+			</eObject>
+		</mapping> 		
+	    <mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceRef_ResRefName"/>
+			</eObject>
+		</mapping>	
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.annotation.Resource" eFeatureName="WEBPACKAGE.getWebApp_ResourceEnvRefs">
+		<context targetType="Attribute" target="type" notOneOfContextValidValues="true">
+			<value>javax.sql.DataSource</value>
+			<value>javax.jms.ConnectionFactory</value>
+			<value>javax.jms.QueueConnectionFactory</value>
+			<value>javax.jms.TopicConnectionFactory</value>
+			<value>javax.mail.Session</value>
+			<value>java.net.URL</value>
+			<value>javax.resource.cci.ConnectionFactory</value>
+			<value>org.omg.CORBA_2_3.ORB</value>
+			<value>javax.jms.Queue</value>
+			<value>javax.jms.Topic</value>
+			<value>javax.jms.Destination</value>
+			<value>java.lang.String</value>
+			<value>java.lang.Character</value>
+			<value>java.lang.Integer</value>
+			<value>java.lang.Boolean</value>
+			<value>java.lang.Double</value>
+			<value>java.lang.Byte</value>
+			<value>java.lang.Short</value>
+			<value>java.lang.Long</value>
+			<value>java.lang.Float</value>
+			<value>javax.xml.rpc.Service</value>
+			<value>javax.xml.ws.Service</value>
+			<value>javax.jws.WebService</value>
+		</context>  
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping> 		
+		<mapping>
+			<eObject>
+				<eAttribute targetName="type" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_ResourceEnvRefType"/>
+			</eObject>
+		</mapping> 		
+		<mapping>
+			<eObject>
+				<eAttribute targetName="mappedName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_MappedName"/>
+			</eObject>
+		</mapping> 		
+	    <mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getResourceEnvRef_ResourceEnvRefName"/>
+			</eObject>
+		</mapping>		
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.annotation.PostConstruct" eFeatureName="WEBPACKAGE.getWebApp_PostConstructs">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackClass"/>
+				<eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackMethod"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+
+	<AnnotationMapping name="javax.annotation.PreDestroy" eFeatureName="WEBPACKAGE.getWebApp_PreDestroys">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackClass"/>
+				<eAttribute targetName="methodName" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getLifecycleCallback_LifecycleCallbackMethod"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.annotation.security.RunAs" eFeatureName="WEBPACKAGE.getWebApp_Servlets">
+		<triggerAnnotation eFeatureName="WEBPACKAGE.getServlet_RunAs">javax.servlet.annotation.WebServlet</triggerAnnotation>
+		<trigger eFeatureName="WEBPACKAGE.getServlet_RunAs">javax.servlet.Servlet</trigger>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getRunAs_RoleName"/>
+			</eObject>
+		</mapping> 
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.servlet.annotation.WebServlet" eFeatureName="WEBPACKAGE.getWebApp_Servlets">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="className" targetType="JavaElement" eFeatureName="WEBPACKAGE.getServlet_ServletClass"/>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getServlet_ServletName"/>
+				<eAttribute targetName="asyncSupported" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getServlet_AsyncSupported"/>
+				<eAttribute targetName="loadOnStartup" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getServlet_LoadOnStartup"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject eFeatureName="WEBPACKAGE.getServlet_Icons">
+				<eAttribute targetName="largeIcon" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getIcon_LargeIcon"/>
+				<eAttribute targetName="smallIcon" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getIcon_SmallIcon"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject eFeatureName="WEBPACKAGE.getServlet_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.servlet.annotation.WebFilter" eFeatureName="WEBPACKAGE.getWebApp_Filters">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="className" targetType="JavaElement" eFeatureName="WEBPACKAGE.getFilter_FilterClass"/>
+				<eAttribute targetName="filterName" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getFilter_FilterName"/>
+				<eAttribute targetName="asyncSupported" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getFilter_AsyncSupported"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject eFeatureName="WEBPACKAGE.getFilter_Icons">
+				<eAttribute targetName="largeIcon" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getIcon_LargeIcon"/>
+				<eAttribute targetName="smallIcon" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getIcon_SmallIcon"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject eFeatureName="WEBPACKAGE.getFilter_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.servlet.annotation.WebInitParam">
+		<triggerAnnotation eFeatureName="WEBPACKAGE.getServlet_InitParams">javax.servlet.annotation.WebServlet</triggerAnnotation>
+		<triggerAnnotation eFeatureName="WEBPACKAGE.getFilter_InitParams">javax.servlet.annotation.WebFilter</triggerAnnotation>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getParamValue_ParamName"/>
+				<eAttribute targetName="value" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getParamValue_ParamValue"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getParamValue_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.servlet.annotation.MultipartConfig">
+		<triggerAnnotation eFeatureName="WEBPACKAGE.getServlet_MultipartConfig">javax.servlet.annotation.WebServlet</triggerAnnotation>
+		<trigger eFeatureName="WEBPACKAGE.getServlet_MultipartConfig">javax.servlet.Servlet</trigger>
+		<mapping>
+			<eObject>
+				<eAttribute targetName="fileSizeThreshhold" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getMultipartConfigType_FileSizeThreshold"/>
+				<eAttribute targetName="location" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getMultipartConfigType_Location"/>
+				<eAttribute targetName="maxFileSize" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getMultipartConfigType_MaxFileSize"/>
+				<eAttribute targetName="maxRequestSize" targetType="AnnotationAttribute" eFeatureName="WEBPACKAGE.getMultipartConfigType_MaxRequestSize"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+	
+	<AnnotationMapping name="javax.servlet.annotation.WebListener" eFeatureName="WEBPACKAGE.getWebApp_Listeners">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="className" targetType="JavaElement" eFeatureName="JAVAEEPACKAGE.getListener_ListenerClass"/>
+			</eObject>
+		</mapping>
+		<mapping>
+			<eObject eFeatureName="JAVAEEPACKAGE.getListener_Descriptions">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+	
+	<TriggerMapping name="javax.servlet.Servlet" eFeatureName="WEBPACKAGE.getWebApp_Servlets">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="className" targetType="JavaElement" eFeatureName="WEBPACKAGE.getServlet_ServletClass"/>
+				<eAttribute targetName="typeName" targetType="JavaElement" eFeatureName="WEBPACKAGE.getServlet_ServletName"/>
+			</eObject>
+		</mapping>
+	</TriggerMapping>
+	
+	<AnnotationMapping name="javax.annotation.sql.DataSourceDefinition" eFeatureName="WEBPACKAGE.getWebApp_DataSource">
+		<mapping>
+			<eObject>
+				<eAttribute targetName="name" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Name"/>
+				<eAttribute targetName="className" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_ClassName"/>
+				<eAttribute targetName="url" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Url"/>
+				<eAttribute targetName="user" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_User"/>
+				<eAttribute targetName="password" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Password"/>
+				<eAttribute targetName="databaseName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_DatabaseName"/>
+				<eAttribute targetName="portNumber" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_PortNumber"/>
+				<eAttribute targetName="serverName" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_ServerName"/>
+				<eAttribute targetName="transactional" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_Transactional"/>
+				<eAttribute targetName="initialPoolSize" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_InitialPoolSize"/>
+				<eAttribute targetName="maxPoolSize" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MaxPoolSize"/>
+				<eAttribute targetName="minPoolSize" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MinPoolSize"/>
+				<eAttribute targetName="maxIdleTime" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MaxIdleTime"/>
+				<eAttribute targetName="maxStatements" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_MaxStatements"/>
+				<eAttribute targetName="loginTimeout" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDataSourceType_LoginTimeout"/>
+			</eObject>
+		</mapping>
+		<mapping targetName="description" targetType="AnnotationAttribute">
+			<eObject eFeatureName="JAVAEEPACKAGE.getDataSourceType_Description">
+				<eAttribute targetName="description" targetType="AnnotationAttribute" eFeatureName="JAVAEEPACKAGE.getDescription_Value"/>
+			</eObject>
+		</mapping>
+	</AnnotationMapping>
+</root>

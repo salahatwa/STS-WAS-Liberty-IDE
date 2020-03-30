@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.ibm-application-client-ext-editor			          *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-application-client-ext_1_0.xsd   *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	hideOverviewSection="true"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-application-client-ext_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-application-client-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0004"
+	headerIcon="icons/application-client-bnd/application-client-ext.gif">
+
+	<node path="/application-client-ext" label="%APPLICATION_CLIENT_EXTENSIONS" icon="icons/application-client-ext/application-client-ext.gif">
+		<item path="@bootstrapAddress" label="%BOOTSTRAP_ADDRESS" style="text"/>	
+		<item path="@metadata-complete" label="%METADATA_COMPLETE" style="checkBox"/>	
+		<item path="@version" hide="true"/>	
+		<node path="allow-jta-demarcation" hideSectionTitle="true">
+			<item path="@value" label="%ALLOW_JTA_DEMARCATION" style="checkBox"/>
+		</node>
+
+
+	</node>
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+	</node>
+</customization>

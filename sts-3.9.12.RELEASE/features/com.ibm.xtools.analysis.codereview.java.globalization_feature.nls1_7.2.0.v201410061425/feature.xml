@@ -1,0 +1,3 @@
+<feature id="com.ibm.xtools.analysis.codereview.java.globalization_feature.nls1"  label="com.ibm.xtools.analysis.codereview.java.globalization_feature.nls1" version="7.2.0.v201410061425">
+<plugin fragment="true" id="com.ibm.xtools.analysis.codereview.java.globalization.nl1" version="7.2.0.v201410061425" unpack="false"  />
+</feature>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://xmlns.jcp.org/xml/ns/javaee"
+	customizationSchemaLocation="" overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	treeSortingPreference="alwaysUnsorted" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile ../../com.ibm.xwt.dde/schema/CustomizationFile.xsd "
+	headerIcon="icons/obj16/permissions.png">
+	
+	<node path="*">
+		<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance"/>
+		<item path="@id" hide="true"/>
+	</node>
+	<node path="/permissions" label="%PERMISSIONS" icon="icons/obj16/permissions.png">
+		<item path="@version" label="%VERSION" disabled="true"></item>
+		<node path="permission" label="%PERMISSION" style="treeNode" treeLabel="%PERMISSION_TREE" treeLabelData="class-name" icon="icons/obj16/permission.png" 
+			creationClass="com.ibm.etools.javaee.ui.editors.security.editor.internal.dialogs.PermissionCreationDialog" >
+		    <item path="class-name" label="%CLASS-NAME"
+				validationClass="com.ibm.etools.javaee.ui.editors.security.editor.internal.validation.ClassNameValidator"/>
+			<item path="name" label="%NAME"
+				buttonClass="com.ibm.etools.javaee.ui.editors.security.editor.internal.handlers.EditNameValueDialogHandler" 
+				buttonLabel="%SUGGESTED_VALUES"
+				buttonToolTip="%SELECT_SUGGESTED_VALUES"
+				validationClass="com.ibm.etools.javaee.ui.editors.security.editor.internal.validation.NameValidator"/>
+			<item path="actions" label="%ACTIONS"
+				buttonClass="com.ibm.etools.javaee.ui.editors.security.editor.internal.handlers.EditActionsValueDialogHandler" 
+				buttonLabel="%SUGGESTED_VALUES"
+				buttonToolTip="%SELECT_SUGGESTED_VALUES"
+				validationClass="com.ibm.etools.javaee.ui.editors.security.editor.internal.validation.ActionsValidator"/>
+		</node>
+	</node>
+</customization>

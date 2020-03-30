@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization 
+customizationNamespace="http://xmlns.jcp.org/xml/ns/javaee"
+	customizationSchemaLocation="http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd ">
+	
+	<!-- Global customization -->
+	<node path="*" inheritCustomization="true">
+		<node path="scan" label="%Scan_Tree_Label" treeLabel="%Scan_Tree_Label" icon="icons/obj16/scan.gif">
+			<node path="exclude" label="%Exclude_Tree_Label" treelabel="%Exclude_Tree_Label" icon="icons/obj16/exclude.gif">
+				<item path="@name" label="%Name_Label"/>			
+				<node path="if-class-available" label="%If_Class_Available_Tree_Label" treeLabel="%If_Class_Available_Tree_Label" icon="icons/obj16/if-class-available.gif">
+						<item path="@name" label="%Name_Label" buttonClass="com.ibm.etools.javaee.cdi.ui.dialogs.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>	
+				</node>
+				<node path="if-class-not-available" label="%If_Class_Not_Available_Tree_Label" treeLabel="%If_Class_Not_Available_Tree_Label" icon="icons/obj16/if-class-not-available.gif">
+						<item path="@name" label="%Name_Label" buttonClass="com.ibm.etools.javaee.cdi.ui.dialogs.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>	
+				</node>
+				<node path="if-system-property" label="%If_System_Property_Tree_Label" treeLabel="%If_System_Property_Tree_Label" icon="icons/obj16/system-property.gif">
+					<item path="@name" label="%Name_Label"/>
+				</node>
+			</node>
+		</node>
+		<item path="@value" label="%Value_Label"/>	
+	</node>
+	
+	<node path="/beans" inheritCustomization="true">
+		<item path="@version" label="%Version_Label"/>
+		<item path="@bean-discovery-mode" label="%Beans_Discovery_Mode_Label"/>
+	</node>		
+			
+</customization>

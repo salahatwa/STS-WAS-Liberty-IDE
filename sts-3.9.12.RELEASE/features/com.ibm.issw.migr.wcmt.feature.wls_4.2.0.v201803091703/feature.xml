@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.issw.migr.wcmt.feature.wls"
+      label="%featureName"
+      version="4.2.0.v201803091703"
+      provider-name="%providerName"
+      plugin="com.ibm.issw.migr.osgi.wasconfig.wls">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.ibm.issw.migr.osgi.commons"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.osgi.logmanager"
+         download-size="0"
+         install-size="0"
+         version="1.0.4.201803091702"/>
+
+   <plugin
+         id="com.ibm.issw.migr.osgi.wasconfig"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.wcmt"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.osgi.wsadmin"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.osgi.liberty"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.plugins.unified.migration.tool.common"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.osgi.wasconfig.wls"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.migr.wcmt.wls"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.201803091702"
+         unpack="false"/>
+
+</feature>

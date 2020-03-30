@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization 
+	customizationNamespace="http://java.sun.com/xml/ns/javaee"
+	customizationSchemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd">
+
+	<node path="/application" inheritCustomization="true">
+		<section label="%WAS_DESCRIPTORS">
+			<hyperlink icon="icons/application-bnd/application.gif" label="%BINDINGS" hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.addons.ApplicationBindingsHyperLink" leftIndentation="true"/>
+			<hyperlink icon="icons/application-ext/application-ext.gif" label="%EXTENSIONS" hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.addons.ApplicationExtensionsHyperLink" leftIndentation="true"/>
+			<hyperlink icon="icons/application-ext-pme/application-ext-pme.gif" label="%PMES" hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.addons.ApplicationPmeHyperLink" leftIndentation="true"/>
+		</section>
+		<node path="icon" inheritCustomization="true"></node>  
+	</node>
+
+</customization>

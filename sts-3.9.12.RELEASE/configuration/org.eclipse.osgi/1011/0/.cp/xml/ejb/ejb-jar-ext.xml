@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.content.ibm-ejb-jar-ext-1.0-editor	                      *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-ext_1_0.xsd              *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-ext_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-ejb-jar-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile ../../com.ibm.xwt.dde/schema/CustomizationFile.xsd "
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0008"
+	headerIcon="icons/ejb-jar-ext/ejb-jar-ext.gif">
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+		<item path="@version" label="%VERSION" readOnly="true" />
+		<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+		<item path="@activation-policy" label="%ACTIVATION_POLICY"/>
+		<item path="@boundary" label="%BOUNDARY"/>
+		<item path="@commit-priority" label="%COMMIT_PRIORITY"/>
+		<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+		<item path="@isolation-level" label="%ISOLATION_LEVEL"/>
+		<item path="@mode" label="%MODE" possibleValuesClass="com.ibm.jee.was.internal.descriptors.ui.custom.ModePossibleValues"/>
+		<item path="@name" label="%NAME"/>
+		<item path="@params" label="%PARAMETERS"/>
+		<item path="@resolver" label="%RESOLVER"/>
+		<item path="@role" label="%ROLE"/>
+		<item path="@send-wsat-context" label="%SEND_WSAT_CONTEXT">
+			<possibleValues>
+				<value value="true" label="%TRUE"/>
+				<value value="false" label="%FALSE"/>
+			</possibleValues>
+		</item>
+		<item path="@transaction-time-out" label="%TRANSACTION_TIME_OUT"/>
+		<!--<item path="@type" label="%TYPE"/>-->
+		<item path="@unresolved-action" label="%UNRESOLVED_ACTION"/>
+
+		<node path="method" label="%METHOD" icon="icons/ejb-jar-ext/method.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@params" inheritCustomization="true"/>
+		</node>
+
+		<node path="specified-identity" label="%SPECIFIED_IDENTITY" >
+			<item path="@role" inheritCustomization="true" shouldItemDisableClass="com.ibm.jee.was.internal.descriptors.ui.custom.DisableSpecifiedIdentitySection"/>
+			<item path="@description" inheritCustomization="true" shouldItemDisableClass="com.ibm.jee.was.internal.descriptors.ui.custom.DisableSpecifiedIdentitySection"	/>
+		</node>		
+	</node>
+	
+	<node path="/ejb-jar-ext" label="%EJB_JAR_EXTENSIONS" icon="icons/ejb-jar-ext/ejb-jar-ext.gif" sectionHeaderText="%hEJB_JAR_EXTENSIONS">
+		<node path="message-driven" label="%MESSAGE_DRIVEN_BEAN" treeLabel="%fMESSAGE_DRIVEN_BEAN" treeLabelData="@name" icon="icons/ejb-jar-ext/message-driven.gif" sectionHeaderText="%hREQUIRED">
+	 	 	<item path="@name" inheritCustomization="true"
+ 				buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.MessageDrivenBeanBrowser"
+ 				buttonLabel="%BROWSE"
+ 			/>
+
+			<node path="bean-cache" label="%BEAN_CACHE"/>
+			<node path="global-transaction" label="%GLOBAL_TRANSACTION"/>
+			<node path="local-transaction" label="%LOCAL_TRANSACTION"/>
+			<section label="%SETTINGS_OPTIONAL">
+				<node path="start-at-app-start" hideSectionTitle="true">
+					<item path="@value" label="%START_AT_APPLICATION_START" style="checkBox"/>
+				</node>
+			</section>
+			
+			<node path="resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/ejb-jar-ext/resource-ref.gif" sectionHeaderText="%hREQUIRED">
+		 		<item path="@name" inheritCustomization="true"
+ 					buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceRefBrowser"
+ 					buttonLabel="%BROWSE"
+ 				/>
+		 		<item path="@commit-priority" label="%COMMIT_PRIORITY"/>	 		
+				<item path="@isolation-level" label="%ISOLATION_LEVEL"/>
+				<item path="@branch-coupling" label="%BRANCH_COUPLING"/>		
+			</node>
+			
+			<node path="run-as-mode" label="%RUN_AS_MODE" icon="icons/ejb-jar-ext/run-as-mode.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@mode" inheritCustomization="true" disableClass="com.ibm.jee.was.internal.descriptors.ui.custom.DisableSpecifiedIdentitySection"/>
+				<item path="@description" inheritCustomization="true"  disableClass="com.ibm.jee.was.internal.descriptors.ui.custom.DisableSpecifiedIdentitySection"/>
+				
+				<node path="method" inheritCustomization="true">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>
+				</node>
+			</node>
+		</node>
+		
+		<node path="session" label="%SESSION_BEAN" treeLabel="%fSESSION_BEAN" treeLabelData="@name" icon="icons/ejb-jar-ext/session.gif" sectionHeaderText="%hREQUIRED">
+	 		<item path="@name" inheritCustomization="true"
+ 				buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.SessionBeanBrowser"
+ 				buttonLabel="%BROWSE"
+ 			/>
+
+			<node path="bean-cache" label="%BEAN_CACHE"/>
+			<node path="global-transaction" label="%GLOBAL_TRANSACTION"/>
+			<node path="local-transaction" label="%LOCAL_TRANSACTION"/>
+			<section label="%SETTINGS_OPTIONAL">
+				<node path="start-at-app-start" hideSectionTitle="true">
+					<item path="@value" label="%START_AT_APPLICATION_START" style="checkBox"/>
+				</node>
+				<node path="time-out" hideSectionTitle="true">
+					<item path="@value" label="%TIME_OUT_VALUE" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+			</section>
+			
+			<node path="resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/ejb-jar-ext/resource-ref.gif" sectionHeaderText="%hREQUIRED">
+		 		<item path="@name" inheritCustomization="true"
+ 					buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceRefBrowser"
+ 					buttonLabel="%BROWSE"
+ 				/>
+		 		<item path="@commit-priority" label="%COMMIT_PRIORITY"/>	 		
+				<item path="@isolation-level" label="%ISOLATION_LEVEL"/>
+				<item path="@branch-coupling" label="%BRANCH_COUPLING"/>
+			</node>
+			
+			<node path="run-as-mode" label="%RUN_AS_MODE" icon="icons/ejb-jar-ext/run-as-mode.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@mode" inheritCustomization="true" disableClass="com.ibm.jee.was.internal.descriptors.ui.custom.DisableSpecifiedIdentitySection"/>
+				<item path="@description" inheritCustomization="true" disableClass="com.ibm.jee.was.internal.descriptors.ui.custom.DisableSpecifiedIdentitySection"/>
+				
+				<node path="method" inheritCustomization="true">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>
+				</node>
+			</node>
+		</node>
+	</node>
+</customization>

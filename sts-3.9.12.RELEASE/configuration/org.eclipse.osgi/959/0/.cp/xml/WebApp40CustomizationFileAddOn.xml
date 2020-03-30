@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization 
+customizationNamespace="http://xmlns.jcp.org/xml/ns/javaee"
+	customizationSchemaLocation="http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd ">		
+
+	<node path="/web-app" inheritCustomization="true">
+		<item path="default-context-path" label="%Default_Context_Path" style="text"/>
+		<item path="response-character-encoding" label="%Response_Character_Encoding" style="text"/>
+		<item path="request-character-encoding" label="%Request_Character_Encoding" style="text"/>
+	</node>	
+</customization>

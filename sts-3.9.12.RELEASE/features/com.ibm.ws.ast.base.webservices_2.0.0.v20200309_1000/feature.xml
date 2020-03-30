@@ -1,0 +1,19 @@
+<feature id="com.ibm.ws.ast.base.webservices" image="rtFeatUpdate.gif" label="%featureName" provider-name="%providerName" version="2.0.0.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.environment.ui" install-size="0" unpack="false" version="6.1.100.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.ui" install-size="0" unpack="false" version="7.0.0.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.xml.editor" install-size="0" unpack="false" version="1.0.450.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxrs.common" install-size="0" unpack="false" version="2.0.0.v20200309_1000"/>
+
+</feature>

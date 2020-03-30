@@ -1,0 +1,19 @@
+<feature id="com.ibm.jee.bean.validation.feature" label="%featureName" provider-name="%providerName" version="1.0.4.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.jee.bean.validation.core" install-size="0" unpack="false" version="1.0.103.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.jee.bean.validation.ui" install-size="0" unpack="false" version="1.0.103.v20200309_1000"/>
+
+</feature>

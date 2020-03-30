@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.rsar.analysis.reporting.oda.base.compatability_feature"
+      label="%feature_name"
+      version="7.0.200.v20170609_1759"
+      provider-name="%feature_provider">
+
+   <description url="http://www.example.com/description">
+      Compatibility layer between Eclipse 3.3, 3.4 and 3.5 for BIRT.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %copyright
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      %license
+   </license>
+
+   <plugin
+         id="com.ibm.rsar.analysis.reporting.oda.base.compatability"
+         download-size="0"
+         install-size="0"
+         version="7.0.200.v20170609_1759"
+         unpack="false"/>
+
+</feature>

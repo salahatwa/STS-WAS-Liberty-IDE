@@ -1,0 +1,23 @@
+requires.1.namespace = org.eclipse.equinox.p2.iu
+requires.1.name = com.ibm.etools.rpe.jetty8.feature.feature.group
+requires.1.range = [1.0.0, 2.0.0)
+requires.1.optional = true
+requires.2.namespace = org.eclipse.equinox.p2.iu
+requires.2.name = com.ibm.wdt.doc.feature.feature.group
+requires.2.range = [1.0.0, 2.0.0)
+requires.2.optional = true
+requires.3.namespace = org.eclipse.equinox.p2.iu
+requires.3.name = com.ibm.websphere.wdt.dependency.eclipse47.feature.group
+requires.3.range = [1.0.1, 2.0.0)
+requires.3.optional = true
+
+requires.4.namespace = org.eclipse.equinox.p2.iu
+requires.4.name = com.ibm.etools.webservice.discovery.core.e47.feature.group
+requires.4.range = [6.0.0, 7.100.0)
+requires.4.optional = true
+
+requires.5.namespace = org.eclipse.equinox.p2.iu
+requires.5.name = com.ibm.etools.webservice.discovery.core.feature.group
+requires.5.range = [7.100.0, 9.0.0)
+requires.5.optional = true
+

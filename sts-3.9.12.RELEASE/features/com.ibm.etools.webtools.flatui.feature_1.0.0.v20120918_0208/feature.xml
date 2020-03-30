@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.etools.webtools.flatui.feature"
+      label="Webtools FlatUI Feature"
+      version="1.0.0.v20120918_0208"
+      provider-name="IBM">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.ibm.etools.webtools.flatui"
+         download-size="0"
+         install-size="0"
+         version="6.0.200.v20120918_0208"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	headerIcon="icons/dynacache/cache_node.gif">
+
+	<node path="*">
+		<item path="class" style="combo" label="%CLASS_COMPONENT" deleteIfEmpty="true"/>
+		<item path="priority" style="text" label="%PRIORITY_VALUE" deleteIfEmpty="true"/>
+		<item path="exclude" style="text" label="%EXCLUDE" deleteIfEmpty="true"/>
+		<item path="name" style="text" label="%NAME" deleteIfEmpty="true"/>
+		<item path="required" style="combo" label="%REQUIRED" deleteIfEmpty="true"/>
+		<item path="sharing-policy" style="combo" label="%SHARING_POLICY" deleteIfEmpty="true"/>
+		<item path="timeout" style="text" label="%TIMEOUT_VALUE" deleteIfEmpty="true"/>
+		<item path="inactivity" style="text" label="%INACTIVITY" deleteIfEmpty="true"/>
+		<item path="index" style="text" label="%INDEX" deleteIfEmpty="true"/>
+		<item path="description" style="text" textLines="3" label="%DESCRIPTION" deleteIfEmpty="true"/>
+		<item path="display-name" style="text" label="%DISPLAY_NAME" deleteIfEmpty="true"/>
+		<item path="@name" label="%NAME" ></item>
+		<item path="@id" label="%ID"></item>
+		<item path="@type" label="%TYPE"></item>
+		<item path="@ignore-value" label="%IGNORE_VALUE"></item>
+		<item path="@multipleIDs" label="%MULTIPLE_IDS"></item>
+		<item path="@high" label="%HIGH"></item>
+		<item path="@low" label="%LOW"></item>
+		<node path="component" icon="icons/dynacache/external-cache-group.gif"  label="%COMPONENT">
+			<item path="." label="%COMPONENT"></item>
+		</node>
+		<node path="property" icon="icons/persistence/property.gif" label="%PROPERTY" >
+			<item path="." label="%PROPERTY"></item>
+			<item path="@name" label="%NAME" style="combo"></item>
+		</node>
+		<node path="dependency-id" icon="icons/dynacache/cache-lifetime.gif" label="%DEPENDENCY_ID" >
+			<item path="." label="%DEPENDENCY_ID"></item>
+		</node>
+		<node path="value" icon="icons/web-ext/cache-variable.gif"  label="%VALUE">
+			<item path="." label="%VALUE"></item>
+		</node>
+		<node path="range" icon="icons/dynacache/cachescopetype.gif"  label="%RANGE">
+			<item path="." label="%RANGE"></item>
+		</node>
+		<node path="method" icon="icons/dynacache/options_method_obj.gif" label="%METHOD">
+			<item path="." label="%METHOD"></item>
+		</node>
+		<node path="field" icon="icons/dynacache/mppd_flds.gif" label="%FIELD" >
+			<item path="." label="%FIELD"></item>
+		</node>
+		<node path="not-value" icon="icons/dynacache/nullvaluefield_obj.gif" label="%NOT_VALUE">
+			<item path="." label="%NOT_VALUE"></item>
+		</node>
+		<node path="group" icon="icons/dynacache/sequence-group.gif" label="%GROUP">
+			<item path="." label="%GROUP"></item>
+		</node>
+		<node path="cache-instance" label="%CACHE_INSTANCE">
+			<item path="." label="%CACHE_INSTANCE"></item>
+		</node>
+		<item path="skip-cache-attribute" style="text" label="%SKIP_CACHE_ATTRIBUTE" deleteIfEmpty="true"/>
+		<item path="id" label="%ID" deleteIfEmpty="true"/>
+		<item path="type" label="%TYPE" deleteIfEmpty="true"></item>
+		<item path="ignore-value" label="%IGNORE_VALUE" deleteIfEmpty="true"></item>
+		<item path="multipleIDs" label="%MULTIPLE_IDS" deleteIfEmpty="true"></item>
+		<node path="exclude" icon="icons/dynacache/excludegroupnode_obj.gif" label="%EXCLUDE">
+			<item path="." label="%EXCLUDE"></item>
+		</node>
+		<node path="cache-entry" treeLabel="%CACHE_ENTRY" treeLabelData="name" label="%CACHE_ENTRY_LABEL" icon="icons/dynacache/cache_entry.gif" 
+			creationClass="com.ibm.jee.was.internal.descriptors.ui.utils.AddDynaCacheEntry" >
+			<item path="class" style="combo" label="%CLASS_COMPONENT"/>
+			<item path="name" style="text" label="%NAME"/>
+			<node path="invalidation" icon="icons/dynacache/fieldnotallowed.gif" label="%INVALIDATION">
+				<item path="." label="%INVALIDATION"></item>
+				<item path="invalidationgenerator" style="text" label="%INVALIDATION_CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+						buttonLabel="%BROWSE" deleteIfEmpty="true"></item>
+			</node>
+			<node path="cache-id" icon="icons/dynacache/cache_id.gif" label="%CACHE_ID">
+				<item path="idgenerator" inheritCustomization="true" style="text" label="%ID_GENERATOR_CLASS"
+					buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+					buttonLabel="%BROWSE" deleteIfEmpty="true"></item>
+				<item path="metadatagenerator" inheritCustomization="true" label="%METADATA_GENERATOR_CLASS"
+					style="text"
+					buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+					buttonLabel="%BROWSE" deleteIfEmpty="true"></item>
+				
+			</node>
+		</node>
+	</node>
+	<node path="/cache" icon="icons/dynacache/cache_node.gif" inheritCustomization="true" label="%CACHE" >
+		<!-- <node path="cache-entry" treeLabel="%CACHE_ENTRY" treeLabelData="name" icon="icons/dynacache/cache_entry.gif" 
+			creationClass="com.ibm.jee.was.internal.descriptors.ui.utils.AddDynaCacheEntry" >
+			<item path="class" style="combo" label="%CLASS_COMPONENT"/>
+			<item path="name" style="text" label="%NAME"/>
+			<node path="invalidation" icon="icons/dynacache/fieldnotallowed.gif" label="%INVALIDATION">
+					<item path="invalidationgenerator" style="text" label="%INVALIDATION_CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+						buttonLabel="%BROWSE" ></item>
+				</node>
+			<node path="cache-id" icon="icons/dynacache/cache_id.gif" label="%CACHE_ID">
+				<item path="idgenerator" inheritCustomization="true" style="text" label="%ID_GENERATOR_CLASS"
+					buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+					buttonLabel="%BROWSE"></item>
+				<item path="metadatagenerator" inheritCustomization="true" label="%METADATA_GENERATOR_CLASS"
+					style="text"
+					buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+					buttonLabel="%BROWSE"></item>
+				<node path="property" icon="icons/persistence/property.gif" label="%PROPERTY">
+					<section label="%EXCLUDE" >
+						<item path="exclude" label="%EXCLUDE" style="default"></item>
+					</section>
+				</node>
+			</node>
+		</node> -->
+		<node path="cache-instance" icon="icons/dynacache/cache_instance.gif" inheritCustomization="true" label="%CACHE_INSTANCE">
+			<!-- <node path="cache-entry" treeLabel="%CACHE_ENTRY" treeLabelData="name" icon="icons/dynacache/cache_entry.gif"
+				creationClass="com.ibm.jee.was.internal.descriptors.ui.utils.AddDynaCacheEntry">
+				<item path="class" style="combo" label="%CLASS_COMPONENT"/>
+				<item path="name" style="text" label="%NAME"/>
+				<node path="invalidation" icon="icons/dynacache/fieldnotallowed.gif" label="%INVALIDATION">
+					<item path="invalidationgenerator" style="text" label="%INVALIDATION_CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+						buttonLabel="%BROWSE" ></item>
+				</node>
+				<node path="cache-id" icon="icons/dynacache/cache_id.gif" label="%CACHE_ID">
+					<item path="idgenerator" inheritCustomization="true" style="text" label="%ID_GENERATOR_CLASS"
+						buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+						buttonLabel="%BROWSE"></item>
+					<item path="metadatagenerator" inheritCustomization="true" label="%METADATA_GENERATOR_CLASS" 
+						style="text"
+						buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser"
+						buttonLabel="%BROWSE"></item>
+					<node path="property" icon="icons/persistence/property.gif" label="%PROPERTY">
+						<section label="%EXCLUDE">
+							<item path="exclude" label="%EXCLUDE" style="default"></item>
+						</section>
+					</node>
+				</node> 
+			</node> -->
+		</node>
+	</node>
+</customization>

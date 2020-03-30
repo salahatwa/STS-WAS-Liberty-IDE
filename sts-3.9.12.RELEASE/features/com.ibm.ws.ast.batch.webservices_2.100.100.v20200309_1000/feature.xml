@@ -1,0 +1,17 @@
+<feature id="com.ibm.ws.ast.batch.webservices" image="rtFeatUpdate.gif" label="%featureName" provider-name="%providerName" version="2.100.100.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.environment.core" install-size="0" unpack="false" version="6.1.200.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.etools.webservice.was.core" install-size="0" unpack="false" version="6.1.800.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.etools.webservice.was.consumption.core" install-size="0" unpack="false" version="7.100.0.v20200309_1000"/>
+
+</feature>

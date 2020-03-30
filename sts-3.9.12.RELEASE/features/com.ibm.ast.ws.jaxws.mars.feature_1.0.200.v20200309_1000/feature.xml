@@ -1,0 +1,17 @@
+<feature id="com.ibm.ast.ws.jaxws.mars.feature" label="%FeatureName" provider-name="IBM" version="1.0.200.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+    <license url="%licenseURL">
+      %License
+   </license> 
+   
+    <plugin download-size="0" id="com.ibm.ast.ws.jaxws.creation.ui.mars" install-size="0" unpack="false" version="1.0.150.v20200309_1000"/> 
+
+</feature>

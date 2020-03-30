@@ -1,0 +1,74 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+
+Name: rtFeatUpdate.gif
+SHA-256-Digest: +aKHWS/yq9bl3r2ZSVoPSvY7NE4TsfY4Y+66+jy5RJQ=
+
+Name: license_pt_BR.html
+SHA-256-Digest: CMNw5hhKxgs5iOn2euw9sdyywwn6uSItwAhJO1eOG7A=
+
+Name: license_zh_TW.html
+SHA-256-Digest: 6llDso4JjGkFyM4W5WIDoyxX7GVvdFONgdcPdBCFm5E=
+
+Name: license_zh_CN.html
+SHA-256-Digest: xhacX5cPzPTwbcJY24cNTjAtLAZ1d6YUXsDxxQLpYOo=
+
+Name: license_ko.html
+SHA-256-Digest: 2Z9IhPcz/LZpRoEMa40JgoLtwmjAHCAifhjRxq3AcqY=
+
+Name: feature_pt_BR.properties
+SHA-256-Digest: B2GVrYXHvXD5/9/LnOREVlIXg+wnvfnjvcn+Ewcvy2o=
+
+Name: feature.xml
+SHA-256-Digest: gZhkkUuHqHV3aJUx2wZ8XmXSpESOhKPfA5nIlrAqQq8=
+
+Name: feature_ko.properties
+SHA-256-Digest: ugGULBF5pfAI/a8jJn0rdWopQnoY6TdSQe9QYCi6L38=
+
+Name: feature_de.properties
+SHA-256-Digest: Ov96duUylaoTgFqzOueBdawd/tKFpB92Ii+xWSMu5Gc=
+
+Name: license_fr.html
+SHA-256-Digest: 6+6ecmooER+x3QI1WRjWIgNdZcHq4Dx74Ek82znBvHE=
+
+Name: feature_es.properties
+SHA-256-Digest: 1ZQCGN7jdNe4Lu3RCyRJc+EGyCh4vBfI0Woxv85uX2w=
+
+Name: feature_it.properties
+SHA-256-Digest: lGIHOjhdUNO+szpuPxmX9vOqI1qrbDIXHEbl7lTiPcQ=
+
+Name: feature_zh_CN.properties
+SHA-256-Digest: wHUO1TGiLbyC/KiRhEioBsH7hCETnvcLMPiJSy0iVdk=
+
+Name: license_es.html
+SHA-256-Digest: 5BoKEvWJR0gHXqWeEdlk5FC7MKWgSuTKtlv2sqKlTYA=
+
+Name: license_de.html
+SHA-256-Digest: r+q8CxBP//ZeIPYVWE8Gzn9tsTpnci0WIlAlV4YKY3k=
+
+Name: feature_ja.properties
+SHA-256-Digest: p6OVRmPCR128vuJsOdY3QB4Hj/iRE3aQk6223uW7V4c=
+
+Name: license_it.html
+SHA-256-Digest: sv2N+NGAMPLGZYBqbCEaU1zPPXZpy5gOgkQU5EwOCjE=
+
+Name: about.html
+SHA-256-Digest: fqiKVhJR+5MhVQ3LuKkAlskyYAfx+sq9pVnZgVirkO0=
+
+Name: feature_zh_TW.properties
+SHA-256-Digest: UjidCOKepKy4SQWHb9ncXMNKjj1ehAB95H6x2wuUGJw=
+
+Name: license.html
+SHA-256-Digest: mKFEGbux7nq+YZ+oIQCMwNTcCOm9XF6W2MkWSqqu1bg=
+
+Name: feature_fr.properties
+SHA-256-Digest: V0LnnFPG7inbMk7MuIhNO+57R3/jCkrY2DLOUwMSsbw=
+
+Name: license_ja.html
+SHA-256-Digest: doDLRQ4OVIlYkC8Ym3Dl5f10WiMGH5ItqPem8U4WLHI=
+
+Name: feature.properties
+SHA-256-Digest: 7c1Ss5KhMHD5+OMaordTwV07pOpJHS65MCi2ODB7z4I=
+

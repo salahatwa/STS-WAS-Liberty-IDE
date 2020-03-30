@@ -1,0 +1,17 @@
+<feature id="com.ibm.etools.attrview.feature" label="%featureName" provider-name="IBM" version="1.0.100.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.attrview" install-size="0" unpack="false" version="1.0.200.v20200309_1000"/>
+
+</feature>

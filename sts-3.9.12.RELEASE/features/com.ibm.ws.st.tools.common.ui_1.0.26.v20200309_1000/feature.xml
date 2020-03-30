@@ -1,0 +1,17 @@
+<feature id="com.ibm.ws.st.tools.common.ui" label="%featureName" provider-name="%providerName" version="1.0.26.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes id="com.ibm.ws.st.was.tools.common.ui" version="1.0.3.v2020-03-09_0937"/>
+         
+</feature>

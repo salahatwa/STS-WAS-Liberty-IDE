@@ -1,0 +1,18 @@
+<feature id="com.ibm.etools.webtools.json.feature" label="%featureName" provider-name="IBM" version="1.0.100.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %License
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.webtools.json.core" install-size="0" unpack="false" version="1.0.200.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.etools.webtools.json.ui" install-size="0" unpack="false" version="1.1.200.v20200309_1000"/>
+</feature>

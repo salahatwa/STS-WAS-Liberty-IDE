@@ -1,0 +1,32 @@
+<feature id="com.ibm.wdt.javaee.feature" label="%FeatureName" provider-name="%ProviderName" version="1.0.400.v20200309_1000">
+
+   <description url="http://www.example.com/description">
+      %General
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %Copyright
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      %License
+   </license>
+
+   <includes id="com.ibm.etools.maven.javaee.feature" version="1.2.0.v20200309_1000"/>
+
+   <requires>
+      <import feature="com.ibm.xwt.dde.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.propertygroup.feature" match="greaterOrEqual" version="6.6.100"/>
+      <import feature="com.ibm.etools.slickui.feature" match="greaterOrEqual" version="1.1.0"/>
+      <import feature="com.ibm.etools.webtools.flatui.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.etools.wtp.extensions.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.etools.j2ee.common" match="greaterOrEqual" version="7.0.201"/>
+      <import feature="com.ibm.etools.project.explorer.feature" match="greaterOrEqual" version="1.0.1"/>
+      <import feature="com.ibm.etools.annotations.feature" match="greaterOrEqual" version="1.0.300"/>
+      <import feature="com.ibm.etools.annotations.javaee.feature" match="greaterOrEqual" version="1.0.300"/>
+      <import feature="com.ibm.etools.common.migration.feature" match="greaterOrEqual" version="1.0.1"/>
+      <import feature="com.ibm.jee.bean.validation.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.etools.restapi.documentation.feature" version="1.0.0.qualifier"/>
+   </requires>
+
+</feature>

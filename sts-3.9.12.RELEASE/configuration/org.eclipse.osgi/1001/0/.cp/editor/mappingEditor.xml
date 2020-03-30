@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://jboss.org/xml/ns/javax/validation/mapping"
+	customizationSchemaLocation="" overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	treeSortingPreference="alwaysUnsorted" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile ../../com.ibm.xwt.dde/schema/CustomizationFile.xsd "
+	headerIcon="icons/obj16/constraint-mapping.gif">
+
+	<node path="/constraint-mappings" label="%CONSTRAINT_MAPPINGS"
+		icon="icons/obj16/constraint-mapping.gif">
+		<item path="@version" label="%VERSION" />
+		<item path="default-package" label="%DEFAULT_PACKAGE" />
+
+		<node path="bean" label="%BEAN" treeLabel="%BEAN_TREE_LABEL"
+			treeLabelData="@class" icon="icons/obj16/bean.gif">
+			<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+				style="checkBox" />
+			<item path="@class" label="%CLASS"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ConstraintMappingXMLCreateClassHandler" 
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ConstraintMappingXMLBrowseClassHandler" 
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+
+			<node path="class" label="%CLASS" icon="icons/obj16/class.gif">
+				<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+					style="checkBox" />
+				<node path="group-sequence" label="%GROUP_SEQUENCE">
+					<item path="value" label="%VALUE" />
+				</node>
+			</node>
+
+			<node path="field" label="%FIELD" treeLabel="%FIELD_TREE_LABEL"
+				treeLabelData="@name" icon="icons/obj16/field.gif">
+				<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+					style="checkBox" />
+				<item path="@name" label="%NAME" />
+				<item path="valid" label="%VALID" style="checkBox" />
+			</node>
+
+			<node path="getter" label="%GETTER" treeLabel="%GETTER_TREE_LABEL"
+				treeLabelData="@name" icon="icons/obj16/getter.gif">
+				<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+					style="checkBox" />
+				<item path="@name" label="%NAME" />
+				<item path="valid" label="%VALID" style="checkBox" />					
+			</node>
+
+			<node path="constructor" label="%CONSTRUCTOR" icon="icons/obj16/constructor.gif">
+				<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+					style="checkBox" />
+			</node>
+
+			<node path="method" label="%METHOD" treeLabel="%METHOD_TREE_LABEL"
+				treeLabelData="@name" icon="icons/obj16/method.gif">
+				<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+					style="checkBox" />
+				<item path="@name" label="%NAME" />
+			</node>
+		</node>
+
+		<node path="constraint-definition" label="%CONSTRAINT_DEFINITION"
+			treeLabel="%CONSTRAINT_DEFINITION_TREE_LABEL"
+			treeLabelData="@annotation"
+			icon="icons/obj16/constraint-definition.gif">
+			<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+				style="checkBox" />
+			<item path="@annotation" label="%ANNOTATION" />
+			<node path="validated-by" label="%VALIDATED_BY" style="treeNode"
+				icon="icons/obj16/validated-by.gif">
+				<item path="@include-existing-validators" label="%INCLUDE_EXISTING_VALIDATORS"
+					style="checkBox" />
+				<node path="value" label="%VALUE" style="treeNode" treeLabel="%VALUE_TREE_LABEL"
+					treeLabelData="." icon="icons/obj16/value.gif">
+					<item path="." label="%VALUE"
+						labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ConstraintMappingXMLCreateClassHandler"
+						buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ConstraintMappingXMLBrowseClassHandler"
+						buttonLabel="%BROWSE" 
+						validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+				</node>
+				
+			</node>
+		</node>
+	</node>
+	
+	<node path="*">
+		<node path="annotation" label="%ANNOTATION" icon="icons/obj16/annotation.gif"/>
+
+		<node path="constraint" label="%CONSTRAINT" treeLabel="%CONSTRAINT_TREE_LABEL"
+			treeLabelData="@annotation" icon="icons/obj16/constraint.gif">
+			<item path="@annotation" label="%ANNOTATION" />
+			<item path="message" label="%MESSAGE" />
+			
+			<node path="groups" label="%GROUPS">
+				<item path="." label="%GROUPS"></item>
+				<item path="value" label="%VALUE" />
+			</node>
+			
+			<node path="payload" label="%PAYLOAD">
+				<item path="." label="%PAYLOAD"></item>
+				<item path="value" label="%VALUE" />
+			</node>
+		</node>
+		
+		<node path="convert-group" label="%CONVERT_GROUP" icon="icons/obj16/convert-group.gif">
+			<item path="@from" label="%FROM" />
+			<item path="@to" label="%TO" />
+		</node>
+		
+		<node path="element" label="%ELEMENT" treeLabel="%ELEMENT_TREE_LABEL"
+			treeLabelData="@name" icon="icons/obj16/element.gif">
+			<item path="@name" label="%ELEMENT_ITEM_NAME" />
+			<item path="." label="%ELEMENT_ITEM_SINGLE_VALUE" deleteIfEmpty="false"  
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ElementValueValidator" />
+			<item path="value" label="%ELEMENT_ITEM_ARRAY_OF_VALUES"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ElementValueValidator" />
+		</node>
+
+		<node path="cross-parameter" label="%CROSS_PARAMETER"
+			icon="icons/obj16/cross-parameter.gif">
+			<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+				style="checkBox" />
+		</node>
+
+		<node path="parameter" label="%PARAMETER" icon="icons/obj16/parameter.gif">
+			<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+				style="checkBox" />
+			<item path="@type" label="%TYPE" />
+			<item path="valid" label="%VALID" style="checkBox"/>
+		</node>
+
+		<node path="return-value" label="%RETURN_VALUE" icon="icons/obj16/return-value.gif">
+			<item path="@ignore-annotations" label="%IGNORE_ANNOTATIONS"
+				style="checkBox" />
+			<item path="valid" label="%VALID" style="checkBox" />
+		</node>
+	</node>
+
+</customization>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.content.ibm-web-bnd-1.0-editor			                  *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-web-bnd_1_0.xsd                  *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-web-bnd_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-web-bnd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0003"
+	headerIcon="icons/web-bnd/web-bnd.gif">
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+		<item path="@version" label="%VERSION" readOnly="true" />
+		<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+		
+		<item path="@binding-name" label="%BINDING_NAME"/>
+		<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+		<item path="@name" label="%NAME"/>
+		<item path="@password" label="%PASSWORD"/>
+		<item path="@userid" label="%USER_ID"/>
+		<item path="@value" label="%VALUE"/>
+	</node>
+
+	<node path="/web-bnd" label="%WEB_BINDINGS" treeLabel="%fWEB_BINDINGS" treeLabelData="virtual-host@name" icon="icons/web-bnd/web-bnd.gif" sectionHeaderText="%hREQUIRED">
+		<node path="data-source" hide="true"/>
+ 		<node path="env-entry" hide="true"/> 
+		<node path="virtual-host" hideSectionTitle="true">
+			<item path="@name" label="%VIRTUAL_HOST_NAME"/>
+		</node>
+		
+ 		<node path="jaspi-ref" label="%JASPI_REF">
+ 			<item path="@provider-name" label="%PROVIDER_NAME"/>
+	 		<item path="@use-jaspi" label="%USE_JASPI">
+				<possibleValues>
+					<value value="inherit" label="inherit (default)" />
+					<value value="yes" label="yes" />
+					<value value="no" label="no" />
+				</possibleValues>
+			</item>
+		</node>
+		
+		<node path="ejb-ref" label="%EJB_REFERENCE" treeLabel="%fEJB_REFERENCE" treeLabelData="@name" icon="icons/web-bnd/ejb-ref.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@binding-name" inheritCustomization="true"/>
+		</node>
+
+	 	<node path="message-destination" label="%MESSAGE_DESTINATION" icon="icons/web-bnd/message-destination.gif">
+ 			<item path="@name" inheritCustomization="true" />
+ 			<item path="@binding-name" inheritCustomization="true" />
+ 		</node>
+
+		<node path="message-destination-ref" label="%MESSAGE_DESTINATION_REFERENCE" treeLabel="%fMESSAGE_DESTINATION_REFERENCE" treeLabelData="@name" icon="icons/web-bnd/message-destination-ref.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@binding-name" inheritCustomization="true"/>		
+		</node>
+
+		<node path="resource-env-ref" label="%RESOURCE_ENVIRONMENT_REFERENCE" treeLabel="%fRESOURCE_ENVIRONMENT_REFERENCE" treeLabelData="@name" icon="icons/web-bnd/resource-env-ref.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@binding-name" inheritCustomization="true"/>		
+		</node>
+
+		<node path="resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/web-bnd/resource-ref.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@binding-name" inheritCustomization="true"/>
+			
+			<node path="default-auth" hide="true"/>
+			
+			<node path="authentication-alias" label="%AUTHENTICATION_ALIAS" treeLabel="%fAUTHENTICATION_ALIAS" treeLabelData="@name" icon="icons/web-bnd/authentication-alias.gif" sectionHeaderText="%hREQUIRED"/>
+			
+			<node path="custom-login-configuration" label="%CUSTOM_LOGIN_CONFIGURATION" treeLabel="%fCUSTOM_LOGIN_CONFIGURATION" treeLabelData="@name" icon="icons/web-bnd/custom-login-configuration.gif" sectionHeaderText="%hREQUIRED">
+				<node path="property" label="%PROPERTY" treeLabel="%fPROPERTY" treeLabelData="@name" icon="icons/web-bnd/property.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@value" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+				</node>			
+			</node>
+		</node>
+	</node>
+</customization>

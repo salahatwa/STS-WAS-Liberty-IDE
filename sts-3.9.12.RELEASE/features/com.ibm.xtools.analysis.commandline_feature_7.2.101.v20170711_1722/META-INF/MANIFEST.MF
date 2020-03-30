@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0 (IBM Corporation)
+
+Name: feature.xml
+SHA-256-Digest: Kih2scDAkeRgVA5p3nMhttTZqQ1U42oyBuATepsxN6Q=
+
+Name: feature.properties
+SHA-256-Digest: 155IPC1xqWPn03QXdcyAXyg6GopTPFdrqq6aVHARZeo=
+

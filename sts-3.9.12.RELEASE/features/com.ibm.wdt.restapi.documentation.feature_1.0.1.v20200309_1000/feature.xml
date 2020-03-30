@@ -1,0 +1,19 @@
+<feature id="com.ibm.wdt.restapi.documentation.feature" label="%FeatureName" provider-name="%ProviderName" version="1.0.1.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %License
+   </license>
+
+   <requires>
+      <import feature="com.ibm.etools.restapi.documentation.feature" version="1.0.0.qualifier"/>
+   </requires>
+
+</feature>

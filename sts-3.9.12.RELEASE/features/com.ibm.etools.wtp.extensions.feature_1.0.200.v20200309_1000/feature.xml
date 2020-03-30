@@ -1,0 +1,19 @@
+<feature id="com.ibm.etools.wtp.extensions.feature" label="WTP Extensions" provider-name="IBM" version="1.0.200.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %License
+   </license>
+
+   <plugin download-size="0" id="com.ibm.faceted.project.wizard" install-size="0" unpack="false" version="1.0.300.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.faceted.project.wizard.core" install-size="0" unpack="false" version="1.1.0.v20200309_1000"/>
+
+</feature>

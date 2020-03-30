@@ -1,0 +1,17 @@
+<feature id="com.ibm.ws.ast.ws.tools" image="rtFeatUpdate.gif" label="%featureName" provider-name="IBM" version="1.0.801.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.emitter.tools" install-size="0" version="2.0.101.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.tools" install-size="0" version="1.0.600.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.annotations.tools" install-size="0" unpack="false" version="2.0.0.v20200309_1000"/>
+
+</feature>

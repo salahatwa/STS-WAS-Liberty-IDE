@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.xtools.analysis.commandline_feature.nl1"
+      label="%name"
+      version="7.0.0.v20170609_1759"
+      provider-name="%provider">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.ibm.xtools.analysis.commandline_feature" version="7.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="com.ibm.xtools.analysis.commandline.nl1"
+         download-size="0"
+         install-size="0"
+         version="7.0.0.v20170609_1759"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,20 @@
+<feature id="com.ibm.etools.webservice.discovery.core" label="%featureName" provider-name="%featureProvider" version="7.100.0.v20200309_1000">
+   <install-handler/>
+
+   <description>
+      %featureDescription
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.webservice.discovery.core" install-size="0" unpack="false" version="7.100.0.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ccl.ws.finder.core" install-size="0" unpack="false" version="1.0.450.v20200309_1000"/>
+
+</feature>

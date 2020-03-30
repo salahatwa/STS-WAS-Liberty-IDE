@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* (C) Copyright IBM Corp. 2016, 2018                                */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+-->
+
+<feature
+      id="com.ibm.rrd.feature"
+      label="%featureName"
+      version="3.16.0.v20200305_1150"
+      provider-name="%providerName"
+      license-feature="com.ibm.ws.migrationtoolkit.license.feature"
+      license-feature-version="9.0.0.qualifier">
+<license url="%licenseURL" >
+      %license
+  </license>
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <plugin
+         id="com.ibm.rrd"
+         download-size="0"
+         install-size="0"
+         version="1.4.0.v20200305_1150"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.rrd.nl1"
+         download-size="0"
+         install-size="0"
+         version="1.4.0.v20200305_1150"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.rrd.core"
+         download-size="0"
+         install-size="0"
+         version="1.11.0.v20200305_1150"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.rrd.core.nl1"
+         download-size="0"
+         install-size="0"
+         version="1.11.0.v20200305_1150"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

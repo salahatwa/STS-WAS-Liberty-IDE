@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization 
+customizationNamespace="http://xmlns.jcp.org/xml/ns/javaee"
+	customizationSchemaLocation="http://xmlns.jcp.org/xml/ns/javaee/application-client_7.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd">
+
+	<!-- Global customization -->
+	<node path="*" inheritCustomization="true">	
+		<node path="property" label="%Property" treeLabel="%Property_treelabel" treeLabelData="name" icon="icons/property.gif">
+			<item path="name" label="%Name" style="text"/>
+	   		<item path="value" label="%Value" style="text"/>	  	 			
+		</node>		
+			
+		<node path="administered-object" label="%Administered_Object" treeLabel="%Administered_Object_treelabel" treeLabelData="name" icon="icons/obj16/admin_obj.gif">
+		 	<item path="name" label="%Name" style="text"/>
+			<item path="class-name" label="%Class_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="interface-name" label="%Interface_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="resource-adapter" label="%Resource_Adapter" style="text"/>
+		</node>
+		
+		<node path="connection-factory" label="%Connection_Factory" treeLabel="%Connection_Factory_treelabel" treeLabelData="name" icon="icons/obj16/connection_factory.gif">
+			<item path="name" label="%Name" style="text"/>		
+			<item path="interface-name" label="%Interface_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="resource-adapter" label="%Resource_Adapter" style="text"/>
+			<item path="max-pool-size" label="%Max_Pool_Size" style="text"/>
+			<item path="min-pool-size" label="%Min_Pool_Size" style="text"/>	
+			<item path="transaction-support" label="%Transaction_Support"/>
+		</node>
+		
+
+		<node path="jms-connection-factory" label="%JMS_Connection_Factory" treeLabel="%JMS_Connection_Factory_treelabel" treeLabelData="name" icon="icons/obj16/jms_connection_factory.gif">
+		- 	<item path="name" label="%Name" style="text"/>
+			<item path="class-name" label="%Class_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="interface-name" label="%Interface_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="resource-adapter" label="%Resource_Adapter" style="text"/>		
+			<item path="user" label="%User" style="text"/>	
+			<item path="password" label="%Password" style="text"/>
+			<item path="client-id" label="%Client_ID" style="text"/>
+			<item path="transactional" label="%Transactional"/>
+			<item path="max-pool-size" label="%Max_Pool_Size" style="text"/>
+			<item path="min-pool-size" label="%Min_Pool_Size" style="text"/>	
+		</node>
+		
+		<node path="jms-destination" label="%JMS_Destination_Factory" treeLabel="%JMS_Destination_Factory_treelabel" treeLabelData="name" icon="icons/obj16/jms_destination.gif">
+			<item path="name" label="%Name" style="text"/>
+			<item path="class-name" label="%Class_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="interface-name" label="%Interface_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="resource-adapter" label="%Resource_Adapter" style="text"/>	
+			<item path="destination-name" label="%Destination_Name" style="text"/>	
+		</node>		
+		
+		<node path="mail-session" label="%Mail_Session" treeLabel="%Mail_Session_treelabel" treeLabelData="name" icon="icons/obj16/mail_session_obj.gif">
+			<item path="name" label="%Name" style="text"/>
+			<item path="store-protocol" label="%Store_Protocol" style="text"/>
+			<item path="store-protocol-class" label="%Store_Protocol_Class_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="transport-protocol" label="%Transport_Protocol" style="text"/>			
+			<item path="transport-protocol-class" label="%Transport_Protocol_Class_Name" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="host" label="%Host" style="text"/>			
+			<item path="user" label="%User" style="text"/>	
+			<item path="password" label="%Password" style="text"/>
+			<item path="from" label="%From" style="text"/>			
+		</node>	
+	</node>		
+
+</customization>

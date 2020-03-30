@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.devtools.cshelp.feature"
+      label="%featureName"
+      version="1.0.500.v20130514_1745"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.ibm.jythontools.cshelp"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20121212_0720"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.servertools.cshelp"
+         download-size="0"
+         install-size="0"
+         version="1.0.500.v20130511_1717"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.ejbdeploy.ui.core.cshelp"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20121212_0720"
+         unpack="false"/>
+
+</feature>

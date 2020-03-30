@@ -1,0 +1,19 @@
+<feature id="com.ibm.ws.st.tools.common.core" label="%featureName" provider-name="%providerName" version="1.0.14.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes id="com.ibm.ws.st.was.tools.common.core" version="1.0.5.v2020-03-09_0937"/>
+
+   <plugin download-size="0" id="com.ibm.ws.st.rxa.ext" install-size="0" unpack="false" version="1.0.8.v20200309_1000"/>
+
+</feature>

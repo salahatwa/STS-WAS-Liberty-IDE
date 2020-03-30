@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.rsaz.analysis.architecture_feature"
+      label="%name"
+      version="7.0.200.v20170609_1759"
+      provider-name="%provider">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime" version="3.2.0" match="compatible"/>
+      <import plugin="com.ibm.rsaz.analysis.core" version="7.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.ibm.rsaz.analysis.architecture.core"
+         download-size="0"
+         install-size="0"
+         version="7.0.200.v20170609_1759"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.rsaz.analysis.architecture.java"
+         download-size="0"
+         install-size="0"
+         version="7.0.100.v20170609_1759"
+         unpack="false"/>
+
+</feature>

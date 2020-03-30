@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.ibm-web-ext-pme-1.0-editor			                  *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-web-ext-pme_1_0.xsd              *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-web-ext-pme_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-web-ext-pme"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0011"
+	headerIcon="icons/web-ext-pme/web-ext-pme.gif">
+
+	<node path="*">
+		<item path="@country" label="%COUNTRY" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.CountryBrowser" buttonLabel="%BROWSE"/>
+		<item path="@id" hide="true"/>
+		<item path="@version" hide="true"/>
+		<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+		<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+		<item path="@lang" label="%LANGUAGE" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.LanguageBrowser" buttonLabel="%BROWSE"/>
+		<item path="@name" label="%NAME"/>
+		<item path="@type" label="%TYPE"/>
+		<item path="@variant" label="%VARIANT"/>
+
+		<node path="activity-sessions" label="%ACTIVITY_SESSIONS" icon="icons/web-ext-pme/activity-sessions.gif" sectionHeaderText="%hACTIVITY_SESSIONS"/>
+	
+		<node path="application" label="%APPLICATION" icon="icons/web-ext-pme/application.gif" sectionHeaderText="%hAPPLICATION"/>
+
+		<node path="compensation" label="%COMPENSATION" icon="icons/web-ext-pme/compensation.gif" sectionHeaderText="%hCOMPENSATION"/>
+
+		<node path="internationalization" label="%INTERNATIONALIZATION" icon="icons/web-ext-pme/internationalization.gif" sectionHeaderText="%hINTERNATIONALIZATION"/>
+		
+		<node path="locale" label="%LOCALE" icon="icons/web-ext-pme/locale.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@lang" inheritCustomization="true"/>
+			<item path="@country" inheritCustomization="true"/>
+			<item path="@variant" inheritCustomization="true"/>
+			<item path="@description" inheritCustomization="true"/>
+		</node>
+		
+		<node path="run-as-caller" label="%RUN_AS_CALLER" icon="icons/web-ext-pme/run-as-caller.gif" sectionHeaderText="%hRUN_AS"/>
+		
+		<node path="run-as-server" label="%RUN_AS_SERVER" icon="icons/web-ext-pme/run-as-server.gif" sectionHeaderText="%hRUN_AS"/>
+		
+		<node path="run-as-specified" label="%RUN_AS_SPECIFIED" icon="icons/web-ext-pme/run-as-specified.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@description" inheritCustomization="true"/>
+			<node path="time-zone" label="%TIME_ZONE">
+				<item path="@name" inheritCustomization="true"/>
+				<item path="@description" inheritCustomization="true"/>
+			</node>
+		</node>
+		
+		<node path="servlet" label="%SERVLET" treeLabel="%fSERVLET" treeLabelData="@name" icon="icons/web-ext-pme/servlet.gif" sectionHeaderText="%hREQUIRED"/>		
+	</node>
+
+	<node path="/web-ext-pme" label="%WEB_PME" icon="icons/web-ext-pme/web-ext-pme.gif" sectionHeaderText="%hWEB_PME">
+		<node path="app-profiles" label="%APPLICATION_PROFILES" icon="icons/web-ext-pme/app-profiles.gif" sectionHeaderText="%hAPPLICATION_PROFILES">
+			<node path="servlet-component-extension" label="%SERVLET_COMPONENT_EXTENSION" treeLabel="%fSERVLET_COMPONENT_EXTENSION" treeLabelData="@servlet" icon="icons/web-ext-pme/servlet-component-extension.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@servlet" label="%SERVLET"/>
+				<node path="task" label="%TASK">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+				</node>
+				<node path="task-ref" label="%TASK_REFERENCE" treeLabel="%fTASK_REFERENCE" treeLabelData="@logical-name" icon="icons/ejb-ext-pme/task-ref.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@logical-name" label="%LOGICAL_NAME"/>
+					<node path="task" label="%TASK">
+						<item path="@name" inheritCustomization="true"/>
+						<item path="@description" inheritCustomization="true"/>
+						</node>
+				</node>
+			</node>
+		</node>
+	</node>
+</customization>

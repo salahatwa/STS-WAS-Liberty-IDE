@@ -1,0 +1,19 @@
+<feature id="com.ibm.ws.st.jee.tools.feature" label="%FeatureName" provider-name="%ProviderName" version="1.0.100.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license url="">
+      %License
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.javaee.cdi.ext.ui" install-size="0" unpack="false" version="1.2.301.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.jee.annotations.processor" install-size="0" unpack="false" version="1.1.50.v20200309_1000"/>
+
+</feature>

@@ -1,0 +1,19 @@
+<feature id="com.ibm.websphere.wdt.server.tools.main" label="%featureName" provider-name="IBM" version="20.0.300.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.ibm.websphere.wdt.server.tools" match="greaterOrEqual" version="20.0.300"/>
+   </requires>
+
+</feature>

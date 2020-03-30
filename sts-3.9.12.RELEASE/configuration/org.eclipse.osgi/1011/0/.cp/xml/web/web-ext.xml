@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.ibm-web-ext-1.0-editor			                  *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-web-ext_1_0.xsd                  *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-web-ext_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-web-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0010"
+	headerIcon="icons/web-ext/web-ext.gif">
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+		<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance"/>
+
+		<item path="@alternate-name" label="%ALTERNAME_NAME"/>
+		<item path="@boundary" label="%BOUNDARY"/>
+		<item path="@default-page" label="%DEFAULT_PAGE"/>
+		<item path="@error-page" label="%ERROR_PAGE"/>
+		<item path="@execute-using-wsat" label="%EXECUTE_USING_WSAT">
+			<possibleValues>
+				<value value="true" label="%TRUE"/>
+				<value value="false" label="%FALSE"/>
+			</possibleValues>
+		</item>
+		<item path="@metadata-complete" label="%METADATA_COMPLETE" style="checkBox"/>
+		<item path="@mime-type" label="%MIME_TYPE"/>
+		<item path="@name" label="%NAME"/>
+		<item path="@target" label="%TARGET"/>
+		<item path="@resolver" label="%RESOLVER"/>
+		<item path="@send-wsat-context" label="%SEND_WSAT_CONTEXT">
+			<possibleValues>
+				<value value="true" label="%TRUE"/>
+				<value value="false" label="%FALSE"/>
+			</possibleValues>
+		</item>
+		<item path="@transaction-time-out" label="%TRANSACTION_TIME-OUT"/>
+		<item path="@value" label="%VALUE"/>
+		<item path="@unresolved-action" label="%UNRESOLVED_ACTION"/>
+		<item path="@uri" label="%URI"/>
+		<item path="@use-path-infos" label="%USE_PATH_INFOS" style="checkBox"/>
+		<item path="@use-uri" label="%USE_URI" style="checkBox"/>
+
+		<node path="cache-variable" label="%CACHE_VARIABLE" icon="icons/web-ext/cache-variable.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@data-id" label="%DATA_ID"/>
+			<item path="@identifier" label="%IDENTIFIER"/>
+			<item path="@invalidate" label="%INVALIDATE"/>
+			<item path="@method" label="%METHOD"/>
+			<item path="@type" label="%TYPE"/>
+			<item path="@required" label="%REQUIRED" style="checkBox"/>
+		</node>
+		
+		<node path="external-cache-group" label="%EXTERNAL_CACHE_GROUP" treeLabel="%fEXTERNAL_CACHE_GROUP" treeLabelData="@name" icon="icons/web-ext/external-cache-group.gif" sectionHeaderText="%hREQUIRED"/>
+
+		<node path="file-serving-attribute" label="%FILE_SERVING_ATTRIBUTE" treeLabel="%fFILE_SERVING_ATTRIBUTE" treeLabelData="@name" icon="icons/web-ext/file-serving-attribute.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="id-generation-properties" label="%ID_GENERATION_PROPERTIES" icon="icons/web-ext/id-generation-properties.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="global-transaction" label="%GLOBAL_TRANSACTION"/>
+		
+		<node path="invoker-attribute" label="%INVOKER_ATTRIBUTE" treeLabel="%fINVOKER_ATTRIBUTE" treeLabelData="@name" icon="icons/web-ext/invoker-attribute.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="jsp-attribute" label="%JSP_ATTRIBUTE" treeLabel="%fJSP_ATTRIBUTE" treeLabelData="@name" icon="icons/web-ext/jsp-attribute.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="local-transaction" label="%LOCAL_TRANSACTION">
+			<item path="@shareable"  label="%SHAREABLE"/>
+		</node>
+		
+		<node path="mime-filter" label="%MIME_FILTER" treeLabel="%fMIME_FILTER" treeLabelData="@mime-type" icon="icons/web-ext/mime-filter.gif" sectionHeaderText="%hREQUIRED"/>
+
+		<node path="markup-language" label="%MARKUP_LANGUAGE" treeLabel="%fMARKUP_LANGUAGE" treeLabelData="@name" icon="icons/web-ext/markup-language.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@default-page" inheritCustomization="true"/>
+			<item path="@error-page" inheritCustomization="true"/>
+			<item path="@mime-type" inheritCustomization="true"/>
+		</node>
+
+		<node path="page" label="%PAGE" treeLabel="%fPAGE" treeLabelData="@name" icon="icons/web-ext/page.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="servlet" label="%SERVLET" treeLabel="%fSERVLET" treeLabelData="@name" icon="icons/web-ext/servlet.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="web-global-transaction" label="%WEB_GLOBAL_TRANSACTION"/>
+	</node>
+	
+	<node path="/web-ext" label="%WEB_EXTENSIONS" icon="icons/web-ext/web-ext.gif" sectionHeaderText="%hREQUIRED">
+		<item path="@version" label="%VERSION" readOnly="true" />
+		<node path="additional-classpath" hide="true"/>
+		<node path="default-error-page" hideSectionTitle="true">
+			<item path="@uri" label="%DEFAULT_ERROR_PAGE_URI" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+		</node>
+		<node path="reload-interval" hideSectionTitle="true">
+			<item path="@value" label="%RELOAD_INTERVAL" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+		</node>
+		<node path="context-root" hideSectionTitle="true">
+			<item path="@uri" label="%CONTEXT_ROOT" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+		</node>
+		<node path="auto-encode-requests" hideSectionTitle="true">
+			<item path="@value" label="%AUTO_ENCODE_REQUESTS" style="checkBox"/>
+		</node>
+		<node path="auto-encode-responses" hideSectionTitle="true">
+			<item path="@value" label="%AUTO_ENCODE_RESPONSES" style="checkBox"/>
+		</node>
+		<node path="autoload-filters" hideSectionTitle="true" hide="true">
+			<item path="@value" label="%AUTOLOAD_FILTERS" style="checkBox"/>
+		</node>
+		<node path="enable-directory-browsing" hideSectionTitle="true">
+			<item path="@value" label="%ENABLE_DIRETORY_BROWSING" style="checkBox"/>
+		</node>
+		<node path="enable-file-serving" hideSectionTitle="true">
+			<item path="@value" label="%ENABLE_FILE_SERVING" style="checkBox"/>
+		</node>
+		<node path="enable-reloading" hideSectionTitle="true">
+			<item path="@value" label="%ENABLE_RELOADING" style="checkBox"/>
+		</node>
+		<node path="enable-serving-servlets-by-class-name" hideSectionTitle="true">
+			<item path="@value" label="%ENABLE_SERVING_SERVLETS_BY_CLASS_NAME" style="checkBox"/>
+		</node>
+		<node path="pre-compile-jsps" hideSectionTitle="true">
+			<item path="@value" label="%PRE-COMPILE_JSPS" style="checkBox"/>
+		</node>
+		
+		<node path="resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/web-ext/resource-ref.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+			<item path="@commit-priority" label="%COMMIT_PRIORITY"/>
+			<item path="@isolation-level" label="%ISOLATION_LEVEL"/>
+			<item path="@connection-management-policy" label="%CONNECTION_MANAGEMENT_POLICY"/>
+			<item path="@branch-coupling" label="%BRANCH_COUPLING"/>
+		</node>
+		
+		<node path="servlet-cache-config" label="%SERVLET_CACHE_CONFIG" treeLabel="%fSERVLET_CACHE_CONFIG" treeLabelData="@properties-group-name" icon="icons/web-ext/servlet-cache-config.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@properties-group-name" label="%PROPERTIES_GROUP_NAME"/>
+			<section label="%SETTINGS_OPTIONAL">
+				<node path="additional-classpath" hide="true"/>
+				<node path="id-generator" hideSectionTitle="true">
+					<item path="@class" label="%ID_GENERATOR_CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="metadata-generator" hideSectionTitle="true">
+					<item path="@class" label="%METADATA_GENERATOR_CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="priority" hideSectionTitle="true">
+					<item path="@value" label="%PRIORITY_VALUE" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="timeout" hideSectionTitle="true">
+					<item path="@value" label="%TIMEOUT_VALUE" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="invalidate-only" hideSectionTitle="true">
+					<item path="@value" label="%INVALIDATE_ONLY" style="checkBox"/>
+				</node>
+			</section>
+		</node>
+	</node>
+</customization>

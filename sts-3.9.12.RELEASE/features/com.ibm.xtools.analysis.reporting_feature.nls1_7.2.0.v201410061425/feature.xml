@@ -1,0 +1,5 @@
+<feature id="com.ibm.xtools.analysis.reporting_feature.nls1"  label="com.ibm.xtools.analysis.reporting_feature.nls1" version="7.2.0.v201410061425">
+<plugin fragment="true" id="com.ibm.rsar.analysis.core.reporting.nl1" version="7.2.0.v201410061425" unpack="false"  />
+<plugin fragment="true" id="com.ibm.rsaz.analysis.birt.compatibility.nl1" version="7.0.101.v201410061425" unpack="false"  />
+<plugin fragment="true" id="com.ibm.xtools.analysis.reporting.nl1" version="7.1.102.v201410061425" unpack="false"  />
+</feature>

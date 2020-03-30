@@ -1,0 +1,18 @@
+<feature id="com.ibm.websphere.wdt.product.site.fe" label="%featureName" provider-name="%providerName" version="2.0.30.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <requires>
+      <import feature="com.ibm.ut.ic.server.feature" match="greaterOrEqual" version="1.0.1"/>
+      <import feature="com.ibm.ccl.preferenceharvester.feature" match="greaterOrEqual" version="1.2.0"/>
+   </requires>
+
+   <plugin download-size="0" id="com.ibm.websphere.wdt.product.site" install-size="0" unpack="false" version="2.0.8.v20200309_1000"/>
+
+</feature>

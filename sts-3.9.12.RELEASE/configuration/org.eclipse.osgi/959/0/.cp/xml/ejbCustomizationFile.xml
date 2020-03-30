@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.etools.javaee.ui.editors(EJB Editor)                   
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization helpContextId="com.ibm.etools.javaee.ui.editors.ejb.ejbEditor" 
+ 
+headerActions="com.ibm.etools.javaee.ui.editors.web.HelpAction"   
+headerIcon="icons/ejb/ejb_dd.gif"
+overviewSectionTitle="%EJB_Structure" customizationNamespace="http://java.sun.com/xml/ns/javaee" 
+	customizationSchemaLocation="http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	multipleDeletionClass="com.ibm.etools.javaee.ui.editors.ejb.EnterpriseBeanDeletion"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd">
+
+	<!-- Global customization -->
+	<node path="*">
+		<!-- hide all occurrences of the attributes id, lang and type -->
+		<item path="@id" hide="true" />
+		<item path="@lang" hide="true" />  
+	  	<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+	  	 
+	  	<!-- Show all "description" items as text fields 5 lines tall and customize its label -->
+	  	<item path="description" style="text" textLines="5" label="%Description"/> 
+		
+		<!-- Make all "icon" nodes appear with the corresponding icon image and label -->
+		<node path="icon" label="%Icon" icon="icons/image.gif" singleOccurrence="true" > 
+			<!-- customize item labels of all icon nodes -->
+			<item path="small-icon" label="%Small_icon" style="text" buttonLabel="%Browse" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseIconActionHandler"/>
+			<item path="large-icon" label="%Large_icon" style="text" buttonLabel="%Browse" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseIconActionHandler"/>
+		</node> 
+		
+		<!-- Make all "handler" nodes appear with the corresponding icon image and label -->
+		<node path="handler"  label="%Handler" treeLabel="%Handler_treelabel" treeLabelData="handler-name" icon="icons/handler.gif">
+			<item path="display-name" label="%Display_name" style="text"/>
+			<item path="handler-name" label="%Handler_name"/>
+			<item path="handler-class" label="%Handler_class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="port-name" label="%Port_name"/>
+			<item path="soap-header" label="%SOAP_header" defaultValueClass="com.ibm.etools.javaee.ui.editors.ejb.SoapHandlerHeaderCreation"/>
+			<item path="soap-role" label="%SOAP_role"/>
+			<node path="init-param" label="%Initialization_Parameter" treeLabel="%Initialization_Parameter_treelabel" treeLabelData="param-name" icon="icons/context_parameter.gif">
+				<item path="param-name" label="%Name" style="text"/>
+				<item path="param-value" label="%Value" style="text"/>
+			</node>
+		</node>
+		
+		<!-- Make all "injection-target" nodes appear with the corresponding icon image and label -->
+		<node path="injection-target" label="%INJECTION_TARGET" treeLabel="%INJECTION_TARGET_treelabel" treeLabelData="injection-target-name" icon="icons/target.gif">
+			<!-- customize item labels of all icon nodes -->
+			<item path="injection-target-name" label="%IN_TGT_NAME"/>
+			<item path="injection-target-class" label="%IN_TGT_CLASS" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+		</node>
+			
+		<!-- Make all "mapped-name" nodes appear with the corresponding icon image and label -->
+		<node path="mapped-name" label="%Mapped_Name" treeLabel="%Mapped_Name_treelabel" treeLabelData="." icon="icons/match_by_name.gif">
+		<item path="." label="%Mapped_Name" deleteIfEmpty="false"/>
+		</node>
+		
+		<node path="around-invoke" label="%Around_Invoke" treeLabel="%Around_Invoke_treelabel" treeLabelData="method-name" icon="icons/around_invoke.gif">
+			<item path="class" label="%Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="method-name" label="%Method_Name"/>
+		</node>
+			
+		<node path="persistence-context-ref" label="%Persistence_Context_Reference" treeLabel="%Persistence_Context_Reference_treelabel" treeLabelData="persistence-context-ref-name" icon="icons/context_ref.gif">
+			<item path="persistence-context-ref-name" label="%Persistence_Context_Reference_Name"/>
+			<item path="persistence-context-type" label="%Persistence_Context_Type">
+				<possibleValues>
+					<value label="%Transaction" value="Transaction"/>
+					<value label="%Extended" value="Extended"/>
+				</possibleValues>
+			</item>
+			<item path="persistence-unit-name" label="%Persistence_Unit_Name"/>
+			<node path="persistence-property" label="%Persistence_Property" treeLabel="%Persistence_Property_treelabel" treeLabelData="name" icon="icons/property.gif">
+				<item path="name" label="%Name" style="text"/>
+				<item path="value" label="%Value" style="text"/>
+			</node>
+		</node>
+		
+		<node path="persistence-unit-ref" label="%Persistence_Unit_Reference" treeLabel="%Persistence_Unit_Reference_treelabel" treeLabelData="persistence-unit-ref-name" icon="icons/unit_ref.gif">
+			<item path="persistence-unit-ref-name" label="%Persistence_Unit_Reference_Name"/>
+			<item path="persistence-unit-name" label="%Persistence_Unit_Name"/>
+		</node>
+		
+		<node path="post-activate" label="%Post_Activate" treeLabel="%Post_Activate_treelabel" treeLabelData="lifecycle-callback-method" icon="icons/post_activate.gif">
+			<item path="lifecycle-callback-class" label="%Lifecycle_Callback_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="lifecycle-callback-method" label="%Lifecycle_Callback_Method"/>
+		</node>
+		
+		<node path="post-construct" label="%Post_Construct" treeLabel="%Post_Construct_treelabel" treeLabelData="lifecycle-callback-method" icon="icons/start.gif">
+			<item path="lifecycle-callback-class" label="%Lifecycle_Callback_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="lifecycle-callback-method" label="%Lifecycle_Callback_Method"/>
+		</node>
+		
+		<node path="pre-destroy" label="%Pre_Destroy" treeLabel="%Pre_Destroy_treelabel" treeLabelData="lifecycle-callback-method" icon="icons/stop.gif">
+			<item path="lifecycle-callback-class" label="%Lifecycle_Callback_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="lifecycle-callback-method" label="%Lifecycle_Callback_Method"/>
+		</node>
+		
+		<node path="pre-passivate" label="%Pre_Passivate" treeLabel="%Pre_Passivate_treelabel" treeLabelData="lifecycle-callback-method" icon="icons/pre_passivate.gif">
+			<item path="lifecycle-callback-class" label="%Lifecycle_Callback_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			<item path="lifecycle-callback-method" label="%Lifecycle_Callback_Method"/>
+		</node>		
+		
+		<node path="timeout-method" label="%Timeout_Method" treeLabel="%Timeout_Method_treelabel" treeLabelData="method-name" icon="icons/timeout_method.gif">
+			<item path="method-name" label="%Method_Name"/>
+			<node path="method-params" label="%Method_Parameters">
+				<node path="method-param" label="%Method_Parameter" />
+			</node>
+		</node>
+		
+		<!-- EJB Reference Customization -->
+		<node path="ejb-ref" label="%EJB_Reference" treeLabel="%EJB_Reference_treelabel" treeLabelData="ejb-ref-name" icon="icons/ejb/ejb_ref.gif"  creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddEJBReference" canCreate="true">
+			<item path="ejb-ref-name" label="%EJB_Reference_Name" style="text"/>
+			<item path="ejb-ref-type" label="%EJB_Reference_Type">
+					<!-- Include a set of predefined possible values for the page encoding -->
+					<possibleValues>
+						<value label="%Entity" value="Entity"/>
+						<value label="%Session" value="Session"/>
+					</possibleValues>
+			</item>
+			<item path="home" label="%Home_Interface" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="remote" label="%Remote_Interface" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="ejb-link" label="%EJB_Link" style="text"/>
+		</node>
+		
+		<!-- EJB Local Reference Customization -->
+		<node path="ejb-local-ref" label="%EJBLOCALREF" treeLabel="%EJBLOCALREF_treelabel" treeLabelData="ejb-ref-name" icon="icons/ejb/ejb_ref.gif"  creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddEJBReference" canCreate="true">
+			<item path="ejb-ref-name" label="%EJB_Reference_Name" style="text"/>
+			<item path="ejb-ref-type" label="%EJB_Reference_Type">
+				<!-- Include a set of predefined possible values for the page encoding -->
+				<possibleValues>
+					<value label="%Entity" value="Entity"/>
+					<value label="%Session" value="Session"/>
+				</possibleValues>
+			</item>
+			<item path="local-home" label="%Local_Home_Interface" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="local" label="%Local_interface" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="ejb-link" label="%EJB_Link" style="text"/>
+		</node>
+		
+		<node path="env-entry" label="%Environment_Variable" treeLabel="%Environment_Variable_treelabel" treeLabelData="env-entry-name" icon="icons/ejb/env_variable.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddEnvironmentVariableAction" canCreate="true" >
+			<item path="env-entry-name" label="%Environment_Variable_Name" style="text" />
+			<item path="env-entry-type" label="%Environment_Variable_Type"/>
+			<item path="env-entry-value" label="%Environment_Variable_Value" style="text" />
+		</node>
+		
+		<node path="message-destination-ref" label="%Message_Destination_Reference" treeLabel="%Message_Destination_Reference_treelabel" treeLabelData="message-destination-ref-name" icon="icons/ejb/mes_ref.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddMessageDestinationReference" canCreate="true">
+			<item path="message-destination-ref-name" label="%Message_Destination_Reference_Name"/>
+			<item path="message-destination-type" label="%Message_Destination_Reference_Type"/>
+			<item path="message-destination-link" label="%Message_Destination_Link"/>
+			<item path="message-destination-usage" label="%Message_Destination_Usage">
+				<possibleValues>
+					<value label="%Consumes" value="Consumes"/>
+					<value label="%Consumes_And_Produces" value="ConsumesProduces"/>
+					<value label="%Produces" value="Produces"/>
+				</possibleValues>
+			</item>
+		</node>
+		
+		<node path="resource-env-ref" label="%Resource_Environment_Reference" treeLabel="%Resource_Environment_Reference_treelabel" treeLabelData="resource-env-ref-name" icon="icons/ejb/res_env_ref.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddResourceEnvironmentReference" canCreate="true">
+			<item path="resource-env-ref-name" label="%Resource_Reference_Name" style="text"/>
+			<item path="resource-env-ref-type" label="%Resource_Reference_Type" suggestedValuesClass="com.ibm.etools.javaee.ui.editors.ResourceEnvRefSuggestedValues"/>
+		</node>
+		
+		<node path="resource-ref" label="%Resource_Reference" treeLabel="%Resource_Reference_treelabel" treeLabelData="res-ref-name" icon="icons/ejb/res_ref.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddResourceReference"  canCreate="true">
+			<item path="res-ref-name" label="%Resource_Reference_Name" style="text"/>
+			<item path="res-type" label="%Resource_Reference_Type" suggestedValuesClass="com.ibm.etools.javaee.ui.editors.ResourceRefSuggestedValues"/>
+			<item path="res-auth" label="%Resource_Authorization">
+				<possibleValues>
+					<value label="%Application" value="Application"/>
+					<value label="%Container" value="Container"/>
+				</possibleValues>
+			</item>
+			<item path="res-sharing-scope" label="%Resource_Sharing_Scope">
+				<possibleValues>
+					<value label="%Shareable" value="Shareable"/>
+					<value label="%Unshareable" value="Unshareable"/>
+				</possibleValues>
+			</item>
+		</node>
+		
+		<node path="security-role-ref" label="%Security_Role_Reference" treeLabel="%Security_Role_Reference_treelabel" treeLabelData="role-name" icon="icons/ejb/security_role_ref.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddSecurityRoleReference"  canCreate="true">
+		<item path="role-name" label="%Security_Role_Name" style="text"/>
+		<item path="role-link" label="%Security_Role_Link" style="text"/>
+		</node>
+		
+		<node path="service-ref" label="%Service_Reference" treeLabel="%Service_Reference_treelabel" treeLabelData="service-ref-name" icon="icons/ejb/serv_ref.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddServiceReference" canCreate="true">
+			<item path="service-ref-name" label="%Service_Reference_Name"/>
+			<item path="service-interface" label="%Service_Interface" style="text" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+			<item path="display-name" label="%Display_name" style="text" />
+			<item path="service-ref-type" label="%Service_Reference_Type"/>
+			<item path="service-qname" label="%Service_Qualified_Name"/>
+			<item path="wsdl-file" label="%WSDL_file"/>
+			<item path="jaxrpc-mapping-file" label="%JAX_RPC_Mapping_File"/>
+			<node path="port-component-ref" label="%Port_Component_Reference" treeLabel="%Port_Component_Reference_treelabel" treeLabelData="service-endpoint-interface" icon="icons/component_ref.gif" >
+				<item path="enable-mtom" label="%Enable_MTOM"/>
+				<item path="port-component-link" label="%Port_component_link"/>
+				<item path="service-endpoint-interface" label="%service_endpoint_interface"/>
+			</node>
+			<node path="handler-chains" label="%Handler_Chains" icon="icons/chain_folder.gif">
+				<node path="handler-chain" label="%Chain" icon="icons/chain.gif">
+					<node path="port-name-pattern" label="%Port_name_pattern" treeLabel="%Port_name_pattern_treelabel" treeLabelData="." icon="icons/obj16/port_name_pattern.gif">
+						<item path="." label="%Port_name_pattern"/>
+					</node>
+					<node path="protocol-bindings" label="%Protocol_bindings" treeLabel="%Protocol_bindings_treelabel" treeLabelData="." icon="icons/obj16/protocol_bindings.gif">
+						<item path="." label="%Protocol_bindings"/>
+					</node>
+					<node path="service-name-pattern" label="%Service_name_pattern" treeLabel="%Service_name_pattern_treelabel" treeLabelData="." icon="icons/obj16/service_name_pattern.gif">
+						<item path="." label="%Service_name_pattern"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		
+		<node path="security-identity" label="%Security_Identity" treeLabel="%Security_Identity" icon="icons/ejb/security_id.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.SecurityIdentityCreation"  canCreate="true"  singleOccurrence="false">
+			<node path="run-as" label="%Run_As" treeLabel="%Run_As_treelabel" treeLabelData="role-name" canCreate="true" hide="false">
+				 	<item path="role-name" label="%Role_Name"/>
+			</node>
+		 	<node path="use-caller-identity" label="%UCI"  canCreate="true" hide="false"/>
+		</node>		
+	</node>
+		
+		
+		
+   
+	<!-- EJB customization-->
+		<node path="/ejb-jar" label="%EJB_Project" treeLabel="%EJB_Project" treeLabelData="display-name" icon="icons/ejb/ejb_dd.gif" detailSectionTitle="%general_info">
+		<item path="display-name" label="%Display_name" style="text"/>            
+		<item path="@version" label="%Version" readOnly="true" />
+		<item path="ejb-client-jar" label="%EJB_Client_Jar" readOnly="false" buttonClass="com.ibm.etools.javaee.ui.editors.ejb.EJBClientJarCreator" buttonLabel="%Create"/>
+		<item path="@metadata-complete" label="%Metadata_complete"/>
+		<section label="%Actions">
+			<hyperlink label="%SERVLET_MAPPING_LINK_LABEL" icon="icons/chain.gif" leftIndentation="true"  hyperlinkClass="com.ibm.etools.javaee.ui.editors.ejb.J2EEDependenciesPageHyperLink" />
+		</section>
+		</node>  
+ 
+		<node path="/ejb-jar/enterprise-beans" label="%Enterprise_Beans" icon="icons/ejb/ent_beans.gif"/>	
+	
+		<node path="/ejb-jar/enterprise-beans/entity" label="%E_Bean" treeLabel="%Entity_Bean" treeLabelData="ejb-name" icon="icons/ejb/ent_bean.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.EntityCreation" deletionClass="com.ibm.etools.javaee.ui.editors.ejb.EnterpriseBeanDeletion" canCreate="true">
+		<item path="display-name" label="%Display_name" style="text" hide="false" deleteIfEmpty="false"/>
+		<item path="ejb-name" label="%EJB_Name" style="text" hide="false" deleteIfEmpty="false"/>
+		<item path="ejb-class" label="%EJB_Class" readOnly="false" hide="false" deleteIfEmpty="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+		<item path="persistence-type" label="%Persistence_Type">
+				<!-- Include a set of predefined possible values for the page encoding -->
+				<possibleValues>
+					<value label="%Bean" value="Bean"/>
+					<value label="%Container" value="Container"/>
+				</possibleValues>
+			</item>
+		<item path="prim-key-class" label="%Key_Class" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+		<item path="primkey-field" label="%Key_Name" style="text" />
+		<item path="home" label="%Home_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="local" label="%Local_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="local-home" label="%Local_Home_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>		
+		<item path="remote" label="%Remote_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="business-local" label="%Business_Local" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" />
+		<item path="business-remote" label="%Business_Remote" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" />
+		
+			<item path="cmp-version" label="%CMP_Version">
+				<!-- Include a set of predefined possible values for the page encoding -->
+				<possibleValues>
+					<value label="%1.x" value="1.x"/>
+					<value label="%2.x" value="2.x"/>
+				</possibleValues>
+			</item>
+		
+		
+			<item path="reentrant" label="%Reenterant">
+				<!-- Include a set of predefined possible values for the page encoding -->
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+		
+		
+		<item path="abstract-schema-name" label="%Abstract_Schema" style="text"/>
+		</node>
+		
+		<node path="/ejb-jar/enterprise-beans/entity/cmp-field" label="%CMP_Field" treeLabel="%CMP_Field_treelabel" treeLabelData="field-name" icon="icons/ejb/cmp_field.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddCMPFieldAction"  canCreate="true" >
+		<item path="field-name" label="%Field_Name" style="text" />
+		</node>
+		
+		<node path="/ejb-jar/enterprise-beans/entity/query" label="%Query" treeLabel="%Query_treelabel" treeLabelData="ejb-ql" icon="icons/query_obj.gif">
+			<item path="ejb-ql" label="%EJB_Query_Language"/>
+			<item path="result-type-mapping" label="%Result_Type_Mapping">
+				<possibleValues>
+					<value label="%Local" value="Local"/>
+					<value label="%Remote" value="Remote"/>
+				</possibleValues>
+			</item>
+			<node path="query-method" label="%Query_Method" treeLabel="%Query_Method_treelabel" treeLabelData="method-name" icon="icons/query_method.gif">
+				<item path="method-name" label="%Method_Name"/>
+				<node path="method-params" label="%Method_Parameters">
+					<item path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+		</node>
+		
+		
+		
+		<node path="/ejb-jar/enterprise-beans/message-driven" label="%M_Bean" treeLabel="%Message_Driven_Bean" treeLabelData="ejb-name" icon="icons/full/obj16/message_bean_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.MDBCreation" deletionClass="com.ibm.etools.javaee.ui.editors.ejb.EnterpriseBeanDeletion" canCreate="true">
+		<item path="ejb-name" label="%EJB_Name" style="text"/>
+		<item path="display-name" label="%Display_name" style="text"/>
+		<item path="ejb-class" label="%EJB_Class" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+		<item path="message-destination-type" label="%Message_Destination_Type"/>
+		<item path="transaction-type" label="%Transaction_Type">
+			<!-- Include a set of predefined possible values for the page encoding -->
+			<possibleValues>
+				<value label="%Bean" value="Bean"/>
+				<value label="%Container" value="Container"/>
+			</possibleValues>
+		</item>
+		<item path="message-destination-link" label="%Message_Destination_Link" style="text" />
+		<item path="messaging-type" label="%Message_Type" style="text" />
+		</node>
+		
+		<node path="/ejb-jar/enterprise-beans/message-driven/activation-config" label="%Activation_Config" treeLabel="%Activation_Config" icon="icons/ejb/app_ex.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddActivationConfig" canCreate="true">
+			<node path="activation-config-property" label="%Activation_Config_Property" treeLabel="%Activation_Config_Property" icon="icons/ejb/run_as.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AddActivationConfig" canCreate="true">
+			<item path="activation-config-property-name" label="%Name" style="text"/>
+			<item path="activation-config-property-value" label="%Value" style="text"/>
+			</node>
+		</node>
+		
+		
+		<node path="/ejb-jar/enterprise-beans/session" label="%S_Bean" treeLabel="%Session_Bean" treeLabelData="ejb-name" icon="icons/full/obj16/sessionBean_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.SessionCreation" deletionClass="com.ibm.etools.javaee.ui.editors.ejb.EnterpriseBeanDeletion" canCreate="true">
+		<item path="ejb-name" label="%EJB_Name" style="text"/>
+		<item path="display-name" label="%Display_name" style="text"/>
+		<item path="ejb-class" label="%EJB_Class" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler"  buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+		<item path="session-type" label="%Bean_Type">
+				<!-- Include a set of predefined possible values for the page encoding -->
+				<possibleValues>
+					<value label="%Stateful" value="Stateful"/>
+					<value label="%Stateless" value="Stateless"/>
+				</possibleValues>
+		</item>
+		<item path="transaction-type" label="%Transaction_Type">
+				<!-- Include a set of predefined possible values for the page encoding -->
+				<possibleValues>
+					<value label="%Container_Managed" value="Container"/>
+					<value label="%Bean_Managed" value="Bean"/>
+				</possibleValues>
+		</item>
+		<item path="home" label="%Home_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="local" label="%Local_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="local-home" label="%Local_Home_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>		
+		<item path="remote" label="%Remote_Interface" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="service-endpoint" label="%Service_Endpoint" readOnly="false" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" buttonLabel="%Browse"/>
+		<item path="business-local" label="%Business_Local" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" defaultValueClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler" />
+		<item path="business-remote" label="%Business_Remote" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaInterfaceActionHandler" defaultValueClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaInterfaceActionHandler"/>
+		<node path="init-method" label="%Initialize_Method" icon="icons/init_method.gif">
+			<node path="bean-method" label="%Bean_Method" treeLabel="%Bean_Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+				<item path="method-name" label="%Bean_Method_Name"/>
+				<node path="method-params" label="%Bean_Method_Parameters">
+					<node path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+			<node path="create-method" label="%Create_Method" treeLabel="%Create_Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+				<item path="method-name" label="%Create_Method_Name"/>
+				<node path="method-params" label="%Create_Method_Parameters">
+					<node path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+		</node>
+		<node path="remove-method" label="%Remove_Method" icon="icons/remove_method.gif">
+			<item path="retain-if-exception" label="%Retain_If_Exception">
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+			<node path="bean-method" label="%Bean_Method" treeLabel="%Bean_Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+			<item path="method-name" label="%Bean_Method_Name"/>
+				<node path="method-params" label="%Bean_Method_Parameters">
+					<node path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+		</node>
+		</node>
+		
+		<node path="/ejb-jar/relationships" label="%Relationships" icon="icons/ejb/relationships.gif">
+		<node path="ejb-relation" label="%Relationship" treeLabel="%Relationship_treelabel" treeLabelData="ejb-relation-name" icon="icons/ejb/relationship.gif"/>
+		</node>
+		
+		<node path="/ejb-jar/interceptors" label="%Interceptors" icon="icons/full/cview16/ear_ed_view.gif" >
+			<node path="interceptor" label="%Interceptor"  treeLabel="%Interceptor_tree" treeLabelData="interceptor-class" icon="icons/ejb/relationship.gif" >
+				<item path="interceptor-class" label="%Interceptor_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" />
+			</node>
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor" label="%Assembly" icon="icons/ejb/assembly.gif">
+			<node path="interceptor-binding" label="%Interceptor_Binding" icon="icons/interceptor_binding.gif">
+				<item path="ejb-name" label="%EJB_Name" style="text"/>
+				<item path="exclude-class-interceptors" label="%Exclude_Class_Interceptors">
+					<possibleValues>
+						<value label="%True" value="true"/>
+						<value label="%False" value="false"/>
+					</possibleValues>
+				</item>
+				<item path="exclude-default-interceptors" label="%Exclude_Default_Interceptors">
+					<possibleValues>
+						<value label="%True" value="true"/>
+						<value label="%False" value="false"/>
+					</possibleValues>
+				</item>
+				<node path="interceptor-class" label="%Interceptor_Class" treeLabel="%Interceptor_Class_treelabel" treeLabelData="." icon="icons/java_class.gif">
+					<item path="." label="%Interceptor_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse" deleteIfEmpty="false"/>
+				</node>
+				<node path="interceptor-order" label="%Interceptor_Order" icon="icons/obj16/interceptor_order.gif">
+					<item path="interceptor-class" label="%Interceptor_Classes"/>
+				</node>
+				<node path="method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+					<item path="method-name" label="%Method_Name" style="text"/>
+					<item path="method-intf" label="%Method_Interface">
+						<possibleValues>
+							<value label="%Home" value="Home"/>
+							<value label="%Local" value="Local"/>
+							<value label="%Local_Home" value="LocalHome"/>
+							<value label="%Remote" value="Remote"/>
+							<value label="%Service_Endpoint" value="ServiceEndpoint"/>
+						</possibleValues>
+					</item>
+					<node path="method-params" label="%Method_Parameters">
+						<node path="method-param" label="%Method_Parameter" />
+					</node>
+				</node>
+			</node>
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/application-exception" label="%Application_Exception" treeLabel="%Application_Exception_treelabel" treeLabelData="exception-class" icon="icons/ejb/app_ex.gif">
+			<item path="exception-class" label="%Exception_Class" labelLinkClass="com.ibm.etools.javaee.ui.editors.ejb.NewJavaClassActionHandler" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseJavaClassActionHandler" buttonLabel="%Browse"/>
+			<item path="rollback" label="%Rollback">
+				<possibleValues>
+					<value label="%True" value="true"/>
+					<value label="%False" value="false"/>
+				</possibleValues>
+			</item>
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/container-transaction" label="%Container_Transaction" treeLabel="%Container_Transaction" icon="icons/ejb/cont_trans.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.MethodTransactionAction" canCreate="true">
+		<item path="trans-attribute" label="%Transaction_Attribute">
+			<possibleValues>
+					<value label="%Mandatory" value="Mandatory"/>
+					<value label="%Never" value="Never"/>
+					<value label="%Not_Supported" value="NotSupported"/>
+					<value label="%Required" value="Required"/>
+					<value label="%Requires_New" value="RequiresNew"/>
+					<value label="%Supports" value="Supports"/>
+			</possibleValues>
+		</item>
+		<node path="method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif"/>
+		
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/exclude-list" label="%Exclude_List" treeLabel="%Exclude_List" icon="icons/ejb/app_ex.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.AssemblyExcludeAction" >
+			<node path="method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+				<item path="ejb-name" label="%EJB_Name" style="text"/>
+				<item path="method-name" label="%Method_Name" style="text"/>
+				<item path="method-intf" label="%Method_Interface">
+					<possibleValues>
+						<value label="%Home" value="Home"/>
+						<value label="%Local" value="Local"/>
+						<value label="%Local_Home" value="LocalHome"/>
+						<value label="%Remote" value="Remote"/>
+						<value label="%Service_Endpoint" value="ServiceEndpoint"/>
+					</possibleValues>
+				</item>
+				<node path="method-params" label="%Method_Parameters">
+					<node path="method-param" label="%Method_Parameter" />
+				</node>
+			</node>
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/method-permission" label="%Method_Permission" treeLabel="%Method_Permission" icon="icons/MethodPermission.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.MethodPermissionAction" canCreate="true">
+		<node path="method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif" />
+		<node path="role-name" label="%Security_Role" treeLabel="%Security_Role_treelabel" treeLabelData="role-name" icon="icons/ejb/security_role.gif" />
+		<node path="unchecked" label="%Unchecked" icon="icons/obj16/unchecked.gif"/>
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/method-permission/role-name" label="%Security_Role" treeLabel="%Security_Role_treelabel" treeLabelData="role-name" icon="icons/ejb/security_role.gif">
+		<item path="." label="%Role_Name"  />
+		</node>
+	
+		<node path="/ejb-jar/assembly-descriptor/method-permission/method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif" >
+		<item path="ejb-name" label="%EJB_Name" style="text"/>
+		<item path="method-name" label="%Method_Name" style="text"/>
+		<item path="method-intf" label="%Method_Interface">
+			<possibleValues>
+				<value label="%Home" value="Home"/>
+				<value label="%Local" value="Local"/>
+				<value label="%Local_Home" value="LocalHome"/>
+				<value label="%Remote" value="Remote"/>
+				<value label="%Service_Endpoint" value="ServiceEndpoint"/>
+			</possibleValues>
+		</item>
+		<node path="method-params" label="%Method_Parameters" />
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/method-permission/method/method-params" label="%Method_Parameters">
+		<node path="method-param" label="%Method_Parameter" />
+		</node>
+		
+	
+		<node path="/ejb-jar/assembly-descriptor/container-transaction/method" label="%Method" treeLabel="%Method_treelabel" treeLabelData="method-name" icon="icons/ejb/method.gif">
+		<item path="ejb-name" label="%Bean_Name" style="text"/>
+		<item path="method-name" label="%Method_Name" style="text"/>
+		<item path="method-intf" label="%Method_Interface">
+			<possibleValues>
+				<value label="%Home" value="Home"/>
+				<value label="%Local" value="Local"/>
+				<value label="%Local_Home" value="LocalHome"/>
+				<value label="%Remote" value="Remote"/>
+				<value label="%Service_Endpoint" value="ServiceEndpoint"/>
+			</possibleValues>
+		</item>
+		<item path="method-param" label="%Method_Parameter" style="text"/>
+		<node path="method-params" label="%Method_Parameters" />
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/container-transaction/method/method-params" label="%Method_Parameters">
+			<node path="method-param" label="%Method_Parameter" />
+		</node>
+		
+		<node path="/ejb-jar/assembly-descriptor/message-destination" label="%Message_Destination" treeLabel="%Message_Destination_treelabel" treeLabelData="message-destination-name" icon="icons/Message.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.MessageDrivenDestinationCreationAction" canCreate="true">
+			<item path="message-destination-name" label="%Message_Destination_Name" style="text"/>
+			<item path="display-name" label="%Display_name" style="text"/>
+			<item path="mapped-name" label="%Mapped_Name" style="text"/>
+		</node>
+		 
+		<node path="/ejb-jar/assembly-descriptor/security-role" label="%Security_Role" treeLabel="%Security_Role_treelabel" treeLabelData="role-name" icon="icons/ejb/security_role.gif" creationClass="com.ibm.etools.javaee.ui.editors.ejb.SecurityRoleCreationAction" canCreate="true">
+		<item path="role-name" label="%Role_Name" style="text"/>
+		</node>
+		
+		<node path="/ejb-jar/relationships/ejb-relation" label="%Relationship" treeLabel="%Relationship_treelabel" treeLabelData="ejb-relation-name" icon="icons/ejb/relationship.gif" >
+		<node path="ejb-relationship-role" label="%Relationship_Role" treeLabel="%Relationship_Role" icon="icons/ejb/relationship_role.gif" canCreate="false" />
+		<item path="ejb-relation-name" label="%EJB_Relationship_Name" style="text"/>
+		</node>
+		
+		<node path="/ejb-jar/relationships/ejb-relation/ejb-relationship-role" label="%Relationship_Role" treeLabel="%Relationship_Role_treelabel" treeLabelData="ejb-relationship-role-name" icon="icons/ejb/relationship_role.gif" creationClass="com.ibm.etools.javaee.ui.editors.common.internal.ElementCreationDisabler" canCreate="false">
+		<item path="multiplicity" label="%Multiplicity">
+			<possibleValues>
+				<value label="%Many" value="Many"/>
+				<value label="%One" value="One"/>
+			</possibleValues>
+		</item>
+		<item path="ejb-relationship-role-name" label="%Relationship_Role_Name" style="text"/>
+		<item path="cascade-delete" label="%Cascade_Delete" style="checkBox"/>
+		</node>
+		
+		<node path="/ejb-jar/relationships/ejb-relation/ejb-relationship-role/cmr-field" label="%CMR_Field">
+		<item path="cmr-field-name" label="%CMR_Field" style="text"/>
+		<item path="cmr-field-type" label="%CMR_Field_Type">
+			<possibleValues>
+				<value label="java.util.Collection" value="java.util.Collection"/>
+				<value label="java.util.Set" value="java.util.Set"/>
+			</possibleValues>
+		</item>
+		</node>
+		
+		<node path="/ejb-jar/relationships/ejb-relation/ejb-relationship-role/relationship-role-source" label="%Relationship_Role_Source">
+		<item path="ejb-name" label="%EJB_Name" style="text"/>
+		</node>
+</customization>

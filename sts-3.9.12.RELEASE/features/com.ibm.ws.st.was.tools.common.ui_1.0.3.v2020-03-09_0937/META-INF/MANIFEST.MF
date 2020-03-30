@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+
+Name: license.html
+SHA-256-Digest: jYKh174GD2hnJ6JzYjqyP53vK27uZ7cLF19oYlXKDS8=
+
+Name: feature.xml
+SHA-256-Digest: e19ny2133gMCZkUMaZcawm/5+1Mj6NJnP0q74S56yJU=
+
+Name: feature.properties
+SHA-256-Digest: DSD+vvaEqe+6O+3qg4Luth+BId1/Umf4ftNykuF0sG8=
+

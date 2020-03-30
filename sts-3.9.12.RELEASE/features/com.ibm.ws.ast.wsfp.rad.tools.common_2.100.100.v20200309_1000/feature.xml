@@ -1,0 +1,21 @@
+<feature id="com.ibm.ws.ast.wsfp.rad.tools.common" image="rtFeatUpdate.gif" label="%featureName" provider-name="%providerName" version="2.100.100.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxb.ui" install-size="0" unpack="false" version="2.0.0.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.annotations" install-size="0" unpack="false" version="2.0.100.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.creation.ui" install-size="0" unpack="false" version="2.100.100.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.handlers.ui" install-size="0" unpack="false" version="2.0.0.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxws.creation.ejb.ui" install-size="0" unpack="false" version="2.100.100.v20200309_1000"/>
+
+</feature>

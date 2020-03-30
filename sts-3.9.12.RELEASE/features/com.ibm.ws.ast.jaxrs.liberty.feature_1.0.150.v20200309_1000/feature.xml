@@ -1,0 +1,13 @@
+<feature id="com.ibm.ws.ast.jaxrs.liberty.feature" image="rtFeatUpdate.gif" label="%featureName" provider-name="IBM" version="1.0.150.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.ast.ws.jaxrs.liberty" install-size="0" unpack="false" version="1.0.150.v20200309_1000"/>
+
+</feature>

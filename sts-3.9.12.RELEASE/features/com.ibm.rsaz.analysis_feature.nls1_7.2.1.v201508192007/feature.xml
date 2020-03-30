@@ -1,0 +1,5 @@
+<feature id="com.ibm.rsaz.analysis_feature.nls1"  label="com.ibm.rsaz.analysis_feature.nls1" version="7.2.1.v201508192007">
+<plugin fragment="true" id="com.ibm.rsaz.analysis.compatibility.nl1" version="7.0.100.v201410061425" unpack="false"  />
+<plugin fragment="true" id="com.ibm.rsaz.analysis.core.nl1" version="7.3.0.v201410061425" unpack="false"  />
+<plugin fragment="true" id="com.ibm.rsaz.analysis.core.ui.nl1" version="7.3.1.v201508192007" unpack="false"  />
+</feature>

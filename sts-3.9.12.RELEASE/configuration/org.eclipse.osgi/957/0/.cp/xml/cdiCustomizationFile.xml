@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.etools.javaee.cdiEditor                
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization helpContextId="com.ibm.etools.javaee.cdi.ui.editors.cdiEditor" 
+	headerActions="com.ibm.etools.javaee.cdi.ui.editors.HelpAction"  
+	headerIcon="icons/obj16/cdifacet_obj.gif"
+	overviewSectionTitle="%CDI_Structure" 
+	treeSortingPreference="unsorted"
+	customizationNamespace="http://java.sun.com/xml/ns/javaee"
+	customizationSchemaLocation="http://java.sun.com/xml/ns/javaee/beans_1_0.xsd"	
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	>
+	
+	<node path="*">
+		<node path="alternatives" 
+				label="%Alternatives"
+				treeLabel="%Alternatives"
+				validationClass = "com.ibm.etools.javaee.cdi.ui.validation.BeansDDValidator"
+				icon="icons/obj16/alternatives_obj.gif">
+		</node> 
+		
+		<node path="decorators"
+				label="%Decorators"	
+				treeLabel="%Decorators"
+				validationClass = "com.ibm.etools.javaee.cdi.ui.validation.BeansDDValidator"
+				icon="icons/obj16/decorators_obj.gif">
+		</node>
+		
+		<node path="interceptors"
+			label="%Interceptors"
+			treeLabel="%Interceptors"
+			validationClass = "com.ibm.etools.javaee.cdi.ui.validation.BeansDDValidator"
+			icon="icons/obj16/interceptors_obj.gif">
+		</node> 
+		
+		<node   path="class" 
+				label="%Class" 
+				treeLabel="%Tree_Class_Label"
+				treeLabelData = "."
+				icon="icons/obj16/class_obj.gif">
+			<item path="." 
+				deleteIfEmpty="false"
+				label="%Class" 
+				labelLinkClass="com.ibm.etools.javaee.cdi.ui.dialogs.NewJavaClassActionHandler" 
+				buttonClass="com.ibm.etools.javaee.cdi.ui.dialogs.BrowseJavaClassActionHandler"
+				validationClass = "com.ibm.etools.javaee.cdi.ui.validation.BeansDDValidator"
+				buttonLabel="%Browse"/>
+		</node>
+		<node path="stereotype" 
+				label="%Stereotype" 
+				treeLabel="%Tree_Stereotype_Label"
+				treeLabelData = "."
+				icon="icons/obj16/stereotype_obj.gif">
+			<item path="." 
+				deleteIfEmpty="false"
+				label="%Stereotype" 
+				validationClass = "com.ibm.etools.javaee.cdi.ui.validation.BeansDDValidator"
+				buttonLabel="%Browse"/>
+		</node>
+		
+	</node>
+	
+	
+	<!-- Web Application customization -->
+ 	<node path="/beans" 
+ 			label="%Beans" 
+ 			treeLabel="%Beans" 
+ 			icon="icons/obj16/cdifacet_obj.gif">
+	</node>	
+	
+	</customization>

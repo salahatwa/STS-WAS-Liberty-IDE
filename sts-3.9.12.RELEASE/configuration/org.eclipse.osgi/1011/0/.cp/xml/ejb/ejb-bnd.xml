@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2007. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.ejb-bnd-1.0-editor				                  *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                           *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-bnd_1_0.xsd                          *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-bnd_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ejb-bnd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0013"
+	headerIcon="icons/ejb-bnd/ejbBinding_obj.gif">
+
+	<node path="*">
+		<item path="@id" hide="true" />
+
+		<item path="@auth-type" label="%AUTHENTICATION_TYPE">
+			<possibleValues>
+					<value value="CONTAINER" label="%CONTAINER"/>
+					<value value="PER_CONNECTION_FACTORY" label="%PER_CONNECTION_FACTORY"/>
+			</possibleValues>
+		</item>
+
+		<item path="@binding-name" label="%BINDING_NAME"/>
+		<item path="@name" label="%NAME"/>
+		<item path="@value" label="%VALUE"/>
+	  	<item path="@class" label="%CLASS"/>
+	  	<item path="@component-id" label="%COMPONENT_ID"/>
+	  	<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+	  	<item path="@local-home-binding-name" label="%LOCAL_HOME_BINDING_NAME"/>
+	  	<item path="@remote-home-binding-name" label="%REMOTE_HOME_BINDING_NAME"/>
+	  	<item path="@simple-binding-name" label="%SIMPLE_BINDING_NAME"/>
+
+		<node path="authentication-alias" label="%AUTHENTICATION_ALIAS" icon="icons/ejb-bnd/authmethod_obj.gif"/>
+	  	<node path="ejb-ref" label="%EJB_REFERENCE" treeLabel="%fEJB_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/ejb_reference.gif"/>
+	  	<node path="message-destination-ref" label="%MESSAGE_DESTINATION_REFERENCE" treeLabel="%fMESSAGE_DESTINATION_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/messdestref_obj.gif"/>
+	  	<node path="property" label="%PROPERTY" treeLabel="%fPROPERTY" treeLabelData="@name" icon="icons/ejb-bnd/property_obj.gif"/>
+	  	<node path="resource-env-ref" label="%RESOURCE_ENVIRONMENT_REFERENCE" treeLabel="%fRESOURCE_ENVIRONMENT_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/res_env_ref_obj.gif"/>
+	  	<node path="resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/resourceRef_obj.gif"/>
+ 		<node path="cmp-connection-factory" label="%CMP_CONNECTION_FACTORY" icon="icons/ejb-bnd/connectionfactories_obj.gif"/>
+ 		<node path="custom-login-configuration" label="%CUSTOM_LOGIN_CONFIGURATION" icon="icons/ejb-bnd/form_login_config.gif"/>
+ 		<node path="data-source" hide="true"/>
+ 		<node path="env-entry" hide="true"/> 	
+	</node>
+	
+ 	<node path="/ejb-jar-bnd" label="%EJB_JAR_BINDINGS" icon="icons/ejb-bnd/EjbModule.gif">
+ 		<item path="@version" label="%VERSION" readOnly="true" />
+ 	</node>
+ 	
+ 	<node path="/ejb-jar-bnd/default-datasource" hide="true"/>
+ 	<node path="/ejb-jar-bnd/entity/datasource" hide="true"/>
+	<node path="*/resource-ref/default-auth" hide="true"/>
+
+ 	<node path="/ejb-jar-bnd/current-backend" label="%CURRENT_BACKEND" style="treeNode" icon="icons/ejb-bnd/database.gif"/>
+ 	<node path="/ejb-jar-bnd/default-cmp-connection-factory" label="%DEFAULT_CMP_CONNECTION_FACTORY" icon="icons/ejb-bnd/connectionfactories_obj.gif"/>
+ 	<node path="/ejb-jar-bnd/message-destination" label="%MESSAGE_DESTINATION" icon="icons/ejb-bnd/message-destination.gif">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/interceptor" label="%INTERCEPTOR" icon="icons/ejb-bnd/interceptor.gif" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateInterceptorBindingElement">
+ 		<item path="@class" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.InterceptorBrowser"
+ 			buttonLabel="%BROWSE"
+ 			labelLinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateOrEditClass" 
+ 		/>
+
+	  	<section label="%ACTIONS" >
+	  		<hyperlink label="%INTERCEPTOR_LINK" icon="icons/ejb-bnd/interceptor.gif"
+	  			hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.InterceptorHyperLink" />
+	  	</section>
+	  	
+ 	</node>
+
+	<!-- Customizations for Session bean bindings -->
+ 	
+ 	<node path="/ejb-jar-bnd/session" label="%SESSION" treeLabel="%fSESSION" treeLabelData="@name" icon="icons/ejb-bnd/sessionBean_obj.gif" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateSessionBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.SessionBeanBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@simple-binding-name" inheritCustomization="true"/>
+ 	  	<item path="@local-home-binding-name" inheritCustomization="true"/>
+	  	<item path="@remote-home-binding-name" inheritCustomization="true"/>
+
+	  	<section label="%ACTIONS" >
+	  		<hyperlink label="%SESSION_BEAN_LINK" icon="icons/ejb-bnd/sessionBean_obj.gif"
+	  			hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.SessionBeanHyperLink" />
+	  	</section>
+	  	
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/session/interface" label="%INTERFACE" treeLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.SessionInterfaceCustomTreeLabel" icon="icons/ejb-bnd/interface.gif" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateSessionInterfaceBindingElement">
+ 		<item path="@class" label="%CLASS"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.SessionInterfaceBrowser"
+ 			buttonLabel="%BROWSE"
+ 			labelLinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateOrEditInterface" 
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/session/ejb-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateEjbRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.EjbRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/session/message-destination-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateMessageDestinationRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.MessageDestinationRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/resource-env-ref" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/resource-ref/custom-login-configuration/property" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@value" inheritCustomization="true" />
+ 		<item path="@description" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/cmp-connection-factory/custom-login-configuration/property" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@value" inheritCustomization="true" />
+ 		<item path="@description" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/session/resource-env-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateResourceEnvRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceEnvRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/session/resource-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateResourceRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/interceptor/ejb-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateEjbRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.EjbRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/interceptor/message-destination-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateMessageDestinationRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.MessageDestinationRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/interceptor/resource-env-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateResourceEnvRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceEnvRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/interceptor/resource-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateResourceRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/interceptor/resource-ref/custom-login-configuration/property" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@value" inheritCustomization="true" />
+ 		<item path="@description" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/message-driven/resource-ref/custom-login-configuration/property" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@value" inheritCustomization="true" />
+ 		<item path="@description" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/session/resource-ref/custom-login-configuration/property" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@value" inheritCustomization="true" />
+ 		<item path="@description" inheritCustomization="true" />
+ 	</node>
+
+
+	<!--  Customizations for Entity bean bindings -->
+
+ 	<node path="/ejb-jar-bnd/entity" label="%ENTITY" treeLabel="%fENTITY" treeLabelData="@name" icon="icons/ejb-bnd/entitybean_obj.gif">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@simple-binding-name" inheritCustomization="true"/>
+ 	  	<item path="@local-home-binding-name" inheritCustomization="true"/>
+	  	<item path="@remote-home-binding-name" inheritCustomization="true"/>
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/cmp-connection-factory" inheritCustomization="true">
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 		<item path="@auth-type" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/ejb-ref" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/message-destination-ref" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/entity/resource-ref" inheritCustomization="true">
+ 		<item path="@name" inheritCustomization="true" />
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+	<!--  Customizations for Message Driven bean bindings -->
+
+ 	<node path="/ejb-jar-bnd/message-driven" label="%MESSAGE_DRIVEN" treeLabel="%fMESSAGE_DRIVEN" treeLabelData="@name" icon="icons/ejb-bnd/message_bean_obj.gif" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateMessageDrivenBindingElement">
+ 	 	<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.MessageDrivenBeanBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+
+	  	<section label="%ACTIONS" >
+	  		<hyperlink label="%MESSAGE_DRIVEN_BEAN_LINK" icon="icons/ejb-bnd/message_bean_obj.gif"
+	  			hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.MessageDrivenBeanHyperLink" />
+	  	</section>
+
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/message-driven/listener-port" label="%LISTENER_PORT" icon="icons/ejb-bnd/port.gif"/>
+
+ 	<node path="/ejb-jar-bnd/message-driven/jca-adapter" label="%JCA_ADAPTER" icon="icons/ejb-bnd/connector template.gif">
+	 	<item path="@activation-spec-binding-name" label="%ACTIVATION_SPEC_BINDING_NAME"/>
+ 		<node path="@activation-spec-auth-alias" label="%ACTIVATION_SPEC_AUTHENTICATION_ALIAS"/>
+ 		<node path="@destination-binding-name" label="%DESTINATION_BINDING_NAME"/>
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/message-driven/ejb-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateEjbRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.EjbRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/message-driven/message-destination-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateMessageDestinationRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.MessageDestinationRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/message-driven/resource-env-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateResourceEnvRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceEnvRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+ 	<node path="/ejb-jar-bnd/message-driven/resource-ref" inheritCustomization="true" creationClass="com.ibm.jee.was.internal.descriptors.ui.custom.CreateResourceRefBindingElement">
+ 		<item path="@name" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.ResourceRefBrowser"
+ 			buttonLabel="%BROWSE"
+ 		/>
+ 		<item path="@binding-name" inheritCustomization="true" />
+ 	</node>
+
+</customization>

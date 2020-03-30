@@ -1,0 +1,19 @@
+<feature id="com.ibm.ws.st.was.tools.common.ui" label="%featureName" provider-name="%providerName" version="1.0.3.v2020-03-09_0937">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.ws.st.common.ui" install-size="0" unpack="false" version="1.0.506.v2020-03-09_0937"/>
+
+   <plugin download-size="0" id="com.ibm.ws.st.common.ui.ext" install-size="0" unpack="false" version="1.0.4.v2020-03-09_0937"/>
+
+</feature>

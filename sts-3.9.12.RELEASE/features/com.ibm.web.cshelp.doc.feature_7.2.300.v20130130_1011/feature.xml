@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.web.cshelp.doc.feature"
+      label="%featureName"
+      version="7.2.300.v20130130_1011"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.ibm.etools.webtools.cshelp"
+         download-size="0"
+         install-size="0"
+         version="7.1.200.v20121212_0720"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.etools.webtools.gadgets.cshelp"
+         download-size="0"
+         install-size="0"
+         version="7.0.100.v20130130_1011"
+         unpack="false"/>
+
+</feature>

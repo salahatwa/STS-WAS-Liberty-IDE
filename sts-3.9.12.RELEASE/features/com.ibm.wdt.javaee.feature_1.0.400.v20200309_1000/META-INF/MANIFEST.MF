@@ -1,0 +1,68 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27) (IBM Corpo
+ ration)
+
+Name: license_tr.html
+SHA-256-Digest: qIcUFAZa9DKWaQlFhNRhubpgcF4wgQCeoQCosYZrgqI=
+
+Name: license_zh.html
+SHA-256-Digest: IdfGnoSnHvmLErA4QzYYNP+peyA0BcY02mL0zmokSEI=
+
+Name: p2.inf
+SHA-256-Digest: VpGfs47jXMSfJgPNfmhrTWZgVP38mlM8t3b1JI8G6Bk=
+
+Name: license_zh_TW.html
+SHA-256-Digest: AAhhb7+mUcI2eZOI/V9OF3Uv1ntuVlWsnDqeSlwndcE=
+
+Name: license_ko.html
+SHA-256-Digest: nDkqh0ejIKZVF6lNvu4SKNrBay51Jvou1EpbPzZBbc0=
+
+Name: license_el.html
+SHA-256-Digest: i6aoAUxpbXEi/pFJZi4JgzV9oa+IChG5LnqIy57RlDU=
+
+Name: feature.xml
+SHA-256-Digest: 7RLDiOdgtptKcZv4cWsNpDD834sFzxyKhjjdwPt+Yy0=
+
+Name: license_pt.html
+SHA-256-Digest: VayZ8GZXRXY6C/cQSkCmH8eOTvtkeNt5v9wxdtnVQRg=
+
+Name: license_fr.html
+SHA-256-Digest: XPG5n57cSVers7KfAVk43ulZfQ3xMVPFKn6NRJAIgw4=
+
+Name: license_in.html
+SHA-256-Digest: sOIZ+oucsLjZWAKt0Cg1vBHF06t914aJVdEDgjHkkbI=
+
+Name: license_sl.html
+SHA-256-Digest: VRJ3n9PfFQ12PmGq2N8FECbCsNlHCRxlYc72+ESAUzE=
+
+Name: license_de.html
+SHA-256-Digest: hWNAZWfFoDnsGpy5EHxy4Xe1PUGJnKGDNi7ao9HdBHw=
+
+Name: license_es.html
+SHA-256-Digest: H8LIQeGYC0Ymb3JjBu0WVvwI5hMdregVYhgL+Mc8DOw=
+
+Name: license_pl.html
+SHA-256-Digest: 1GyEusdaMC1+FjmZrbZ3njFF0+vK3S7xg6Q4k1d4nEo=
+
+Name: license.html
+SHA-256-Digest: oRQjFwX2z7DvLpkOPFXIu0tCwdwS3m9iXml4i4z8zj8=
+
+Name: license_it.html
+SHA-256-Digest: IBGeVsFg5o7k8hJYmVB0wb9vBmRa0MpY0Ms59j358do=
+
+Name: license_cs.html
+SHA-256-Digest: ornX/rJIC2XDrtGdBLliMEovdSt631Zy66I4Vxble/c=
+
+Name: license_ja.html
+SHA-256-Digest: izW8D0d2v5keJajJjV8bOykaHo6of7TTZlNJAUDRbtY=
+
+Name: license_ru.html
+SHA-256-Digest: ezB25ATQ6th/fjxmYTARfqtBu9M4DVirR780P4IXcJw=
+
+Name: feature.properties
+SHA-256-Digest: gIigDRbarUBPOwkKmOXF1Mrhb4BOqC2XEYJklykWYSE=
+
+Name: license_lt.html
+SHA-256-Digest: 4aXbw2LjpxaGEowJUMJcSRE+wgTVidAK7amyl7JcaIs=
+

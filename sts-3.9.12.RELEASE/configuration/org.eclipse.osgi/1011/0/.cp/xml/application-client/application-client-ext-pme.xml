@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+********************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                       *
+*                                                                                           *
+*  Editor ID: com.ibm.jee.was.schemas.ibm-application-client-ext-pme-1.0-editor			    *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                        *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-application-client-ext-pme_1_0.xsd *
+*                                                                                           *
+*********************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-application-client-ext-pme_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-application-client-ext-pme"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0005"
+	headerIcon="icons/application-client-ext-pme/application-client-ext-pme.gif">
+
+	<node path="*/application-client-ext-pme" label="%APPLICATION_CLIENT_EXTENSIONS_PME" treeLabel="%APPLICATION_CLIENT_EXTENSIONS_PME" icon="icons/application-client-ext-pme/application-client-ext-pme.gif" sectionHeaderText="%hREQUIRED">			
+		<node path="@version" hide="true"/>
+
+		<node path="compensation" hideSectionTitle="true">
+			<item path="@type" label="%COMPENSATION_TYPE"/>
+		</node>
+		
+		<node path="app-profile" label="%APP_PROFILE" icon="icons/application-client-ext-pme/app-profile.gif" sectionHeaderText="%hAPP_PROFILE">
+			<node path="component-extension" label="%COMPONENT_EXTENSION" icon="icons/application-client-ext-pme/application-client-ext-pme.gif" sectionHeaderText="%hREQUIRED">
+				<node path="task-ref" label="%TASK_REFERENCE" icon="icons/application-client-ext-pme/task-ref.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@logical-name" label="%LOGICAL_NAME"/>
+				</node>				
+ 			</node>
+		</node>
+
+	</node>
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+		
+		<node path="task" label="%TASK">
+			<item path="@name" label="%NAME"/>
+			<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+		</node>
+		
+	</node>
+</customization>

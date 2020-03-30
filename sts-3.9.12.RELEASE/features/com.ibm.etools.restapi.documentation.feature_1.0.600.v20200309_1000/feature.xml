@@ -1,0 +1,23 @@
+<feature id="com.ibm.etools.restapi.documentation.feature" label="%featureName" provider-name="%providerName" version="1.0.600.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.ibm.etools.webtools.json.feature" version="1.0.0.qualifier"/>
+   </requires>
+
+   <plugin download-size="0" id="com.ibm.etools.restapi.documentation.swagger.ui" install-size="0" unpack="false" version="1.1.600.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.etools.restapi.documentation.swagger.core" install-size="0" version="1.0.300.v20200309_1000"/>
+
+</feature>

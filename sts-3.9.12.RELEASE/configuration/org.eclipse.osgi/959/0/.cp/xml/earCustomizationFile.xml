@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: org.eclipse.jst.jee.ee5earDD (Application version 5)                  *
+*  Namespace: http://java.sun.com/xml/ns/javaee                                           *
+*  Schema:    http://java.sun.com/xml/ns/javaee/application_5.xsd                         *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization 
+	helpContextId="com.ibm.etools.javaee.ui.editors.ear.earEditor"
+	headerActions="com.ibm.etools.javaee.ui.editors.web.HelpAction"
+	headerIcon="icons/full/cview16/ear_ed_view.gif"
+	customizationNamespace="http://java.sun.com/xml/ns/javaee"
+	customizationSchemaLocation="http://java.sun.com/xml/ns/javaee/application_5.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd ">
+
+	<!-- Global customization -->
+	<node path="*">
+		<!-- hide all occurrences of the attributes id, lang and type -->
+		<item path="@id" hide="true" />
+		<item path="@lang" hide="true" />  
+	  	<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+	  	 
+	  	<!-- Show all "description" items as text fields 5 lines tall and customize its label -->
+	  	<item path="description" style="text" textLines="5" label="%description" deleteIfEmpty="true" /> 
+		
+		<!-- Make all "icon" nodes appear with the corresponding icon image and label -->
+		<node path="icon" label="%Icon" icon="icons/image.gif" singleOccurrence="true">
+			<!-- customize item labels of all icon nodes -->
+			<item path="small-icon" deleteIfEmpty="true" label="%Small_icon" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseIconActionHandler" buttonLabel="%browse" />
+			<item path="large-icon" deleteIfEmpty="true" label="%Large_icon" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseIconActionHandler" buttonLabel="%browse" />
+		</node>
+	</node>
+
+ 
+	<!-- Application customization -->
+ 	<node path="/application" label="%application" treeLabel="%application" treeLabelData="display-name" icon="icons/full/cview16/ear_ed_view.gif" detailSectionTitle="%general_info">
+		<item path="display-name" deleteIfEmpty="true" label="%display_name" style="text"/>
+		<item path="@version" label="%version" disabled="true" />
+		<item path="library-directory" deleteIfEmpty="false" disabled="true" readOnly="true" label="%library_directory" buttonClass="com.ibm.etools.javaee.ui.editors.application.LibraryDirectoryActionHandler" buttonLabel="%edit" validationClass="com.ibm.etools.javaee.ui.validation.LibraryDirectoryValidator"/>
+		<item path="description" inheritCustomization="true"/>
+		<section label="%Actions">
+			<hyperlink label="%SERVLET_MAPPING_LINK_LABEL" icon="icons/chain.gif" leftIndentation="true" hyperlinkClass="com.ibm.etools.javaee.ui.editors.ejb.J2EEDependenciesPageHyperLink" />
+		</section>
+	</node>
+
+	<node path="/application/module" label="%module" treeLabelClass="com.ibm.etools.javaee.ui.editors.application.ModuleTreeLabelCreationHandler" icon="icons/full/obj16/folder.gif" creationClass="com.ibm.etools.javaee.ui.editors.application.ModuleCreationHandler" deletionClass="com.ibm.etools.javaee.ui.editors.application.ModuleDeletionHandler" >
+		<item path="alt-dd" label="%alt_dd" deleteIfEmpty="true" buttonClass="com.ibm.etools.javaee.ui.editors.common.internal.BrowseXMLActionHandler" buttonLabel="%browse" />
+		<node path="web" label="%uri" treeLabel="%web" icon="icons/full/obj16/module_web_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.common.internal.ElementCreationDisabler" canCreate="false" canDelete="false">
+			<item path="web-uri" label="%uri" style="text" validationClass="com.ibm.etools.javaee.ui.validation.ModuleURIValidator"/>
+			<item path="context-root" label="%context_root" style="text" buttonLabel="%refresh" buttonClass="com.ibm.etools.javaee.ui.editors.application.RefreshContextRootButtonHandler" />
+		</node>
+		<node path="ejb" label="%uri" treeLabel="%ejb" icon="icons/full/obj16/module_ejb_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.common.internal.ElementCreationDisabler" canCreate="false" canDelete="false" />
+		<node path="connector" label="%uri" treeLabel="%connector" icon="icons/full/obj16/connectorgroup_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.common.internal.ElementCreationDisabler" canCreate="false" canDelete="false" />
+		<node path="java" label="%uri" treeLabel="%appClient" icon="icons/full/obj16/module_clientapp_obj.gif" creationClass="com.ibm.etools.javaee.ui.editors.common.internal.ElementCreationDisabler" canCreate="false" canDelete="false" />
+	</node>
+	
+	<node path="/application/module/ejb" label="%ejb" icon="icons/full/obj16/module_ejb_obj.gif" canDelete="false"  >
+	<item path="." label="%ejb" style="text" validationClass="com.ibm.etools.javaee.ui.validation.ModuleURIValidator"/>
+	</node>
+	
+	<node path="/application/module/java" label="%appClient" icon="icons/full/obj16/module_clientapp_obj.gif" canDelete="false" >
+	<item path="." label="%appClient" style="text" validationClass="com.ibm.etools.javaee.ui.validation.ModuleURIValidator"/>
+	</node>
+	
+	<node path="/application/module/connector" label="%connector" icon="icons/full/obj16/connectorgroup_obj.gif"  canDelete="false" >
+	<item path="." label="%connector" style="text" validationClass="com.ibm.etools.javaee.ui.validation.ModuleURIValidator"/>
+	</node>
+	
+	<!-- Security Role customization -->
+	<node path="/application/security-role" label="%security_role" icon="icons/security_role.gif"  treeLabel="%security_role_tree_label" treeLabelData="role-name">
+		<item path="role-name" label="%Role_Name"/>
+	</node>
+</customization>

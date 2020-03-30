@@ -1,0 +1,19 @@
+<feature id="com.ibm.jee.jpa.core.feature.eclipse43" label="IBM JPA Core Feature on Eclipse 4.3 and up" provider-name="IBM" version="1.400.251.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %License
+   </license>
+
+   <plugin download-size="0" id="com.ibm.jee.deploy.jdbc" install-size="0" unpack="false" version="1.1.1300.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.jee.jpa.entity.config" install-size="0" unpack="false" version="1.200.102.v20200309_1000"/>
+
+</feature>

@@ -1,0 +1,32 @@
+<feature id="com.ibm.websphere.wdt.server.tools" label="%featureName" plugin="com.ibm.ws.st.core" provider-name="IBM" version="20.0.300.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes id="com.ibm.wdt.install.feature" version="1.0.3.v20200309_1000"/>
+
+   <includes id="com.ibm.wdt.preferences.feature" version="1.0.201.v20200309_1000"/>
+
+   <requires>
+      <import feature="com.ibm.ws.ast.ws.tools" match="greaterOrEqual" version="1.0.100"/>
+      <import feature="com.ibm.xwt.dde.feature" match="greaterOrEqual" version="1.0.202"/>
+      <import feature="com.ibm.jee.was.descriptors.feature" match="greaterOrEqual" version="1.0.100"/>
+      <import feature="com.ibm.ws.st.tools" match="greaterOrEqual" version="1.0.200"/>
+      <import feature="com.ibm.websphere.wdt.product.site.fe" match="greaterOrEqual" version="1.0.200"/>
+      <import feature="com.ibm.ws.ast.jaxrs.liberty.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.jee.was.descriptors.ui.feature" match="greaterOrEqual" version="1.0.1"/>
+      <import feature="com.ibm.ws.st.jee.tools.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.wdt.restapi.documentation.feature" match="greaterOrEqual" version="1.0.0"/>
+      <import feature="com.ibm.etools.common.migration.feature" match="greaterOrEqual" version="1.0.100.qualifier"/>
+   </requires>
+
+</feature>

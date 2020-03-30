@@ -1,0 +1,17 @@
+<feature id="com.ibm.ws.ast.rad.tools" image="rtFeatUpdate.gif" label="%featureName" provider-name="IBM" version="1.1.500.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.jee.ejb.refactoring.core" install-size="0" unpack="false" version="1.0.3.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.jee.ejb.refactoring.ui" install-size="0" unpack="false" version="1.0.101.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.jaxrs.annotations.processor" install-size="0" unpack="false" version="1.0.601.v20200309_1000"/>
+
+</feature>

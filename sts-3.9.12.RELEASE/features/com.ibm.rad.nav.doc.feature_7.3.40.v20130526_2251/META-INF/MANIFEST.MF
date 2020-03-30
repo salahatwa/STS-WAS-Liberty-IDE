@@ -1,0 +1,105 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_25 (Sun Microsystems Inc.)
+
+Name: license_ko.html
+SHA-256-Digest: 3JBUzmDzPT5PbSpZNYGQstxW54qrTHIg1j/C41SIngg=
+
+Name: feature_cs.properties
+SHA-256-Digest: SP1IQsCA1+B673GkZwktQIqipZMi9G9/5u3vXz7Lu60=
+
+Name: feature.xml
+SHA-256-Digest: gPe0sfAWcQf3444IslQUmXngbR/Y3O1FCtNepldY760=
+
+Name: feature_de.properties
+SHA-256-Digest: 98Yxn3a6O52Ypk1v7JxeImSltmGzuKusDsVWEnqN5Ys=
+
+Name: license_fr.html
+SHA-256-Digest: N3AzRZ6UarHcdvWEhnB3nEUxjUgWp1sJSAjHbIN94yk=
+
+Name: feature_it.properties
+SHA-256-Digest: 8lwuv0QD3cAIJenmDXY4ADGcAWN6B7YLu21T8iQQ0PE=
+
+Name: license_hu.html
+SHA-256-Digest: 5M2mMy7B/5MROnuRweneH5Dno8aXkmeJHmnR/2kKjYk=
+
+Name: license_de.html
+SHA-256-Digest: WXXcUHCGlmEB7LpMnIos/pIEFQ6HAeJFGhxkerDYeXo=
+
+Name: feature_ja.properties
+SHA-256-Digest: 9k0Q3cy0hUq34KhvtdAFHqLOHMU6qwcFcYroaxg2Tig=
+
+Name: feature_zh_TW.properties
+SHA-256-Digest: l1gHm/4vK2dM2UAbwrtZwZ/h34EL6BbFK3+q6nxYMiY=
+
+Name: license_cs.html
+SHA-256-Digest: 3Op3XTNp8/cZychlXkJkhZ2NCvd06tRpVdu4G20kli8=
+
+Name: license_zh_HK.html
+SHA-256-Digest: IqU7TsEeAK3xmTTYP1T7PUPw5DoIFs0nrw78QjZ98/g=
+
+Name: license_ru.html
+SHA-256-Digest: GDK9Q3+4aHLHwKdXfgXn0qE/r2XUyqEhSX5cfjRCsAA=
+
+Name: feature.properties
+SHA-256-Digest: wR5jZDAXySZ7aUogQDMokyP4yE0AbP8o9bmfoo1acOc=
+
+Name: license_pt_BR.html
+SHA-256-Digest: XlL/cE+dWy3yz1RA6WfUantvi3A6VVTK5aPfBofSVJk=
+
+Name: feature_hu.properties
+SHA-256-Digest: B4wc/Jho98NLWYEn6I4byKdsi6Q/eIaK5hCJxrovhHM=
+
+Name: license_zh.html
+SHA-256-Digest: dBIbB2HjPF25xIvQP4buGdMx3UOM6Bivl66peshLnlg=
+
+Name: feature_ru.properties
+SHA-256-Digest: Yhek/VoD8X8OAQBIsKuovKoOno4nJHKLYQEBcfrdzZ4=
+
+Name: feature_pl.properties
+SHA-256-Digest: gvWY+cYlCkj5fNYXBxGKG/ohdXcT2pAol0hrMiNfp0A=
+
+Name: feature_zh_HK.properties
+SHA-256-Digest: HN+FG5z7NZkAtPIxgQB8jsp8EBcrJJYb21f5Xp69BBU=
+
+Name: license_zh_TW.html
+SHA-256-Digest: IqU7TsEeAK3xmTTYP1T7PUPw5DoIFs0nrw78QjZ98/g=
+
+Name: license_zh_CN.html
+SHA-256-Digest: dBIbB2HjPF25xIvQP4buGdMx3UOM6Bivl66peshLnlg=
+
+Name: feature_pt_BR.properties
+SHA-256-Digest: wysc5ws11FOXZ67s7jOsjJkC/3ehJ+YSuZ6AaQ+FgCA=
+
+Name: uadelivery.properties
+SHA-256-Digest: jZBkONe2wY7vvUVnmx7dizM8m2TJuQ2qKMgdpf5JjAs=
+
+Name: feature_ko.properties
+SHA-256-Digest: hNqD1dIv/YOu2jHL5+Ykb6EVO/YH9CtNgZwGRT9SgSs=
+
+Name: feature_es.properties
+SHA-256-Digest: PKYfXA1bne3lpKVmejkSOB9O9/BajS0AOMV7X+VeppI=
+
+Name: feature_zh_CN.properties
+SHA-256-Digest: XDxqkwlUKZcQzKhOd/7vnGMSfbmDZSDpDCW41ZIemTo=
+
+Name: license_es.html
+SHA-256-Digest: 3jJeCNHTtauZ4HPPSPbllhxGdow//uLJDUT3l/FHWBc=
+
+Name: license_pl.html
+SHA-256-Digest: dCaZiw6PdDp40jC6VnCKkIs00vs5Z7iGDu1sy9dxHyg=
+
+Name: license.html
+SHA-256-Digest: hqSVaewuYmynRgjBLcJov0+kEUBe4iK+18Ya+pprFA8=
+
+Name: license_it.html
+SHA-256-Digest: Sr3J5iQc8ShCPXhY83ypyDYUu9664StK49fCtcZMkQc=
+
+Name: feature_fr.properties
+SHA-256-Digest: tniJzy+lUKl2sNI+b24zzDfEMZTcgCN03ZsYCQlV6L8=
+
+Name: feature_zh.properties
+SHA-256-Digest: uNpCWeE89882sR/NrZ9kTKmIisVXOKQicHHa4OlEydY=
+
+Name: license_ja.html
+SHA-256-Digest: 0hDUcE7wtIjB1b2bCixjkrBrUdONcZIPaiIXEu6K/tI=
+

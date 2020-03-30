@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_25 (Sun Microsystems Inc.)
+
+Name: about.properties
+SHA-256-Digest: /XWuHx+TJk+Him48t5ZDnuCXGW1tnCu5/WDU8BGqVKE=
+
+Name: license.html
+SHA-256-Digest: UpmczMISoiMCA6u0fM6tlF9d1fRSYzyde0l/aXNKA3M=
+
+Name: about.html
+SHA-256-Digest: QgLRDstrR7gUS8gjUdSXUWm6fSZ+9p18zrAi9wBmMmo=
+
+Name: uadelivery.properties
+SHA-256-Digest: kAqeipYZZJI+n3c6E90U2hQcEbWx/O3SLcAK5h0LWRA=
+
+Name: rational32.gif
+SHA-256-Digest: WmfD9Qh4+axZVphPnsBDPleNo5IXr5tWtzloQpQ+Oh8=
+
+Name: feature.xml
+SHA-256-Digest: w5qbqNFjTZ3mFhYRlyn1ekqEWlGt+JMzSytmAPA1dzc=
+
+Name: feature.properties
+SHA-256-Digest: 39MzIgDScd8eOBnTfYPW51Tr6Io1DkagRQ/RPH6mosU=
+
+Name: about.ini
+SHA-256-Digest: YSALIoIcVOtow7Nj9P2KLqbQk8xLtH+GKEg1l78GiqQ=
+
+Name: about.mappings
+SHA-256-Digest: Nv5MgpoM7eQPwZzOMa5JOboR4oPNR2Xh/BDOlMeEdPw=
+

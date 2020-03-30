@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization 
+	customizationNamespace="http://java.sun.com/xml/ns/javaee" 
+	customizationSchemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd">
+
+	<node path="/ejb-jar" inheritCustomization="true">
+		<section label="%WAS_DESCRIPTORS">
+			<hyperlink icon="icons/ejb-bnd/ejbBinding_obj.gif" label="%BINDINGS" hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.addons.EjbBindingsHyperLink" leftIndentation="true"/>
+			<hyperlink icon="icons/ejb-jar-ext/ejb-jar-ext.gif" label="%EXTENSIONS" hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.addons.EjbExtensionsHyperLink" leftIndentation="true"/>
+			<hyperlink icon="icons/ejb-ext-pme/ejb-ext-pme.gif" label="%PMES" hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.addons.EjbPmeHyperLink" leftIndentation="true"/>
+		</section>
+	</node>
+
+</customization>

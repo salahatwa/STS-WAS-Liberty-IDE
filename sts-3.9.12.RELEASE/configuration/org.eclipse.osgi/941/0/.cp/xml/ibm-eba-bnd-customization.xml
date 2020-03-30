@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://www.ibm.com/blueprintbinding.xsd"
+	customizationSchemaLocation="" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd ">
+	
+	<node path="/eba-bnd" label="%EBA_BND" icon="icons/bp_binding.gif">
+		<node path="resource-ref" label="%RESOURCE_REF" treeLabelData="id" icon="icons/resource_ref.gif">
+			<item path="authentication-alias" label="%AUTHENTICATION_ALIAS" />
+			<item path="interface" label="%INTERFACE" required="true" labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ClassLauncher"  buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.CustomDialog" buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN" buttonToolTip="%CLK_CLS_CHG"/>
+			<item path="authentication" label="%AUTHENTICATION" hide="true"/>
+			<item path="sharing-scope" label="%SHARING_SCOPE" hide="true"/>
+			<item path="id" label="%ID"  />	
+			<item path="jndi-name" hide="true"/>
+		</node>
+	</node>
+</customization>

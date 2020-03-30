@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.content.ibm-ejb-jar-ext-pme-1.0-editor                      *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-ext-pme_1_0.xsd          *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-ext-pme_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-ejb-jar-ext-pme"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0009"
+	headerIcon="icons/ejb-ext-pme/ejb-jar-ext-pme.gif">
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+		<item path="@version" hide="true"/>
+		
+		<item path="@batch" label="%BATCH" style="checkBox"/>
+		<item path="@class" label="%CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+		<item path="@country" label="%COUNTRY" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.CountryBrowser" buttonLabel="%CHOOSE"/>
+		<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+		<item path="@ejb" label="%EJB"/>
+		<item path="@increment" label="%INCREMENT"/>
+		<item path="@hint" label="%HINT"/>
+		<item path="@lang" label="%LANGUAGE" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.LanguageBrowser" buttonLabel="%CHOOSE"/>
+		
+		<item path="@name" label="%NAME"/>
+		<item path="@params" label="%PARAMETERS"/>
+		
+		<item path="@variant" label="%VARIANT"/>
+
+		<node path="optimistic-read" label="%OPTIMISTIC_READ" icon="icons/ejb-ext-pme/optimistic-read.gif" sectionHeaderText="%ATTRIBUTE_SET"/>	
+		<node path="optimistic-update" label="%OPTIMISTIC_UPDATE" icon="icons/ejb-ext-pme/optimistic-update.gif" sectionHeaderText="%ATTRIBUTE_SET"/>
+		<node path="partial-operation" hide="true"/>
+
+		<node path="app-profiles" label="%APPLICATION_PROFILES" icon="icons/ejb-ext-pme/app-profiles.gif" sectionHeaderText="%hAPPLICATION_PROFILES"/>
+		<node path="collection-access-pattern" label="%COLLECTION_ACCESS_PATTERN" icon="icons/ejb-ext-pme/collection-access-pattern.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@type" label="%TYPE"/>
+		</node>
+		<node path="collection-increment" label="%COLLECTION_INCREMENT" icon="icons/ejb-ext-pme/collection-increment.gif" sectionHeaderText="%hREQUIRED"/>
+		<node path="collection-scope" label="%COLLECTION_SCOPE" icon="icons/ejb-ext-pme/collection-scope.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@type" label="%TYPE"/>
+			<node path="time-out" hideSectionTitle="true">
+				<item path="@value" label="%TIME-OUT_VALUE_OPTIONAL"/>
+			</node>
+		</node>
+
+		<node path="pessimistic-read" label="%PESSIMISTIC_READ" icon="icons/ejb-ext-pme/pessimistic-read.gif" sectionHeaderText="%ATTRIBUTE_SET"/>
+
+		<node path="pessimistic-update" label="%PESSIMISTIC_UPDATE" icon="icons/ejb-ext-pme/pessimistic-update.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@exclusive" inheritCustomization="true"/>
+			<item path="@greedy" inheritCustomization="true"/>
+			<item path="@no-collision" inheritCustomization="true"/>
+			<item path="@promote" inheritCustomization="true"/>
+		</node>
+
+		<node path="read-ahead-hint" label="%READ_AHEAD_HINT" treeLabel="%fREAD_AHEAD_HINT" treeLabelData="@hint" icon="icons/ejb-ext-pme/read-ahead-hint.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="resource-manager-prefetch-increment" label="%RESOURCE_MANAGER_PREFETCH_INCREMENT" icon="icons/ejb-ext-pme/resource-manager-prefetch-increment.gif" sectionHeaderText="%hREQUIRED"/>
+
+		<node path="verify-read-only-data" label="%VERIFY_READ_ONLY_DATA" icon="icons/ejb-ext-pme/verify-read-only-data.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@type" label="%TYPE"/>
+		</node>
+		
+		<node path="deferred-operation" label="%DEFERRED_OPERATION" icon="icons/ejb-ext-pme/deferred-operation.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@type" label="%TYPE"/>
+			<item path="@batch" inheritCustomization="true"/>
+		</node>
+		
+		<node path="compensation" label="%COMPENSATION" icon="icons/ejb-ext-pme/compensation.gif" sectionHeaderText="%hCOMPENSATION"/>
+		
+		<node path="bean-policy" label="%BEAN_POLICY" icon="icons/ejb-ext-pme/bean-policy.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@type" label="%TYPE"/>
+		</node>
+		
+		<node path="handler" label="%HANDLER"/>
+
+		<node path="ejb" label="%EJB" treeLabel="%fEJB" treeLabelData="@name" icon="icons/ejb-ext-pme/ejb.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="method-policy" label="%METHOD_POLICY" icon="icons/ejb-ext-pme/method-policy.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@type" label="%TYPE"/>
+		</node>
+		
+		<node path="internationalization" label="%INTERNATIONALIZATION" icon="icons/ejb-ext-pme/internationalization.gif" sectionHeaderText="%hINTERNATIONALIZATION"/>
+		
+		<node path="application" label="%APPLICATION" icon="icons/ejb-ext-pme/application.gif" sectionHeaderText="%hAPPLICATION"/>
+		
+		<node path="run-as-caller" label="%RUN_AS_CALLER" icon="icons/ejb-ext-pme/run-as-caller.gif" sectionHeaderText="%hREQUIRED"/>
+		
+		<node path="run-as-server" label="%RUN_AS_SERVER" icon="icons/ejb-ext-pme/run-as-server.gif" sectionHeaderText="%hREQUIRED"/>
+				
+		<node path="run-as-specified" label="%RUN_AS_SPECIFIED" icon="icons/ejb-ext-pme/run-as-specified.gif" sectionHeaderText="%hREQUIRED"/>
+
+		<node path="method" label="%METHOD" icon="icons/ejb-ext-pme/method.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" inheritCustomization="true"/>
+			<item path="@params" inheritCustomization="true"/>
+			<item path="@type" label="%TYPE"/>			
+		</node>
+		
+		<node path="locale" label="%LOCALE" icon="icons/ejb-ext-pme/locale.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@lang" inheritCustomization="true"/>
+			<item path="@country" inheritCustomization="true"/>
+			<item path="@variant" inheritCustomization="true"/>
+			<item path="@description" inheritCustomization="true"/>
+		</node>
+
+	</node>
+	
+	<node path="/ejb-jar-ext-pme" label="%EJB_PME" icon="icons/ejb-ext-pme/ejb-ext-pme.gif" sectionHeaderText="%hEJB_PME">
+		<node path="activity-sessions" label="%ACTIVITY_SESSIONS" icon="icons/ejb-ext-pme/activity-sessions.gif" sectionHeaderText="%hACTIVITY_SESSIONS">
+			<node path="container-activity-session" label="%CONTAINER_ACTIVITY_SESSIONS" icon="icons/ejb-ext-pme/container-activity-session.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" inheritCustomization="true"/>
+				<item path="@description" inheritCustomization="true"/>
+				<item path="@type" label="%TYPE"/>
+				
+				<node path="method" label="%METHOD" icon="icons/ejb-ext-pme/method.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>
+					
+					<node path="ejb" hideSectionTitle="true">
+						<item path="@name" label="%EJB_NAME"/>
+					</node>
+				</node>
+			</node>
+			<node path="ejb-activity-session" label="%EJB_ACTIVITY_SESSION" treeLabel="%fEJB_ACTIVITY_SESSION" treeLabelData="@ejb" icon="icons/ejb-ext-pme/ejb-activity-session.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@ejb" inheritCustomization="true"/>
+				<item path="@type" label="%TYPE"/>
+			</node>
+		</node>
+	
+		<node path="app-profiles" inheritCustomization="true">
+			<node path="defined-access-intent-policy" label="%DEFINED_ACCESS_INTENT_POLICY" treeLabel="%fDEFINED_ACCESS_INTENT_POLICY" treeLabelData="@name" icon="icons/ejb-ext-pme/defined-access-intent-policy.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" inheritCustomization="true"/>
+				<item path="@description" inheritCustomization="true"/>
+					
+				<node path="deferred-operation" label="%DEFERRED_OPERATION" icon="icons/ejb-ext-pme/deferred-operation.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@type" label="%TYPE"/>
+					<item path="@batch" inheritCustomization="true"/>
+				</node>
+			</node>
+			<node path="ejb-component-extension" label="%EJB_COMPONENT_EXTENSION" treeLabel="%fEJB_COMPONENT_EXTENSION" treeLabelData="@ejb" icon="icons/ejb-ext-pme/ejb-component-extension.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@ejb" inheritCustomization="true"/>
+				<node path="task" label="%TASK">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+				</node>
+				<node path="task-ref" label="%TASK_REFERENCE" treeLabel="%fTASK_REFERENCE" treeLabelData="@logical-name" icon="icons/ejb-ext-pme/task-ref.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@logical-name" label="%LOGICAL_NAME"/>
+					<node path="task" label="%TASK">
+						<item path="@name" inheritCustomization="true"/>
+						<item path="@description" inheritCustomization="true"/>
+					</node>
+				</node>
+				
+			</node>
+			<node path="ejb-module-profile" label="%EJB_MODULE_PROFILE" treeLabel="%fEJB_MODULE_PROFILE" treeLabelData="@name" icon="icons/ejb-ext-pme/ejb-module-profile.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" inheritCustomization="true"/>
+				<item path="@description" inheritCustomization="true"/>
+				<node path="applied-access-intent" label="%APPLIED_ACCESS_INTENT" icon="icons/ejb-ext-pme/applied-access-intent.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+					<item path="@access-intent-name" label="%ACCESS_INTENT_NAME"/>
+				</node>
+				<node path="task" label="%TASK" treeLabel="%fTASK" treeLabelData="@name" icon="icons/ejb-ext-pme/task.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+				</node>
+			</node>
+			<node path="run-as-task" label="%RUN_AS_TASK" icon="icons/ejb-ext-pme/run-as-task.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" inheritCustomization="true"/>
+				<item path="@description" inheritCustomization="true"/>
+				<item path="@type" label="%TYPE"/>
+				<node path="task" label="%TASK">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+				</node>
+				
+				<node path="method" label="%METHOD" icon="icons/ejb-ext-pme/method.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>
+					
+					<node path="ejb" hideSectionTitle="true">
+						<item path="@name" label="%EJB_NAME"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		
+		<node path="compensation" inheritCustomization="true">
+			<node path="method-policy" inheritCustomization="true">
+				<node path="method" inheritCustomization="true">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>			
+
+					<node path="ejb" hideSectionTitle="true">
+						<item path="@name" label="%EJB_NAME"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		
+		<node path="internationalization" inheritCustomization="true">
+			<node path="run-as-caller" inheritCustomization="true">
+				<node path="method" inheritCustomization="true">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>			
+
+					<node path="ejb" hideSectionTitle="true">
+						<item path="@name" label="%EJB_NAME"/>
+					</node>
+				</node>
+			</node>
+
+			<node path="run-as-server" inheritCustomization="true">
+				<node path="method" inheritCustomization="true">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>			
+
+					<node path="ejb" hideSectionTitle="true">
+						<item path="@name" label="%EJB_NAME"/>
+					</node>
+				</node>
+			</node>
+
+			<node path="run-as-specified" inheritCustomization="true">
+				<item path="@name" inheritCustomization="true"/>
+				<item path="@description" inheritCustomization="true"/>
+				<node path="time-zone" label="%TIME_ZONE">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@description" inheritCustomization="true"/>
+				</node>
+				
+				<node path="method" inheritCustomization="true">
+					<item path="@name" inheritCustomization="true"/>
+					<item path="@params" inheritCustomization="true"/>
+					<item path="@type" label="%TYPE"/>			
+
+					<node path="ejb" hideSectionTitle="true">
+						<item path="@name" label="%EJB_NAME"/>
+					</node>
+				</node>
+			</node>
+		</node>	
+	</node>
+
+	
+</customization>

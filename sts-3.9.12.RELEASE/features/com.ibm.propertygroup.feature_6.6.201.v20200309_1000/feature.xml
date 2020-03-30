@@ -1,0 +1,20 @@
+<feature id="com.ibm.propertygroup.feature" label="%featureName" provider-name="%providerName" version="6.6.201.v20200309_1000">
+   <install-handler/>
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.propertygroup.ui" install-size="0" unpack="false" version="6.3.250.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.propertygroup" install-size="0" unpack="false" version="6.5.101.v20200309_1000"/>
+
+</feature>

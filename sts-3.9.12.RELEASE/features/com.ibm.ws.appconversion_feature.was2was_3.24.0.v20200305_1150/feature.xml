@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* (C) Copyright IBM Corp. 2016, 2018.                               */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+-->
+
+<feature
+      id="com.ibm.ws.appconversion_feature.was2was"
+      label="%featureName"
+      version="3.24.0.v20200305_1150"
+      provider-name="%providerName"
+      plugin="com.ibm.ws.appconversion.was2was"
+      license-feature="com.ibm.ws.migrationtoolkit.license.feature"
+      license-feature-version="9.0.0.qualifier">
+<license url="%licenseURL" >
+      %license
+  </license>
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <includes
+         id="com.ibm.ws.appconversion_feature.common"
+         version="3.23.0.v20200305_1150"
+         search-location="both"/>
+
+   <includes
+         id="com.ibm.ws.appconversion_feature.jre"
+         version="3.20.0.v20200305_1150"
+         search-location="both"/>
+
+   <includes
+         id="com.ibm.rrd.liberty.rules.feature"
+         version="1.15.0.v20200305_1150"
+         search-location="both"/>
+
+   <includes
+         id="com.ibm.ws.appconversion.was2liberty_feature"
+         version="3.23.0.v20200305_1150"
+         search-location="both"/>
+
+   <includes
+         id="com.ibm.ws.appconversion.javaee_feature"
+         version="3.21.0.v20200305_1150"
+         search-location="both"/>
+
+   <plugin
+         id="com.ibm.ws.appconversion.was2was"
+         download-size="0"
+         install-size="0"
+         version="3.19.0.v20200305_1150"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.ws.appconversion.was2was.nl1"
+         download-size="0"
+         install-size="0"
+         version="3.19.0.v20200305_1150"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

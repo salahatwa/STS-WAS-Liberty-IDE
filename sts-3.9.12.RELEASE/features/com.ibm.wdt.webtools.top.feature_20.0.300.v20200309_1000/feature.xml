@@ -1,0 +1,33 @@
+<feature id="com.ibm.wdt.webtools.top.feature" label="%FeatureName" plugin="com.ibm.etools.webtools.javaee" provider-name="IBM" version="20.0.300.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+   <includes id="com.ibm.wdt.install.feature" version="1.0.3.v20200309_1000"/>
+
+   <includes id="com.ibm.wdt.preferences.feature" version="1.0.201.v20200309_1000"/>
+
+   <requires>
+      <import feature="com.ibm.etools.attrview.feature" match="greaterOrEqual" version="1.0.100"/>
+<!--      <import feature="com.ibm.etools.webservice.discovery.core" version="7.0.450" match="greaterOrEqual"/> -->
+      <import feature="com.ibm.etools.webservice.finder.ui.feature" match="greaterOrEqual" version="1.0.100"/>
+      <import feature="com.ibm.wdt.webtools.core.feature" match="greaterOrEqual" version="1.1.100"/>
+      <import feature="com.ibm.ws.base.webservices" match="greaterOrEqual" version="1.0.100"/>
+      <import feature="com.ibm.wdt.javaee.feature" match="greaterOrEqual" version="1.0.301"/>
+      <import feature="org.eclipse.draw2d" match="greaterOrEqual" version="3.6.2"/>
+      <import feature="org.eclipse.gef" match="greaterOrEqual" version="3.6.2"/>
+      <import feature="com.ibm.wdt.doc.feature" match="greaterOrEqual" version="1.0.2"/>
+      <import feature="com.ibm.websphere.wdt.product.site.fe" match="greaterOrEqual" version="1.0.200"/>
+      <import feature="com.ibm.wdt.restapi.documentation.feature" match="greaterOrEqual" version="1.0.0"/>
+   </requires>
+
+</feature>

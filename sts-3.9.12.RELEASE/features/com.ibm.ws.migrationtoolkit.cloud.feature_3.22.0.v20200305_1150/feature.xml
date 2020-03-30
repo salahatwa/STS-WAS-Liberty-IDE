@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* (C) Copyright IBM Corp. 2016, 2020.                               */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+-->
+<feature id="com.ibm.ws.migrationtoolkit.cloud.feature" label="%featureName" license-feature="com.ibm.ws.migrationtoolkit.license.feature" license-feature-version="9.0.0.qualifier" provider-name="%providerName" version="3.22.0.v20200305_1150">
+<license url="%licenseURL" >
+      %license
+  </license>
+    <description>
+      %description
+   </description>
+    <copyright>
+      %copyright
+   </copyright>
+    <includes id="com.ibm.ws.appconversion.liberty2cloud_feature" search-location="both" version="3.17.0.v20200305_1150"/>
+    <includes id="com.ibm.ws.appconversion_feature.common" search-location="both" version="3.23.0.v20200305_1150"/>
+    <includes id="com.ibm.ws.appconversion_feature.jre" search-location="both" version="3.20.0.v20200305_1150"/>
+    <includes id="com.ibm.ws.appconversion.javaee_feature" search-location="both" version="3.21.0.v20200305_1150"/>
+</feature>

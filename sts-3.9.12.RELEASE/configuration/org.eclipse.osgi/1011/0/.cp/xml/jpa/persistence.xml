@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2007. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.descriptors.ui.persistence-2.0-editor		                  *
+*  Namespace: http://java.sun.com/xml/ns/persistence"                                     *
+*  Schema:    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd                  *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://java.sun.com/xml/ns/persistence"
+	customizationSchemaLocation="http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEWSECTIONHEADERTEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0001"
+	headerIcon="icons/jpa/ejb_rdbmapping_view.gif">
+
+	<node path="/persistence" label="%PERSISTENCE" treeLabel="%PERSISTENCE" sectionHeaderText="%hPERSISTENCE" icon="icons/persistence/persistence.gif">
+		<item path="@version" label="%VERSION" readOnly="true" />
+		
+		<node path="persistence-unit" label="%PERSISTENCEUNIT" treeLabel="%fPERSISTENCEUNIT" treeLabelData="@name" icon="icons/persistence/persistence-unit.gif" sectionHeaderText="%hREQUIRED">			
+			<item path="@name" label="%NAME"/>
+			<item path="description"  label="%DESCRIPTION"/>
+			<item path="provider" label="%PROVIDER"/>
+			<item path="@transaction-type" label="%TRANSACTIONTYPE"/>
+			<item path="jta-data-source" label="%JTADATASOURCE"/>
+			<item path="non-jta-data-source" label="%NONJTADATASOURCE"/>
+			<item path="exclude-unlisted-classes" label="%EXCLUDEUNLISTEDCLASSES"/>
+			<item path="jar-file" label="%JARFILE" labelLinkToolTip="%tJARFILE" labelLinkClass="java.lang.Object"/>
+			<item path="mapping-file" label="%MAPPINGFILE" labelLinkToolTip="%tMAPPINGFILE" labelLinkClass="java.lang.Object"/>
+			<item path="shared-cache-mode" label="%SHAREDCACHEMODE"/>
+			<item path="validation-mode" label="%VALIDATIONMODE"/>
+
+ 			<node path="class" style="treeNode" label="%CLASS" treeLabel="%fCLASS" treeLabelData="." icon="icons/persistence/entity-class.gif" sectionHeaderText="%hINPUT">
+	 			<item path="." label="%CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.EntityClassBrowser" buttonLabel="%BROWSE"/>
+ 			</node>
+			<node path="properties" label="%PROPERTIES" treeLabel="%PROPERTIES" sectionHeaderText="%hPROPERTIES" icon="icons/persistence/properties.gif">
+				<node path="property" label="%PROPERTY" treeLabel="%fPROPERTY" treeLabelData="@name" icon="icons/persistence/property.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" label="%NAME"/>
+					<item path="@value"  label="%VALUE"/>
+				</node>
+			</node>
+		</node>
+		
+		<section label="%ACTIONS" >
+			<hyperlink label="%JPA_GENERIC_LINK" icon="icons/persistence/property.gif"
+			 	hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.ConfigJPAGenericHyperLink" />		
+			<hyperlink label="%WAS_JPA_CACHE_LINK" icon="icons/persistence/property.gif"
+			hyperlinkClass="com.ibm.jee.was.internal.descriptors.ui.custom.links.WASJPADataCacheHyperLink" />
+		</section>
+	</node>
+
+</customization>

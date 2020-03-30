@@ -1,0 +1,41 @@
+<feature id="com.ibm.wdt.webtools.core.feature" label="%featureName" provider-name="IBM" version="1.1.200.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin download-size="0" id="com.ibm.etools.webtools.webproject.wizard" install-size="0" unpack="false" version="1.0.100.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.etools.webtools.samples.core" install-size="0" unpack="false" version="1.0.0.v20200309_1000"/>
+
+<!--
+   <plugin
+         id="com.ibm.etools.wdt.server.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.etools.wdt.server.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/> 
+
+   <plugin
+         id="com.ibm.etools.ajax.proxy.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/> -->
+
+</feature>

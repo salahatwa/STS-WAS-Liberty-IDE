@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://xmlns.jcp.org/xml/ns/validation/configuration"
+	customizationSchemaLocation="" overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	treeSortingPreference="alwaysUnsorted" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile ../../com.ibm.xwt.dde/schema/CustomizationFile.xsd "
+	headerIcon="icons/obj16/validation-config.gif">
+
+	<node path="/validation-config" label="%VALIDATION_CONFIG"
+		icon="icons/obj16/validation-config.gif">
+		<item path="." label="%VALIDATION_CONFIG"></item>
+		<item path="@version" label="%VERSION"></item>
+		<node path="constraint-mapping" style="treeNode" label="%CONSTRAINT_MAPPING"
+			treeLabel="%CONSTRAINT_MAPPING_TREE_LABEL"
+			treeLabelData="."
+			icon="icons/obj16/constraint-mapping.gif">
+			<item deleteIfEmpty="false" path="." label="%REF"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ConstraintsMappingHandler" 
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ConstraintsMappingBrowseHandler"
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.FilePathValidator"/>
+		</node>
+
+		<!-- The five below identify classes -->
+		<node path="default-provider" style="treeNode" label="%DEFAULT_PROVIDER"
+			icon="icons/obj16/default-provider.gif">
+			<item path="." label="%REF"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLCreateClassHandler" 
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLBrowseClassHandler" 
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+		</node>
+		<node path="message-interpolator" style="treeNode" label="%MESSAGE_INTERPOLATOR"
+			icon="icons/obj16/message-interpolator.gif">
+			<item path="." label="%REF"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLCreateClassHandler"
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLBrowseClassHandler" 
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+		</node>
+		<node path="traversable-resolver" style="treeNode" label="%TRAVERSABLE_RESOLVER"
+			icon="icons/obj16/traversable-resolver.gif">
+			<item path="." label="%REF"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLCreateClassHandler"
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLBrowseClassHandler" 
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+		</node>
+		<node path="constraint-validator-factory" style="treeNode"
+			label="%CONSTRAINT_VALIDATOR_FACTORY" icon="icons/obj16/constraint-validator-factory.gif">
+			<item path="." label="%REF"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLCreateClassHandler" 
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLBrowseClassHandler" 
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+		</node>
+		<node path="parameter-name-provider" style="treeNode"
+			label="%PARAMETER_NAME_PROVIDER" icon="icons/obj16/parameter-name-provider.gif">
+			<item path="." label="%REF"
+				labelLinkClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLCreateClassHandler"
+				buttonClass="com.ibm.jee.bean.validation.ui.internal.handlers.ValidationXMLBrowseClassHandler" 
+				buttonLabel="%BROWSE"
+				validationClass="com.ibm.jee.bean.validation.ui.internal.validation.ClassAvailabilityValidator"/>
+		</node>
+
+		<node path="executable-validation" style="treeNode" label="%EXECUTABLE_VALIDATION"
+			icon="icons/obj16/executable-validation.gif">
+			<item path="@enabled" style="checkBox" defaultValue="true" label="%ENABLED"/>
+			<node path="default-validated-executable-types" label="%DEFAULT_VALIDATED_EXECUTABLE_TYPES">
+				<node path="executable-type" label="%EXECUTABLE_TYPE">
+				</node>
+			</node>
+		</node>
+		
+		<node path="property" label="%PROPERTY" treeLabel="%PROPERTY_NAME"
+			treeLabelData="@name" icon="icons/obj16/properties-node.png">
+			<item path="@name" label="%NAME" />
+			<item path="." label="%VALUE" />
+		</node>
+	</node>
+</customization>

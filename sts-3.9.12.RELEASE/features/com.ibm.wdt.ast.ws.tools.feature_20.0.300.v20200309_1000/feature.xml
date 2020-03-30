@@ -1,0 +1,34 @@
+<feature id="com.ibm.wdt.ast.ws.tools.feature" label="%FeatureName" plugin="com.ibm.etools.webservice.was.core" provider-name="IBM" version="20.0.300.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+   <includes id="com.ibm.wdt.preferences.feature" version="1.0.201.v20200309_1000"/>
+
+   <includes id="com.ibm.wdt.install.feature" version="1.0.3.v20200309_1000"/>
+
+   <requires>
+      <import feature="com.ibm.ws.base.webservices" match="greaterOrEqual" version="1.0.100"/>
+      <import feature="com.ibm.ws.ast.base.webservices" match="greaterOrEqual" version="1.0.100"/>
+<!--      <import feature="com.ibm.ws.ast.batch.webservices" version="1.0.101" match="greaterOrEqual"/> -->
+<!--      <import feature="com.ibm.ws.ast.wsfp.common" version="1.1.0" match="greaterOrEqual"/> -->
+<!--      <import feature="com.ibm.ws.ast.wsfp.rad.tools.common" version="1.1.0" match="greaterOrEqual"/> -->
+      <import feature="com.ibm.etools.webservice.finder.ui.feature" match="greaterOrEqual" version="1.0.100"/>
+      <import feature="com.ibm.etools.webservice.gsc.feature" match="greaterOrEqual" version="1.0.100"/>
+<!--      <import feature="com.ibm.etools.webservice.discovery.core" version="7.0.450" match="greaterOrEqual"/> -->
+      <import feature="com.ibm.ccl.ws.jaxws.gstc.core" match="greaterOrEqual" version="1.0.302"/>
+      <import feature="com.ibm.ccl.ws.jaxws.gstc.ui" match="greaterOrEqual" version="1.0.300"/>
+      <import feature="com.ibm.websphere.wdt.product.site.fe" match="greaterOrEqual" version="1.0.200"/>
+      <import feature="com.ibm.wdt.restapi.documentation.feature" match="greaterOrEqual" version="1.0.0"/>
+   </requires>
+
+</feature>

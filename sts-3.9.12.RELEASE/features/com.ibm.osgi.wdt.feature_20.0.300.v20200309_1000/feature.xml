@@ -1,0 +1,36 @@
+<feature id="com.ibm.osgi.wdt.feature" label="%featureName" plugin="com.ibm.etools.aries.core" provider-name="%providerName" version="20.0.300.v20200309_1000">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes id="com.ibm.wdt.preferences.feature" version="1.0.201.v20200309_1000"/>
+
+   <includes id="com.ibm.wdt.install.feature" version="1.0.3.v20200309_1000"/>
+
+   <requires>
+      <import feature="com.ibm.etools.aries.core.feature" match="greaterOrEqual" version="1.6.0"/>
+      <import feature="com.ibm.etools.aries.ui.feature" match="greaterOrEqual" version="1.6.0"/>
+      <import feature="com.ibm.etools.aries.maven.core.feature" match="greaterOrEqual" version="1.5.100"/>
+      <import feature="com.ibm.etools.aries.maven.ui.feature" match="greaterOrEqual" version="1.5.100"/>
+      <import feature="com.ibm.etools.aries.rad.ext.core.feature" match="greaterOrEqual" version="1.6.0"/>
+      <import feature="com.ibm.etools.aries.rad.ext.ui.feature" match="greaterOrEqual" version="1.6.0"/>
+      <import feature="com.ibm.support.trace.feature" match="greaterOrEqual" version="1.0.2"/>
+      <import feature="com.ibm.ws.ast.rad.tools" match="greaterOrEqual" version="1.1.100"/>
+      <import feature="com.ibm.wdt.javaee.feature" match="greaterOrEqual" version="1.0.300"/>
+      <import feature="com.ibm.wdt.doc.feature" match="greaterOrEqual" version="1.0.2"/>
+      <import feature="com.ibm.websphere.wdt.product.site.fe" match="greaterOrEqual" version="1.0.200"/>
+      <import feature="org.eclipse.emf.ecore" match="greaterOrEqual" version="2.6.1"/>
+      <import feature="org.eclipse.wst.web_ui.feature" match="greaterOrEqual" version="3.2.5"/>
+      <import feature="com.ibm.wdt.restapi.documentation.feature" version="1.0.0.qualifier"/>
+   </requires>
+
+</feature>

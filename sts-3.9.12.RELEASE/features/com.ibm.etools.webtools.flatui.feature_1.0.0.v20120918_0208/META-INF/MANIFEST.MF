@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0 (IBM Corporation)
+
+Name: license.html
+SHA-256-Digest: r3rF2lS5wVhjwnOSVivFoX6FioZGo5YikP7FrmQNX9A=
+
+Name: feature.xml
+SHA-256-Digest: M6RL7GsiTtcEhr4PIBQngxMDvyaC4qyTVaUszc4D4K0=
+
+Name: feature.properties
+SHA-256-Digest: 1te8C5bffEkUKhGAo8+eJNLm9RVjfAStp6uu28eyids=
+

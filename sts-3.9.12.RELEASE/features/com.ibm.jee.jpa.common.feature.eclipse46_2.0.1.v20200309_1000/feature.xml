@@ -1,0 +1,19 @@
+<feature id="com.ibm.jee.jpa.common.feature.eclipse46" label="Eclipse46" provider-name="IBM" version="2.0.1.v20200309_1000">
+
+   <description>
+      %General
+   </description>
+
+   <copyright>
+      %Copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %License
+   </license>
+
+   <plugin download-size="0" id="com.ibm.jee.jpa.compatibility" install-size="0" unpack="false" version="2.0.1.v20200309_1000"/>
+
+   <plugin download-size="0" id="com.ibm.jee.jpa.platform" install-size="0" unpack="false" version="1.200.100.v20200309_1000"/>
+
+</feature>

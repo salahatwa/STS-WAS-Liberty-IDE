@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2015. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.descriptors.ui.orm-2.1-editor                               *
+*  Namespace: http://xmlns.jcp.org/xml/ns/persistence/orm                                 *
+*  Schema:    http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd                         *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://xmlns.jcp.org/xml/ns/persistence/orm"
+	customizationSchemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd"
+	xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEWSECTIONHEADERTEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0000"
+	headerIcon="icons/jpa/ejb_rdbmapping_view.gif">
+
+	<node path="*">
+	    <item path="description" label="%DESCRIPTION"/>
+		<item path="@catalog" label="%CATALOG"/>
+		<item path="@schema" label="%SCHEMA"/>
+		<item path="@access" label="%ACCESS"/>
+		<node path="table-generator" label="%TABLEGENERATOR" treeLabel="%fTABLEGENERATOR" treeLabelData="@name" icon="icons/orm/table-generator.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+			<item path="@catalog" label="%CATALOG"/>
+			<item path="@schema" label="%SCHEMA"/>
+			<item path="@table" label="%TABLE"/>
+			<item path="@pk-column-name" label="%PRIMARYKEYCOLUMN"/>
+			<item path="@value-column-name" label="%VALUECOLUMN"/>
+			<item path="@pk-column-value" label="%PRIMARYKEYCOLUMNVALUE"/>
+			<item path="@allocation-size" label="%ALLOCATIONSIZE"/>
+			<item path="@initial-value" label="%INITIALVALUE"/>
+		</node>
+
+		<node path="discriminator-column" label="%DISCRIMINATORCOLUMN" sectionHeaderText="%hINPUT">
+			<item path="@name" label="%NAME"/>
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@discriminator-type" label="%DISCRIMINATORTYPE"/>
+			<item path="@length" label="%LENGTH"/>
+		</node>
+		<node path="inheritance" label="%INHERITANCE" sectionHeaderText="%hINPUT">
+			<item path="@strategy" label="%STRATEGY"/>
+		</node>
+		<node path="cascade" label="%CASCADE" sectionHeaderText="%hINPUT">
+			<item path="cascade-all" label="%ALL"/>
+			<item path="cascade-persist" label="%PERSIST"/>
+			<item path="cascade-merge" label="%MERGE"/>
+			<item path="cascade-remove" label="%REMOVE"/>
+			<item path="cascade-refresh" label="%REFRESH"/>
+		</node>
+		
+		<node path="map-key" label="%MAPKEY" sectionHeaderText="%hINPUT" icon="icons/orm2/mapKey_obj.gif">
+			<item path="@name" label="%NAME"/>
+		</node>
+
+		<node path="sequence-generator" label="%SEQUENCEGENERATOR" treeLabel="%fSEQUENCEGENERATOR" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm/sequence-generator.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@sequence-name" label="%SEQUENCE"/>
+			<item path="@allocation-size" label="%ALLOCATIONSIZE"/>
+			<item path="@initial-value" label="%INITIALVALUE"/>				
+		</node>
+
+		<node path="column" label="%COLUMNDETAILS" sectionHeaderText="%hINPUT" icon="icons/orm2/columnDetails_obj.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@table" label="%TABLE"/>				
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@length" label="%LENGTH"/>
+			<item path="@precision" label="%PRECISION"/>
+			<item path="@scale" label="%SCALE"/>
+			<item path="@insertable" label="%INSERTABLE"/>
+			<item path="@nullable" label="%NULLABLE"/>
+			<item path="@unique" label="%UNIQUE"/>
+			<item path="@updatable" label="%UPDATABLE"/>
+		</node>
+		<node path="map-key-column" label="%MAPKEYCOLUMN" treeLabel="%fMAPKEYCOLUMN" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm2/mapKeyColumn_obj.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@table" label="%TABLE"/>				
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@length" label="%LENGTH"/>
+			<item path="@precision" label="%PRECISION"/>
+			<item path="@scale" label="%SCALE"/>
+			<item path="@insertable" label="%INSERTABLE"/>
+			<item path="@nullable" label="%NULLABLE"/>
+			<item path="@unique" label="%UNIQUE"/>
+			<item path="@updatable" label="%UPDATABLE"/>
+		</node>
+		<node path="map-key-join-column" label="%MAPKEYJOINCOLUMN" treeLabel="%fMAPKEYJOINCOLUMN" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm2/mapKeyJoinColumn_obj.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@table" label="%TABLE"/>				
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@insertable" label="%INSERTABLE"/>
+			<item path="@nullable" label="%NULLABLE"/>
+			<item path="@unique" label="%UNIQUE"/>
+			<item path="@updatable" label="%UPDATABLE"/>
+			<item path="@referenced-column-name" label="%REFERENCEDCOLUMNNAME"/>
+		</node>
+		<node path="order-column" label="%ORDERCOLUMN" treeLabel="%fORDERCOLUMN" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm2/customOrderingColumn_obj.gif">
+			<item path="@name" label="%NAME"/>			
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@insertable" label="%INSERTABLE"/>
+			<item path="@nullable" label="%NULLABLE"/>
+			<item path="@updatable" label="%UPDATABLE"/>
+		</node>
+						
+		<node path="attributes" label="%ATTRIBUTES" treeLabel="%ATTRIBUTES" icon="icons/orm/attributes.gif" sectionHeaderText="%hATTRIBUTES">
+			<node path="basic" label="%BASIC" treeLabel="%fBASIC" treeLabelData="@name" icon="icons/orm/basic.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="@fetch" label="%FETCH"/>
+				<item path="@optional" label="%OPTIONAL"/>
+				<item path="temporal" label="%TEMPORAL" style="text"/>
+				<item path="enumerated" label="%ENUMERATED" style="text"/>
+				<item path="lob" label="%LOB" style="checkBox"/>
+			</node>
+			<node path="element-collection" label="%ELEMENTCOLLECTION" treeLabel="%fELEMENTCOLLECTION" treeLabelData="@name" icon="icons/orm2/elementCollection_obj.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="@fetch" label="%FETCH"/>
+				<item path="@target-class" label="%TARGETCLASS"/>
+				<node path="collection-table" label="%COLLECTIONTABLE" treeLabel="%fCOLLECTIONTABLE" treeLabelData="@name" icon="icons/orm2/collectionTable_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" label="%NAME"/>
+				</node>
+				<node path="enumerated" label="%ENUMERATED" treeLabel="%ENUMERATED" sectionHeaderText="%hREQUIRED" icon="icons/orm2/enumerated_obj.gif">
+					<item path="." label="%ENUMERATED"/>
+				</node>
+				<node path="lob" label="%LOB" treeLabel="%LOB" icon="icons/orm2/largeObject_obj.gif">
+				</node>
+				<node path="map-key-attribute-override" label="%MAPKEYATTRIBUTEOVERRIDE" treeLabel="%fMAPKEYATTRIBUTEOVERRIDE" treeLabelData="@name" icon="icons/orm2/mapKeyAttributeOverride_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" label="%NAME"/>
+				</node>
+				<node path="map-key-class" label="%MAPKEYCLASS" treeLabel="%fMAPKEYCLASS" treeLabelData="@class" icon="icons/orm2/mapKeyClass_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@class" label="%CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+				</node>
+				<node path="map-key-enumerated" label="%MAPKEYENUMERATED" treeLabel="%MAPKEYENUMERATED" icon="icons/orm2/mapKeyEnumerated_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="." label="%MAPKEYENUMERATED"/>
+				</node>								
+				<node path="map-key-temporal" label="%MAPKEYTEMPORAL" treeLabel="%MAPKEYTEMPORAL" icon="icons/orm2/mapKeyTemporal_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="." label="%MAPKEYTEMPORAL"/>
+				</node>
+				<node path="temporal" label="%TEMPORAL" treeLabel="%TEMPORAL" icon="icons/orm2/temporal_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="." label="%TEMPORAL"/>
+				</node>
+				<node path="order-by" label="%CUSTOMORDERING" treeLabel="%CUSTOMORDERING" icon="icons/orm2/customOrdering_obj.gif" sectionHeaderText="%hREQUIRED">
+					<item path="." label="%CUSTOMORDERING"/>
+				</node>							
+			</node>
+			<node path="embedded" label="%EMBEDDED" treeLabel="%fEMBEDDED" treeLabelData="@name" icon="icons/orm/embedded.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+			</node>
+			<node path="id" label="%ID" treeLabel="%fID" treeLabelData="@name" icon="icons/orm/id.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="temporal" label="%TEMPORAL"/>
+
+				<node path="generated-value" label="%PRIMARYKEYGENERATIONDETAILS" sectionHeaderText="%hINPUT">
+					<item path="@strategy" label="%STRATEGY"/>				
+					<item path="@generator" label="%GENERATORNAME"/>
+				</node>
+			</node>
+
+			<node path="many-to-many" label="%MANYTOMANY" treeLabel="%fMANYTOMANY" treeLabelData="@name" icon="icons/orm/many-to-many.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="@target-entity" label="%TARGETENTITY"/>
+				<item path="@fetch" label="%FETCH"/>
+				<item path="@mapped-by" label="%MAPPEDBY"/>
+				<item path="order-by" label="%CUSTOMORDERING"/>
+			</node>
+			<node path="many-to-one" label="%MANYTOONE" treeLabel="%fMANYTOONE" treeLabelData="@name" icon="icons/orm/many-to-one.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="@target-entity" label="%TARGETENTITY"/>
+				<item path="@fetch" label="%FETCH"/>
+				<item path="@optional" label="%OPTIONAL"/>
+			</node>
+			<node path="one-to-many" label="%ONETOMANY" treeLabel="%fONETOMANY" treeLabelData="@name" icon="icons/orm/one-to-many.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="@target-entity" label="%TARGETENTITY"/>
+				<item path="@fetch" label="%FETCH"/>
+				<item path="@mapped-by" label="%MAPPEDBY"/>
+				<item path="order-by" label="%CUSTOMORDERING"/>
+			</node>
+			<node path="one-to-one" label="%ONETOONE" treeLabel="%fONETOONE" treeLabelData="@name" icon="icons/orm/one-to-one.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="@target-entity" label="%TARGETENTITY"/>
+				<item path="@fetch" label="%FETCH"/>
+				<item path="@mapped-by" label="%MAPPEDBY"/>
+				<item path="@optional" label="%OPTIONAL"/>
+				<node path="primary-key-join-column" label="%PRIMARYKEYJOINCOLUMN" treeLabel="%PRIMARYKEYJOINCOLUMN" sectionHeaderText="%hINPUT" icon="icons/orm/primary-key-join-column.gif">
+					<item path="@name" label="%NAME"/>
+					<item path="@referenced-column-name" label="%REFERENCEDCOLUMNNAME"/>
+					<item path="@column-definition" label="%COLUMNDEFINITION"/>
+				</node>
+			</node>
+			<node path="transient" label="%TRANSIENT" treeLabel="%fTRANSIENT" treeLabelData="@name" icon="icons/orm/transient.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+			</node>
+			<node path="version" label="%VERSION" treeLabel="%fVERSION" treeLabelData="@name" icon="icons/orm/version.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%JAVAATTRIBUTE"/>
+				<item path="temporal" label="%TEMPORAL"/>				
+			</node>
+		</node>
+		<node path="attribute-override" label="%ATTRIBUTEOVERRIDE" treeLabel="%fATTRIBUTEOVERRIDE" treeLabelData="@name" icon="icons/orm/attribute-override.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+		</node>
+		<node path="association-override" label="%ASSOCIATIONOVERRIDE" treeLabel="%fASSOCIATIONOVERRIDE" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm/association-override.gif">
+			<item path="@name" label="%NAME"/>
+		</node>		
+		<node path="embedded-id" label="%EMBEDDEDID" treeLabel="%fEMBEDDEDID" treeLabelData="@name" icon="icons/orm/embedded-id.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%JAVAATTRIBUTE"/>		
+		</node>
+		<node path="unique-constraint" label="%UNIQUECONSTRAINT" treeLabel="%UNIQUECONSTRAINT" icon="icons/orm/unique-constraint.gif" sectionHeaderText="%hREQUIRED">
+			<item path="column-name" label="%COLUMNNAME"/>
+			<item path="@name" label="%NAME"/>
+		</node>
+		<node path="join-column" label="%JOINCOLUMN" treeLabel="%JOINCOLUMN" sectionHeaderText="%hINPUT" icon="icons/orm/join-column.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@referenced-column-name" label="%REFERENCEDCOLUMNNAME"/>
+			<item path="@table" label="%TABLE"/>
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@insertable" label="%INSERTABLE"/>
+			<item path="@nullable" label="%NULLABLE"/>
+			<item path="@unique" label="%UNIQUE"/>
+			<item path="@updatable" label="%UPDATABLE"/>
+		</node>
+		<node path="inverse-join-column" label="%INVERSEJOINCOLUMN" treeLabel="%INVERSEJOINCOLUMN" sectionHeaderText="%hINPUT" icon="icons/orm/inverse-join-column.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@referenced-column-name" label="%REFERENCEDCOLUMNNAME"/>
+			<item path="@table" label="%TABLE"/>
+			<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			<item path="@insertable" label="%INSERTABLE"/>
+			<item path="@nullable" label="%NULLABLE"/>
+			<item path="@unique" label="%UNIQUE"/>
+			<item path="@updatable" label="%UPDATABLE"/>
+		</node>
+		<node path="join-table" label="%JOINTABLE" treeLabel="%JOINTABLE" icon="icons/orm/join-table.gif" sectionHeaderText="%hINPUT">
+			<item path="@name" label="%NAME"/>
+			<item path="@catalog" label="%CATALOG"/>
+			<item path="@schema" label="%SCHEMA"/>
+		</node>
+		<node path="hint" label="%HINT" treeLabel="%fHINT" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm/hint.gif">
+			<item path="@name" label="%NAME"/>
+			<item path="@value" label="%VALUE"/>
+		</node>
+		<node path="sql-result-set-mapping" label="%SQLRESULTSETMAPPING" treeLabel="%fSQLRESULTSETMAPPING" treeLabelData="@name" icon="icons/orm/sql-result-set-mapping.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+
+			<node path="column-result" label="%COLUMNRESULT" treeLabel="%fCOLUMNRESULT" treeLabelData="@name" icon="icons/orm/column-result.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@name" label="%NAME"/>
+			</node>
+
+			<node path="entity-result" label="%ENTITYRESULT" treeLabel="%fENTITYRESULT" treeLabelData="@entity-class" icon="icons/orm/entity-result.gif" sectionHeaderText="%hREQUIRED">
+				<item path="@entity-class" label="%ENTITYCLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.EntityClassBrowser" buttonLabel="%BROWSE"/>
+				<item path="@discriminator-column" label="%DISCRIMINATORCOLUMN"/>
+
+				<node path="field-result" label="%FIELDRESULT" treeLabel="%fFIELDRESULT" treeLabelData="@name" icon="icons/orm/field-result.gif" sectionHeaderText="%hREQUIRED">
+					<item path="@name" label="%NAME"/>
+					<item path="@column" label="%COLUMN"/>
+				</node>
+			</node>
+		</node>
+		<node path="entity-listeners" label="%ENTITYLISTENERS" treeLabel="%ENTITYLISTENERS" icon="icons/orm/entity-listeners.gif" sectionHeaderText="%hLISTENERS">
+			<node path="entity-listener" label="%ENTITYLISTENER" treeLabel="%fENTITYLISTENER" treeLabelData="@class" sectionHeaderText="%hREQUIRED" icon="icons/orm/entity-listener.gif">
+				<item path="@class" label="%CLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+
+				<section label="%LIFECYCLE">
+					<node path="pre-persist" hideSectionTitle="true">
+						<item path="@method-name" label="%PREPERSISTMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+					<node path="pre-update" hideSectionTitle="true">
+						<item path="@method-name" label="%PREUPDATEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+					<node path="pre-remove" hideSectionTitle="true">
+						<item path="@method-name" label="%PREREMOVEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+					<node path="post-load" hideSectionTitle="true">
+						<item path="@method-name" label="%POSTLOADMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+					<node path="post-persist" hideSectionTitle="true">
+						<item path="@method-name" label="%POSTPERSISTMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+					<node path="post-update" hideSectionTitle="true">
+						<item path="@method-name" label="%POSTUPDATEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+					<node path="post-remove" hideSectionTitle="true">
+						<item path="@method-name" label="%POSTREMOVEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+					</node>
+				</section>
+			</node>
+		</node>
+		<node path="named-query" label="%NAMEDQUERY" treeLabel="%fNAMEDQUERY" treeLabelData="@name" icon="icons/orm/named-native-query.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+			<item path="query" label="%QUERY"/>
+			<item path="lock-mode" label="%LOCKMODE"/>
+		</node>
+		<node path="named-native-query" label="%NAMEDNATIVEQUERY" treeLabel="%fNAMEDNATIVEQUERY" treeLabelData="@name" icon="icons/orm/named-native-query.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+			<item path="query" label="%QUERY"/>
+			<item path="@result-class" label="%RESULTCLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+			<item path="@result-set-mapping" label="%RESULTSETMAPPING"/>
+		</node>
+	</node>
+	
+	<node path="/entity-mappings" label="%ENTITYMAPPINGS" treeLabel="%ENTITYMAPPINGS" sectionHeaderText="%hINPUT" icon="icons/orm/entity-mappings.gif">
+	    <item path="@version" label="%VERSION" readOnly="true" />
+		<item path="description" label="%DESCRIPTION"/>
+		<item path="package" label="%PACKAGE" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaPackageBrowser" buttonLabel="%BROWSE"/>
+		<item path="schema" label="%SCHEMA"/>
+		<item path="catalog" label="%CATALOG"/>
+		<item path="access" label="%ACCESS"/>
+
+		<node path="embeddable" label="%EMBEDDABLE" treeLabel="%fEMBEDDABLE" treeLabelData="@class" sectionHeaderText="%hREQUIRED" icon="icons/orm/embeddable.gif">
+			<item path="@class" label="%JAVACLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+			<item path="description" label="%DESCRIPTION"/>
+			<item path="@metadata-complete" label="%METADATACOMPLETE" style="checkBox"/>
+			<item path="@access" label="%ACCESS"/>
+		</node>
+		
+		<node path="entity" label="%ENTITY" treeLabel="%fENTITY" treeLabelData="@class" sectionHeaderText="%hREQUIRED" icon="icons/orm/entity-class.gif">
+			<item path="@class" label="%JAVACLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+			<node path="id-class" hideSectionTitle="true">
+				<item path="@class" label="%IDCLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+			</node>
+			<item path="@name" label="%NAME"/>
+			<item path="description" label="%DESCRIPTION"/>
+			<item path="exclude-default-listeners" label="%EXCLUDEDEFAULTLISTENERS"/>
+			<item path="exclude-superclass-listeners" label="%EXCLUDESUPERCLASSLISTENERS"/>
+			<item path="@metadata-complete" label="%METADATACOMPLETE" style="checkBox"/>
+			<item path="@access" label="%ACCESS"/>
+			<item path="discriminator-value" label="%DISCRIMINATORVALUE"/>
+			<item path="@cacheable" label="%CACHEABLE"/>
+			
+			<section label="%LIFECYCLE">
+				<node path="pre-persist" hideSectionTitle="true">
+					<item path="@method-name" label="%PREPERSISTMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="pre-update" hideSectionTitle="true">
+					<item path="@method-name" label="%PREUPDATEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="pre-remove" hideSectionTitle="true">
+					<item path="@method-name" label="%PREREMOVEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-load" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTLOADMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-persist" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTPERSISTMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-update" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTUPDATEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-remove" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTREMOVEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+			</section>
+			<node path="association-override" label="%ASSOCIATIONOVERRIDE" treeLabel="%fASSOCIATIONOVERRIDE" treeLabelData="@name" sectionHeaderText="%hREQUIRED" icon="icons/orm/association-override.gif">
+				<item path="@name" label="%NAME"/>
+			</node>
+			<node path="secondary-table" label="%SECONDARYTABLE" treeLabel="%fSECONDARYTABLE" treeLabelData="@name" icon="icons/orm/secondary-table.gif" sectionHeaderText="%hINPUT">
+				<item path="@name" label="%NAME"/>
+				<item path="@catalog" label="%CATALOG"/>
+				<item path="@schema" label="%SCHEMA"/>
+			</node>
+			<node path="table" label="%TABLE" treeLabel="%TABLE" treeLabelData="@name" icon="icons/orm/table.gif" sectionHeaderText="%hINPUT">
+				<item path="@name" label="%NAME"/>
+				<item path="@catalog" label="%CATALOG"/>
+				<item path="@schema" label="%SCHEMA"/>
+			</node>
+			<node path="primary-key-join-column" label="%PRIMARYKEYJOINCOLUMN" treeLabel="%INHERITANCEPRIMARYJOINKEYCOLUMN" sectionHeaderText="%hINPUT" icon="icons/orm/primary-key-join-column.gif">
+				<item path="@name" label="%NAME"/>
+				<item path="@referenced-column-name" label="%REFERENCEDCOLUMNNAME"/>
+				<item path="@column-definition" label="%COLUMNDEFINITION"/>
+			</node>
+		</node>
+		<node path="mapped-superclass" label="%MAPPEDSUPERCLASS" treeLabel="%fMAPPEDSUPERCLASS" treeLabelData="@class" sectionHeaderText="%hREQUIRED" icon="icons/orm/mapped-superclass.gif">
+			<item path="@class" label="%JAVACLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+			<node path="id-class" hideSectionTitle="true">
+				<item path="@class" label="%IDCLASS" buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.browsers.JavaClassInProjectBrowser" buttonLabel="%BROWSE"/>
+			</node>
+			<item path="description" label="%DESCRIPTION"/>
+			<item path="exclude-default-listeners" label="%EXCLUDEDEFAULTLISTENERS"/>
+			<item path="exclude-superclass-listeners" label="%EXCLUDESUPERCLASSLISTENERS"/>
+			<item path="@metadata-complete" label="%METADATACOMPLETE" style="checkBox"/>
+			<item path="@access" label="%ACCESS"/>
+			
+			<section label="%LIFECYCLE">
+				<node path="pre-persist" hideSectionTitle="true">
+					<item path="@method-name" label="%PREPERSISTMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="pre-update" hideSectionTitle="true">
+					<item path="@method-name" label="%PREUPDATEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="pre-remove" hideSectionTitle="true">
+					<item path="@method-name" label="%PREREMOVEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-load" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTLOADMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-persist" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTPERSISTMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-update" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTUPDATEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="post-remove" hideSectionTitle="true">
+					<item path="@method-name" label="%POSTREMOVEMETHODNAME" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+		</section>
+		</node>
+		<node path="persistence-unit-metadata" label="%PERSISTENCEUNITMETADATA" treeLabel="%PERSISTENCEUNITMETADATA" sectionHeaderText="%hINPUT" icon="icons/orm/persistence-unit-metadata.gif">
+			<item path="xml-mapping-metadata-complete" label="%XMLMAPPINGMETADATACOMPLETE"/>
+
+			<node path="persistence-unit-defaults" label="%PERSISTENCEUNITDEFAULTS" treeLabel="%PERSISTENCEUNITDEFAULTS" sectionHeaderText="%hREQUIRED" icon="icons/orm/persistence-unit-defaults.gif">
+				<item path="schema" label="%SCHEMA"/>
+				<item path="catalog" label="%CATALOG"/>
+				<item path="access" label="%ACCESS"/>
+				<item path="cascade-persist" label="%CASCADEPERSIST"/>
+				<item path="delimited-identifiers" label="%DELIMITEDID"/>
+			</node>
+		</node>
+	</node>
+
+</customization>

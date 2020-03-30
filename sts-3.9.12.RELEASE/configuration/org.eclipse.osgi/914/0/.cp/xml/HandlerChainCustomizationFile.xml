@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization customizationNamespace="http://java.sun.com/xml/ns/javaee"
+	customizationSchemaLocation="" xmlns="http://com.ibm.xwt.dde/CustomizationFile"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd ">
+
+	<node path="*">
+		<item path="@id" hide="true" />
+		<item path="@lang" hide="true" />
+		<item path="@type" hide="true" namespace="http://www.w3.org/2001/XMLSchema-instance"/>
+		<item path="description" style="text" textLines="5" label="%DESCRIPTION" />
+	</node>
+
+	<node path="/handler-chains" label="%HANDLER_CHAINS" icon="icons/chains.gif" sectionHeaderText="%MESSAGE">
+		<node path="handler-chain" label="%HANDLER_CHAIN" treeLabel="%HANDLER_CHAIN_TREE_LABEL" icon="icons/chain.gif">
+			<node path="handler" label="%HANDLER" treeLabel="%HANDLER_TREE_LABEL" treeLabelData="display-name" icon="icons/handler.gif">
+				<item path="display-name" style="text" label="%DISPLAY_NAME" />
+                <item path="handler-class" label="%HANDLER_CLASS" labelLinkClass="com.ibm.ast.ws.jaxws.handlers.ui.editor.ChangeButtonCustomization" buttonClass="com.ibm.ast.ws.jaxws.handlers.ui.editor.ChangeButtonCustomization" buttonLabel="%BUTTON_CONFIGURE_LABEL" labelLinkToolTip="%TOOLTIP_LINK_CHANGE" buttonToolTip="%TOOLTIP_CHANGE_BUTTON"/>
+				<item path="handler-name" label="%HANDLER_NAME"/>
+				<item path="soap-role" label="%SOAP_ROLE"/>
+				<node path="icon" singleOccurrence="true" label="%ICON">
+					<item path="small-icon" label="%SMALL_ICON" />
+					<item path="large-icon" label="%LARGE_ICON" />
+				</node>
+				<node path="init-param" treeLabel="%INIT_PARAM_TREE_LABEL" treeLabelData="param-name" label="%INIT_PARAM" icon="icons/init_param.gif">
+					<item path="param-name" label="%PARAM_NAME"/>
+					<item path="param-value" label="%PARAM_VALUE"/>
+				</node>
+			</node>
+   			<node path="service-name-pattern" treeLabel="%SERVICE_NAME_PATTERN" treeLabelData="service-name-pattern" label="%SERVICE_NAME_PATTERN_ACTION"/>
+			<node path="port-name-pattern" treeLabel="%PORT_NAME_PATTERN" treeLabelData="port-name-pattern" label="%PORT_NAME_PATTERN_ACTION" />
+			<node path="protocol-bindings" treeLabel="%PROTOCOL_BINDINGS" treeLabelData="protocol-bindings" label="%PROTOCOL_BINDING_ACTION"/>
+		</node>
+	</node>
+</customization>

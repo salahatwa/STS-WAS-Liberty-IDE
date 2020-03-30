@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.ibm-application-client-bnd-1.0-editor			      *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-application-client-bnd_1_0.xsd   *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-application-client-bnd_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-application-client-bnd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0002"
+	headerIcon="icons/application-client-bnd/application-client-bnd.gif">
+
+	<node path="*/ejb-ref" label="%EJB_REFERENCE" treeLabel="%fEJB_REFERENCE" treeLabelData="@name" icon="icons/application-client-bnd/ejb-ref.gif" sectionHeaderText="%hREQUIRED">			
+		<item path="@name" label="%NAME"/>
+		<item path="@binding-name" label="%BINDING_NAME"/>
+	</node>
+
+ 	<node path="*/message-destination" label="%MESSAGE_DESTINATION" icon="icons/application-client-bnd/message-destination.gif">
+		<item path="@name" label="%NAME"/>
+		<item path="@binding-name" label="%BINDING_NAME"/>
+	</node>
+
+	<node path="*/message-destination-ref" label="%MESSAGE_DESTINATION_REFERENCE" treeLabel="%fMESSAGE_DESTINATION_REFERENCE" treeLabelData="@name" icon="icons/application-client-bnd/message-destination-ref.gif" sectionHeaderText="%hREQUIRED">			
+		<item path="@name" label="%NAME"/>
+		<item path="@binding-name" label="%BINDING_NAME"/>
+	</node>
+
+	<node path="*/resource-env-ref" label="%RESOURCE_ENVIRONMENT_REFERENCE" treeLabel="%fRESOURCE_ENVIRONMENT_REFERENCE" treeLabelData="@name" icon="icons/application-client-bnd/resource-env-ref.gif" sectionHeaderText="%hREQUIRED">			
+		<item path="@name" label="%NAME"/>
+		<item path="@binding-name" label="%BINDING_NAME"/>
+	</node>
+
+	<node path="*/resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/application-client-bnd/resource-ref.gif" sectionHeaderText="%hREQUIRED">			
+		<item path="@name" label="%NAME"/>
+		<item path="@binding-name" label="%BINDING_NAME"/>
+
+		<node path="default-auth" hide="true"/>
+
+		<node path="custom-login-configuration" label="%CUSTOM_LOGIN_CONFIGURATION" treeLabel="%fCUSTOM_LOGIN_CONFIGURATION" treeLabelData="@name" icon="icons/application-client-bnd/resource-ref.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+		</node>
+				
+		<node path="authentication-alias" label="%AUTHENTICATION_ALIAS" treeLabel="%fAUTHENTICATION_ALIAS" treeLabelData="@name" icon="icons/application-client-bnd/authentication-alias.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+		</node>
+	</node>
+
+	<node path="*/property" label="%PROPERTY" treeLabel="%fPROPERTY" treeLabelData="@name" icon="icons/application-client-bnd/property.gif" sectionHeaderText="%hREQUIRED">			
+		<item path="@name" label="%NAME"/>
+		<item path="@value" label="%VALUE"/>
+	  	<item path="@description" label="%DESCRIPTION" style="text" textLines="5" />
+	 </node>
+
+	<node path="/application-client-bnd" label="%APPLICATION_CLIENT_BINDINGS" treeLabel="%APPLICATION_CLIENT_BINDINGS" sectionHeaderText="%hAPPLICATION_CLIENT_BINDINGS" icon="icons/application-client-bnd/application-client-bnd.gif">
+		<node path="data-source" hide="true"/>
+ 		<node path="env-entry" hide="true"/> 	
+	</node>
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+		<item path="@version" label="%VERSION" readOnly="true" />
+	</node>
+</customization>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2008. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.ibm-application-ext-1.0-editor	                  *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-application-ext_1_0.xsd          *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-application-ext_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/ibm-application-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0006"
+	headerIcon="icons/application-ext/application-ext.gif">
+
+	<node path="/application-ext" label="%APPLICATION_EXTENSIONS" treeLabe="%APPLICATION_EXTENSIONS" sectionHeaderText="%hREQUIRED" icon="icons/application-ext/application-ext.gif">
+		<item path="@client-mode" label="%CLIENT_MODE" />
+		<item path="@version" hide="true"/>
+		
+		<node path="reload-interval" hideSectionTitle="true">
+			<item path="@value" label="%RELOAD_INTERVAL_VALUE" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+		</node>
+		<node path="shared-session-context" hideSectionTitle="true">
+			<item path="@value" label="%SHARED_SESSION_CONTEXT_VALUE" style="checkBox"/>
+		</node>
+		
+		<node path="module-extension" label="%MODULE_EXTENSION" treeLabel="%fMODULE_EXTENSION" treeLabelData="@name" icon="icons/application-ext/module-extension.gif" sectionHeaderText="%hREQUIRED">
+			<item path="@name" label="%NAME"/>
+			
+			<section label="%SETTINGS_OPTIONAL">
+				<node path="absolute-path" hide="true"/>
+				<node path="dependent-classpath" hide="true"/>
+				<node path="alt-bindings" hideSectionTitle="true">
+					<item path="@uri" label="%ALTERNATE_BINDINGS_URI" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="alt-extensions" hideSectionTitle="true">
+					<item path="@uri" label="%ALTERNATE_EXTENSIONS_URI" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+				<node path="alt-root" hideSectionTitle="true">
+					<item path="@uri" label="%ALTERNATE_ROOT_URI" clearOptionalSectionIfEmpty="true" showItemAsOptional="true"/>
+				</node>
+			</section>
+
+		</node>
+	</node>
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+	</node>
+</customization>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed Materials - Property of IBM
+
+  com.ibm.jee.was.descriptors.ui
+
+  Copyright IBM Corporation 2007. All Rights Reserved.
+
+  U.S. Government Users Restricted Rights -  Use, duplication or disclosure
+  restricted by GSA DP Schedule Contract with IBM Corp.
+
+-->
+
+<!--
+******************************************************************************************* 
+*                     Deployment Descriptor Editor Customization File                     *
+*                                                                                         *
+*  Editor ID: com.ibm.jee.was.schemas.application-1.0-editor			                  *
+*  Namespace: http://websphere.ibm.com/xml/ns/javaee                                      *
+*  Schema:    http://websphere.ibm.com/xml/ns/javaee/ibm-application-bnd_1_0.xsd          *
+*                                                                                         *
+*******************************************************************************************
+-->
+<customization customizationNamespace="http://websphere.ibm.com/xml/ns/javaee"
+	customizationSchemaLocation="http://websphere.ibm.com/xml/ns/javaee/ibm-application-bnd_1_0.xsd"
+	xmlns="http://com.ibm.j2ee.was.editors.ui/application-bnd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://com.ibm.xwt.dde/CustomizationFile CustomizationFile.xsd"
+	overviewSectionHeaderText="%OVERVIEW_SECTION_HEADER_TEXT"
+	headerLabelClass="com.ibm.jee.was.internal.descriptors.ui.custom.GetProjectName"
+	helpContextId="com.ibm.jee.was.descriptors.ui.dded0012"
+	headerIcon="icons/application-bnd/application.gif">
+
+	<node path="*">
+		<item path="@id" hide="true"/>
+
+		<item path="@access-id" label="%ACCESS_ID" hide="true"/>
+		<item path="@name" label="%NAME"/>
+		<item path="@binding-name" label="%BINDING_NAME"/>
+		<item path="@password" label="%PASSWORD"/>
+		<item path="@type" label="%TYPE" />
+		<item path="@userid" label="%USER_ID"></item>
+		
+		<node path="authentication-alias" label="%AUTHENTICATION_ALIAS" icon="icons/ejb-bnd/authmethod_obj.gif"/>
+ 		<node path="custom-login-configuration" label="%CUSTOM_LOGIN_CONFIGURATION" icon="icons/ejb-bnd/form_login_config.gif"/>
+		<node path="client-profile" label="%CLIENT_PROFILE" treeLabel="%fCLIENT_PROFILE" treeLabelData="@name" icon="icons/application-bnd/UserProfilePrincipal16.gif"/>
+		<node path="group" label="%GROUP" treeLabel="%fGROUP" treeLabelData="@name" icon="icons/application-bnd/usergroup_obj.gif"/>
+		<node path="profile" label="%PROFILE" treeLabel="%fPROFILE" treeLabelData="@name" icon="icons/application-bnd/sk_profile_obj.gif"/>
+		<node path="security-role" label="%SECURITY_ROLE" treeLabel="%fSECURITY_ROLE" treeLabelData="@name" icon="icons/application-bnd/security_role.gif"/>
+		<node path="special-subject" label="%SPECIAL_SUBJECT" treeLabel="%fSPECIAL_SUBJECT" treeLabelData="@type" icon="icons/application-bnd/group_obj.gif"/>
+		<node path="user" label="%USER" treeLabel="%fUSER" treeLabelData="@name" icon="icons/application-bnd/user_obj.gif"/>
+	  	<node path="ejb-ref" label="%EJB_REFERENCE" treeLabel="%fEJB_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/ejb_reference.gif"/>
+	  	<node path="message-destination-ref" label="%MESSAGE_DESTINATION_REFERENCE" treeLabel="%fMESSAGE_DESTINATION_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/messdestref_obj.gif"/>
+	  	<node path="resource-env-ref" label="%RESOURCE_ENVIRONMENT_REFERENCE" treeLabel="%fRESOURCE_ENVIRONMENT_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/res_env_ref_obj.gif"/>
+	  	<node path="resource-ref" label="%RESOURCE_REFERENCE" treeLabel="%fRESOURCE_REFERENCE" treeLabelData="@name" icon="icons/ejb-bnd/resourceRef_obj.gif"/>		
+	</node>
+
+ 	<node path="/application-bnd" label="%APPLICATION_BINDINGS" treeLabel="%APPLICATION_BINDINGS" sectionHeaderText="%hREQUIRED" icon="icons/application-bnd/application.gif">
+ 		<item path="@version" label="%VERSION" readOnly="true" />
+ 		<node path="data-source" hide="true"/>
+ 		<node path="env-entry" hide="true"/>
+ 		<node path="jaspi-ref" label="%JASPI_REF">
+ 			<item path="@provider-name" label="%PROVIDER_NAME"/>
+	 		<item path="@use-jaspi" label="%USE_JASPI">
+				<possibleValues>
+					<value value="inherit" label="inherit (default)" />
+					<value value="yes" label="yes" />
+					<value value="no" label="no" />
+				</possibleValues>
+			</item>
+		</node>
+ 	</node>
+
+	<node path="*/ejb-ref" 
+		label="%EJB_REFERENCE"
+		treeLabel="%fEJB_REFERENCE"
+		treeLabelData="@name"
+		icon="icons/application-client-bnd/ejb-ref.gif"
+		sectionHeaderText="%hREQUIRED"/>	
+
+	<node path="*/message-destination-ref" 
+		label="%MESSAGE_DESTINATION_REFERENCE" 
+		treeLabel="%fMESSAGE_DESTINATION_REFERENCE" 
+		treeLabelData="@name" 
+		icon="icons/application-client-bnd/message-destination-ref.gif" 
+		sectionHeaderText="%hREQUIRED"/>
+
+	<node path="*/resource-env-ref" 
+			label="%RESOURCE_ENVIRONMENT_REFERENCE" 
+			treeLabel="%fRESOURCE_ENVIRONMENT_REFERENCE" 
+			treeLabelData="@name"
+			icon="icons/application-client-bnd/resource-env-ref.gif"
+			sectionHeaderText="%hREQUIRED"/>
+
+	<node path="*/resource-ref"
+			label="%RESOURCE_REFERENCE"
+			treeLabel="%fRESOURCE_REFERENCE"
+			treeLabelData="@name"
+			icon="icons/application-client-bnd/resource-ref.gif"
+			sectionHeaderText="%hREQUIRED">			
+		<node path="default-auth" hide="true"/>
+		<node path="custom-login-configuration" 
+				label="%CUSTOM_LOGIN_CONFIGURATION"
+				treeLabel="%fCUSTOM_LOGIN_CONFIGURATION"
+				treeLabelData="@name" 
+				icon="icons/application-client-bnd/resource-ref.gif" 
+				sectionHeaderText="%hREQUIRED" />
+				
+		<node path="authentication-alias" 
+				label="%AUTHENTICATION_ALIAS" 
+				treeLabel="%fAUTHENTICATION_ALIAS" 
+				treeLabelData="@name" 
+				icon="icons/application-client-bnd/authentication-alias.gif" 
+				sectionHeaderText="%hREQUIRED" />
+	</node>
+
+	<node path="/application-bnd/security-role/special-subject" 
+			inheritCustomization="true">
+		<item path="@type" label="%TYPE">
+			<possibleValues>
+				<value value="EVERYONE" label="%EVERYONE"/>
+				<value value="ALL_AUTHENTICATED_USERS" label="%ALL_AUTHENTICATED_USERS"/>
+				<value value="ALL_AUTHENTICATED_IN_TRUSTED_REALMS" label="%ALL_AUTHENTICATED_IN_TRUSTED_REALMS" />
+
+				<!-- Note: SERVER is deprecated. -->
+				<value value="SERVER" label="%SERVER" />
+			</possibleValues>
+		</item>
+	</node>
+
+	<node path="/application-bnd/security-role/run-as" 
+			label="%RUN_AS" 
+			treeLabel="%fRUN_AS" 
+			treeLabelData="@userid" 
+			icon="icons/application-bnd/run_binding_obj.gif" 
+			style="treeNode">
+		<item path="@userid"  inheritCustomization="true" />
+		<item path="@password" inheritCustomization="true"
+ 			buttonClass="com.ibm.jee.was.internal.descriptors.ui.custom.EncodePassword"
+ 			buttonLabel="%EDIT"
+ 			readOnly="true" />
+	</node>	
+</customization>

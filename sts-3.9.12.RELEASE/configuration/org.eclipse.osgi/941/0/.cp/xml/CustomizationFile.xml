@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ******************************************************************************************* 
+	* Blueprint Deployment Descriptor Editor Customization File * * * ******************************************************************************************* -->
+<customization customizationNamespace="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	customizationSchemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"
+	xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ogsi.org/xmlns/blueprint/v1.0.0 http://www.ogsi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"
+	headerIcon="/icons/bp.gif" helpContextId="com.ibm.etools.aries.rad.ext.ui.BLUEPRINT_EDITOR"
+	preSelectedTreeElementClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.editors.FocusSelect">
+
+	<!-- Global customization -->
+	<node path="*">
+		<!-- hide all occurrences of the attributes lang and type, and null -->
+		<item path="@lang" hide="true" />
+		<item path="@type" hide="true"
+			namespace="http://www.w3.org/2001/XMLSchema-instance" />
+		<node path="null" hide="true" />
+
+		<!-- Show all "description" items as text fields 5 lines tall and customize 
+			its label -->
+		<item path="description" singleOccurrence="true" textLines="5"
+			label="%DESC" />
+
+
+	</node>
+
+
+	<!-- Blueprint customization -->
+	<node path="/blueprint" label="%BP_APP" icon="icons/bp.gif"
+		sectionHeaderText="%BP_SHT" detailSectionTitle="%BP_DST">
+
+		<item path="@default-activation" label="%BP_DEF_ACT"
+			defaultValue="eager" />
+		<item path="@default-availability" label="%BP_DEF_AV"
+			defaultValue="mandatory" />
+		<item path="@default-timeout" label="%BP_DEF_TO" style="text"
+			defaultValue="300000" />
+
+		<section label="%ACTIONS">
+			<hyperlink label="%BP_BINDING_LINK_LABEL" icon="/icons/bp_binding.gif"
+				leftIndentation="true" toolTip="%BP_BINDING_LINK_LABEL_TOOLTIP"
+				hyperlinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.BlueprintBindingFileLauncher" />
+
+
+
+			<hyperlink label="%APPLY_NS" leftIndentation="true"
+				toolTip="%APPLY_NS_TOOLTIP"
+				hyperlinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.BlueprintNamespaceAdder" />
+		</section>
+
+
+
+	</node>
+
+	<!-- Service customization -->
+	<node path="*/service" label="%SVC"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.InterfacedLabelClass"
+		icon="icons/obj16/bundle_service.gif"
+		creationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ServiceCreationDialog">
+		<item path="@id" label="%ID" />
+		<item path="@interface" label="%IF"
+			labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ClassLauncherWithID"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.CustomDialogWithID"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%TTIP_INTERFACE"
+			buttonToolTip="%CLK_CLS_CHG" />
+		<item path="@activation" label="%ACT" />
+		<item path="@auto-export" label="%AUTO_EXPORT" defaultValue="disabled" hoverHelp="%TTIP_SERVICE_AUTO_EXPORT" />
+		<item path="@ranking" label="%RNK" defaultValue="0" />
+		<node path="interfaces" label="%IFS" sectionHeaderText="%BP_IF_SHT"
+			icon="icons/goto.gif" />
+		<section label="%REF_SET">
+			<item path="@ref" label="%REF"
+				labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceLinker"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceDialog"
+				buttonLabel="%BROWSE_LBL" buttonToolTip="%CLK_REF_CHG" />
+			<item path="@depends-on" label="%BP_DO"
+				hoverHelp="%TTIP_DO"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.DependsOnReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+		</section>
+		
+		<section label="%ACTIONS">
+			<hyperlink label="%CREATE_SERVICE_PROPERTY" icon="icons/obj16/bundle_service_ref.gif"
+				leftIndentation="true" toolTip="%CREATE_SERVICE_PROPERTY_TOOLTIP"
+				hyperlinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.AddServicePropertyLauncher" />
+		</section>
+
+		<node path="registration-listener" label="%RG_LIST" treeLabel="%REG_L_W_PARAM"
+			treeLabelData="@ref" icon="icons/filter_mapping.gif">
+			<item path="@ref" label="%REF"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+			<item path="@registration-method" label="%RG_METH" 
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.RegisterUnregiserMethodDialog"
+				buttonLabel="%BROWSE_LBL" />
+			<item path="@unregistration-method" label="%UNRG_METH" 
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.RegisterUnregiserMethodDialog"
+				buttonLabel="%BROWSE_LBL" />
+		</node>
+		<node path="service-properties" label="%SVC_PROP"
+			sectionHeaderText="%PROP_SHT" icon="icons/context_ref.gif">
+			<node path="entry" label="%ENTRY" treeLabel="%ENTRY_W_PARAM"
+				treeLabelData="@key" icon="icons/environment.gif">
+				<item path="@key" label="%KEY"
+					validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.RequiredFieldValidator" />
+				<item path="@value" label="%VALUE" />
+			</node>
+		</node>
+
+	</node>
+
+	<!-- Reference customization -->
+	<node path="*/reference" label="%REF"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.InterfacedLabelClass"
+		icon="icons/obj16/bundle_service_ref.gif"
+		creationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceCreationDialog">
+		<item path="@id" label="%ID" />
+		<item path="@interface" label="%IF"
+			labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ClassLauncherWithID"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.CustomDialogWithID"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%TTIP_INTERFACE"
+			buttonToolTip="%CLK_CLS_CHG" />
+		<item path="@activation" label="%ACT" />
+		<item path="@availability" label="%AVAIL" hoverHelp="%TTIP_AVAILABILITY" />
+		<item path="@filter" label="%FLTR" hoverHelp="%TTIP_FILTER" />
+		<item path="@timeout" label="%TO" />
+		<section label="%REF_SET">
+			<item path="@component-name" label="%CP_NAME"
+				labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceLinker"
+				labelLinkToolTip="%TTIP_COMPONENT_NAME" />
+			<item path="@depends-on" label="%BP_DO"
+				hoverHelp="%TTIP_DO"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.DependsOnReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+		</section>
+	</node>
+
+	<!-- Bean customization -->
+	<node path="*/bean" label="%BEAN"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.InlinedLabelClass"
+		icon="icons/bean_ref.gif" treeLabelData="@id"
+		validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.BeanNodeValidation"
+		creationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.BeanCreationDialog">
+		<item path="@id" label="%ID" hoverHelp="%TTIP_ID" />
+		<item path="@class" label="%CLS"
+			labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ClassLauncherWithID"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.CustomDialogWithID"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+			buttonToolTip="%CLK_CLS_CHG" />
+		<item path="@activation" label="%ACT" defaultValue="lazy" hoverHelp="%TTIP_ACTIVATION" />
+		<item path="@scope" label="%SCOPE" hidden="true" hoverHelp="%TTIP_SCOPE" />
+
+		<section label="%REF_SET">
+			<item path="@depends-on" label="%BP_DO"
+				hoverHelp="%TTIP_DO"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.DependsOnReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+			<item path="@factory-ref" label="%FAC_REF"
+				hoverHelp="%TTIP_FAC_REF"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.FactoryReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+		</section>
+		<section label="%METH_REF">
+			<item path="@destroy-method" label="%DS_METH"
+				hoverHelp="%TTIP_DESTROY"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.DestroyMethodDialog"
+				buttonLabel="%BROWSE_LBL" />
+			<item path="@factory-method" label="%FAC_METH"
+				hoverHelp="%TTIP_FACTORY" 
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.FactoryMethodDialog"
+				buttonLabel="%BROWSE_LBL"/>
+			<item path="@init-method" label="%INIT_METH" 
+				hoverHelp="%TTIP_INIT"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.InitMethodDialog"
+				buttonLabel="%BROWSE_LBL"/>
+		</section>
+
+		<node path="argument" label="%ARG"
+			treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferencingLabelClass"
+			icon="icons/add.gif">
+			<item path="@ref" label="%REF"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+			<item path="@index" label="%INDEX" triggerNodeValidationPath="/blueprint/bean/" />
+			<item path="@type" label="%TYPE" />
+			<item path="@value" label="%VALUE" />
+		</node>
+
+		<section label="%ACTIONS">
+			<hyperlink label="%SERVICE_FROM_BEAN_LABEL" icon="icons/obj16/bundle_service.gif"
+				leftIndentation="true" toolTip="%SERVICE_FROM_BEAN_TOOLTIP"
+				hyperlinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ServiceLauncher" />
+			<hyperlink label="%REFERENCE_FROM_BEAN_LABEL" icon="icons/obj16/bundle_service_ref.gif"
+				leftIndentation="true" toolTip="%REFERENCE_FROM_BEAN_TOOLTIP"
+				hyperlinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceLauncher" />
+		</section>
+
+	</node>
+
+	<!-- Mini Items customization. Come up in different sub-nodes so needs to 
+		be here -->
+	<node path="*/array" label="%ARRAY"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ValueTypedLabelClass"
+		icon="icons/session_config.gif">
+		<item path="@value-type" label="%VAL_TYPE" hoverHelp="%TTIP_VALUE_TYPE" />
+	</node>
+
+	<node path="*/property" label="%PROPERTY"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferencingLabelClass"
+		icon="icons/property.gif" treeLabelData="@name">
+		<item path="@name" label="%NAME" defaultValue=""
+			validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.RequiredFieldValidator" />
+		<item path="@ref" label="%REF"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceDialog"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+			buttonToolTip="%CLK_REF_CHG" />
+		<item path="@value" label="%VALUE" />
+	</node>
+
+	<node path="*/idref" label="%ID_REF"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ComponentDependantLabelClass"
+		icon="icons/chain.gif">
+		<item path="@component-id" label="%COM_ID" defaultValue=""
+			hoverHelp="%TTIP_ID_REF_COMP_ID"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ComponentIDReferenceDialog"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+			buttonToolTip="%CLK_REF_CHG" />
+	</node>
+
+	<node path="*/list" label="%LIST"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ValueTypedLabelClass"
+		icon="icons/context_parameter.gif">
+		<item path="@value-type" label="%VAL_TYPE" hoverHelp="%TTIP_VALUE_TYPE" />
+	</node>
+
+	<node path="*/props" label="%PROPS" icon="icons/XSDAttribute.gif"
+		sectionHeaderText="%PROP_SHT">
+		<node path="prop" label="%PROP" treeLabel="%PROP_W_PARAM"
+			treeLabelData="@key" icon="icons/url.gif">
+			<item path="@key" label="%KEY"
+				validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.RequiredFieldValidator" />
+			<item path="." label="%PROP" />
+			<item path="@value" label="%VALUE" />
+		</node>
+	</node>
+
+	<node path="*/ref" label="%RF"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ComponentDependantLabelClass"
+		icon="icons/mime_mapping.gif">
+		<item path="@component-id" label="%COM_ID" defaultValue=""
+			labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceLinker"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ComponentIDReferenceDialog"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+			buttonToolTip="%CLK_REF_CHG" />
+	</node>
+
+	<node path="*/set" label="%SET"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ValueTypedLabelClass"
+		icon="icons/dataSet.gif">
+		<item path="@value-type" label="%VAL_TYPE" hoverHelp="%TTIP_VALUE_TYPE" />
+	</node>
+
+	<node path="*/value" label="%VALUE" treeLabel="%VALUE_W_PARAM"
+		treeLabelData="value" icon="icons/target.gif">
+		<item path="." label="%VALUE"
+			validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.RequiredFieldValidator" />
+		<item path="@type" label="%TYPE" />
+	</node>
+
+	<node path="*/map" label="%MAP"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ValueTypedLabelClass"
+		icon="icons/match_by_name.gif">
+		<item path="@value-type" label="%VAL_TYPE" hoverHelp="%TTIP_VALUE_TYPE" />
+		<item path="@key-type" label="%KEY_TYPE" hoverHelp="%TTIP_MAP_KEY_TYPE" />
+		<node path="entry" label="%ENTRY" treeLabel="%ENTRY_W_PARAM"
+			treeLabelData="@key" icon="icons/environment.gif">
+			<item path="@key" label="%KEY" />
+			<item path="@key-ref" label="%KEY_TYPE" hoverHelp="%TTIP_MAP_ENTRY_KEY_TYPE" />
+			<item path="@value" label="%VALUE" />
+			<item path="@value-ref" label="%VAL_TYPE" hoverHelp="%TTIP_MAP_ENTRY_VALUE_TYPE" />
+			<node path="key" label="%KEY" sectionHeaderText="%KEY_SHT"
+				icon="icons/parameters.gif" />
+		</node>
+	</node>
+
+
+
+	<!-- Reference-list customization -->
+	<node path="*/reference-list" label="%REF_LIST"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.InterfacedLabelClass"
+		icon="icons/obj16/bundle_service_ref_list.gif">
+		<item path="@id" label="%ID" />
+		<item path="@interface" label="%IF"
+			labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ClassLauncherWithID"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.CustomDialogWithID"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%TTIP_INTERFACE"
+			buttonToolTip="%CLK_CLS_CHG" />
+		<item path="@activation" label="%ACT" defaultValue="lazy"
+			disabled="true" />
+		<item path="@availability" label="%AVAIL" hoverHelp="%TTIP_AVAILABILITY" />
+		<item path="@filter" label="%FLTR" hoverHelp="%TTIP_FILTER" />
+		<item path="@member-type" label="%MEMBER_TYPE" defaultValue="service-object" 
+			hoverHelp="%TTIP_REFERENCE_LIST_MEM_TYPE" />
+		<section label="%REF_SET">
+			<item path="@component-name" label="%CP_NAME"
+				labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceLinker"
+				labelLinkToolTip="%TTIP_COMPONENT_NAME"/>
+			<item path="@depends-on" label="%BP_DO"
+				hoverHelp="%TTIP_DO"
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.DependsOnReferenceDialog"
+				buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+				buttonToolTip="%CLK_REF_CHG" />
+		</section>
+	</node>
+
+	<!-- Reference listener customization -->
+	<node path="*/reference-listener" label="%REF_LISTENER"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferencingLabelClass"
+		icon="icons/handler.gif" treeLabelData="@ref" >
+		<item path="@ref" label="%REF"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceDialog"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+			buttonToolTip="%CLK_REF_CHG" validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceListenerRefBeanValidator"/>
+		<section label="%METH_REF">
+			<item path="@bind-method" label="%BIND_METH" 
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.BindUnbindMethodDialog"
+				buttonLabel="%BROWSE_LBL" validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceListenerBindUnbindMethodValidator" />
+			<item path="@unbind-method" label="%UNBIND_METH" 
+				buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.BindUnbindMethodDialog"
+				buttonLabel="%BROWSE_LBL" validationClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferenceListenerBindUnbindMethodValidator"/>
+		</section>
+		<node path="bean" inheritCustomization="true">
+			<item path="@class" label="%CLS"
+			labelLinkClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ClassLauncher"
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.CustomDialog"
+			buttonLabel="%BROWSE_LBL" labelLinkToolTip="%CLK_TO_OPEN"
+			buttonToolTip="%CLK_CLS_CHG" />
+		</node>
+	</node>
+
+	<!-- Type-converters customization -->
+	<node path="/blueprint/type-converters" label="%TYPE_CONV"
+		icon="icons/convert_to.gif" sectionHeaderText="%PROP_SHT">
+	</node>
+
+
+
+	<!-- transaction namespace customization -->
+	<node style="treeNode" label="%TRANSACTION" path="*/bean/transaction"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.TxLabelClass"
+		icon="icons/transaction.gif" namespace="http://aries.apache.org/xmlns/transactions/v1.0.0">
+		<item path="@value" label="%VALUE"
+			namespace="http://aries.apache.org/xmlns/transactions/v1.0.0" />
+		<item path="@method" label="%METHOD"
+			namespace="http://aries.apache.org/xmlns/transactions/v1.0.0" 
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.PublicMethodDialog"
+			buttonLabel="%BROWSE_LBL" />
+	</node>
+	<node style="treeNode" label="%TRANSACTION" path="*/service/transaction"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.TxLabelClass"
+		icon="icons/transaction.gif" namespace="http://aries.apache.org/xmlns/transactions/v1.0.0">
+		<item path="@value" label="%VALUE"
+			namespace="http://aries.apache.org/xmlns/transactions/v1.0.0" />
+		<item path="@method" label="%METHOD"
+			namespace="http://aries.apache.org/xmlns/transactions/v1.0.0" 
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.PublicMethodDialog"
+			buttonLabel="%BROWSE_LBL" />
+	</node>
+
+	<!-- jpa namespace customization -->
+	<node style="treeNode" path="*/context"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.JpaLabelClass"
+		label="%CONTEXT" icon="icons/context.gif" namespace="http://aries.apache.org/xmlns/jpa/v1.0.0">
+		<item path="@property" label="%PROPERTY"
+			namespace="http://aries.apache.org/xmlns/jpa/v1.0.0" />
+		<item path="@unitname" label="%UNITNAME"
+			namespace="http://aries.apache.org/xmlns/jpa/v1.0.0" />
+		<item path="@type" label="%TYPE"
+			namespace="http://aries.apache.org/xmlns/jpa/v1.0.0" />
+		<node path="map" label="%MAP"
+			treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ValueTypedLabelClass"
+			icon="icons/match_by_name.gif" namespace="http://aries.apache.org/xmlns/jpa/v1.0.0">
+		</node>
+	</node>
+	<node style="treeNode" path="*/bean/unit"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.JpaLabelClass"
+		label="%UNIT" icon="icons/unit.gif" namespace="http://aries.apache.org/xmlns/jpa/v1.0.0">
+		<item path="@property" label="%PROPERTY"
+			namespace="http://aries.apache.org/xmlns/jpa/v1.0.0" />
+		<item path="@unitname" label="%UNITNAME"
+			namespace="http://aries.apache.org/xmlns/jpa/v1.0.0" />
+	</node>
+
+	<!-- resref namespace customization -->
+	<node style="treeNode" path="*/resource-reference" label="%RESOURCEREFERENCE"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.InterfacedLabelClass"
+		icon="icons/resource_ref.gif"
+		namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference">
+		<node path="res-auth" label="%RESOURCEAUTH" singleOccurrence="true"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference">
+			<item path="." label="%AUTH"
+				namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference"></item>
+		</node>
+		<node path="res-sharing-scope" label="%RESSHARINGSCOPE"
+			singleOccurrence="true"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference">
+			<item path="." label="%SCOPE"
+				namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference"></item>
+		</node>
+		<item path="@id" label="%ID"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@interface" label="%IF" defaultValue="default"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@filter" label="%FLTR"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@activation" label="%ACT"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@availability" label="%AVAIL"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@component-name" label="%CP_NAME"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@dependsOn" label="%BP_DO"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+		<item path="@timeout" label="%TO"
+			namespace="http://www.ibm.com/appserver/schemas/8.0/blueprint/resourcereference" />
+	</node>
+
+
+	<!-- blueprint extension namespace customization -->
+	<node style="treeNode" path="*/property-placeholder" label="%PROPPLACE"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.IDedLabelClass"
+		icon="icons/property-placeholder.gif" namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0">
+		<node style="treeNode" path="default-properties" label="%DEFPROP"
+			icon="icons/default-properties.gif" namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0">
+			<node path="property" label="%PROPERTY"
+				namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0"
+				treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.ReferencingLabelClass"
+				icon="icons/property.gif">
+			</node>
+		</node>
+		<item path="@id" label="%ID" />
+		<item path="@placeholder-prefix" label="%PLACEHOLDERPREFIX"
+			namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0"></item>
+		<item path="@placeholder-suffix" label="%PLACEHOLDERSUFFIX"
+			namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0"></item>
+		<item path="@defaults-ref" label="%DEFSREF"
+			namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0"></item>
+		<item path="@ignore-missing-locations" label="%IGNOREMISSINGLOC"
+			style="checkbox" namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0"></item>
+		<item path="@system-properties" label="%SYSPROPS"
+			namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0"></item>
+		<item path="@activation" label="%ACT" />
+		<item path="@depends-on" label="%BP_DO" />
+		<node path="location" label="%LOCATION"
+			namespace="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0" />
+
+	</node>
+
+	<!-- security namespace customization -->
+	<node style="treeNode" label="%ACCESS_CONSTRAINT" path="*/bean/access-constraint"
+		treeLabelClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.SecurityLabelClass"
+		icon="icons/security_role.gif" namespace="http://www.ibm.com/appserver/schemas/blueprint/security/v1.0.0">
+		<item path="@role" label="%ROLE"
+			namespace="http://www.ibm.com/appserver/schemas/blueprint/security/v1.0.0" />
+		<item path="@method" label="%METHOD"
+			namespace="http://www.ibm.com/appserver/schemas/blueprint/security/v1.0.0" 
+			buttonClass="com.ibm.etools.aries.internal.rad.ext.ui.bp.PublicMethodDialog"
+			buttonLabel="%BROWSE_LBL" />
+	</node>
+	
+</customization>

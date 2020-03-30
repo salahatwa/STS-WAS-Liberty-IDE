@@ -1,0 +1,20 @@
+requires.3.namespace = org.eclipse.equinox.p2.iu
+requires.3.name = com.ibm.etools.annotations.ui.feature.eclipse43.feature.group
+requires.3.range = [1.0.0, 2.0.0)
+requires.3.optional = true
+
+requires.4.namespace = org.eclipse.equinox.p2.iu
+requires.4.name = com.ibm.etools.javaee.editors.feature.eclipse43.feature.group
+requires.4.range = [1.0.0, 2.0.0)
+requires.4.optional = true
+
+
+requires.5.namespace = org.eclipse.equinox.p2.iu
+requires.5.name = com.ibm.jee.jpa.core.feature.eclipse43.feature.group
+requires.5.range = [1.0.0, 2.0.0)
+requires.5.optional = true
+
+requires.6.namespace = org.eclipse.equinox.p2.iu
+requires.6.name = com.ibm.jee.jpa.common.feature.eclipse46.feature.group
+requires.6.range = [2.0.0, 3.0.0)
+requires.6.optional = true
